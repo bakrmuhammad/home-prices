@@ -1,10 +1,13 @@
 'use strict';
 
 		var income,
-			$houseLayer 	   = null,
-			$condoLayer 	   = null,
-			$defaultHouseLayer = null,
-			$defaultCondoLayer = null;
+			$houseLayer 	    = null,
+			$condoLayer 	    = null,
+
+			$defaultHouseLayer  = null,
+			$defaultCondoLayer  = null,
+			$defaultCrimeLayer  = null,
+			$defaultSchoolLayer = null;
 	
 		// MAKE TILE LAYER FOR ZOOMED IN VIEW
 		var tiles = new L.StamenTileLayer('toner-lite');
@@ -68,6 +71,7 @@
 		// ADD DEFAULT LAYER TO MAP
 		map.addLayer($defaultHouseLayer);
 
+
 		function getDefaultCondoColor (d) {
 
 			if ((d >= 203975 ) && (d <= 3102400)) {
@@ -105,6 +109,87 @@
 
 		// SET DEFAULT LAYER
 		var $defaultCondoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCondoStyle });
+
+
+		function getDefaultCrimeColor (d) {
+
+			if ((d >= 201 ) && (d <= 400)) {
+				return '#a50f15';
+			}
+
+			else if  ((d >= 101 ) && (d <= 200)) {
+				return '#de2d26';
+			}
+
+			else if ((d >= 51  ) && (d <= 100)){
+				return '#fb6a4a';
+			}
+
+			else if  ((d >= 1  ) && (d <= 50)) {
+				return '#fcae91';
+			}
+
+			else {
+				return '#fee5d9';
+			}
+		}
+
+		// SET DEFAULT STYLES
+		function defaultCrimeStyle (features, layer) {
+		    return {
+		        fillColor: getDefaultCrimeColor(features.properties.crime),
+		        weight: 2,
+		        opacity: 1,
+		        color: 'white',
+		        dashArray: '3',
+		        fillOpacity: 0.7
+		    };
+		}
+
+		// SET DEFAULT LAYER
+		var $defaultCrimeLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCrimeStyle });
+
+
+		function getDefaultSchoolColor (d) {
+
+			if (d >= 4 ) {
+				return '#54278f';
+			}
+
+			else if  ((d >= 3 ) && (d <= 3.9)) {
+				return '#756bb1';
+			}
+
+			else if ((d >= 2  ) && (d <= 2.9)){
+				return '#9e9ac8';
+			}
+
+			else if  ((d >= 1  ) && (d <= 1.9)) {
+				return '#cbc9e2';
+			}
+
+			else {
+				return '#f2f0f7';
+			}
+		}
+
+		// SET DEFAULT STYLES
+		function defaultSchoolStyle (features, layer) {
+		    return {
+		        fillColor: getDefaultSchoolColor(features.properties.school_grade),
+		        weight: 2,
+		        opacity: 1,
+		        color: 'white',
+		        dashArray: '3',
+		        fillOpacity: 0.7
+		    };
+		}
+
+		// SET DEFAULT LAYER
+		var $defaultSchoolLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultSchoolStyle });
+
+
+
 
 		// ADD DEFAULT LAYER TO MAP
 		function getHouseColor (d) {
@@ -326,7 +411,7 @@
 			}
 		}
 
-		else {
+		else if (housing === 'condo') {
 			var legendColors = ['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c'];
 
 			for (var i = 0; i < legendColors.length; i++) {
@@ -334,6 +419,27 @@
 				$('.key-default').append('<div class=\'legend-block\' style=\'color:' + legendColors[i] + '\'</div>');
 			}
 		}
+
+		else if (housing === 'crime') {
+			var legendColors = ['#fee5d9','#fcae91','#fb6a4a','#de2d26','#a50f15'];
+
+			for (var i = 0; i < legendColors.length; i++) {
+				
+				$('.key-default').append('<div class=\'legend-block\' style=\'color:' + legendColors[i] + '\'</div>');
+			}
+		}
+
+
+		else {
+			var legendColors = ['#f2f0f7','#cbc9e2','#9e9ac8','#756bb1','#54278f'];
+
+			for (var i = 0; i < legendColors.length; i++) {
+				
+				$('.key-default').append('<div class=\'legend-block\' style=\'color:' + legendColors[i] + '\'</div>');
+			}
+		}
+
+
 	}
 
 
@@ -481,6 +587,7 @@
 
 		$('.condo-select').addClass('selected-interface');
 		$('.house-select').removeClass('selected-interface');
+		$('.crime-select').removeClass('selected-interface');
 		
 		var condo = 'condo';
 		buildKey(condo);		
@@ -495,6 +602,8 @@
 		$('.label-left').html('Least Expensive');
 		$('.label-right').html('Most Expensive');
 
+		map.removeLayer($defaultSchoolLayer);
+		map.removeLayer($defaultCrimeLayer);
 		map.removeLayer($defaultHouseLayer);
 		map.addLayer($defaultCondoLayer);				
 	}
@@ -504,6 +613,7 @@
 		
 		$('.house-select').addClass('selected-interface');
 		$('.condo-select').removeClass('selected-interface');
+		$('.crime-select').removeClass('selected-interface');
 
 		var house = 'house';
 		buildKey(house);
@@ -518,9 +628,63 @@
 		$('.label-left').html('Least Expensive');
 		$('.label-right').html('Most Expensive');
 
+		map.removeLayer($defaultCrimeLayer);
+		map.removeLayer($defaultSchoolLayer);
 		map.removeLayer($defaultHouseLayer);
 		map.removeLayer($defaultCondoLayer);
 		map.addLayer($defaultHouseLayer);					
+	}
+
+
+	function buildDefaultCrime() {
+		
+		$('.crime-select').addClass('selected-interface');
+		$('.house-select').removeClass('selected-interface');
+		$('.condo-select').removeClass('selected-interface');
+
+		var crime = 'crime';
+		buildKey(crime);
+
+		$('.housing')
+			.html('Crime rates')
+			.css({
+				'color': '#a50f15',
+				'font-weight': 'bold'
+			});
+
+		$('.label-left').html('Least Crime');
+		$('.label-right').html('Most Crime');
+
+		map.removeLayer($defaultHouseLayer);
+		map.removeLayer($defaultSchoolLayer);
+		map.removeLayer($defaultCondoLayer);
+		map.addLayer($defaultCrimeLayer);					
+	}
+
+
+	function buildDefaultSchool() {
+		
+		$('.school-select').addClass('selected-interface');
+		$('.house-select').removeClass('selected-interface');
+		$('.condo-select').removeClass('selected-interface');
+
+		var school = 'school';
+		buildKey(school);
+
+		$('.housing')
+			.html('School rates')
+			.css({
+				'color': '#54278f',
+				'font-weight': 'bold'
+			});
+
+		$('.label-left').html('Least Crime');
+		$('.label-right').html('Most Crime');
+		
+		map.removeLayer($defaultCrimeLayer);
+		map.removeLayer($defaultHouseLayer);
+		map.removeLayer($defaultCondoLayer);
+		map.addLayer($defaultSchoolLayer);					
 	}
 
 
@@ -575,6 +739,8 @@
 		$('.label-left').html('Least affordable');
 		$('.label-right').html('Most affordable');
 
+		map.removeLayer($defaultSchoolLayer);
+		map.removeLayer($defaultCrimeLayer);
 		map.removeLayer($defaultHouseLayer);
 		map.removeLayer($defaultCondoLayer);
 		map.removeLayer($condoLayer);
@@ -636,6 +802,8 @@
 		$('.label-right').html('Most affordable');
 
 		map.removeLayer($defaultCondoLayer);
+		map.removeLayer($defaultSchoolLayer);
+		map.removeLayer($defaultCrimeLayer);
 		map.removeLayer($defaultHouseLayer);
 		map.removeLayer($houseLayer);
 		map.addLayer($condoLayer);
@@ -704,13 +872,9 @@
 					var q = $(this).attr('data-index'),
 						schoolData = data[q].school;
 
-
-
-
-
 					for (var i = 0; i < schoolData.length; i++) {
 						
-						$('.table-head').after('<tr><td class=\'name\'>' + schoolData[i].name + '</td><td>'+ schoolData[i].grade2012 +'</td><td>' + schoolData[i].grade2011 +'</td><td>' + schoolData[i].grade2010+'</td></tr>');
+						$('.table-head').after('<tr><td class=\'name\'>' + schoolData[i].name + '</td><td>'+ schoolData[i].grade2015 +'</td><td>' + schoolData[i].grade2014 +'</td><td>' + schoolData[i].grade2013+'</td></tr>');
 					}
 				});
 	  		});
@@ -719,7 +883,7 @@
 	
 			$('#reset').click(function() {
 				$('#srcbox').val('')
-				$('.listing').removeClass('selected-interface')
+				$('.listing').LClass('selected-interface')
 			})
 
 

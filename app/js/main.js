@@ -138,6 +138,82 @@
 			console.log('build default condo map');
 		}
 	});
+
+
+
+	$('#interface-container').on('click', '.crime-select', function(event) {
+		
+		$('.house-select').removeClass('selected-interface')
+		$('.condo-select').removeClass('selected-interface');		
+		$(this).addClass('selected-interface');
+
+		var crime = 'crime'
+
+		buildKey(crime)
+		buildDefaultCrime();
+
+		// var crime 		   = 'crime',
+		// 	incomeInput    = $('.income-box').val(),
+		// 	house_checkbox = $('.house:checkbox'),
+		// 	condo_checkbox = $('.condo:checkbox'),
+		// 	houseCheck 	   = (house_checkbox.is(':checked')),
+		// 	condoCheck 	   = (condo_checkbox.is(':checked')),
+		// 	inputEmpty 	   = (incomeInput === '');
+
+		// if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
+		// 	buildCondoMap();
+		// 	console.log('build condo map');
+		// } 
+
+		// else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
+		// 	buildCondoMap();
+		// 	console.log('build condo map');
+		// }
+
+		// else {
+		// 	buildKey(condo)
+		// 	buildDefaultCondo();
+		// 	console.log('build default condo map');
+		// }
+	});
+
+
+	$('#interface-container').on('click', '.school-select', function(event) {
+		
+		$('.house-select').removeClass('selected-interface');
+		$('.condo-select').removeClass('selected-interface');
+		$('.crime-select').removeClass('selected-interface');		
+		$(this).addClass('selected-interface');
+
+		var school = 'school'
+
+		buildKey(school)
+		buildDefaultSchool();
+
+		// var crime 		   = 'crime',
+		// 	incomeInput    = $('.income-box').val(),
+		// 	house_checkbox = $('.house:checkbox'),
+		// 	condo_checkbox = $('.condo:checkbox'),
+		// 	houseCheck 	   = (house_checkbox.is(':checked')),
+		// 	condoCheck 	   = (condo_checkbox.is(':checked')),
+		// 	inputEmpty 	   = (incomeInput === '');
+
+		// if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
+		// 	buildCondoMap();
+		// 	console.log('build condo map');
+		// } 
+
+		// else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
+		// 	buildCondoMap();
+		// 	console.log('build condo map');
+		// }
+
+		// else {
+		// 	buildKey(condo)
+		// 	buildDefaultCondo();
+		// 	console.log('build default condo map');
+		// }
+	});
 	
 
 	// WHEN EVERYTHING IS GOOD TO GO...
