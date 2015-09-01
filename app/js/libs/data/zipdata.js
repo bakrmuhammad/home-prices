@@ -13,7 +13,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 149
+                    "crime": 149,
+                    "school_grade" : 2 
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -54,7 +55,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 110
+                    "crime": 110,
+                    "school_grade" : 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -103,7 +105,8 @@ var $zipData = [
                     "condo_price_fifteen": 100000,
                     "condo_price_fourteen": 94300,
                     "condo_pct": 0.06,
-                    "crime": 80
+                    "crime": 80,
+                    "school_grade" : 2.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -152,7 +155,8 @@ var $zipData = [
                     "condo_price_fifteen": 107200,
                     "condo_price_fourteen": 91000,
                     "condo_pct": 0.178,
-                    "crime": 137
+                    "crime": 137,
+                    "school_grade" : 2.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -205,7 +209,8 @@ var $zipData = [
                     "condo_price_fifteen": 117800,
                     "condo_price_fourteen": 103000,
                     "condo_pct": 0.144,
-                    "crime": 78
+                    "crime": 78,
+                     "school_grade" : 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -254,7 +259,8 @@ var $zipData = [
                     "condo_price_fifteen": 139200,
                     "condo_price_fourteen": 127300,
                     "condo_pct": 0.093,
-                    "crime": 96
+                    "crime": 96,
+                     "school_grade" : 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -303,7 +309,8 @@ var $zipData = [
                     "condo_price_fifteen": 158400,
                     "condo_price_fourteen": 150200,
                     "condo_pct": 0.055,
-                    "crime": 103
+                    "crime": 103,
+                     "school_grade" : 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -360,7 +367,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": "N/A"
+                    "crime": "N/A",
+                     "school_grade" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -425,7 +433,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 221
+                    "crime": 221,
+                     "school_grade" : 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -470,7 +479,9 @@ var $zipData = [
                     "condo_price_fifteen": 236200,
                     "condo_price_fourteen": 222900,
                     "condo_pct": 0.6,
-                    "crime": 200
+                    "crime": 200,
+                    "school_grade" : 2.8
+
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -535,7 +546,8 @@ var $zipData = [
                     "condo_price_fifteen": 151900,
                     "condo_price_fourteen": 154900,
                     "condo_pct": -0.019,
-                    "crime": 298
+                    "crime": 298,
+                    "school_grade" : 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -584,7 +596,8 @@ var $zipData = [
                     "condo_price_fifteen": 75200,
                     "condo_price_fourteen": 64700,
                     "condo_pct": 0.162,
-                    "crime": 151
+                    "crime": 151,
+                    "school_grade" : 2.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -633,7 +646,8 @@ var $zipData = [
                     "condo_price_fifteen": 178300,
                     "condo_price_fourteen": 164200,
                     "condo_pct": 0.086,
-                    "crime": 84
+                    "crime": 84,
+                    "school_grade" : 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -678,7 +692,8 @@ var $zipData = [
                     "condo_price_fifteen": 277900,
                     "condo_price_fourteen": 273200,
                     "condo_pct": 1.7,
-                    "crime": 84
+                    "crime": 84,
+                    "school_grade" : 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -769,7 +784,8 @@ var $zipData = [
                     "condo_price_fifteen": 157800,
                     "condo_price_fourteen": 144700,
                     "condo_pct": 0.091,
-                    "crime": 108
+                    "crime": 108,
+                    "school_grade" : 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -814,7 +830,8 @@ var $zipData = [
                     "condo_price_fifteen": 369300,
                     "condo_price_fourteen": 355100,
                     "condo_pct": 0.04,
-                    "crime": 137
+                    "crime": 137,
+                    "school_grade" : 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -855,7 +872,8 @@ var $zipData = [
                     "condo_price_fifteen": 150400,
                     "condo_price_fourteen": 141500,
                     "condo_pct": 0.063,
-                    "crime": 128
+                    "crime": 128,
+                    "school_grade" : 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -896,7 +914,8 @@ var $zipData = [
                     "condo_price_fifteen": 102100,
                     "condo_price_fourteen": 92200,
                     "condo_pct": 0.107,
-                    "crime": 253
+                    "crime": 253,
+                    "school_grade" : 2.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -945,7 +964,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": "N/A"
+                    "crime": "N/A",
+                    "school_grade" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -994,7 +1014,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 244
+                    "crime": 244,
+                    "school_grade" : 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1043,7 +1064,8 @@ var $zipData = [
                     "condo_price_fifteen": 502600,
                     "condo_price_fourteen": 466100,
                     "condo_pct": 0.078,
-                    "crime": 97
+                    "crime": 97,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1100,7 +1122,9 @@ var $zipData = [
                     "condo_price_fifteen": 254800,
                     "condo_price_fourteen": 238700,
                     "condo_pct": 0.067,
-                    "crime": 128
+                    "crime": 128,
+                    "school_grade": "N/A"
+
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1141,7 +1165,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 330
+                    "crime": 330,
+                    "school_grade": 2.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1191,7 +1216,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 308
+                    "crime": 308,
+                    "school_grade": 1.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1289,7 +1315,8 @@ var $zipData = [
                     "condo_price_fifteen": 94800,
                     "condo_price_fourteen": 87200,
                     "condo_pct": 0.087,
-                    "crime": 207
+                    "crime": 207,
+                    "school_grade": 2.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1392,7 +1419,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 334
+                    "crime": 334,
+                    "school_grade": 1.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1437,7 +1465,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 230
+                    "crime": 230,
+                    "school_grade": 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1498,7 +1527,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 267
+                    "crime": 267,
+                    "school_grade": 2.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1559,7 +1589,8 @@ var $zipData = [
                     "condo_price_fifteen": 99100,
                     "condo_price_fourteen": 81500,
                     "condo_pct": 0.216,
-                    "crime": 180
+                    "crime": 180,
+                    "school_grade": 2.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1604,7 +1635,8 @@ var $zipData = [
                     "condo_price_fifteen": 113800,
                     "condo_price_fourteen": 106800,
                     "condo_pct": 0.066,
-                    "crime": 190
+                    "crime": 190,
+                    "school_grade": 2.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1721,7 +1753,8 @@ var $zipData = [
                     "condo_price_fifteen": 169000,
                     "condo_price_fourteen": 158400,
                     "condo_pct": 0.067,
-                    "crime": 98
+                    "crime": 98,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1774,7 +1807,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 213
+                    "crime": 213,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1861,9 +1895,10 @@ var $zipData = [
                     "house_price_fourteen": 1248800,
                     "house_pct": 0.228,
                     "condo_price_fifteen": 408300,
-                    "condo_price_fourteen": 377800,
+                    "condo_price_fourteen": 408300,
                     "condo_pct": 0.081,
-                    "crime": 297
+                    "crime": 297,
+                    "school_grade": 3.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1919,12 +1954,13 @@ var $zipData = [
                     "zipcode": 33177,
                     "cities": "South Miami Heights",
                     "house_price_fifteen": 214400,
-                    "house_price_fourteen": 189900,
-                    "house_pct": 0.13,
+                    "house_price_fourteen": 0,
+                    "house_pct": 0,
                     "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
-                    "crime": 98
+                    "condo_price_fourteen": 0,
+                    "condo_pct": 0,
+                    "crime": 98,
+                    "school_grade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1977,7 +2013,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 107
+                    "crime": 107,
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2034,7 +2071,8 @@ var $zipData = [
                     "condo_price_fifteen": 3102400,
                     "condo_price_fourteen": 0,
                     "condo_pct": 0,
-                    "crime": "N/A"
+                    "crime": "N/A",
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2075,7 +2113,8 @@ var $zipData = [
                     "condo_price_fifteen": 907100,
                     "condo_price_fourteen": 847900,
                     "condo_pct": 0.07,
-                    "crime": 76
+                    "crime": 76,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2168,7 +2207,8 @@ var $zipData = [
                     "condo_price_fifteen": 435600,
                     "condo_price_fourteen": 438500,
                     "condo_pct": -0.07,
-                    "crime": 227
+                    "crime": 227,
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2221,7 +2261,8 @@ var $zipData = [
                     "condo_price_fifteen": 145800,
                     "condo_price_fourteen": 125800,
                     "condo_pct": 0.159,
-                    "crime": 86
+                    "crime": 86,
+                    "school_grade": 3.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2270,7 +2311,9 @@ var $zipData = [
                     "condo_price_fifteen": 1256400,
                     "condo_price_fourteen": 1190600,
                     "condo_pct": 0.055,
-                    "crime": 69
+                    "crime": 69,
+                    "school_grade": "N/A"
+
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2315,7 +2358,8 @@ var $zipData = [
                     "condo_price_fifteen": 299100,
                     "condo_price_fourteen": 292200,
                     "condo_pct": 0.024,
-                    "crime": 203
+                    "crime": 203,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2364,7 +2408,8 @@ var $zipData = [
                     "condo_price_fifteen": 152500,
                     "condo_price_fourteen": 140000,
                     "condo_pct": 0.089,
-                    "crime": 169
+                    "crime": 169,
+                    "school_grade": 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2425,7 +2470,8 @@ var $zipData = [
                     "condo_price_fifteen": 142500,
                     "condo_price_fourteen": 129200,
                     "condo_pct": 0.103,
-                    "crime": 149
+                    "crime": 149,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2478,7 +2524,8 @@ var $zipData = [
                     "condo_price_fifteen": 142000,
                     "condo_price_fourteen": 125800,
                     "condo_pct": 0.129,
-                    "crime": 125
+                    "crime": 125,
+                    "school_grade": 3.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2519,7 +2566,8 @@ var $zipData = [
                     "condo_price_fifteen": 181500,
                     "condo_price_fourteen": 163900,
                     "condo_pct": 0.107,
-                    "crime": 113
+                    "crime": 113,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2568,7 +2616,8 @@ var $zipData = [
                     "condo_price_fifteen": 391300,
                     "condo_price_fourteen": 370200,
                     "condo_pct": 0.057,
-                    "crime": 222
+                    "crime": 222,
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2633,7 +2682,8 @@ var $zipData = [
                     "condo_price_fifteen": 302400,
                     "condo_price_fourteen": 307200,
                     "condo_pct": -0.016,
-                    "crime": 290
+                    "crime": 290,
+                    "school_grade": 3.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2678,7 +2728,8 @@ var $zipData = [
                     "condo_price_fifteen": 321200,
                     "condo_price_fourteen": 297800,
                     "condo_pct": 0.079,
-                    "crime": 97
+                    "crime": 97,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2732,14 +2783,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33162,
-                    "cities" : "North Miami Beach",
-                    "house_price_fifteen" : 175400,
-                    "house_price_fourteen" : 157000,
-                    "house_pct" : 0.12,
-                    "condo_price_fifteen" : 76200,
+                    "cities": "North Miami Beach",
+                    "house_price_fifteen": 175400,
+                    "house_price_fourteen": 15700,
+                    "house_pct": 0.117,
+                    "condo_price_fifteen": 76200,
                     "condo_price_fourteen": 70800,
-                    "condo_pct": 0.08,
-                    "crime" : 192
+                    "condo_pct": 0.076,
+                    "crime": 192,
+                    "school_grade": 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2792,7 +2844,8 @@ var $zipData = [
                     "condo_price_fifteen": 404000,
                     "condo_price_fourteen": 379800,
                     "condo_pct": 0.064,
-                    "crime": 227
+                    "crime": 227,
+                    "school_grade": 3.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2861,7 +2914,8 @@ var $zipData = [
                     "condo_price_fifteen": 85800,
                     "condo_price_fourteen": 77600,
                     "condo_pct": 0.106,
-                    "crime": 176
+                    "crime": 176,
+                    "school_grade": 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2914,7 +2968,9 @@ var $zipData = [
                     "condo_price_fifteen": 144300,
                     "condo_price_fourteen": 139700,
                     "condo_pct": 0.033,
-                    "crime": 168
+                    "crime": 168,
+                    "school_grade": 4
+
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2975,7 +3031,8 @@ var $zipData = [
                     "condo_price_fifteen": 109200,
                     "condo_price_fourteen": 99600,
                     "condo_pct": 0.096,
-                    "crime": 202
+                    "crime": 202,
+                    "school_grade": 1.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3028,7 +3085,8 @@ var $zipData = [
                     "condo_price_fifteen": 134100,
                     "condo_price_fourteen": 119300,
                     "condo_pct": 0.0124,
-                    "crime": 143
+                    "crime": 143,
+                    "school_grade": 3.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3085,7 +3143,8 @@ var $zipData = [
                     "condo_price_fifteen": 223700,
                     "condo_price_fourteen": 194600,
                     "condo_pct": 0.15,
-                    "crime": 160
+                    "crime": 160,
+                    "school_grade": 2.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3139,7 +3198,8 @@ var $zipData = [
                     "condo_price_fifteen": 87500,
                     "condo_price_fourteen": 90300,
                     "condo_pct": -0.031,
-                    "crime": 323
+                    "crime": 323,
+                    "school_grade": 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3200,7 +3260,8 @@ var $zipData = [
                     "condo_price_fifteen": 151900,
                     "condo_price_fourteen": 135400,
                     "condo_pct": 0.122,
-                    "crime": 86
+                    "crime": 86,
+                    "school_grade": 3.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3249,7 +3310,8 @@ var $zipData = [
                     "condo_price_fifteen": 140500,
                     "condo_price_fourteen": 128100,
                     "condo_pct": 0.097,
-                    "crime": 201
+                    "crime": 201,
+                    "school_grade": 2.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3306,7 +3368,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": "N/A"
+                    "crime": "N/A",
+                    "school_grade": 1.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3355,7 +3418,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 294
+                    "crime": 294,
+                    "school_grade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3424,7 +3488,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 278
+                    "crime": 278,
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3469,7 +3534,8 @@ var $zipData = [
                     "condo_price_fifteen": 119900,
                     "condo_price_fourteen": 95700,
                     "condo_pct": 0.253,
-                    "crime": 201
+                    "crime": 201,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3514,15 +3580,16 @@ var $zipData = [
             {
                 "type": "Feature",
                 "properties": {
-                   "zipcode": 33010,
-                    "cities" : "Hialeah",
-                    "house_price_fifteen" : 201100,
-                    "house_price_fourteen" : 174900,
-                    "house_pct" : 0.15,
-                    "condo_price_fifteen" : "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
-                    "crime" : 119
+                    "zipcode": 33010,
+                    "cities": "Hialeah",
+                    "house_price_fifteen": 201100,
+                    "house_price_fourteen": 174900,
+                    "house_pct": 0.15,
+                    "condo_price_fifteen": "N/A",
+                    "condo_price_fourteen": 0,
+                    "condo_pct": 0,
+                    "crime": 119,
+                    "school_grade" : 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3575,7 +3642,8 @@ var $zipData = [
                     "condo_price_fifteen": 203600,
                     "condo_price_fourteen": 177300,
                     "condo_pct": 0.148,
-                    "crime": 181
+                    "crime": 181,
+                    "school_grade": 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3636,7 +3704,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": "N/A"
+                    "crime": "N/A",
+                    "school_grade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3697,7 +3766,8 @@ var $zipData = [
                     "condo_price_fifteen": 109100,
                     "condo_price_fourteen": 101800,
                     "condo_pct": 0.072,
-                    "crime": 189
+                    "crime": 189,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3762,7 +3832,8 @@ var $zipData = [
                     "condo_price_fifteen": 138700,
                     "condo_price_fourteen": 131100,
                     "condo_pct": 0.058,
-                    "crime": 100
+                    "crime": 100,
+                    "school_grade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3839,7 +3910,8 @@ var $zipData = [
                     "condo_price_fifteen": 102100,
                     "condo_price_fourteen": 102100,
                     "condo_pct": 0,
-                    "crime": 0.072
+                    "crime": 0.072,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3888,7 +3960,8 @@ var $zipData = [
                     "condo_price_fifteen": 367400,
                     "condo_price_fourteen": 343100,
                     "condo_pct": 0.71,
-                    "crime": 294
+                    "crime": 294,
+                    "school_grade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3949,7 +4022,8 @@ var $zipData = [
                     "condo_price_fifteen": 394500,
                     "condo_price_fourteen": 395600,
                     "condo_pct": -0.03,
-                    "crime": 215
+                    "crime": 215,
+                    "school_grade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4014,7 +4088,8 @@ var $zipData = [
                     "condo_price_fifteen": 301100,
                     "condo_price_fourteen": 292700,
                     "condo_pct": 0.107,
-                    "crime": 253
+                    "crime": 253,
+                    "school_grade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4059,7 +4134,8 @@ var $zipData = [
                     "condo_price_fifteen": 225900,
                     "condo_price_fourteen": 208800,
                     "condo_pct": 0.082,
-                    "crime": 137
+                    "crime": 137,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4108,7 +4184,8 @@ var $zipData = [
                     "condo_price_fifteen": 342700,
                     "condo_price_fourteen": 331900,
                     "condo_pct": 0.033,
-                    "crime": 189
+                    "crime": 189,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4165,7 +4242,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": "N/A"
+                    "crime": "N/A",
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4230,7 +4308,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 248
+                    "crime": 248,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4271,7 +4350,8 @@ var $zipData = [
                     "condo_price_fifteen": 140100,
                     "condo_price_fourteen": 12500,
                     "condo_pct": 0.116,
-                    "crime": 212
+                    "crime": 212,
+                    "school_grade": 2.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4329,14 +4409,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33176,
-                    "cities" : "Kendall",
-                    "house_price_fifteen" : 418500,
-                    "house_price_fourteen" : 420800,
-                    "house_pct" : -0.01,
-                    "condo_price_fifteen" : 127300,
+                    "cities": "Kendall",
+                    "house_price_fifteen": 418500,
+                    "house_price_fourteen": 420800,
+                    "house_pct": -0.01,
+                    "condo_price_fifteen": 127300,
                     "condo_price_fourteen": 118900,
-                    "condo_pct": 0.07,
-                    "crime" : 125
+                    "condo_pct":  0.07,
+                    "crime": 116,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4401,7 +4482,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 252
+                    "crime": 252,
+                    "school_grade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4450,7 +4532,8 @@ var $zipData = [
                     "condo_price_fifteen": 85900,
                     "condo_price_fourteen": 75300,
                     "condo_pct": 0.141,
-                    "crime": 129
+                    "crime": 129,
+                    "school_grade": 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4523,7 +4606,8 @@ var $zipData = [
                     "condo_price_fifteen": 235500,
                     "condo_price_fourteen": 228200,
                     "condo_pct": 0.032,
-                    "crime": 250
+                    "crime": 250,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4568,7 +4652,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 83
+                    "crime": 83,
+                    "school_grade": 3.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4625,7 +4710,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 81
+                    "crime": 81,
+                    "school_grade": 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4670,7 +4756,8 @@ var $zipData = [
                     "condo_price_fifteen": 117100,
                     "condo_price_fourteen": 108500,
                     "condo_pct": 0.079,
-                    "crime": 128
+                    "crime": 128,
+                    "school_grade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4731,7 +4818,8 @@ var $zipData = [
                     "condo_price_fifteen": 54300,
                     "condo_price_fourteen": 52800,
                     "condo_pct": 0.028,
-                    "crime": 57
+                    "crime": 57,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4784,7 +4872,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 135
+                    "crime": 135,
+                    "school_grade": 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4841,7 +4930,8 @@ var $zipData = [
                     "condo_price_fifteen": 284500,
                     "condo_price_fourteen": 265400,
                     "condo_pct": 0.072,
-                    "crime": 140
+                    "crime": 140,
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4906,7 +4996,9 @@ var $zipData = [
                     "condo_price_fifteen": 74400,
                     "condo_price_fourteen": 70200,
                     "condo_pct": 0.06,
-                    "crime": 101
+                    "crime": 101,
+                    "school_grade": 2.3
+
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4971,7 +5063,8 @@ var $zipData = [
                     "condo_price_fifteen": 80300,
                     "condo_price_fourteen": 75900,
                     "condo_pct": 0.058,
-                    "crime": 74
+                    "crime": 74,
+                    "school_grade": 3.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5021,14 +5114,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33069,
-                    "cities" : "Pompano Beach",
-                    "house_price_fifteen" : 106100,
-                    "house_price_fourteen" : 101700,
-                    "house_pct" : 0.043,
-                    "condo_price_fifteen" : 128800,
+                    "cities": "Pompano Beach",
+                    "house_price_fifteen": 106100,
+                    "house_price_fourteen": 101700,
+                    "house_pct": 0.002,
+                    "condo_price_fifteen": 128800,
                     "condo_price_fourteen": 127600,
-                    "condo_pct": 0.01,
-                    "crime" : 195
+                    "condo_pct": 0.09,
+                    "crime": 195,
+                    "school_grade": 1.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5097,7 +5191,8 @@ var $zipData = [
                     "condo_price_fifteen": 56000,
                     "condo_price_fourteen": 53600,
                     "condo_pct": 0.045,
-                    "crime": 70
+                    "crime": 70,
+                    "school_grade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5154,7 +5249,8 @@ var $zipData = [
                     "condo_price_fifteen": 87300,
                     "condo_price_fourteen": 83700,
                     "condo_pct": 0.043,
-                    "crime": 94
+                    "crime": 94,
+                    "school_grade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5203,7 +5299,8 @@ var $zipData = [
                     "condo_price_fifteen": 86900,
                     "condo_price_fourteen": 79500,
                     "condo_pct": 0.093,
-                    "crime": 158
+                    "crime": 158,
+                    "school_grade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5253,14 +5350,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33071,
-                    "cities" : "Coral Springs",
-                    "house_price_fifteen" : 347800,
-                    "house_price_fourteen" : 341100,
-                    "house_pct" : 0.020,
-                    "condo_price_fifteen" : 118600,
+                    "cities": "Coral Springs",
+                    "house_price_fifteen": 347800,
+                    "house_price_fourteen": 341100,
+                    "house_pct": 0.002,
+                    "condo_price_fifteen": 118600,
                     "condo_price_fourteen": 114800,
                     "condo_pct": 0.033,
-                    "crime" : 66
+                    "crime": 66,
+                    "school_grade": 3.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5309,7 +5407,8 @@ var $zipData = [
                     "condo_price_fifteen": 71200,
                     "condo_price_fourteen": 63800,
                     "condo_pct": 0.116,
-                    "crime": 85
+                    "crime": 85,
+                    "school_grade": 2.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5374,7 +5473,8 @@ var $zipData = [
                     "condo_price_fifteen": 85400,
                     "condo_price_fourteen": 78700,
                     "condo_pct": 0.085,
-                    "crime": 64
+                    "crime": 64,
+                    "school_grade": 2.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5427,7 +5527,8 @@ var $zipData = [
                     "condo_price_fifteen": 297500,
                     "condo_price_fourteen": 289600,
                     "condo_pct": 0.027,
-                    "crime": 112
+                    "crime": 112,
+                    "school_grade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5480,7 +5581,8 @@ var $zipData = [
                     "condo_price_fifteen": 99900,
                     "condo_price_fourteen": 96800,
                     "condo_pct": 0.032,
-                    "crime": 168
+                    "crime": 168,
+                    "school_grade": 1.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5529,7 +5631,8 @@ var $zipData = [
                     "condo_price_fifteen": 101200,
                     "condo_price_fourteen": 92900,
                     "condo_pct": 0.089,
-                    "crime": 204
+                    "crime": 204,
+                    "school_grade": 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5586,7 +5689,8 @@ var $zipData = [
                     "condo_price_fifteen": 58200,
                     "condo_price_fourteen": 56800,
                     "condo_pct": 0.025,
-                    "crime": 94
+                    "crime": 94,
+                    "school_grade": 1.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5636,14 +5740,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33351,
-                    "cities" : "Sunrise",
-                    "house_price_fifteen" : 216400,
-                    "house_price_fourteen" : 198800,
-                    "house_pct" : 0.09,
-                    "condo_price_fifteen" : 87100,
+                    "cities": "Sunrise",
+                    "house_price_fifteen": 216400,
+                    "house_price_fourteen": 19800,
+                    "house_pct": 0.089,
+                    "condo_price_fifteen": 87100,
                     "condo_price_fourteen": 82500,
-                    "condo_pct": 0.06,
-                    "crime" : 136
+                    "condo_pct": 0.056,
+                    "crime": 136,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5786,7 +5891,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 184
+                    "crime": 184,
+                    "school_grade": 0.03
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5843,7 +5949,8 @@ var $zipData = [
                     "condo_price_fifteen": 47400,
                     "condo_price_fourteen": 46400,
                     "condo_pct": 0.022,
-                    "crime": 147
+                    "crime": 147,
+                    "school_grade": 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5885,14 +5992,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33322,
-                    "cities" : "Sunrise",
-                    "house_price_fifteen" : 232700,
-                    "house_price_fourteen" : 218000,
-                    "house_pct" : 0.07,
-                    "condo_price_fifteen" : 49500,
+                    "cities": "Sunrise",
+                    "house_price_fifteen": 232700,
+                    "house_price_fourteen": 21800,
+                    "house_pct": 0.067,
+                    "condo_price_fifteen": 49500,
                     "condo_price_fourteen": 47500,
-                    "condo_pct": 0.04,
-                    "crime" : 76
+                    "condo_pct": 0.042,
+                    "crime": 76,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5945,7 +6053,8 @@ var $zipData = [
                     "condo_price_fifteen": 205100,
                     "condo_price_fourteen": 194500,
                     "condo_pct": 0.016,
-                    "crime": 187
+                    "crime": 187,
+                    "school_grade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5994,7 +6103,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 42
+                    "crime": 42,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6071,7 +6181,8 @@ var $zipData = [
                     "condo_price_fifteen": 249600,
                     "condo_price_fourteen": 245700,
                     "condo_pct": 0.016,
-                    "crime": 282
+                    "crime": 282,
+                    "school_grade": 3.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6120,7 +6231,8 @@ var $zipData = [
                     "condo_price_fifteen": 164000,
                     "condo_price_fourteen": 159800,
                     "condo_pct": 0.026,
-                    "crime": 54
+                    "crime": 54,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6189,7 +6301,8 @@ var $zipData = [
                     "condo_price_fifteen": 92100,
                     "condo_price_fourteen": 85400,
                     "condo_pct": 0.078,
-                    "crime": 155
+                    "crime": 155,
+                    "school_grade": 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6242,7 +6355,8 @@ var $zipData = [
                     "condo_price_fifteen": 130600,
                     "condo_price_fourteen": 122400,
                     "condo_pct": 0.067,
-                    "crime": 105
+                    "crime": 105,
+                    "school_grade": 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6287,7 +6401,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 117
+                    "crime": 117,
+                    "school_grade": 3.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6336,7 +6451,8 @@ var $zipData = [
                     "condo_price_fifteen": 332200,
                     "condo_price_fourteen": 325600,
                     "condo_pct": 0.02,
-                    "crime": 248
+                    "crime": 248,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6389,7 +6505,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 184
+                    "crime": 184,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6450,7 +6567,8 @@ var $zipData = [
                     "condo_price_fifteen": 230000,
                     "condo_price_fourteen": 213700,
                     "condo_pct": 0.076,
-                    "crime": 159
+                    "crime": 159,
+                    "school_grade": 1.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6515,7 +6633,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 336
+                    "crime": 336,
+                    "school_grade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6580,7 +6699,8 @@ var $zipData = [
                     "condo_price_fifteen": 440500,
                     "condo_price_fourteen": 448700,
                     "condo_pct": -1.8,
-                    "crime": 45
+                    "crime": 45,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6645,7 +6765,8 @@ var $zipData = [
                     "condo_price_fifteen": 138100,
                     "condo_price_fourteen": 138100,
                     "condo_pct": 0.03,
-                    "crime": 207
+                    "crime": 207,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6723,14 +6844,15 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33314,
-                    "cities" : "Davie",
-                    "house_price_fifteen" : 197100,
-                    "house_price_fourteen" : 184000,
-                    "house_pct" : 0.07,
-                    "condo_price_fifteen" : 112800,
+                    "cities": "Davie",
+                    "house_price_fifteen": 197100,
+                    "house_price_fourteen": 18400,
+                    "house_pct": 0.071,
+                    "condo_price_fifteen": 112800,
                     "condo_price_fourteen": 94700,
-                    "condo_pct": 0.19,
-                    "crime" : 171
+                    "condo_pct": 0.191,
+                    "crime": 171,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6787,7 +6909,8 @@ var $zipData = [
                     "condo_price_fifteen": 316400,
                     "condo_price_fourteen": 278400,
                     "condo_pct": 0.0136,
-                    "crime": 51
+                    "crime": 51,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6844,7 +6967,8 @@ var $zipData = [
                     "condo_price_fifteen": 138600,
                     "condo_price_fourteen": 130800,
                     "condo_pct": 0.06,
-                    "crime": 76
+                    "crime": 76,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6889,7 +7013,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 92
+                    "crime": 92,
+                    "school_grade": 3.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6995,7 +7120,8 @@ var $zipData = [
                     "condo_price_fifteen": 91600,
                     "condo_price_fourteen": 85700,
                     "condo_pct": 0.069,
-                    "crime": 190
+                    "crime": 190,
+                    "school_grade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7044,7 +7170,8 @@ var $zipData = [
                     "condo_price_fifteen": 103400,
                     "condo_price_fourteen": 92800,
                     "condo_pct": 0.114,
-                    "crime": 133
+                    "crime": 133,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7101,7 +7228,8 @@ var $zipData = [
                     "condo_price_fifteen": 109000,
                     "condo_price_fourteen": 103800,
                     "condo_pct": 0.05,
-                    "crime": 120
+                    "crime": 120,
+                    "school_grade": 2.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7150,7 +7278,8 @@ var $zipData = [
                     "condo_price_fifteen": 105500,
                     "condo_price_fourteen": 92600,
                     "condo_pct": 0.139,
-                    "crime": 80
+                    "crime": 80,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7199,7 +7328,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 94
+                    "crime": 94,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7244,7 +7374,8 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 74
+                    "crime": 74,
+                    "school_grade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7293,7 +7424,9 @@ var $zipData = [
                     "condo_price_fifteen": "N/A",
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
-                    "crime": 143
+                    "crime": 143,
+                    "school_grade": 2
+
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7346,7 +7479,8 @@ var $zipData = [
                     "condo_price_fifteen": 114500,
                     "condo_price_fourteen": 102100,
                     "condo_pct": 0.121,
-                    "crime": 101
+                    "crime": 101,
+                    "school_grade": 3.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7399,7 +7533,8 @@ var $zipData = [
                     "condo_price_fifteen": 107500,
                     "condo_price_fourteen": 95900,
                     "condo_pct": 0.121,
-                    "crime": 87
+                    "crime": 87,
+                    "school_grade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7440,7 +7575,8 @@ var $zipData = [
                     "condo_price_fifteen": 203500,
                     "condo_price_fourteen": 190400,
                     "condo_pct": 0.069,
-                    "crime": 207
+                    "crime": 207,
+                    "school_grade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
