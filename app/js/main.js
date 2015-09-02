@@ -78,6 +78,7 @@
 		 $('.section:first-of-type').after('<br class=\'stop-scroll\'>');
 	});
 
+
 	$('#interface-container').on('click', '.house-select', function(event) {
 
 		$('.condo-select').removeClass('selected-interface');		
@@ -111,7 +112,10 @@
 
 	$('#interface-container').on('click', '.condo-select', function(event) {
 		
+		$('.crime-select').removeClass('selected-interface');
+		$('.school-select').removeClass('selected-interface');
 		$('.house-select').removeClass('selected-interface')		
+		
 		$(this).addClass('selected-interface');
 
 		var condo 		   = 'condo',
@@ -143,38 +147,38 @@
 
 	$('#interface-container').on('click', '.crime-select', function(event) {
 		
+		$('.school-select').removeClass('selected-interface');
 		$('.house-select').removeClass('selected-interface')
 		$('.condo-select').removeClass('selected-interface');		
 		$(this).addClass('selected-interface');
 
-		var crime = 'crime'
 
-		buildKey(crime)
-		buildDefaultCrime();
+		var crime 		   = 'crime',
+			incomeInput    = $('.income-box').val(),
+			house_checkbox = $('.house:checkbox'),
+			condo_checkbox = $('.condo:checkbox'),
+			houseCheck 	   = (house_checkbox.is(':checked')),
+			condoCheck 	   = (condo_checkbox.is(':checked')),
+			inputEmpty 	   = (incomeInput === '');
 
-		// var crime 		   = 'crime',
-		// 	incomeInput    = $('.income-box').val(),
-		// 	house_checkbox = $('.house:checkbox'),
-		// 	condo_checkbox = $('.condo:checkbox'),
-		// 	houseCheck 	   = (house_checkbox.is(':checked')),
-		// 	condoCheck 	   = (condo_checkbox.is(':checked')),
-		// 	inputEmpty 	   = (incomeInput === '');
+		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
+			buildCrimeMap();
+			console.log('build crime map');
+		} 
 
-		// if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
-		// 	buildCondoMap();
-		// 	console.log('build condo map');
-		// } 
+		else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
+			buildCrimeMap();
+			console.log('build crime map');
+		}
 
-		// else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
-		// 	buildCondoMap();
-		// 	console.log('build condo map');
-		// }
+		else {
+			buildKey(crime);
+			buildDefaultCrime();
 
-		// else {
-		// 	buildKey(condo)
-		// 	buildDefaultCondo();
-		// 	console.log('build default condo map');
-		// }
+			console.log('build default crime map');
+		}
+
+
 	});
 
 
@@ -185,36 +189,34 @@
 		$('.crime-select').removeClass('selected-interface');		
 		$(this).addClass('selected-interface');
 
-		var school = 'school'
+		var school 		   = 'school',
+			incomeInput    = $('.income-box').val(),
+			house_checkbox = $('.house:checkbox'),
+			condo_checkbox = $('.condo:checkbox'),
+			houseCheck 	   = (house_checkbox.is(':checked')),
+			condoCheck 	   = (condo_checkbox.is(':checked')),
+			inputEmpty 	   = (incomeInput === '');
 
-		buildKey(school)
-		buildDefaultSchool();
+		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
+			buildSchoolMap();
+			console.log('build school map');
+		} 
 
-		// var crime 		   = 'crime',
-		// 	incomeInput    = $('.income-box').val(),
-		// 	house_checkbox = $('.house:checkbox'),
-		// 	condo_checkbox = $('.condo:checkbox'),
-		// 	houseCheck 	   = (house_checkbox.is(':checked')),
-		// 	condoCheck 	   = (condo_checkbox.is(':checked')),
-		// 	inputEmpty 	   = (incomeInput === '');
+		else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
+			buildSchoolMap();
+			console.log('build school map');
+		}
 
-		// if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
-		// 	buildCondoMap();
-		// 	console.log('build condo map');
-		// } 
+		else {
+			buildKey(school)
+			buildDefaultSchool();
+			
+			console.log('build default crime map');
+		}
 
-		// else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
-		// 	buildCondoMap();
-		// 	console.log('build condo map');
-		// }
-
-		// else {
-		// 	buildKey(condo)
-		// 	buildDefaultCondo();
-		// 	console.log('build default condo map');
-		// }
 	});
-	
+
+
 
 	// WHEN EVERYTHING IS GOOD TO GO...
 	// RUN MAP-BUILDING FUNCTIONS
@@ -226,6 +228,9 @@
 
 		$houseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: houseStyle });	
 		$condoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: condoStyle });
+		$crimeLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: crimeStyle });
+		$schoolLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: schoolStyle });
+
 
 		checkInput(income);
 

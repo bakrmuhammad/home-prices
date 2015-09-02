@@ -368,7 +368,7 @@ var $zipData = [
                     "condo_price_fourteen": "N/A",
                     "condo_pct": "N/A",
                     "crime": "N/A",
-                     "school_grade" : "N/A"
+                     "school_grade" : 0
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6763,8 +6763,8 @@ var $zipData = [
                     "house_price_fourteen": 214100,
                     "house_pct": 0.041,
                     "condo_price_fifteen": 138100,
-                    "condo_price_fourteen": 138100,
-                    "condo_pct": 0.03,
+                    "condo_price_fourteen": 135000,
+                    "condo_pct": 0.23,
                     "crime": 207,
                     "school_grade": 3
                 },

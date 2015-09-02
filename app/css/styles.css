@@ -265,23 +265,30 @@ hr {
   .fa-facebook, .fa-twitter, .fa-google-plus {
     font-size: 18px; } }
 
-.dollar-sign {
-  font-size: 35px; }
-
 .miss {
   display: none; }
 
-#button-container {
-  margin: 1em 0;
-  text-align: left;
-  height: auto; }
-  #button-container h3 {
+.info .dollar-sign {
+  font-size: 30px;
+  vertical-align: 10px; }
+
+.info #button-container {
+  margin: 1em auto;
+  height: auto;
+  display: block;
+  max-width: 475px;
+  border: 1px solid; }
+  .info #button-container h3 {
     text-align: center; }
-  #button-container .input-holder {
-    text-align: center; }
-  #button-container .button-holder {
-    text-align: center; }
-  #button-container .income-btn {
+  .info #button-container .input-holder {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid; }
+  .info #button-container .button-holder {
+    text-align: center;
+    display: inline;
+    float: right; }
+  .info #button-container .income-btn {
     margin: 5px auto;
     background-color: #EFEFEF;
     border-radius: 4px;
@@ -293,47 +300,49 @@ hr {
     font-size: 22px;
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
     font-weight: bold; }
-    #button-container .income-btn:hover {
+    .info #button-container .income-btn:hover {
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-  #button-container .income-box {
+  .info #button-container .income-box {
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     border-bottom: 1px dashed #ccc;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 155px;
-    margin-right: 1em;
-    text-align: left; }
-    #button-container .income-box::-webkit-input-placeholder {
+    width: 200px;
+    text-align: center;
+    vertical-align: 10px; }
+    .info #button-container .income-box::-webkit-input-placeholder {
       font-weight: 300;
-      text-align: left;
-      line-height: 2em;
+      text-align: center;
+      line-height: 1.5em;
       font-size: 30px; }
-    #button-container .income-box:focus {
+    .info #button-container .income-box:focus {
       outline: 0; }
-      #button-container .income-box:focus::-webkit-input-placeholder {
+      .info #button-container .income-box:focus::-webkit-input-placeholder {
         color: #fff; }
 
-.error {
+.info .error {
   height: auto;
-  width: 50%;
+  width: 100%;
   display: none;
   margin: 1px auto;
   text-align: center; }
-  .error .error-message {
+  .info .error .error-message {
     background: #aa0000;
     padding: 0.25em; }
 
-#house-choice {
-  margin: 1em 0;
+.info #house-choice {
+  margin: 1em 0 2em 0;
   text-align: center;
-  height: auto; }
-  #house-choice h3 {
+  height: auto;
+  width: 100%;
+  border: 1px solid; }
+  .info #house-choice h3 {
     padding-bottom: 8px; }
-  #house-choice #check-button-house, #house-choice #check-button-condo {
+  .info #house-choice #check-button-house, .info #house-choice #check-button-condo {
     margin: 0px auto;
     background-color: #EFEFEF;
     border-radius: 4px;
@@ -342,126 +351,32 @@ hr {
     width: 200px;
     height: 45px;
     display: inline-block; }
-    #house-choice #check-button-house:hover, #house-choice #check-button-condo:hover {
+    .info #house-choice #check-button-house:hover, .info #house-choice #check-button-condo:hover {
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-    #house-choice #check-button-house label, #house-choice #check-button-condo label {
+    .info #house-choice #check-button-house label, .info #house-choice #check-button-condo label {
       float: left;
       width: 100%; }
-      #house-choice #check-button-house label span, #house-choice #check-button-condo label span {
+      .info #house-choice #check-button-house label span, .info #house-choice #check-button-condo label span {
         text-align: center;
         display: block;
         padding: 0.35em;
         font-size: 22px;
         font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif; }
-      #house-choice #check-button-house label input, #house-choice #check-button-condo label input {
+      .info #house-choice #check-button-house label input, .info #house-choice #check-button-condo label input {
         display: none; }
-        #house-choice #check-button-house label input:checked + span, #house-choice #check-button-condo label input:checked + span {
+        .info #house-choice #check-button-house label input:checked + span, .info #house-choice #check-button-condo label input:checked + span {
           background-color: #aaa;
           color: #000; }
-  #house-choice .disabled:hover {
+  .info #house-choice .disabled:hover {
     background-color: #efefef !important; }
-
-.info #list-container {
-  background: #f8f5f2;
-  height: 600px; }
-  .info #list-container header {
-    padding: 10px;
-    display: block;
-    position: relative; }
-    .info #list-container header #srcbox {
-      font-family: 'Roboto Slab', Georgia, Times, Serif;
-      font-size: 16px;
-      width: 78%;
-      padding: 14px 10.5% 14px 2.5%;
-      margin: 15px auto 25px auto;
-      display: block;
-      border: none;
-      background: #EEE;
-      box-shadow: inset 0px 0px 10px #CCC;
-      border-radius: 3px; }
-    .info #list-container header #srcbox-button {
-      background: transparent url("http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png") no-repeat scroll center center;
-      width: 35px;
-      height: 25px;
-      position: absolute;
-      right: 15%;
-      top: 35px; }
-    .info #list-container header #reset {
-      padding: 4px;
-      position: absolute;
-      right: 7%;
-      top: 78px;
-      display: inline-block;
-      cursor: pointer; }
-  .info #list-container #zip-list {
-    border-top: 2px solid #AAA;
-    width: 100%;
-    height: 500px;
-    overflow-y: scroll;
-    box-shadow: inset 0px 0px 10px #CCC; }
-    .info #list-container #zip-list ul {
-      padding: 0px; }
-    .info #list-container #zip-list .active-listing {
-      background: #fff;
-      display: block !important;
-      cursor: default !important; }
-    .info #list-container #zip-list .listing {
-      padding: 20px;
-      list-style-type: none;
-      cursor: pointer;
-      border-bottom: 1px solid #AAA;
-      font-family: "Roboto Slab", "Times New Roman", Times, serif;
-      font-weight: bold;
-      font-size: 18px; }
-      .info #list-container #zip-list .listing:hover {
-        background: #fff; }
-      .info #list-container #zip-list .listing .school-list {
-        border: 1px solid;
-        width: 100%;
-        font-weight: normal; }
-        .info #list-container #zip-list .listing .school-list td, .info #list-container #zip-list .listing .school-list th {
-          border: 1px solid red;
-          font-size: 14px;
-          text-align: center; }
-        .info #list-container #zip-list .listing .school-list .name {
-          text-align: left !important; }
-      .info #list-container #zip-list .listing #prices-container {
-        height: 200px;
-        width: 100%;
-        margin-top: 0.75em; }
-        .info #list-container #zip-list .listing #prices-container .price {
-          text-align: center;
-          margin-bottom: 1em; }
-          .info #list-container #zip-list .listing #prices-container .price:last-of-type {
-            border: none; }
-          .info #list-container #zip-list .listing #prices-container .price .hed {
-            font-size: 14px;
-            display: block; }
-          .info #list-container #zip-list .listing #prices-container .price .num {
-            margin: 0.5em auto;
-            border-right: 1px dashed #ccc; }
-            .info #list-container #zip-list .listing #prices-container .price .num:last-of-type {
-              border: none; }
-            .info #list-container #zip-list .listing #prices-container .price .num .year {
-              font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-              font-size: 14px;
-              font-weight: bold; }
-            .info #list-container #zip-list .listing #prices-container .price .num .price-num {
-              display: block;
-              font-family: "Roboto Slab", "Times New Roman", Times, serif;
-              font-size: 22px;
-              font-weight: 300; }
-
-.info .income {
-  font-weight: bold;
-  color: #2ca25f; }
 
 .map-section {
   display: block;
   margin-top: 1em;
-  height: 650px; }
+  height: 650px;
+  border: 1px solid; }
 
 #map-container {
   height: 602px; }

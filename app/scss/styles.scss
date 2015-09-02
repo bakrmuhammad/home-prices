@@ -2,304 +2,317 @@
 
 //WRITE YOUR CSS HERE
 
-.dollar-sign{
-	font-size: 35px;
-}
+
 
 .miss { display: none;}
 
-#button-container {
-	margin: 1em 0;
-	text-align: left;
-	height: auto;
-	
-	h3 {
-
-		text-align: center;
-	}
-
-	.input-holder {
-
-		text-align: center;
-	}
-
-	.button-holder{
-
-		text-align: center;
-
-	}
-
-	.income-btn {
-		margin: 5px auto;
-	    background-color: #EFEFEF;
-	    border-radius: 4px;
-	    border: 1px solid #D0D0D0;
-	    overflow: hidden;
-	    width: 110px;
-	    height: 40px;
-	    display: inline-block;
-		font-size: $lg;
-		font-family:  $sans-serif-condensed;
-		font-weight: bold;
-
-		&:hover {
-	    	-webkit-box-shadow: 0px 1px 1px $shade;
-			-moz-box-shadow: 0px 1px 1px $shade;
-			box-shadow: 0px 1px 1px $shade;
-	    }
-	}
-
-	.income-box {
-		font-family: $sans-serif-condensed;
-		font-size: 40px;
-		border-bottom: 1px dashed $border-gray;
-		border-top: none;
-		border-left: none;
-		border-right: none;
-		width: 155px;
-		margin-right: 1em;
-		text-align: left;
-		
-		&::-webkit-input-placeholder {
-			font-weight: 300;
-			text-align: left;
-			line-height: 2em;
-			font-size: 30px;
-		}
-
-		&:focus {
-			outline: 0;
-
-			&::-webkit-input-placeholder{
-				color: #fff;
-			}
-		}
-	}
-}
 
 
-.error {
-	height: auto;
-	width: 50%;
-	display: none;
-	margin: 1px auto;
-	text-align: center;
-
-
-	.error-message {
-		background: $red;
-		padding: 0.25em;
-	}
-}
-
-
-#house-choice {
-	margin: 1em 0;
-	text-align: center;
-	height: auto;
-
-	h3 {
-		padding-bottom: 8px;
-	}
-
-	#check-button-house, #check-button-condo {
-	    margin: 0px auto;
-	    background-color:#EFEFEF;
-	    border-radius:4px;
-	    border:1px solid #D0D0D0;
-	    overflow:hidden;
-	    width: 200px;
-	    height: 45px;
-	    display: inline-block;
-
-	    &:hover {
-	    	-webkit-box-shadow: 0px 1px 1px $shade;
-			-moz-box-shadow: 0px 1px 1px $shade;
-			box-shadow: 0px 1px 1px $shade;
-	    }
-
-	    & label {
-	    	float:left;
-	   		width: 100%;
-
-	   		& span {
-	   			text-align:center;
-			    display:block;
-			    padding: 0.35em;
-			    font-size: $lg;
-			    font-family: $sans-serif-condensed;
-			}
-
-
-			& input {
-				display: none;
-
-				&:checked + span {
-					background-color: #aaa;
-	    			color: #000;
-				}
-			}
-	    }
-
-	}
-
-	.disabled {
-
-		&:hover {
-			 background-color: #efefef !important;
-		}
-
-	}
-
-
-}
 
 .info {
 
-	#list-container {
-		background: #f8f5f2;
-		height: 600px;
+	.dollar-sign{
+		font-size: 30px;
+		vertical-align: 10px;
+	}
 
-		& header {
-			padding: 10px;
-			display: block;
-			position: relative;
-
-			#srcbox{
-				font-family: 'Roboto Slab', Georgia, Times, Serif;
-			    font-size: 16px;
-			    width: 78%;
-			    padding: 14px 10.5% 14px 2.5%;
-			    margin: 15px auto 25px auto;
-			    display: block;
-			    border: none;
-			    background: #EEE;
-			    box-shadow: inset 0px 0px 10px #CCC;
-			    border-radius: 3px;
-			}
-
-			#srcbox-button {
-				background: rgba(0, 0, 0, 0) url('http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png') no-repeat scroll center center;
-			    width: 35px;
-			    height: 25px;
-			    position: absolute;
-			    right: 15%;
-			    top: 35px;
-			}
-
-			#reset {
-			    padding: 4px;
-			    position: absolute;
-			    right: 7%;
-			    top: 78px;
-			    display: inline-block;
-			    cursor: pointer;
-			 }
+	#button-container {
+		margin: 1em auto;
+		height: auto;
+		display: block;
+		max-width: 475px;
+		border: 1px solid;
+		
+		h3 {
+			text-align: center;
 		}
 
-		#zip-list {
-			border-top: 2px solid #AAA;
-		    width: 100%;
-		    height: 500px;
-		    overflow-y: scroll;
-		    box-shadow: inset 0px 0px 10px #CCC;
-			
-			ul {
-				padding: 0px;
-			}
-			
-			.active-listing { 
-				background: #fff; 
-				display: block !important; 
-				cursor: default !important 
-			}
-			
-		    .listing {
-		    	padding: 20px;
-		    	list-style-type: none;
-			    cursor: pointer;
-			    border-bottom: 1px solid #AAA;
-			    font-family: $serif;
-			    font-weight: bold;
-			    font-size: $md;
+		.input-holder {
+			text-align: center;
+			display: inline-block;
+			border: 1px solid;
 
-			    &:hover {
-			    	background: #fff;
-			    }
+		}
 
-				
-				.school-list {
-					border: 1px solid;
-					width: 100%;
-					font-weight: normal;
+		.button-holder{
+			text-align: center;
+			display: inline;
+			float: right;
 
-					td, th {
-						border: 1px solid red;
-						font-size: $sm;
-						text-align: center;
-					}
+		}
 
-					.name {
-						text-align: left !important;
-					}
+		.income-btn {
+			margin: 5px auto;
+		    background-color: #EFEFEF;
+		    border-radius: 4px;
+		    border: 1px solid #D0D0D0;
+		    overflow: hidden;
+		    width: 110px;
+		    height: 40px;
+		    display: inline-block;
+			font-size: $lg;
+			font-family:  $sans-serif-condensed;
+			font-weight: bold;
 
-				}
-
-				#prices-container {
-					height: 200px;
-					width: 100%;
-
-					margin-top: 0.75em;
-
-					.price {
-						text-align: center;
-						margin-bottom: 1em;
-	
-						&:last-of-type {
-							border: none;
-						}
-
-						.hed {
-							font-size: $sm;
-							display: block;
-						}
-
-						.num {
-							margin: 0.5em auto;
-							border-right: 1px dashed #ccc;
-
-							&:last-of-type {
-								border: none;
-							}
-
-							
-							.year {
-								font-family: $sans-serif-condensed;
-								font-size: $sm;
-								font-weight: bold;
-							}
-
-							.price-num {
-								display: block;
-								font-family: $serif;
-								font-size: $lg;
-								font-weight: 300;
-							}
-						}	
-					}						
-				}
+			&:hover {
+		    	-webkit-box-shadow: 0px 1px 1px $shade;
+				-moz-box-shadow: 0px 1px 1px $shade;
+				box-shadow: 0px 1px 1px $shade;
 		    }
 		}
+
+		.income-box {
+			font-family: $sans-serif-condensed;
+			font-size: 30px;
+			border-bottom: 1px dashed $border-gray;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			width: 200px;
+			// margin-right: 1em;
+			text-align: center;
+			vertical-align: 10px;
+			
+			&::-webkit-input-placeholder {
+				font-weight: 300;
+				text-align: center;
+				line-height: 1.5em;
+				font-size: 30px;
+			}
+
+			&:focus {
+				outline: 0;
+
+				&::-webkit-input-placeholder{
+					color: #fff;
+				}
+			}
+		}
 	}
 
-	.income {
-		font-weight: bold;	
-		color: $green;
+
+	.error {
+		height: auto;
+		width: 100%;
+		display: none;
+		margin: 1px auto;
+		text-align: center;
+
+
+		.error-message {
+			background: $red;
+			padding: 0.25em;
+		}
 	}
 
-	h2 {
 
-	}	
+	#house-choice {
+		margin: 1em 0 2em 0;
+		text-align: center;
+		height: auto;
+		width: 100%;
+		border: 1px solid;
+
+		h3 {
+			padding-bottom: 8px;
+		}
+
+		#check-button-house, #check-button-condo {
+		    margin: 0px auto;
+		    background-color:#EFEFEF;
+		    border-radius:4px;
+		    border:1px solid #D0D0D0;
+		    overflow: hidden;
+		    width: 200px;
+		    height: 45px;
+		    display: inline-block;
+
+		    &:hover {
+		    	-webkit-box-shadow: 0px 1px 1px $shade;
+				-moz-box-shadow: 0px 1px 1px $shade;
+				box-shadow: 0px 1px 1px $shade;
+		    }
+
+		    & label {
+		    	float:left;
+		   		width: 100%;
+
+		   		& span {
+		   			text-align:center;
+				    display:block;
+				    padding: 0.35em;
+				    font-size: $lg;
+				    font-family: $sans-serif-condensed;
+				}
+
+
+				& input {
+					display: none;
+
+					&:checked + span {
+						background-color: #aaa;
+		    			color: #000;
+					}
+				}
+		    }
+
+		}
+
+		.disabled {
+
+			&:hover {
+				 background-color: #efefef !important;
+			}
+
+		}
+
+
+	}
+
+	// #list-container {
+	// 	background: #f8f5f2;
+	// 	height: 600px;
+
+	// 	& header {
+	// 		padding: 10px;
+	// 		display: block;
+	// 		position: relative;
+
+	// 		#srcbox{
+	// 			font-family: 'Roboto Slab', Georgia, Times, Serif;
+	// 		    font-size: 16px;
+	// 		    width: 78%;
+	// 		    padding: 14px 10.5% 14px 2.5%;
+	// 		    margin: 15px auto 25px auto;
+	// 		    display: block;
+	// 		    border: none;
+	// 		    background: #EEE;
+	// 		    box-shadow: inset 0px 0px 10px #CCC;
+	// 		    border-radius: 3px;
+	// 		}
+
+	// 		#srcbox-button {
+	// 			background: rgba(0, 0, 0, 0) url('http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png') no-repeat scroll center center;
+	// 		    width: 35px;
+	// 		    height: 25px;
+	// 		    position: absolute;
+	// 		    right: 15%;
+	// 		    top: 35px;
+	// 		}
+
+	// 		#reset {
+	// 		    padding: 4px;
+	// 		    position: absolute;
+	// 		    right: 7%;
+	// 		    top: 78px;
+	// 		    display: inline-block;
+	// 		    cursor: pointer;
+	// 		 }
+	// 	}
+
+	// 	#zip-list {
+	// 		border-top: 2px solid #AAA;
+	// 	    width: 100%;
+	// 	    height: 500px;
+	// 	    overflow-y: scroll;
+	// 	    box-shadow: inset 0px 0px 10px #CCC;
+			
+	// 		ul {
+	// 			padding: 0px;
+	// 		}
+			
+	// 		.active-listing { 
+	// 			background: #fff; 
+	// 			display: block !important; 
+	// 			cursor: default !important 
+	// 		}
+			
+	// 	    .listing {
+	// 	    	padding: 20px;
+	// 	    	list-style-type: none;
+	// 		    cursor: pointer;
+	// 		    border-bottom: 1px solid #AAA;
+	// 		    font-family: $serif;
+	// 		    font-weight: bold;
+	// 		    font-size: $md;
+
+	// 		    &:hover {
+	// 		    	background: #fff;
+	// 		    }
+
+				
+	// 			.school-list {
+	// 				border: 1px solid;
+	// 				width: 100%;
+	// 				font-weight: normal;
+
+	// 				td, th {
+	// 					border: 1px solid red;
+	// 					font-size: $sm;
+	// 					text-align: center;
+	// 				}
+
+	// 				.name {
+	// 					text-align: left !important;
+	// 				}
+
+	// 			}
+
+	// 			#prices-container {
+	// 				height: 200px;
+	// 				width: 100%;
+
+	// 				margin-top: 0.75em;
+
+	// 				.price {
+	// 					text-align: center;
+	// 					margin-bottom: 1em;
+	
+	// 					&:last-of-type {
+	// 						border: none;
+	// 					}
+
+	// 					.hed {
+	// 						font-size: $sm;
+	// 						display: block;
+	// 					}
+
+	// 					.num {
+	// 						margin: 0.5em auto;
+	// 						border-right: 1px dashed #ccc;
+
+	// 						&:last-of-type {
+	// 							border: none;
+	// 						}
+
+							
+	// 						.year {
+	// 							font-family: $sans-serif-condensed;
+	// 							font-size: $sm;
+	// 							font-weight: bold;
+	// 						}
+
+	// 						.price-num {
+	// 							display: block;
+	// 							font-family: $serif;
+	// 							font-size: $lg;
+	// 							font-weight: 300;
+	// 						}
+	// 					}	
+	// 				}						
+	// 			}
+	// 	    }
+	// 	}
+	// }
+
+	// .income {
+	// 	font-weight: bold;	
+	// 	color: $green;
+	// }
+
+	// h2 {
+
+	// }	
 }
 
 
@@ -307,6 +320,7 @@
 	display: block;
 	margin-top: 1em;
 	height: 650px;
+	border: 1px solid;
 
 }
 

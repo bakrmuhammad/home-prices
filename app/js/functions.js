@@ -3,7 +3,8 @@
 		var income,
 			$houseLayer 	    = null,
 			$condoLayer 	    = null,
-
+			$crimeLayer 		= null,
+			$schoolLayer 		= null,
 			$defaultHouseLayer  = null,
 			$defaultCondoLayer  = null,
 			$defaultCrimeLayer  = null,
@@ -113,19 +114,19 @@
 
 		function getDefaultCrimeColor (d) {
 
-			if ((d >= 201 ) && (d <= 400)) {
+			if ((d >= 202 ) && (d <= 400)) {
 				return '#a50f15';
 			}
 
-			else if  ((d >= 101 ) && (d <= 200)) {
+			else if  ((d >= 143 ) && (d <= 201)) {
 				return '#de2d26';
 			}
 
-			else if ((d >= 51  ) && (d <= 100)){
+			else if ((d >= 98  ) && (d <= 142)){
 				return '#fb6a4a';
 			}
 
-			else if  ((d >= 1  ) && (d <= 50)) {
+			else if  ((d >= 1  ) && (d <= 97)) {
 				return '#fcae91';
 			}
 
@@ -153,23 +154,27 @@
 		function getDefaultSchoolColor (d) {
 
 			if (d >= 4 ) {
-				return '#54278f';
+				return '#f2f0f7';
 			}
 
 			else if  ((d >= 3 ) && (d <= 3.9)) {
-				return '#756bb1';
+				return '#f2f0f7';
 			}
 
 			else if ((d >= 2  ) && (d <= 2.9)){
 				return '#9e9ac8';
 			}
 
-			else if  ((d >= 1  ) && (d <= 1.9)) {
-				return '#cbc9e2';
+			else if  ((d > 1  ) && (d <= 1.9)) {
+				return '#756bb1';
+			}
+
+			else if  ((d > 0.1  ) && (d <= 0.9)) {
+				return '#54278f';
 			}
 
 			else {
-				return '#f2f0f7';
+				return '#ccc';
 			}
 		}
 
@@ -189,29 +194,27 @@
 		var $defaultSchoolLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultSchoolStyle });
 
 
-
-
-		// ADD DEFAULT LAYER TO MAP
+		// ADD DEFAULT LAYER crimeTO MAP
 		function getHouseColor (d) {
 
 			if (income > d) {
 				return '#006d2c';
 			}
 
-			else if (income > (d * 0.75)) {
-				return '#31a354';
-			}
+			// else if (income > (d * 0.75)) {
+			// 	return '#31a354';
+			// }
 
-			else if (income > (d * 0.50)) {
-				return '#74c476';
-			}
+			// else if (income > (d * 0.50)) {
+			// 	return '#74c476';
+			// }
 
-			else if (income > (d * 0.25)) {
-				return '#bae4b3';
-			}
+			// else if (income > (d * 0.25)) {
+			// 	return '#bae4b3';
+			// }
 
 			else {
-				return '#edf8e9';
+				return '#fff';
 			}
 		}
 
@@ -225,7 +228,6 @@
 		        fillOpacity: 0.7
 		    };
 		}
-
 
 
 		function getCondoColor (d) {
@@ -251,9 +253,90 @@
 			}
 		}
 
+
 		function condoStyle (features, layer) {
 		    return {
 		        fillColor: getCondoColor(features.properties.condo_price_fifteen),
+		        weight: 2,
+		        opacity: 1,
+		        color: 'white',
+		        dashArray: '3',
+		        fillOpacity: 0.7
+		    };
+		}
+
+
+		function getCrimeColor (crime, house, condo) {
+
+			if (((income > house) || (income > condo)) && ((crime >= 202 ) && (crime <= 400)))  {
+				return '#a50f15';
+			}
+
+			else if (((income > house) || (income > condo)) && ((crime >= 143 ) && (crime <= 201))) {
+				return '#de2d26';
+			}
+
+			else if (((income > house) || (income > condo)) && ((crime >= 98 ) && (crime <= 142))) {
+				return '#fb6a4a';
+			}
+
+			else if (((income > house) || (income > condo)) && ((crime >= 1 ) && (crime <= 97))) {
+				return '#fcae91';
+			}
+
+			else if (((income > house) || (income > condo)) && (crime === 0 )) {
+				return '#fcae91';
+			}
+
+			else {
+				return '#ccc';
+			}
+		}
+
+
+		function crimeStyle (features, layer) {
+		    return {
+		        fillColor: getCrimeColor(features.properties.crime,features.properties.house_price_fifteen, features.properties.condo_price_fifteen),
+		        weight: 2,
+		        opacity: 1,
+		        color: 'white',
+		        dashArray: '3',
+		        fillOpacity: 0.7
+		    };
+		}
+
+
+		function getSchoolColor (school, house, condo) {
+
+			if (((income > house) || (income > condo)) && (school === 4))  {
+				return '#f2f0f7';
+			}
+
+			else if (((income > house) || (income > condo)) && ((school >= 3.0 ) && (school <= 3.9))) {
+				return '#cbc9e2';
+			}
+
+			else if (((income > house) || (income > condo)) && ((school >= 2.0 ) && (school <= 2.9))) {
+				return '#9e9ac8';
+			}
+
+			else if (((income > house) || (income > condo)) && ((school > 1 ) && (school <= 1.9))) {
+				return '#756bb1';
+			}
+
+			else if (((income > house) || (income > condo)) && ((school >= 0.1 ) && (school <= 0.9))) {
+				return '#54278f';
+			}
+
+			else {
+				return '#ccc';
+			}
+		}
+
+
+		function schoolStyle (features, layer) {
+		    return {
+		        fillColor: getSchoolColor(features.properties.school_grade,features.properties.house_price_fifteen, features.properties.condo_price_fifteen),
 		        weight: 2,
 		        opacity: 1,
 		        color: 'white',
@@ -678,8 +761,8 @@
 				'font-weight': 'bold'
 			});
 
-		$('.label-left').html('Least Crime');
-		$('.label-right').html('Most Crime');
+		$('.label-left').html('A');
+		$('.label-right').html('F');
 		
 		map.removeLayer($defaultCrimeLayer);
 		map.removeLayer($defaultHouseLayer);
@@ -744,6 +827,8 @@
 		map.removeLayer($defaultHouseLayer);
 		map.removeLayer($defaultCondoLayer);
 		map.removeLayer($condoLayer);
+		map.removeLayer($crimeLayer);
+		map.removeLayer($schoolLayer);
 		map.addLayer($houseLayer);
 	}
 
@@ -805,8 +890,82 @@
 		map.removeLayer($defaultSchoolLayer);
 		map.removeLayer($defaultCrimeLayer);
 		map.removeLayer($defaultHouseLayer);
+		map.removeLayer($crimeLayer);
+		map.removeLayer($schoolLayer);
 		map.removeLayer($houseLayer);
 		map.addLayer($condoLayer);
+
+	}
+
+
+	function buildCrimeMap () {
+
+		$('.income-button').attr('disabled','disabled');
+		$('.crime-select').addClass('selected-interface');
+		$('.house-select').removeClass('selected-interface');
+		$('.condo-select').removeClass('selected-interface');
+
+		var incomeInput = $('.income-box').val(),
+			income 		= getIncome(incomeInput),
+			legendColors = ['#fee5d9','#fcae91','#fb6a4a','#de2d26','#a50f15'];
+
+		$('.key-holder').css('display', 'block');
+		
+		$('.explainer').html('Crime rates in zip codes you could afford to buy a house and/or a condo.')
+			
+		$('.legend-block').remove();
+
+		for (var i = 0; i < legendColors.length; i++) {	
+			$('.key').append('<div class=\'legend-block\' style=\'border-color:' + legendColors[i] + '\'</div>');
+		}
+
+		$('.label-left').html('Less crime');
+		$('.label-right').html('More crime');
+
+		map.removeLayer($defaultCondoLayer);
+		map.removeLayer($defaultSchoolLayer);
+		map.removeLayer($defaultCrimeLayer);
+		map.removeLayer($defaultHouseLayer);
+		map.removeLayer($houseLayer);
+		map.removeLayer($condoLayer);
+		map.removeLayer($schoolLayer);
+		map.addLayer($crimeLayer)
+
+	}
+
+
+	function buildSchoolMap () {
+
+		$('.income-button').attr('disabled','disabled');
+		$('.crime-select').addClass('selected-interface');
+		$('.house-select').removeClass('selected-interface');
+		$('.condo-select').removeClass('selected-interface');
+
+		var incomeInput = $('.income-box').val(),
+			income 		= getIncome(incomeInput),
+			legendColors = ['#f2f0f7','#cbc9e2','#9e9ac8','#756bb1','#54278f'];
+
+		$('.key-holder').css('display', 'block');
+		
+		$('.explainer').html('School grades in zip codes you could afford to buy a house and/or a condo.')
+			
+		$('.legend-block').remove();
+
+		for (var i = 0; i < legendColors.length; i++) {	
+			$('.key').append('<div class=\'legend-block\' style=\'border-color:' + legendColors[i] + '\'</div>');
+		}
+
+		$('.label-left').html('A');
+		$('.label-right').html('F');
+
+		map.removeLayer($defaultCondoLayer);
+		map.removeLayer($defaultSchoolLayer);
+		map.removeLayer($defaultCrimeLayer);
+		map.removeLayer($defaultHouseLayer);
+		map.removeLayer($houseLayer);
+		map.removeLayer($condoLayer);
+		map.removeLayer($crimeLayer);
+		map.addLayer($schoolLayer);
 
 	}
 
@@ -879,11 +1038,15 @@
 				});
 	  		});
 
-			$('#srcbox').quicksearch('.listing', 'data-zipcode');
+			$('#srcbox').quicksearch('.listing', '.hed');
 	
+			
+
+
+
 			$('#reset').click(function() {
 				$('#srcbox').val('')
-				$('.listing').LClass('selected-interface')
+				$('.listing').removeClass('selected-interface')
 			})
 
 
