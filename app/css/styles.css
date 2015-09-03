@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body, html {
   color: #282828;
-  padding-top: 40px;
+  padding-top: 25px;
   background-color: #ffffff; }
 
 .mobile-img {
@@ -268,129 +268,163 @@ hr {
 .miss {
   display: none; }
 
-.info .dollar-sign {
-  font-size: 30px;
-  vertical-align: 10px; }
-
-.info #button-container {
-  margin: 1em auto;
-  height: auto;
-  display: block;
-  max-width: 475px;
-  border: 1px solid; }
-  .info #button-container h3 {
-    text-align: center; }
-  .info #button-container .input-holder {
-    text-align: center;
-    display: inline-block;
-    border: 1px solid; }
-  .info #button-container .button-holder {
-    text-align: center;
-    display: inline;
-    float: right; }
-  .info #button-container .income-btn {
-    margin: 5px auto;
-    background-color: #EFEFEF;
-    border-radius: 4px;
-    border: 1px solid #D0D0D0;
-    overflow: hidden;
-    width: 110px;
-    height: 40px;
-    display: inline-block;
-    font-size: 22px;
-    font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-    font-weight: bold; }
-    .info #button-container .income-btn:hover {
-      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-  .info #button-container .income-box {
-    font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    border-bottom: 1px dashed #ccc;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 200px;
-    text-align: center;
-    vertical-align: 10px; }
-    .info #button-container .income-box::-webkit-input-placeholder {
-      font-weight: 300;
-      text-align: center;
-      line-height: 1.5em;
-      font-size: 30px; }
-    .info #button-container .income-box:focus {
-      outline: 0; }
-      .info #button-container .income-box:focus::-webkit-input-placeholder {
-        color: #fff; }
-
-.info .error {
-  height: auto;
-  width: 100%;
-  display: none;
-  margin: 1px auto;
-  text-align: center; }
-  .info .error .error-message {
-    background: #aa0000;
-    padding: 0.25em; }
-
 .info #house-choice {
   margin: 1em 0 2em 0;
   text-align: center;
   height: auto;
-  width: 100%;
-  border: 1px solid; }
-  .info #house-choice h3 {
-    padding-bottom: 8px; }
-  .info #house-choice #check-button-house, .info #house-choice #check-button-condo {
-    margin: 0px auto;
-    background-color: #EFEFEF;
-    border-radius: 4px;
-    border: 1px solid #D0D0D0;
-    overflow: hidden;
-    width: 200px;
-    height: 45px;
-    display: inline-block; }
-    .info #house-choice #check-button-house:hover, .info #house-choice #check-button-condo:hover {
-      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-    .info #house-choice #check-button-house label, .info #house-choice #check-button-condo label {
-      float: left;
-      width: 100%; }
-      .info #house-choice #check-button-house label span, .info #house-choice #check-button-condo label span {
-        text-align: center;
-        display: block;
-        padding: 0.35em;
-        font-size: 22px;
-        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif; }
-      .info #house-choice #check-button-house label input, .info #house-choice #check-button-condo label input {
-        display: none; }
-        .info #house-choice #check-button-house label input:checked + span, .info #house-choice #check-button-condo label input:checked + span {
-          background-color: #aaa;
-          color: #000; }
+  width: 100% h3;
+    width-padding-bottom: 8px; }
   .info #house-choice .disabled:hover {
     background-color: #efefef !important; }
 
 .map-section {
   display: block;
-  margin-top: 1em;
-  height: 650px;
-  border: 1px solid; }
+  margin-top: 1e; }
 
 #map-container {
-  height: 602px; }
+  width: 100vw;
+  height: 91vh;
+  display: block;
+  position: relative !important; }
+  #map-container #map-info {
+    position: absolute;
+    bottom: 40%;
+    right: 30px;
+    max-width: 315px;
+    z-index: 99999;
+    background-color: #fff;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 0.5em; }
+    #map-container #map-info .headline {
+      font-size: 25px;
+      text-align: left; }
+    #map-container #map-info .byline {
+      font-size: 12px;
+      text-align: left;
+      line-height: 15px; }
+      #map-container #map-info .byline .name a {
+        color: #666; }
+      #map-container #map-info .byline .date {
+        font-size: 12px; }
+    #map-container #map-info .readout {
+      font-size: 14px;
+      text-align: left; }
+    #map-container #map-info .graphic-label {
+      text-align: left; }
+    #map-container #map-info #button-container {
+      margin: 1em auto;
+      height: auto;
+      display: block;
+      max-width: 475px; }
+      #map-container #map-info #button-container h3 {
+        text-align: center; }
+      #map-container #map-info #button-container .input-holder {
+        text-align: center;
+        display: inline-block; }
+      #map-container #map-info #button-container .button-holder {
+        text-align: center;
+        display: inline;
+        float: right; }
+      #map-container #map-info #button-container .income-btn {
+        margin: 5px auto;
+        background-color: #EFEFEF;
+        border-radius: 4px;
+        border: 1px solid #D0D0D0;
+        overflow: hidden;
+        width: 65px;
+        height: 30px;
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+        font-weight: bold; }
+        #map-container #map-info #button-container .income-btn:hover {
+          -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+      #map-container #map-info #button-container .income-box {
+        font-family: "Roboto Slab", "Times New Roman", Times, serif;
+        font-size: 20px;
+        border-bottom: 1px dashed #ccc;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 125px;
+        padding-left: 0.25em;
+        text-align: left;
+        vertical-align: 10px; }
+        #map-container #map-info #button-container .income-box::-webkit-input-placeholder {
+          font-weight: 300;
+          text-align: left;
+          line-height: 1.75em;
+          font-size: 18px; }
+        #map-container #map-info #button-container .income-box:focus {
+          outline: 0; }
+          #map-container #map-info #button-container .income-box:focus::-webkit-input-placeholder {
+            color: #fff; }
+    #map-container #map-info .question {
+      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 16px; }
+    #map-container #map-info .dollar-sign {
+      font-size: 20px;
+      vertical-align: 10px; }
+    #map-container #map-info .error {
+      height: auto;
+      width: 100%;
+      display: none;
+      margin: 1px auto;
+      text-align: center; }
+      #map-container #map-info .error .error-message {
+        background: #aa0000;
+        padding: 0.25em; }
+    #map-container #map-info #check-button-house, #map-container #map-info #check-button-condo {
+      background-color: #EFEFEF;
+      border-radius: 4px;
+      border: 1px solid #D0D0D0;
+      overflow: hidden;
+      width: 60px;
+      height: 20px;
+      display: inline-flex;
+      margin: 0px 0.25em; }
+      #map-container #map-info #check-button-house:hover, #map-container #map-info #check-button-condo:hover {
+        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+      #map-container #map-info #check-button-house label, #map-container #map-info #check-button-condo label {
+        float: left;
+        width: 100%; }
+        #map-container #map-info #check-button-house label span, #map-container #map-info #check-button-condo label span {
+          text-align: left;
+          display: block;
+          padding: 2px 2px;
+          font-size: 14px;
+          font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+          line-height: 0px; }
+        #map-container #map-info #check-button-house label input, #map-container #map-info #check-button-condo label input {
+          display: none; }
+          #map-container #map-info #check-button-house label input:checked + span, #map-container #map-info #check-button-condo label input:checked + span {
+            background-color: #aaa;
+            color: #000; }
+    #map-container #map-info .explainer {
+      display: none;
+      font-size: 14px;
+      line-height: 18px; }
   #map-container #interface-container {
     position: absolute;
-    bottom: 50px;
-    left: 30px;
-    max-width: 300px;
+    bottom: 60px;
+    right: 30px;
+    max-width: 315px;
     z-index: 99999; }
     #map-container #interface-container ul {
       position: relative;
       top: 11px;
       right: 40px;
       z-index: 2; }
+    #map-container #interface-container .price-explainer {
+      font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      font-size: 14px;
+      line-height: 18px; }
   #map-container .interface-selector {
     background: #EEE;
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
@@ -407,9 +441,10 @@ hr {
     background: #fff;
     border-bottom: none;
     padding-bottom: 6px; }
-  #map-container .map-interface, #map-container .map-interface-default {
-    width: 260px;
+  #map-container .map-interface {
+    width: 315px;
     z-index: 9999;
+    display: block;
     padding: 15px;
     background: #FFF;
     border-top: 1px solid #BBB;
@@ -418,10 +453,6 @@ hr {
     border-left: 1px solid #BBB;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px; }
-  #map-container .map-interface {
-    display: none; }
-  #map-container .map-interface-default {
-    display: block; }
   #map-container .key-holder {
     clear: both;
     margin: 1em 0; }
@@ -488,12 +519,10 @@ hr {
     font-size: 10px;
     font-weight: bold;
     color: #666; }
-  #hover-box .zip-code {
+  #hover-box .zip-code, #hover-box .city, #hover-box .state {
     font-family: "Roboto Slab", "Times New Roman", Times, serif;
     font-size: 16px;
     font-weight: bold; }
-  #hover-box .city {
-    font-family: "Roboto", "Helvetica Nueue", Helvetica, Arial, sans-serif; }
 
 @media (max-width: 991px) {
   .input-holder {

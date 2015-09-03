@@ -478,7 +478,7 @@ var $zipData = [
                     "house_pct": 0.099,
                     "condo_price_fifteen": 236200,
                     "condo_price_fourteen": 222900,
-                    "condo_pct": 0.6,
+                    "condo_pct": 0.06,
                     "crime": 200,
                     "school_grade" : 2.8
 
@@ -3959,7 +3959,7 @@ var $zipData = [
                     "house_pct": 0.274,
                     "condo_price_fifteen": 367400,
                     "condo_price_fourteen": 343100,
-                    "condo_pct": 0.71,
+                    "condo_pct": 0.071,
                     "crime": 294,
                     "school_grade": 3.3
                 },

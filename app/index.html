@@ -48,27 +48,27 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="navbar-header"><a class="navbar-brand-img large-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b.png" class="logo"></a> <a class="navbar-brand-img mobile-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/h_b.png" class="logo"></a> <a class="navbar-brand sig">Real Estate</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a onclick="popUp=window.open('https://twitter.com/home?status=This%20is%20a%20test%20tweet%20for%20the%20home%20price%20project','popupwindow','scrollbars=yes,width=500,height=320');popUp.focus();return false"><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-google-plus"></i></a></li></ul></div></nav>
 
       <!-- CONTENT -->
-      <div class="container">
+  <!--     <div class="container"> -->
         
 	<!-- HEADLINE AND BYLINE -->
-	<span class="graphic-label">The housing market</span>
+	<!-- <span class="graphic-label">The housing market</span>
 	<div class="headline">Finding affordable housing in Miami-Dade and Broward counties</div>
-	
-	<div class="byline">
+	 -->
+<!-- 	<div class="byline">
 		<span class="name">By <span class="upper">Chris Alcantara</span> and <span class="upper">Nicolas Nehamas </span></span>
 		<a href="mailto:calcantara"><span class="email">calcantara@MiamiHerald.com</span></a>
 		<span class="date">Published: Sept. 20, 2015</span>
-	</div>
+	</div> -->
 
 	<!-- READOUT -->
 
-	<div class="readout">
+<!-- 	<div class="readout">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus ipsum saepe ex aperiam maxime reiciendis doloremque cum voluptatem tempora laudantium itaque iste repellat eaque et, numquam, nobis, nam. Nisi.</p>
 
-	</div>
+	</div> -->
 	
-	<section class="map-section col-sm-12">
-		<div class="info col-sm-6">
+	<!-- <section class="map-section col-sm-12"> -->
+		<!-- <div class="info col-sm-6">
 
 
 			<div id="house-choice">
@@ -84,37 +84,10 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 					      <input class='condo' type="checkbox" value="1"><span><i class="fa fa-building"></i> Condo</span>
 					   </label>
 					</div>
-			</div>
+			</div> -->
 
 
-			<div id="button-container">
-
-				<h3>What is your household income?</h3>
-				
-				<div class="input-holder">
-					<span class="dollar-sign">$ </span>
-					<input name="income-box" class="income-box" type="text" placeholder="Enter income" />
-				</div>
-				
-
-				<div class="button-holder">
-					<button class='income-button income-btn' type="button" value="Execute">Submit</button>
-					
-					<button class='reset income-btn' type="button" value="Reset">Reset</button>
-				</div>
-			</div>
-
-			<div class="error">
-				<div class="alert alert-danger" role="alert">
-				  <i class="fa fa-info-circle"></i>
-				  <span class="sr-only">Error:</span>
-				   Enter a valid number
-				</div>
-			</div>
-
-			<div class="explainer">
-				<p>With <span class="income"></span>, you can afford a <span class="housing"></span> in <span class="zip-count"></span> ZIP codes.</p>
-			</div>
+			
 
 
 
@@ -142,43 +115,84 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 				</section>
 
 			</div>		 -->	
-		</div>
+		<!-- </div> -->
 
-		<div class="map col-sm-6 col-xs-12">
+		<div class="map">
 			<div id="map-container">
+				
+				<div id="map-info">
+					<span class="graphic-label">The housing market</span>
+					<div class="headline">Finding affordable housing in South Florida</div>
+					<div class="byline">
+						<span class="name">By <span class="upper"><a href="mailto:calcantara@miamiherald.com">Chris Alcantara</a></span> and <span class="upper"><a href="mailto:nnehamas@miamiherald.com">Nicolas Nehamas</a></span></span>
+						<span class="date">Published: Sept. 20, 2015</span>
+					</div>
+
+					<div id="button-container">
+
+						<p class='readout'>If you choose to buy a 
+							<span id="check-button-house">
+								<label>
+									<input class='house' type="checkbox" checked='checked' value="1">
+										<span><i class="fa fa-home"></i> house</span>
+								</label>
+							</span> or 
+						   <span id="check-button-condo">
+							   	<label>
+							   		<input class='condo' type="checkbox" value="1">
+							   	<span><i class="fa fa-building"></i> condo</span>
+							   	</label>
+						   	</span>
+						   in South Florida	with an annual household income of:
+						</p>
+						
+						<div class="input-holder">
+							<span class="dollar-sign">$ </span>
+							<input name="income-box" class="income-box" type="text" placeholder="Enter income" />
+						</div>
+						
+
+						<div class="button-holder">
+							<button class='income-button income-btn' type="button" value="Execute">Submit</button>
+							
+							<button class='reset income-btn' type="button" value="Reset">Reset</button>
+						</div>
+					</div>
+
+					<div class="error">
+						<div class="alert alert-danger" role="alert">
+						  <i class="fa fa-info-circle"></i>
+						  <span class="sr-only">Error:</span>
+						   Enter a valid number
+						</div>
+					</div>
+
+					<div class="explainer">
+						<p>You can afford a <span class="housing"></span> in <span class="zip-count"></span> ZIP codes.</p>
+					</div>	
+				</div>
+
+
+
+
 				<div id="interface-container">
 					<ul>
-						<li class="house-select interface-selector selected-interface">House</li>
-						<li class="condo-select interface-selector">Condo</li>
+						<li class="price-select interface-selector selected-interface">Price</li>
+						<li class="percent-select interface-selector">Rate change</li>
+
 						<li class="crime-select interface-selector">Crime</li>
+						
 						<li class="school-select interface-selector">School</li>
 					</ul>
-					
-					<div class="map-interface-default">
-						<div class="explainer">
-							<p><span class="housing"></span> in Miami-Dade and Broward counties shaded by price.</p>
+			
+					<div class="map-interface">	
+
+						<div class="price-explainer">
+							<p><span class="housing"></span> in Miami-Dade and Broward counties.</p>
 						</div>
-											
+
 						<div class="key-holder">
-							<div class="key-default"></div>
 
-							<div class="clearfix"></div>	
-
-							<span class="label label-left">Least Expensive</span>
-							<span class="label label-right"> Most Expensive</span>
-						
-						</div>
-						
-						<div class="clearfix"></div>
-
-					 </div>
-				
-
-					<div class="map-interface">					
-
-						
-											
-						<div class="key-holder">
 							<div class="key"></div>
 
 							<div class="clearfix"></div>	
@@ -198,18 +212,18 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 
 
 				<div id="hover-box">
-					<span class="zip-code"></span> – <span class="city"></span>, Fla.
+					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span>
 					
 					<div class="clearfix"></div>
 					<div id="house-price">
 						<span class="table-label">Average house price</span>
 						
 						<div class="house-row">
-							<span class="float-left">'14</span><span class="float-right house-price-fourteen"></span>
+							<span class="float-left">2014</span><span class="float-right house-price-fourteen"></span>
 						</div>
 						
 						<div class="house-row">
-							<span class="float-left">'15</span><span class="float-right house-price-fifteen"></span>
+							<span class="float-left">2015</span><span class="float-right house-price-fifteen"></span>
 						</div>
 						
 						<div class="house-row">
@@ -222,11 +236,11 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						<span class="table-label">Average condo price</span>
 						
 						<div class="house-row">
-							<span class="float-left">'14</span><span class="float-right condo-price-fourteen"></span>
+							<span class="float-left">2014</span><span class="float-right condo-price-fourteen"></span>
 						</div>
 						
 						<div class="house-row">
-							<span class="float-left">'15</span><span class="float-right condo-price-fifteen"></span>
+							<span class="float-left">2015</span><span class="float-right condo-price-fifteen"></span>
 						</div>
 						
 						<div class="house-row">
@@ -239,17 +253,15 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 			
 		</div>
 	
-
-	</section>
 	
 
-        <div id="sources">
+       <!--  <div id="sources">
 	<p>Sources: Zillow, Miami-Dade County Public Schools, Broward County Schools and ESRI</p>
-</div>
+</div> -->
         <!-- <h3 class="comments">Comments</h3>
 <div id="fb-root"></div><div class="fb-comments" data-href="" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
  -->
-      </div>
+<!--       </div> -->
       <!-- JS LIBRARIES -->
       <script src="js/libs/d3/d3.min.js"></script>
 <script src="js/libs/jquery/jquery.min.js"></script>
