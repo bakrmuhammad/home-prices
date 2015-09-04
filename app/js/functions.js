@@ -1,249 +1,540 @@
 'use strict';
+(function () {
 		
-		// SET GLOBAL LAYERS TO NULL
-		var income,
-			$zipData,
-	        $houseLayer 	    		= null,
-	        $condoLayer 	    		= null,
-	        $percentHouseLayer 			= null,
-	        $percentCondoLayer 			= null,
-	        $crimeLayer 				= null,
-	        $schoolLayer 				= null,
-	        $defaultHouseLayer  		= null,
-	        $defaultCondoLayer  		= null,
-	        $defaultPercentHouseLayer 	= null,
-	        $defaultPercentCondoLayer 	= null,
-	        $defaultCrimeLayer  		= null,
-	        $defaultSchoolLayer 		= null;
-	
-		// MAKE TILE LAYER FOR ZOOMED IN VIEW
-		var tiles = new L.StamenTileLayer('toner-lite');
+	// SET GLOBAL LAYERS TO NULL
+	var income,
+		$zipData,
+        $houseLayer 	    		= null,
+        $condoLayer 	    		= null,
+        $percentHouseLayer 			= null,
+        $percentCondoLayer 			= null,
+        $crimeLayer 				= null,
+        $schoolLayer 				= null,
+        $defaultHouseLayer  		= null,
+        $defaultCondoLayer  		= null,
+        $defaultPercentHouseLayer 	= null,
+        $defaultPercentCondoLayer 	= null,
+        $defaultCrimeLayer  		= null,
+        $defaultSchoolLayer 		= null;
 
-		// BUILD MAP
-		var map = new L.Map('map-container', {
-			center: new L.LatLng(25.82, -79.85),
-			zoom: 9.5,
-			minZoom: 9.5,
-			maxZoom: 16,
-			zoomControl: false,
-			doubleClickZoom: false,
-			VML: true,
-			scrollWheelZoom: false
-		}).addLayer(tiles);
+	// MAKE TILE LAYER FOR ZOOMED IN VIEW
+	var tiles = new L.StamenTileLayer('toner-lite');
 
-		// ADD CONTROLS
-		var control = L.control.zoom({'position' : 'topleft'});
+	// BUILD MAP
+	var map = new L.Map('map-container', {
+		center: new L.LatLng(25.82, -79.85),
+		zoom: 9.5,
+		minZoom: 9.5,
+		maxZoom: 16,
+		zoomControl: false,
+		doubleClickZoom: false,
+		VML: true,
+		scrollWheelZoom: false
+	}).addLayer(tiles);
 
-		control.addTo(map);
+	// ADD CONTROLS
+	var control = L.control.zoom({'position' : 'topleft'});
 
-		// ========================
-		// BUILD DEFAULT HOUSE MAP
-		// ========================
+	control.addTo(map);
 
-		// SET DEFAULT HOUSE LAYER COLORS
-		function getDefaultHouseColor (d) {
+	// ========================
+	// BUILD DEFAULT HOUSE MAP
+	// ========================
 
-			if ((d >= 416325 ) && (d <= 3229000 )) {
-				return '#006d2c';
-			}
-			else if ((d >= 274250 ) && (d <= 416324)) {
-				return '#31a354';
-			}
-			else if ((d >= 191975 ) && (d <= 274249)) {
-				return '#74c476';
-			}
-			else if ((d >= 1  ) && (d <= 191974)) {
-				return '#bae4b3';
-			}
-			else {
-				return '#edf8e9';
-			}
+	// SET DEFAULT HOUSE LAYER COLORS
+	function getDefaultHouseColor (d) {
+
+		if ((d >= 416325 ) && (d <= 3229000 )) {
+			return '#006d2c';
+		}
+		else if ((d >= 274250 ) && (d <= 416324)) {
+			return '#31a354';
+		}
+		else if ((d >= 191975 ) && (d <= 274249)) {
+			return '#74c476';
+		}
+		else if ((d >= 1  ) && (d <= 191974)) {
+			return '#bae4b3';
+		}
+		else {
+			return '#edf8e9';
+		}
+	}
+
+	// SET DEFAULT HOUSE STYLES
+	function defaultHouseStyle (features, layer) {
+	    return {
+	        fillColor: getDefaultHouseColor(features.properties.housePriceFifteen),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	// CREATE DEFAULT HOUSE VARIABLE
+	var $defaultHouseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultHouseStyle });
+
+	// ADD DEFAULT LAYER TO MAP
+	// THIS IS FIRST LAYER USERS WILL SEE
+	map.addLayer($defaultHouseLayer);
+
+	// ========================
+	// BUILD DEFAULT CONDO MAP
+	// ========================
+
+	function getDefaultCondoColor (d) {
+
+		if ((d >= 203975 ) && (d <= 3102400)) {
+			return '#006d2c';
+		}
+		else if  ((d >= 114150 ) && (d <= 203974)) {
+			return '#31a354';
+		}
+		else if ((d >= 55575  ) && (d <= 114159)){
+			return '#74c476';
+		}
+		else if  ((d >= 1  ) && (d <= 55574)) {
+			return '#bae4b3';
+		}
+		else {
+			return '#edf8e9';
+		}
+	}
+
+	function defaultCondoStyle (features, layer) {
+	    return {
+	        fillColor: getDefaultCondoColor(features.properties.condoPriceFifteen),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	var $defaultCondoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCondoStyle });
+
+	// ===============================
+	// BUILD DEFAULT HOUSE PERCENT MAP
+	// ===============================
+
+	function getDefaultHousePercentColor (d) {
+
+		if ((d >= 0.11 ) && (d <= 0.27 )) {
+			return '#08519c';
+		}
+		else if ((d >= 0.08 ) && (d < 0.11)) {
+			return '#3182bd';
+		}
+		else if ((d >= 0.04 ) && (d < 0.08)) {
+			return '#6baed6';
+		}
+		else if ((d > 0.00  ) && (d < 0.04)) {
+			return '#bdd7e7';
+		}
+		else {
+			return '#eff3ff';
+		}
+	}
+
+	function defaultHousePercentStyle (features, layer) {
+	    return {
+	        fillColor: getDefaultHousePercentColor(features.properties.housePercent),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	// SET DEFAULT LAYER
+	var $defaultPercentHouseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultHousePercentStyle });
+
+
+	// ===============================
+	// BUILD DEFAULT CONDO PERCENT MAP
+	// ===============================
+	function getDefaultCondoPercentColor (d) {
+
+		if ((d >= 0.080 ) && (d <= 0.250 )) {
+			return '#08519c';
+		}
+		else if ((d >= 0.057 ) && (d <= 0.079)) {
+			return '#3182bd';
+		}
+		else if ((d >= 0.000 ) && (d <= 0.056)) {
+			return '#6baed6';
+		}
+		else if ((d >= -0.03  ) && (d <= -0.01)) {
+			return '#bdd7e7';
+		}
+		else {
+			return '#eff3ff';
+		}
+	}
+
+	function defaultCondoPercentStyle (features, layer) {
+	    return {
+	        fillColor: getDefaultCondoPercentColor(features.properties.condoPercent),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	var $defaultPercentCondoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCondoPercentStyle });
+
+
+	// ========================
+	// BUILD DEFAULT CRIME MAP
+	// ========================
+
+	function getDefaultCrimeColor (d) {
+
+		if ((d >= 202 ) && (d <= 400)) {
+			return '#a50f15';
+		}
+		else if  ((d >= 143 ) && (d <= 201)) {
+			return '#de2d26';
+		}
+		else if ((d >= 98  ) && (d <= 142)){
+			return '#fb6a4a';
+		}
+		else if  ((d >= 1  ) && (d <= 97)) {
+			return '#fcae91';
+		}
+		else {
+			return '#fee5d9';
+		}
+	}
+
+	function defaultCrimeStyle (features, layer) {
+	    return {
+	        fillColor: getDefaultCrimeColor(features.properties.crime),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	var $defaultCrimeLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCrimeStyle });
+
+	// ========================
+	// BUILD DEFAULT SCHOOL MAP
+	// ========================
+
+	function getDefaultSchoolColor (d) {
+
+		if (d >= 4 ) {
+			return '#f2f0f7';
+		}
+		else if  ((d >= 3 ) && (d <= 3.9)) {
+			return '#f2f0f7';
+		}
+		else if ((d >= 2  ) && (d <= 2.9)){
+			return '#9e9ac8';
+		}
+		else if  ((d > 1  ) && (d <= 1.9)) {
+			return '#756bb1';
+		}
+		else if  ((d > 0.1  ) && (d <= 0.9)) {
+			return '#54278f';
+		}
+		else {
+			return '#ccc';
+		}
+	}
+
+	function defaultSchoolStyle (features, layer) {
+	    return {
+	        fillColor: getDefaultSchoolColor(features.properties.schoolGrade),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	var $defaultSchoolLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultSchoolStyle });
+
+
+	// ================
+	// BUILD HOUSE MAP
+	// ================
+	function getHouseColor (d) {
+
+		if (income > d) {
+			return '#006d2c';
 		}
 
-		// SET DEFAULT HOUSE STYLES
-		function defaultHouseStyle (features, layer) {
-		    return {
-		        fillColor: getDefaultHouseColor(features.properties.housePriceFifteen),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
+		else {
+			return '#ccc';
 		}
+	}
 
-		// CREATE DEFAULT HOUSE VARIABLE
-		var $defaultHouseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultHouseStyle });
+	// function getHouseOpacity(d) {
+	// 	if (income > d) {
+	// 		return 0.7;
+	// 	}
+	// 	else {
+	// 		return 0
+	// 	}
+	// }
 
-		// ADD DEFAULT LAYER TO MAP
-		// THIS IS FIRST LAYER USERS WILL SEE
-		map.addLayer($defaultHouseLayer);
+	// function getHouseDashColor(d) {
+	// 	if (income > d) {
+	// 		return 'white';
+	// 	}
+	// 	else {
+	// 		return 'none'
+	// 	}
+	// }
 
-		// ========================
-		// BUILD DEFAULT CONDO MAP
-		// ========================
+	function houseStyle (features, layer) {
+	    return {
+	        fillColor: getHouseColor(features.properties.housePriceFifteen),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        // color: getHouseDashColor(features.properties.housePriceFifteen),
+	        dashArray: '3',
+	        fillOpacity:0.7
+	        // fillOpacity: getHouseOpacity(features.properties.housePriceFifteen)
+	    };
+	}
 
-		function getDefaultCondoColor (d) {
+	// ========================
+	// BUILD DEFAULT CONDO MAP
+	// ========================
+	function getCondoColor (d) {
 
-			if ((d >= 203975 ) && (d <= 3102400)) {
-				return '#006d2c';
-			}
-			else if  ((d >= 114150 ) && (d <= 203974)) {
-				return '#31a354';
-			}
-			else if ((d >= 55575  ) && (d <= 114159)){
-				return '#74c476';
-			}
-			else if  ((d >= 1  ) && (d <= 55574)) {
-				return '#bae4b3';
-			}
-			else {
-				return '#edf8e9';
-			}
+		if (income > d) {
+			return '#006d2c';
 		}
-
-		function defaultCondoStyle (features, layer) {
-		    return {
-		        fillColor: getDefaultCondoColor(features.properties.condoPriceFifteen),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
+		
+		else {
+			return '#ccc';
 		}
+	}
 
-		var $defaultCondoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCondoStyle });
+	// function getCondoOpacity(d) {
+	// 	if (income > d) {
+	// 		return 0.7;
+	// 	}
+	// 	else {
+	// 		return 0
+	// 	}
+	// }
 
-		// ===============================
-		// BUILD DEFAULT HOUSE PERCENT MAP
-		// ===============================
+	// function getCondoDashColor(d) {
+	// 	if (income > d) {
+	// 		return 'white';
+	// 	}
+	// 	else {
+	// 		return 'none'
+	// 	}
+	// }
 
-		function getDefaultHousePercentColor (d) {
+	function condoStyle (features, layer) {
+	    return {
+	        fillColor: getCondoColor(features.properties.condoPriceFifteen),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        // color: getCondoDashColor(features.properties.condoPriceFifteen),
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	        // fillOpacity: getCondoOpacity(features.properties.condoPriceFifteen)
+	    };
+	}
 
-			if ((d >= 0.11 ) && (d <= 0.27 )) {
-				return '#08519c';
-			}
-			else if ((d >= 0.08 ) && (d < 0.11)) {
-				return '#3182bd';
-			}
-			else if ((d >= 0.04 ) && (d < 0.08)) {
-				return '#6baed6';
-			}
-			else if ((d > 0.00  ) && (d < 0.04)) {
-				return '#bdd7e7';
-			}
-			else {
-				return '#eff3ff';
-			}
+	// ========================
+	// BUILD HOUSE PERCENT MAP
+	// ========================
+
+	function getHousePercentColor (price, d) {
+
+		if ((income >= price) && (d >= 0.27 )) {
+			return '#08519c';
 		}
-
-		function defaultHousePercentStyle (features, layer) {
-		    return {
-		        fillColor: getDefaultHousePercentColor(features.properties.housePercent),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
+		else if ((income >= price) && ((d >= 0.12 ) && (d <= 0.26 ))) {
+			return '#3182bd';
 		}
-
-		// SET DEFAULT LAYER
-		var $defaultPercentHouseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultHousePercentStyle });
-
-
-		// ===============================
-		// BUILD DEFAULT CONDO PERCENT MAP
-		// ===============================
-		function getDefaultCondoPercentColor (d) {
-
-			if ((d >= 0.080 ) && (d <= 0.250 )) {
-				return '#08519c';
-			}
-			else if ((d >= 0.057 ) && (d <= 0.079)) {
-				return '#3182bd';
-			}
-			else if ((d >= 0.000 ) && (d <= 0.056)) {
-				return '#6baed6';
-			}
-			else if ((d >= -0.03  ) && (d <= -0.01)) {
-				return '#bdd7e7';
-			}
-			else {
-				return '#eff3ff';
-			}
+		else if ((income >= price)&& ((d >= 0.084 ) && (d <= 0.11))) {
+			return '#6baed6';
 		}
-
-		function defaultCondoPercentStyle (features, layer) {
-		    return {
-		        fillColor: getDefaultCondoPercentColor(features.properties.condoPercent),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
+		else if ((income >= price) && ((d >= 0.044 ) && (d <= 0.083))) {
+			return '#bdd7e7';
 		}
+		else if ((income >= price) && ((d > 0.0  ) && (d <= 0.043))) {
+			return '#eff3ff';
+		}
+		else {
+			return '#ccc';
+		}
+	}
 
-		var $defaultPercentCondoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCondoPercentStyle });
+	function housePercentStyle (features, layer) {
+	    return {
+	        fillColor: getHousePercentColor(features.properties.housePriceFifteen,features.properties.housePercent),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
 
+	// ========================
+	// BUILD CONDO PERCENT MAP
+	// ========================
 
-		// ========================
-		// BUILD DEFAULT CRIME MAP
-		// ========================
+	function getCondoPercentColor (price, d) {
 
-		function getDefaultCrimeColor (d) {
+		if ((income >= price) && (d >= 0.25 )) {
+			return '#08519c';
+		}
+		else if ((income >= price) && ((d >= 0.08 ) && (d <= 0.24  ))) {
+			return '#3182bd';
+		}
+		else if ((income >= price) && ((d >= 0.06 ) && (d <= 0.08))) {
+			return '#6baed6';
+		}
+		else if ((income >= price) && ((d >= 0.0 ) && (d <= 0.06))) {
+			return '#bdd7e7';
+		}
+		else if ((income >= price) && ((d >= -0.03 ) && (d <= -0.01))) {
+			return '#bdd7e7';
+		}
+		else {
+			return '#ccc';
+		}
+	}
 
-			if ((d >= 202 ) && (d <= 400)) {
+	function condoPercentStyle (features, layer) {
+	    return {
+	        fillColor: getCondoPercentColor(features.properties.condoPriceFifteen,features.properties.condoPercent),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	// ================
+	// BUILD CRIME MAP
+	// ================
+
+	function getCrimeColor (crime, house, condo) {
+
+		// SET VARIBLES TO GET CRIME
+		var incomeInput    = $('.income-box').val(),
+      houseCheckbox  = $('.house:checkbox'),
+      condoCheckbox  = $('.condo:checkbox'),
+      houseCheck 	   = (houseCheckbox.is(':checked')),
+      condoCheck 	   = (condoCheckbox.is(':checked')),
+      inputEmpty 	   = (incomeInput === '');
+
+		// CEHCK IF HOUSE OR CONDO IS CHECKED 	
+		if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
+
+			
+			if ((income >= house) && ((crime >= 202 ) && (crime <= 400)))  {
 				return '#a50f15';
+			
 			}
-			else if  ((d >= 143 ) && (d <= 201)) {
+
+			else if ((income >= house) && ((crime >= 143 ) && (crime <= 201))) {
 				return '#de2d26';
 			}
-			else if ((d >= 98  ) && (d <= 142)){
+
+			else if ((income >= house) && ((crime >= 98 ) && (crime <= 142))) {
 				return '#fb6a4a';
 			}
-			else if  ((d >= 1  ) && (d <= 97)) {
+
+			else if ((income >= house) && ((crime >= 1 ) && (crime <= 97))) {
 				return '#fcae91';
 			}
+
 			else {
-				return '#fee5d9';
+				return '#ccc';
 			}
+
 		}
 
-		function defaultCrimeStyle (features, layer) {
-		    return {
-		        fillColor: getDefaultCrimeColor(features.properties.crime),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
+		else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === false))) {
+
+			if ((income >= condo) && ((crime >= 202 ) && (crime <= 400)))  {
+				return '#a50f15';
+			
+			}
+
+			else if ((income >= condo) && ((crime >= 143 ) && (crime <= 201))) {
+				return '#de2d26';
+			}
+
+			else if ((income >= condo) && ((crime >= 98 ) && (crime <= 142))) {
+				return '#fb6a4a';
+			}
+
+			else if ((income >= condo) && ((crime >= 1 ) && (crime <= 97))) {
+				return '#fcae91';
+			}
+
+			else {
+				return '#ccc';
+			}
 		}
+	}
 
-		var $defaultCrimeLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultCrimeStyle });
+	function crimeStyle (features, layer) {
+	    return {
+	        fillColor: getCrimeColor(features.properties.crime,features.properties.housePriceFifteen, features.properties.condoPriceFifteen),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
 
-		// ========================
-		// BUILD DEFAULT SCHOOL MAP
-		// ========================
+	// ========================
+	// BUILD DEFAULT SCHOOL MAP
+	// ========================
+	function getSchoolColor (school, house, condo) {
 
-		function getDefaultSchoolColor (d) {
+		var incomeInput    = $('.income-box').val(),
+			houseCheckbox  = $('.house:checkbox'),
+			condoCheckbox  = $('.condo:checkbox'),
+			houseCheck 	   = (houseCheckbox.is(':checked')),
+			condoCheck 	   = (condoCheckbox.is(':checked')),
+			inputEmpty 	   = (incomeInput === '');
 
-			if (d >= 4 ) {
+		if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
+
+			if ((income >= house) && (school === 4))  {
 				return '#f2f0f7';
 			}
-			else if  ((d >= 3 ) && (d <= 3.9)) {
-				return '#f2f0f7';
+			else if ((income >= house) && ((school >= 3.0 ) && (school <= 3.9))) {
+				return '#cbc9e2';
 			}
-			else if ((d >= 2  ) && (d <= 2.9)){
+
+			else if ((income >= house) && ((school >= 2.0 ) && (school <= 2.9))) {
 				return '#9e9ac8';
 			}
-			else if  ((d > 1  ) && (d <= 1.9)) {
+			else if ((income >= house) && ((school > 1 ) && (school <= 1.9))) {
 				return '#756bb1';
 			}
-			else if  ((d > 0.1  ) && (d <= 0.9)) {
+			else if ((income >= house) && ((school >= 0.1 ) && (school <= 0.9))) {
 				return '#54278f';
 			}
 			else {
@@ -251,329 +542,39 @@
 			}
 		}
 
-		function defaultSchoolStyle (features, layer) {
-		    return {
-		        fillColor: getDefaultSchoolColor(features.properties.schoolGrade),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
-		}
+		else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === false))) {
 
-		var $defaultSchoolLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: defaultSchoolStyle });
-
-
-		// ================
-		// BUILD HOUSE MAP
-		// ================
-		function getHouseColor (d) {
-
-			if (income > d) {
-				return '#006d2c';
+			if ((income >= condo) && (school === 4))  {
+				return '#f2f0f7';
 			}
-
-			else {
-				return '#ccc';
+			else if ((income >= condo) && ((school >= 3.0 ) && (school <= 3.9))) {
+				return '#cbc9e2';
 			}
-		}
-
-		// function getHouseOpacity(d) {
-		// 	if (income > d) {
-		// 		return 0.7;
-		// 	}
-		// 	else {
-		// 		return 0
-		// 	}
-		// }
-
-		// function getHouseDashColor(d) {
-		// 	if (income > d) {
-		// 		return 'white';
-		// 	}
-		// 	else {
-		// 		return 'none'
-		// 	}
-		// }
-
-		function houseStyle (features, layer) {
-		    return {
-		        fillColor: getHouseColor(features.properties.housePriceFifteen),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        // color: getHouseDashColor(features.properties.housePriceFifteen),
-		        dashArray: '3',
-		        fillOpacity:0.7
-		        // fillOpacity: getHouseOpacity(features.properties.housePriceFifteen)
-		    };
-		}
-
-		// ========================
-		// BUILD DEFAULT CONDO MAP
-		// ========================
-		function getCondoColor (d) {
-
-			if (income > d) {
-				return '#006d2c';
+			else if ((income >= condo) && ((school >= 2.0 ) && (school <= 2.9))) {
+				return '#9e9ac8';
 			}
-			
-			else {
-				return '#ccc';
+			else if ((income >= condo) && ((school > 1 ) && (school <= 1.9))) {
+				return '#756bb1';
 			}
-		}
-
-		// function getCondoOpacity(d) {
-		// 	if (income > d) {
-		// 		return 0.7;
-		// 	}
-		// 	else {
-		// 		return 0
-		// 	}
-		// }
-
-		// function getCondoDashColor(d) {
-		// 	if (income > d) {
-		// 		return 'white';
-		// 	}
-		// 	else {
-		// 		return 'none'
-		// 	}
-		// }
-
-		function condoStyle (features, layer) {
-		    return {
-		        fillColor: getCondoColor(features.properties.condoPriceFifteen),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        // color: getCondoDashColor(features.properties.condoPriceFifteen),
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		        // fillOpacity: getCondoOpacity(features.properties.condoPriceFifteen)
-		    };
-		}
-
-		// ========================
-		// BUILD HOUSE PERCENT MAP
-		// ========================
-
-		function getHousePercentColor (price, d) {
-
-			if ((income >= price) && (d >= 0.27 )) {
-				return '#08519c';
-			}
-			else if ((income >= price) && ((d >= 0.12 ) && (d <= 0.26 ))) {
-				return '#3182bd';
-			}
-			else if ((income >= price)&& ((d >= 0.084 ) && (d <= 0.11))) {
-				return '#6baed6';
-			}
-			else if ((income >= price) && ((d >= 0.044 ) && (d <= 0.083))) {
-				return '#bdd7e7';
-			}
-			else if ((income >= price) && ((d > 0.0  ) && (d <= 0.043))) {
-				return '#eff3ff';
+			else if ((income >= condo) && ((school >= 0.1 ) && (school <= 0.9))) {
+				return '#54278f';
 			}
 			else {
 				return '#ccc';
 			}
-		}
+		}			
+	}
 
-		function housePercentStyle (features, layer) {
-		    return {
-		        fillColor: getHousePercentColor(features.properties.housePriceFifteen,features.properties.housePercent),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
-		}
-
-		// ========================
-		// BUILD CONDO PERCENT MAP
-		// ========================
-
-		function getCondoPercentColor (price, d) {
-
-			if ((income >= price) && (d >= 0.25 )) {
-				return '#08519c';
-			}
-			else if ((income >= price) && ((d >= 0.08 ) && (d <= 0.24  ))) {
-				return '#3182bd';
-			}
-			else if ((income >= price) && ((d >= 0.06 ) && (d <= 0.08))) {
-				return '#6baed6';
-			}
-			else if ((income >= price) && ((d >= 0.0 ) && (d <= 0.06))) {
-				return '#bdd7e7';
-			}
-			else if ((income >= price) && ((d >= -0.03 ) && (d <= -0.01))) {
-				return '#bdd7e7';
-			}
-			else {
-				return '#ccc';
-			}
-		}
-
-		function condoPercentStyle (features, layer) {
-		    return {
-		        fillColor: getCondoPercentColor(features.properties.condoPriceFifteen,features.properties.condoPercent),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
-		}
-
-		// ================
-		// BUILD CRIME MAP
-		// ================
-
-		function getCrimeColor (crime, house, condo) {
-
-			// SET VARIBLES TO GET CRIME
-			var incomeInput    = $('.income-box').val(),
-          houseCheckbox  = $('.house:checkbox'),
-          condoCheckbox  = $('.condo:checkbox'),
-          houseCheck 	   = (houseCheckbox.is(':checked')),
-          condoCheck 	   = (condoCheckbox.is(':checked')),
-          inputEmpty 	   = (incomeInput === '');
-
-			// CEHCK IF HOUSE OR CONDO IS CHECKED 	
-			if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
-
-				
-				if ((income >= house) && ((crime >= 202 ) && (crime <= 400)))  {
-					return '#a50f15';
-				
-				}
-
-				else if ((income >= house) && ((crime >= 143 ) && (crime <= 201))) {
-					return '#de2d26';
-				}
-
-				else if ((income >= house) && ((crime >= 98 ) && (crime <= 142))) {
-					return '#fb6a4a';
-				}
-
-				else if ((income >= house) && ((crime >= 1 ) && (crime <= 97))) {
-					return '#fcae91';
-				}
-
-				else {
-					return '#ccc';
-				}
-
-			}
-
-			else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === false))) {
-
-				if ((income >= condo) && ((crime >= 202 ) && (crime <= 400)))  {
-					return '#a50f15';
-				
-				}
-
-				else if ((income >= condo) && ((crime >= 143 ) && (crime <= 201))) {
-					return '#de2d26';
-				}
-
-				else if ((income >= condo) && ((crime >= 98 ) && (crime <= 142))) {
-					return '#fb6a4a';
-				}
-
-				else if ((income >= condo) && ((crime >= 1 ) && (crime <= 97))) {
-					return '#fcae91';
-				}
-
-				else {
-					return '#ccc';
-				}
-			}
-		}
-
-		function crimeStyle (features, layer) {
-		    return {
-		        fillColor: getCrimeColor(features.properties.crime,features.properties.housePriceFifteen, features.properties.condoPriceFifteen),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
-		}
-
-		// ========================
-		// BUILD DEFAULT SCHOOL MAP
-		// ========================
-		function getSchoolColor (school, house, condo) {
-
-			var incomeInput    = $('.income-box').val(),
-				houseCheckbox  = $('.house:checkbox'),
-				condoCheckbox  = $('.condo:checkbox'),
-				houseCheck 	   = (houseCheckbox.is(':checked')),
-				condoCheck 	   = (condoCheckbox.is(':checked')),
-				inputEmpty 	   = (incomeInput === '');
-
-			if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
-
-				if ((income >= house) && (school === 4))  {
-					return '#f2f0f7';
-				}
-				else if ((income >= house) && ((school >= 3.0 ) && (school <= 3.9))) {
-					return '#cbc9e2';
-				}
-
-				else if ((income >= house) && ((school >= 2.0 ) && (school <= 2.9))) {
-					return '#9e9ac8';
-				}
-				else if ((income >= house) && ((school > 1 ) && (school <= 1.9))) {
-					return '#756bb1';
-				}
-				else if ((income >= house) && ((school >= 0.1 ) && (school <= 0.9))) {
-					return '#54278f';
-				}
-				else {
-					return '#ccc';
-				}
-			}
-
-			else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === false))) {
-
-				if ((income >= condo) && (school === 4))  {
-					return '#f2f0f7';
-				}
-				else if ((income >= condo) && ((school >= 3.0 ) && (school <= 3.9))) {
-					return '#cbc9e2';
-				}
-				else if ((income >= condo) && ((school >= 2.0 ) && (school <= 2.9))) {
-					return '#9e9ac8';
-				}
-				else if ((income >= condo) && ((school > 1 ) && (school <= 1.9))) {
-					return '#756bb1';
-				}
-				else if ((income >= condo) && ((school >= 0.1 ) && (school <= 0.9))) {
-					return '#54278f';
-				}
-				else {
-					return '#ccc';
-				}
-			}			
-		}
-
-		function schoolStyle (features, layer) {
-		    return {
-		        fillColor: getSchoolColor(features.properties.schoolGrade,features.properties.housePriceFifteen, features.properties.condoPriceFifteen),
-		        weight: 2,
-		        opacity: 1,
-		        color: 'white',
-		        dashArray: '3',
-		        fillOpacity: 0.7
-		    };
-		}
+	function schoolStyle (features, layer) {
+	    return {
+	        fillColor: getSchoolColor(features.properties.schoolGrade,features.properties.housePriceFifteen, features.properties.condoPriceFifteen),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
 
 
 	//====================================
@@ -682,9 +683,6 @@
 			}
 		}
 	}
-
-
-
 
 	//====================================
 	// INCOME INPUT AND HOUSING SELECTION
@@ -1855,3 +1853,5 @@
 	//====================================
 
 	// BUILD SEARCH LIST
+
+})();
