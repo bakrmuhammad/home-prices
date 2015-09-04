@@ -18,6 +18,8 @@
   "unused": "vars",
   
   "globals": {
-    "d3": true
+    "d3": true,
+    "L": true,
+    "$" : true
   }
 }

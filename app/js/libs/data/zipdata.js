@@ -7,14 +7,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33056,
                     "cities": "Miami Gardens",
-                    "house_price_fifteen": 145500,
-                    "house_price_fourteen": 133800,
-                    "house_pct": 0.087,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 145500,
+                    "housePriceFourteen": 133800,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 149,
-                    "school_grade" : 2 
+                    "schoolGrade" : 2 
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -49,14 +49,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33055,
                     "cities": "Miami Gardens",
-                    "house_price_fifteen": 169300,
-                    "house_price_fourteen": 140400,
-                    "house_pct": 0.206,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 169300,
+                    "housePriceFourteen": 140400,
+                    "housePercent": 0.21,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 110,
-                    "school_grade" : 1.9
+                    "schoolGrade" : 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -99,14 +99,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33179,
                     "cities": "Ives Estates",
-                    "house_price_fifteen": 256700,
-                    "house_price_fourteen": 222100,
-                    "house_pct": 0.156,
-                    "condo_price_fifteen": 100000,
-                    "condo_price_fourteen": 94300,
-                    "condo_pct": 0.06,
+                    "housePriceFifteen": 256700,
+                    "housePriceFourteen": 222100,
+                    "housePercent": 0.16,
+                    "condoPriceFifteen": 100000,
+                    "condoPriceFourteen": 94300,
+                    "condoPercent": 0.06,
                     "crime": 80,
-                    "school_grade" : 2.5
+                    "schoolGrade" : 2.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -149,14 +149,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33013,
                     "cities": "Hialeah",
-                    "house_price_fifteen": 212500,
-                    "house_price_fourteen": 191200,
-                    "house_pct": 0.111,
-                    "condo_price_fifteen": 107200,
-                    "condo_price_fourteen": 91000,
-                    "condo_pct": 0.178,
+                    "housePriceFifteen": 212500,
+                    "housePriceFourteen": 191200,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 107200,
+                    "condoPriceFourteen": 91000,
+                    "condoPercent": 0.18,
                     "crime": 137,
-                    "school_grade" : 2.9
+                    "schoolGrade" : 2.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -203,14 +203,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33016,
                     "cities": "Hialeah",
-                    "house_price_fifteen": 246700,
-                    "house_price_fourteen": 240300,
-                    "house_pct": 0.027,
-                    "condo_price_fifteen": 117800,
-                    "condo_price_fourteen": 103000,
-                    "condo_pct": 0.144,
+                    "housePriceFifteen": 246700,
+                    "housePriceFourteen": 240300,
+                    "housePercent": 0.02,
+                    "condoPriceFifteen": 117800,
+                    "condoPriceFourteen": 103000,
+                    "condoPercent": 0.14,
                     "crime": 78,
-                     "school_grade" : 3.9
+                     "schoolGrade" : 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -253,14 +253,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33015,
                     "cities": "Country Club",
-                    "house_price_fifteen": 278200,
-                    "house_price_fourteen": 251000,
-                    "house_pct": 0.108,
-                    "condo_price_fifteen": 139200,
-                    "condo_price_fourteen": 127300,
-                    "condo_pct": 0.093,
+                    "housePriceFifteen": 278200,
+                    "housePriceFourteen": 251000,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 139200,
+                    "condoPriceFourteen": 127300,
+                    "condoPercent": 0.09,
                     "crime": 96,
-                     "school_grade" : 3.4
+                     "schoolGrade" : 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -303,14 +303,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33181,
                     "cities": "North Miami",
-                    "house_price_fifteen": 739200,
-                    "house_price_fourteen": 689000,
-                    "house_pct": 0.073,
-                    "condo_price_fifteen": 158400,
-                    "condo_price_fourteen": 150200,
-                    "condo_pct": 0.055,
+                    "housePriceFifteen": 739200,
+                    "housePriceFourteen": 689000,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 158400,
+                    "condoPriceFourteen": 150200,
+                    "condoPercent": 0.06,
                     "crime": 103,
-                     "school_grade" : 3
+                     "schoolGrade" : 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -361,14 +361,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33039,
                     "cities": "Homestead",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": "N/A",
-                     "school_grade" : 0
+                     "schoolGrade" : 0
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -427,14 +427,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33165,
                     "cities": "University Park",
-                    "house_price_fifteen": 290300,
-                    "house_price_fourteen": 264400,
-                    "house_pct": 0.098,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 290300,
+                    "housePriceFourteen": 264400,
+                    "housePercent": 0.10,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 221,
-                     "school_grade" : 3.3
+                     "schoolGrade" : 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -473,14 +473,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33141,
                     "cities": "Miami Beach",
-                    "house_price_fifteen": 815400,
-                    "house_price_fourteen": 742100,
-                    "house_pct": 0.099,
-                    "condo_price_fifteen": 236200,
-                    "condo_price_fourteen": 222900,
-                    "condo_pct": 0.06,
+                    "housePriceFifteen": 815400,
+                    "housePriceFourteen": 742100,
+                    "housePercent": 0.10,
+                    "condoPriceFifteen": 236200,
+                    "condoPriceFourteen": 222900,
+                    "condoPercent": 0.06,
                     "crime": 200,
-                    "school_grade" : 2.8
+                    "schoolGrade" : 2.8
 
                 },
                 "geometry": {
@@ -540,14 +540,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33155,
                     "cities": "Coral Terrace",
-                    "house_price_fifteen": 317500,
-                    "house_price_fourteen": 287700,
-                    "house_pct": 0.106,
-                    "condo_price_fifteen": 151900,
-                    "condo_price_fourteen": 154900,
-                    "condo_pct": -0.019,
+                    "housePriceFifteen": 317500,
+                    "housePriceFourteen": 287700,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 151900,
+                    "condoPriceFourteen": 154900,
+                    "condoPercent": -0.02,
                     "crime": 298,
-                    "school_grade" : 3.4
+                    "schoolGrade" : 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -590,14 +590,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33161,
                     "cities": "North Miami",
-                    "house_price_fifteen": 200100,
-                    "house_price_fourteen": 176700,
-                    "house_pct": 0.132,
-                    "condo_price_fifteen": 75200,
-                    "condo_price_fourteen": 64700,
-                    "condo_pct": 0.162,
+                    "housePriceFifteen": 200100,
+                    "housePriceFourteen": 176700,
+                    "housePercent": 0.13,
+                    "condoPriceFifteen": 75200,
+                    "condoPriceFourteen": 64700,
+                    "condoPercent": 0.16,
                     "crime": 151,
-                    "school_grade" : 2.1
+                    "schoolGrade" : 2.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -640,14 +640,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33182,
                     "cities": "Tamiami",
-                    "house_price_fifteen": 313100,
-                    "house_price_fourteen": 283000,
-                    "house_pct": 0.106,
-                    "condo_price_fifteen": 178300,
-                    "condo_price_fourteen": 164200,
-                    "condo_pct": 0.086,
+                    "housePriceFifteen": 313100,
+                    "housePriceFourteen": 283000,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 178300,
+                    "condoPriceFourteen": 164200,
+                    "condoPercent": 0.09,
                     "crime": 84,
-                    "school_grade" : 2
+                    "schoolGrade" : 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -686,14 +686,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33178,
                     "cities": "Doral",
-                    "house_price_fifteen": 502800,
-                    "house_price_fourteen": 490550,
-                    "house_pct": 2.5,
-                    "condo_price_fifteen": 277900,
-                    "condo_price_fourteen": 273200,
-                    "condo_pct": 1.7,
+                    "housePriceFifteen": 502800,
+                    "housePriceFourteen": 490550,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 277900,
+                    "condoPriceFourteen": 273200,
+                    "condoPercent": 0.02,
                     "crime": 84,
-                    "school_grade" : 4
+                    "schoolGrade" : 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -778,14 +778,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33184,
                     "cities": "Tamiami",
-                    "house_price_fifteen": 309500,
-                    "house_price_fourteen": 286200,
-                    "house_pct": 0.081,
-                    "condo_price_fifteen": 157800,
-                    "condo_price_fourteen": 144700,
-                    "condo_pct": 0.091,
+                    "housePriceFifteen": 309500,
+                    "housePriceFourteen": 286200,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": 157800,
+                    "condoPriceFourteen": 144700,
+                    "condoPercent": 0.09,
                     "crime": 108,
-                    "school_grade" : 4
+                    "schoolGrade" : 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -824,14 +824,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33180,
                     "cities": "Aventura",
-                    "house_price_fifteen": 796100,
-                    "house_price_fourteen": 745800,
-                    "house_pct": 0.067,
-                    "condo_price_fifteen": 369300,
-                    "condo_price_fourteen": 355100,
-                    "condo_pct": 0.04,
+                    "housePriceFifteen": 796100,
+                    "housePriceFourteen": 745800,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 369300,
+                    "condoPriceFourteen": 355100,
+                    "condoPercent": 0.04,
                     "crime": 137,
-                    "school_grade" : 3.7
+                    "schoolGrade" : 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -866,14 +866,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33175,
                     "cities": "Tamiami",
-                    "house_price_fifteen": 303900,
-                    "house_price_fourteen": 285300,
-                    "house_pct": 0.065,
-                    "condo_price_fifteen": 150400,
-                    "condo_price_fourteen": 141500,
-                    "condo_pct": 0.063,
+                    "housePriceFifteen": 303900,
+                    "housePriceFourteen": 285300,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 150400,
+                    "condoPriceFourteen": 141500,
+                    "condoPercent": 0.06,
                     "crime": 128,
-                    "school_grade" : 3.9
+                    "schoolGrade" : 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -908,14 +908,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33135,
                     "cities": "Miami",
-                    "house_price_fifteen": 260300,
-                    "house_price_fourteen": 231200,
-                    "house_pct": 0.126,
-                    "condo_price_fifteen": 102100,
-                    "condo_price_fourteen": 92200,
-                    "condo_pct": 0.107,
+                    "housePriceFifteen": 260300,
+                    "housePriceFourteen": 231200,
+                    "housePercent": 0.13,
+                    "condoPriceFifteen": 102100,
+                    "condoPriceFourteen": 92200,
+                    "condoPercent": 0.11,
                     "crime": 253,
-                    "school_grade" : 2.6
+                    "schoolGrade" : 2.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -958,14 +958,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33192,
                     "cities": "Homestead",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": "N/A",
-                    "school_grade" : "N/A"
+                    "schoolGrade" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1008,14 +1008,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33150,
                     "cities": "Miami",
-                    "house_price_fifteen": 115600,
-                    "house_price_fourteen": 114700,
-                    "house_pct": 0.008,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 115600,
+                    "housePriceFourteen": 114700,
+                    "housePercent": 0.01,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 244,
-                    "school_grade" : 1.9
+                    "schoolGrade" : 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1058,14 +1058,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33154,
                     "cities": "Bal Harbour",
-                    "house_price_fifteen": 682800,
-                    "house_price_fourteen": 617300,
-                    "house_pct": 0.016,
-                    "condo_price_fifteen": 502600,
-                    "condo_price_fourteen": 466100,
-                    "condo_pct": 0.078,
+                    "housePriceFifteen": 682800,
+                    "housePriceFourteen": 617300,
+                    "housePercent": 0.02,
+                    "condoPriceFifteen": 502600,
+                    "condoPriceFourteen": 466100,
+                    "condoPercent": 0.08,
                     "crime": 97,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1116,14 +1116,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33194,
                     "cities": "Golden Glades",
-                    "house_price_fifteen": 378400,
-                    "house_price_fourteen": 357400,
-                    "house_pct": 0.059,
-                    "condo_price_fifteen": 254800,
-                    "condo_price_fourteen": 238700,
-                    "condo_pct": 0.067,
+                    "housePriceFifteen": 378400,
+                    "housePriceFourteen": 357400,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 254800,
+                    "condoPriceFourteen": 238700,
+                    "condoPercent": 0.07,
                     "crime": 128,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
 
                 },
                 "geometry": {
@@ -1159,14 +1159,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33168,
                     "cities": "North Miami",
-                    "house_price_fifteen": 128000,
-                    "house_price_fourteen": 117800,
-                    "house_pct": 0.087,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 128000,
+                    "housePriceFourteen": 117800,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 330,
-                    "school_grade": 2.4
+                    "schoolGrade": 2.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1210,14 +1210,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33054,
                     "cities": "Miami Gardens",
-                    "house_price_fifteen": 101600,
-                    "house_price_fourteen": 93700,
-                    "house_pct": 0.084,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 101600,
+                    "housePriceFourteen": 93700,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 308,
-                    "school_grade": 1.8
+                    "schoolGrade": 1.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1309,14 +1309,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33035,
                     "cities": "Homestead",
-                    "house_price_fifteen": 193600,
-                    "house_price_fourteen": 172400,
-                    "house_pct": 0.123,
-                    "condo_price_fifteen": 94800,
-                    "condo_price_fourteen": 87200,
-                    "condo_pct": 0.087,
+                    "housePriceFifteen": 193600,
+                    "housePriceFourteen": 172400,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 94800,
+                    "condoPriceFourteen": 87200,
+                    "condoPercent": 0.09,
                     "crime": 207,
-                    "school_grade": 2.5
+                    "schoolGrade": 2.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1413,14 +1413,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33147,
                     "cities": "West Little River",
-                    "house_price_fifteen": 106400,
-                    "house_price_fourteen": 93500,
-                    "house_pct": 0.138,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 106400,
+                    "housePriceFourteen": 93500,
+                    "housePercent": 0.14,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 334,
-                    "school_grade": 1.4
+                    "schoolGrade": 1.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1459,14 +1459,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33034,
                     "cities": "Florida City",
-                    "house_price_fifteen": 106000,
-                    "house_price_fourteen": 91800,
-                    "house_pct": 0.155,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 106000,
+                    "housePriceFourteen": 91800,
+                    "housePercent": 0.16,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 230,
-                    "school_grade": 1.9
+                    "schoolGrade": 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1521,14 +1521,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33167,
                     "cities": "Westview",
-                    "house_price_fifteen": 109700,
-                    "house_price_fourteen": 103000,
-                    "house_pct": 0.065,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 109700,
+                    "housePriceFourteen": 103000,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 267,
-                    "school_grade": 2.1
+                    "schoolGrade": 2.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1583,14 +1583,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33030,
                     "cities": "Homestead",
-                    "house_price_fifteen": 149200,
-                    "house_price_fourteen": 132100,
-                    "house_pct": 0.129,
-                    "condo_price_fifteen": 99100,
-                    "condo_price_fourteen": 81500,
-                    "condo_pct": 0.216,
+                    "housePriceFifteen": 149200,
+                    "housePriceFourteen": 132100,
+                    "housePercent": 0.13,
+                    "condoPriceFifteen": 99100,
+                    "condoPriceFourteen": 81500,
+                    "condoPercent": 0.22,
                     "crime": 180,
-                    "school_grade": 2.4
+                    "schoolGrade": 2.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1629,14 +1629,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33033,
                     "cities": "Homestead",
-                    "house_price_fifteen": 151900,
-                    "house_price_fourteen": 139300,
-                    "house_pct": 0.09,
-                    "condo_price_fifteen": 113800,
-                    "condo_price_fourteen": 106800,
-                    "condo_pct": 0.066,
+                    "housePriceFifteen": 151900,
+                    "housePriceFourteen": 139300,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 113800,
+                    "condoPriceFourteen": 106800,
+                    "condoPercent": 0.07,
                     "crime": 190,
-                    "school_grade": 2.6
+                    "schoolGrade": 2.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1747,14 +1747,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33173,
                     "cities": "Kendall",
-                    "house_price_fifteen": 329200,
-                    "house_price_fourteen": 306400,
-                    "house_pct": 0.074,
-                    "condo_price_fifteen": 169000,
-                    "condo_price_fourteen": 158400,
-                    "condo_pct": 0.067,
+                    "housePriceFifteen": 329200,
+                    "housePriceFourteen": 306400,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 169000,
+                    "condoPriceFourteen": 158400,
+                    "condoPercent": 0.07,
                     "crime": 98,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1801,14 +1801,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33032,
                     "cities": "Princeton",
-                    "house_price_fifteen": 158700,
-                    "house_price_fourteen": 139300,
-                    "house_pct": 0.139,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 158700,
+                    "housePriceFourteen": 139300,
+                    "housePercent": 0.14,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 213,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1891,14 +1891,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33140,
                     "cities": "Miami Beach",
-                    "house_price_fifteen": 1533600,
-                    "house_price_fourteen": 1248800,
-                    "house_pct": 0.228,
-                    "condo_price_fifteen": 408300,
-                    "condo_price_fourteen": 408300,
-                    "condo_pct": 0.081,
+                    "housePriceFifteen": 1533600,
+                    "housePriceFourteen": 1248800,
+                    "housePercent": 0.23,
+                    "condoPriceFifteen": 408300,
+                    "condoPriceFourteen": 408300,
+                    "condoPercent": 0.08,
                     "crime": 297,
-                    "school_grade": 3.2
+                    "schoolGrade": 3.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1953,14 +1953,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33177,
                     "cities": "South Miami Heights",
-                    "house_price_fifteen": 214400,
-                    "house_price_fourteen": 189900,
-                    "house_pct": 0.13,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 214400,
+                    "housePriceFourteen": 189900,
+                    "housePercent": 0.13,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 98,
-                    "school_grade": 3.3
+                    "schoolGrade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2007,14 +2007,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33187,
                     "cities": "Richmond West",
-                    "house_price_fifteen": 294400,
-                    "house_price_fourteen": 264200,
-                    "house_pct": 0.114,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 294400,
+                    "housePriceFourteen": 264200,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 107,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2065,14 +2065,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33109,
                     "cities": "Fisher Island",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": 0,
-                    "house_pct": 0,
-                    "condo_price_fifteen": 3102400,
-                    "condo_price_fourteen": 0,
-                    "condo_pct": 0,
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": 3102400,
+                    "condoPriceFourteen": 2890700,
+                    "condoPercent": 0.07,
                     "crime": "N/A",
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2107,14 +2107,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33149,
                     "cities": "Key Biscayne",
-                    "house_price_fifteen": 2807400,
-                    "house_price_fourteen": 2430700,
-                    "house_pct": 0.155,
-                    "condo_price_fifteen": 907100,
-                    "condo_price_fourteen": 847900,
-                    "condo_pct": 0.07,
+                    "housePriceFifteen": 2807400,
+                    "housePriceFourteen": 2430700,
+                    "housePercent": 0.16,
+                    "condoPriceFifteen": 907100,
+                    "condoPriceFourteen": 847900,
+                    "condoPercent": 0.07,
                     "crime": 76,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2201,14 +2201,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33131,
                     "cities": "Miami",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": 435600,
-                    "condo_price_fourteen": 438500,
-                    "condo_pct": -0.07,
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": 435600,
+                    "condoPriceFourteen": 438500,
+                    "condoPercent": -0.07,
                     "crime": 227,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2255,14 +2255,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33018,
                     "cities": "Hialeah",
-                    "house_price_fifteen": 258200,
-                    "house_price_fourteen": 232200,
-                    "house_pct": 0.112,
-                    "condo_price_fifteen": 145800,
-                    "condo_price_fourteen": 125800,
-                    "condo_pct": 0.159,
+                    "housePriceFifteen": 258200,
+                    "housePriceFourteen": 232200,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 145800,
+                    "condoPriceFourteen": 125800,
+                    "condoPercent": 0.16,
                     "crime": 86,
-                    "school_grade": 3.6
+                    "schoolGrade": 3.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2305,14 +2305,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33158,
                     "cities": "Village of Palmetto Bay",
-                    "house_price_fifteen": 606500,
-                    "house_price_fourteen": 566300,
-                    "house_pct": 0.071,
-                    "condo_price_fifteen": 1256400,
-                    "condo_price_fourteen": 1190600,
-                    "condo_pct": 0.055,
+                    "housePriceFifteen": 606500,
+                    "housePriceFourteen": 566300,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 1256400,
+                    "condoPriceFourteen": 1190600,
+                    "condoPercent": 0.06,
                     "crime": 69,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
 
                 },
                 "geometry": {
@@ -2352,14 +2352,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33146,
                     "cities": "Coral Gables",
-                    "house_price_fifteen": 930700,
-                    "house_price_fourteen": 828800,
-                    "house_pct": 0.123,
-                    "condo_price_fifteen": 299100,
-                    "condo_price_fourteen": 292200,
-                    "condo_pct": 0.024,
+                    "housePriceFifteen": 930700,
+                    "housePriceFourteen": 828800,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 299100,
+                    "condoPriceFourteen": 292200,
+                    "condoPercent": 0.02,
                     "crime": 203,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2402,14 +2402,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33196,
                     "cities": "The Hammocks",
-                    "house_price_fifteen": 300400,
-                    "house_price_fourteen": 278000,
-                    "house_pct": 0.081,
-                    "condo_price_fifteen": 152500,
-                    "condo_price_fourteen": 140000,
-                    "condo_pct": 0.089,
+                    "housePriceFifteen": 300400,
+                    "housePriceFourteen": 278000,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": 152500,
+                    "condoPriceFourteen": 140000,
+                    "condoPercent": 0.09,
                     "crime": 169,
-                    "school_grade": 3.4
+                    "schoolGrade": 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2464,14 +2464,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33172,
                     "cities": "Fountainbleau",
-                    "house_price_fifteen": 415600,
-                    "house_price_fourteen": 408000,
-                    "house_pct": 0.19,
-                    "condo_price_fifteen": 142500,
-                    "condo_price_fourteen": 129200,
-                    "condo_pct": 0.103,
+                    "housePriceFifteen": 415600,
+                    "housePriceFourteen": 408000,
+                    "housePercent": 0.19,
+                    "condoPriceFifteen": 142500,
+                    "condoPriceFourteen": 129200,
+                    "condoPercent": 0.10,
                     "crime": 149,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2518,14 +2518,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33174,
                     "cities": "Fountainbleau",
-                    "house_price_fifteen": 282400,
-                    "house_price_fourteen": 258900,
-                    "house_pct": 0.091,
-                    "condo_price_fifteen": 142000,
-                    "condo_price_fourteen": 125800,
-                    "condo_pct": 0.129,
+                    "housePriceFifteen": 282400,
+                    "housePriceFourteen": 258900,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 142000,
+                    "condoPriceFourteen": 125800,
+                    "condoPercent": 0.13,
                     "crime": 125,
-                    "school_grade": 3.5
+                    "schoolGrade": 3.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2560,14 +2560,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33186,
                     "cities": "The Crossings",
-                    "house_price_fifteen": 293300,
-                    "house_price_fourteen": 271400,
-                    "house_pct": 0.081,
-                    "condo_price_fifteen": 181500,
-                    "condo_price_fourteen": 163900,
-                    "condo_pct": 0.107,
+                    "housePriceFifteen": 293300,
+                    "housePriceFourteen": 271400,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": 181500,
+                    "condoPriceFourteen": 163900,
+                    "condoPercent": 0.11,
                     "crime": 113,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2610,14 +2610,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33129,
                     "cities": "Miami",
-                    "house_price_fifteen": 584800,
-                    "house_price_fourteen": 503000,
-                    "house_pct": 0.163,
-                    "condo_price_fifteen": 391300,
-                    "condo_price_fourteen": 370200,
-                    "condo_pct": 0.057,
+                    "housePriceFifteen": 584800,
+                    "housePriceFourteen": 503000,
+                    "housePercent": 0.16,
+                    "condoPriceFifteen": 391300,
+                    "condoPriceFourteen": 370200,
+                    "condoPercent": 0.06,
                     "crime": 222,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2676,14 +2676,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33130,
                     "cities": "Miami",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": 302400,
-                    "condo_price_fourteen": 307200,
-                    "condo_pct": -0.016,
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": 302400,
+                    "condoPriceFourteen": 307200,
+                    "condoPercent": -0.02,
                     "crime": 290,
-                    "school_grade": 3.5
+                    "schoolGrade": 3.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2722,14 +2722,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33160,
                     "cities": "Sunny Isles Beach",
-                    "house_price_fifteen": 1755300,
-                    "house_price_fourteen": 1548800,
-                    "house_pct": 0.133,
-                    "condo_price_fifteen": 321200,
-                    "condo_price_fourteen": 297800,
-                    "condo_pct": 0.079,
+                    "housePriceFifteen": 1755300,
+                    "housePriceFourteen": 1548800,
+                    "housePercent": 0.13,
+                    "condoPriceFifteen": 321200,
+                    "condoPriceFourteen": 297800,
+                    "condoPercent": 0.08,
                     "crime": 97,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2784,14 +2784,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33162,
                     "cities" : "North Miami Beach",
-                    "house_price_fifteen" : 175400,
-                    "house_price_fourteen" : 157000,
-                    "house_pct" : 0.12,
-                    "condo_price_fifteen" : 76200,
-                    "condo_price_fourteen": 70800,
-                    "condo_pct": 0.08,
+                    "housePriceFifteen" : 175400,
+                    "housePriceFourteen" : 157000,
+                    "housePercent" : 0.12,
+                    "condoPriceFifteen" : 76200,
+                    "condoPriceFourteen": 70800,
+                    "condoPercent": 0.08,
                     "crime" : 192,
-                    "school_grade": 2
+                    "schoolGrade": 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2838,14 +2838,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33133,
                     "cities": "Miami",
-                    "house_price_fifteen": 731100,
-                    "house_price_fourteen": 655000,
-                    "house_pct": 0.116,
-                    "condo_price_fifteen": 404000,
-                    "condo_price_fourteen": 379800,
-                    "condo_pct": 0.064,
+                    "housePriceFifteen": 731100,
+                    "housePriceFourteen": 655000,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 404000,
+                    "condoPriceFourteen": 379800,
+                    "condoPercent": 0.06,
                     "crime": 227,
-                    "school_grade": 3.1
+                    "schoolGrade": 3.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2908,14 +2908,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33169,
                     "cities": "Miami Gardens",
-                    "house_price_fifteen": 181900,
-                    "house_price_fourteen": 164300,
-                    "house_pct": 0.107,
-                    "condo_price_fifteen": 85800,
-                    "condo_price_fourteen": 77600,
-                    "condo_pct": 0.106,
+                    "housePriceFifteen": 181900,
+                    "housePriceFourteen": 164300,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 85800,
+                    "condoPriceFourteen": 77600,
+                    "condoPercent": 0.11,
                     "crime": 176,
-                    "school_grade": 2
+                    "schoolGrade": 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2962,14 +2962,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33143,
                     "cities": "Glenvar Heights",
-                    "house_price_fifteen": 750600,
-                    "house_price_fourteen": 664300,
-                    "house_pct": 0.013,
-                    "condo_price_fifteen": 144300,
-                    "condo_price_fourteen": 139700,
-                    "condo_pct": 0.033,
+                    "housePriceFifteen": 750600,
+                    "housePriceFourteen": 664300,
+                    "housePercent": 0.01,
+                    "condoPriceFifteen": 144300,
+                    "condoPriceFourteen": 139700,
+                    "condoPercent": 0.03,
                     "crime": 168,
-                    "school_grade": 4
+                    "schoolGrade": 4
 
                 },
                 "geometry": {
@@ -3025,14 +3025,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33125,
                     "cities": "Miami",
-                    "house_price_fifteen": 200900,
-                    "house_price_fourteen": 185000,
-                    "house_pct": 0.086,
-                    "condo_price_fifteen": 109200,
-                    "condo_price_fourteen": 99600,
-                    "condo_pct": 0.096,
+                    "housePriceFifteen": 200900,
+                    "housePriceFourteen": 185000,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 109200,
+                    "condoPriceFourteen": 99600,
+                    "condoPercent": 0.10,
                     "crime": 202,
-                    "school_grade": 1.4
+                    "schoolGrade": 1.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3079,14 +3079,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33193,
                     "cities": "Kendall West",
-                    "house_price_fifteen": 289500,
-                    "house_price_fourteen": 274000,
-                    "house_pct": 0.057,
-                    "condo_price_fifteen": 134100,
-                    "condo_price_fourteen": 119300,
-                    "condo_pct": 0.0124,
+                    "housePriceFifteen": 289500,
+                    "housePriceFourteen": 274000,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 134100,
+                    "condoPriceFourteen": 119300,
+                    "condoPercent": 0.01,
                     "crime": 143,
-                    "school_grade": 3.5
+                    "schoolGrade": 3.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3137,14 +3137,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33138,
                     "cities": "Miami",
-                    "house_price_fifteen": 504700,
-                    "house_price_fourteen": 462000,
-                    "house_pct": 0.092,
-                    "condo_price_fifteen": 223700,
-                    "condo_price_fourteen": 194600,
-                    "condo_pct": 0.15,
+                    "housePriceFifteen": 504700,
+                    "housePriceFourteen": 462000,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 223700,
+                    "condoPriceFourteen": 194600,
+                    "condoPercent": 0.15,
                     "crime": 160,
-                    "school_grade": 2.8
+                    "schoolGrade": 2.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3192,14 +3192,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33142,
                     "cities": "Miami",
-                    "house_price_fifteen": 97100,
-                    "house_price_fourteen": 85300,
-                    "house_pct": 0.138,
-                    "condo_price_fifteen": 87500,
-                    "condo_price_fourteen": 90300,
-                    "condo_pct": -0.031,
+                    "housePriceFifteen": 97100,
+                    "housePriceFourteen": 85300,
+                    "housePercent": 0.14,
+                    "condoPriceFifteen": 87500,
+                    "condoPriceFourteen": 90300,
+                    "condoPercent": -0.03,
                     "crime": 323,
-                    "school_grade": 2
+                    "schoolGrade": 2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3254,14 +3254,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33183,
                     "cities": "Kendale Lakes",
-                    "house_price_fifteen": 295800,
-                    "house_price_fourteen": 275400,
-                    "house_pct": 0.074,
-                    "condo_price_fifteen": 151900,
-                    "condo_price_fourteen": 135400,
-                    "condo_pct": 0.122,
+                    "housePriceFifteen": 295800,
+                    "housePriceFourteen": 275400,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 151900,
+                    "condoPriceFourteen": 135400,
+                    "condoPercent": 0.12,
                     "crime": 86,
-                    "school_grade": 3.8
+                    "schoolGrade": 3.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3304,14 +3304,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33166,
                     "cities": "Miami Springs",
-                    "house_price_fifteen": 340200,
-                    "house_price_fourteen": 313900,
-                    "house_pct": 0.084,
-                    "condo_price_fifteen": 140500,
-                    "condo_price_fourteen": 128100,
-                    "condo_pct": 0.097,
+                    "housePriceFifteen": 340200,
+                    "housePriceFourteen": 313900,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": 140500,
+                    "condoPriceFourteen": 128100,
+                    "condoPercent": 0.10,
                     "crime": 201,
-                    "school_grade": 2.9
+                    "schoolGrade": 2.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3362,14 +3362,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33136,
                     "cities": "Miami",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": "N/A",
-                    "school_grade": 1.6
+                    "schoolGrade": 1.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3412,14 +3412,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33170,
                     "cities": "Goulds",
-                    "house_price_fifteen": 187100,
-                    "house_price_fourteen": 167100,
-                    "house_pct": 0.12,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 187100,
+                    "housePriceFourteen": 167100,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 294,
-                    "school_grade": 2.3
+                    "schoolGrade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3482,14 +3482,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33190,
                     "cities": "Cutler Bay",
-                    "house_price_fifteen": 230100,
-                    "house_price_fourteen": 201200,
-                    "house_pct": 0.144,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 230100,
+                    "housePriceFourteen": 201200,
+                    "housePercent": 0.14,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 278,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3528,14 +3528,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33128,
                     "cities": "Miami",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": 119900,
-                    "condo_price_fourteen": 95700,
-                    "condo_pct": 0.253,
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": 119900,
+                    "condoPriceFourteen": 95700,
+                    "condoPercent": 0.25,
                     "crime": 201,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3582,14 +3582,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33010,
                     "cities" : "Hialeah",
-                    "house_price_fifteen" : 201100,
-                    "house_price_fourteen" : 174900,
-                    "house_pct" : 0.15,
-                    "condo_price_fifteen" : "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen" : 201100,
+                    "housePriceFourteen" : 174900,
+                    "housePercent" : 0.15,
+                    "condoPriceFifteen" : "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime" : 119,
-                    "school_grade" : 2.7
+                    "schoolGrade" : 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3636,14 +3636,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33156,
                     "cities": "Pinecrest",
-                    "house_price_fifteen": 999500,
-                    "house_price_fourteen": 891500,
-                    "house_pct": 0.121,
-                    "condo_price_fifteen": 203600,
-                    "condo_price_fourteen": 177300,
-                    "condo_pct": 0.148,
+                    "housePriceFifteen": 999500,
+                    "housePriceFourteen": 891500,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 203600,
+                    "condoPriceFourteen": 177300,
+                    "condoPercent": 0.15,
                     "crime": 181,
-                    "school_grade": 3.9
+                    "schoolGrade": 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3698,14 +3698,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33031,
                     "cities": "Homestead",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": "N/A",
-                    "school_grade": 2.2
+                    "schoolGrade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3760,14 +3760,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33189,
                     "cities": "Cutler Bay",
-                    "house_price_fifteen": 221900,
-                    "house_price_fourteen": 200700,
-                    "house_pct": 0.106,
-                    "condo_price_fifteen": 109100,
-                    "condo_price_fourteen": 101800,
-                    "condo_pct": 0.072,
+                    "housePriceFifteen": 221900,
+                    "housePriceFourteen": 200700,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 109100,
+                    "condoPriceFourteen": 101800,
+                    "condoPercent": 0.07,
                     "crime": 189,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3826,14 +3826,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33014,
                     "cities": "Hialeah",
-                    "house_price_fifteen": 298100,
-                    "house_price_fourteen": 280900,
-                    "house_pct": 0.061,
-                    "condo_price_fifteen": 138700,
-                    "condo_price_fourteen": 131100,
-                    "condo_pct": 0.058,
+                    "housePriceFifteen": 298100,
+                    "housePriceFourteen": 280900,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 138700,
+                    "condoPriceFourteen": 131100,
+                    "condoPercent": 0.06,
                     "crime": 100,
-                    "school_grade": 3.3
+                    "schoolGrade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3904,14 +3904,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33012,
                     "cities": "Hialeah",
-                    "house_price_fifteen": 240600,
-                    "house_price_fourteen": 223300,
-                    "house_pct": 0.077,
-                    "condo_price_fifteen": 102100,
-                    "condo_price_fourteen": 102100,
-                    "condo_pct": 0,
-                    "crime": 0.072,
-                    "school_grade": 3
+                    "housePriceFifteen": 240600,
+                    "housePriceFourteen": 223300,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 102100,
+                    "condoPriceFourteen": 95200,
+                    "condoPercent": 0.07,
+                    "crime": 81,
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3954,14 +3954,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33139,
                     "cities": "Miami Beach",
-                    "house_price_fifteen": 3229000,
-                    "house_price_fourteen": 2535300,
-                    "house_pct": 0.274,
-                    "condo_price_fifteen": 367400,
-                    "condo_price_fourteen": 343100,
-                    "condo_pct": 0.071,
+                    "housePriceFifteen": 3229000,
+                    "housePriceFourteen": 2535300,
+                    "housePercent": 0.27,
+                    "condoPriceFifteen": 367400,
+                    "condoPriceFourteen": 343100,
+                    "condoPercent": 0.07,
                     "crime": 294,
-                    "school_grade": 3.3
+                    "schoolGrade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4016,14 +4016,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33132,
                     "cities": "Miami",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": 394500,
-                    "condo_price_fourteen": 395600,
-                    "condo_pct": -0.03,
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": 394500,
+                    "condoPriceFourteen": 395600,
+                    "condoPercent": -0.03,
                     "crime": 215,
-                    "school_grade": 3.3
+                    "schoolGrade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4082,14 +4082,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33137,
                     "cities": "Miami",
-                    "house_price_fifteen": 663000,
-                    "house_price_fourteen": 539700,
-                    "house_pct": 0.228,
-                    "condo_price_fifteen": 301100,
-                    "condo_price_fourteen": 292700,
-                    "condo_pct": 0.107,
+                    "housePriceFifteen": 663000,
+                    "housePriceFourteen": 539700,
+                    "housePercent": 0.23,
+                    "condoPriceFifteen": 301100,
+                    "condoPriceFourteen": 292700,
+                    "condoPercent": 0.11,
                     "crime": 253,
-                    "school_grade": 3.3
+                    "schoolGrade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4128,14 +4128,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33185,
                     "cities": "Kendall West",
-                    "house_price_fifteen": 332700,
-                    "house_price_fourteen": 315600,
-                    "house_pct": 0.054,
-                    "condo_price_fifteen": 225900,
-                    "condo_price_fourteen": 208800,
-                    "condo_pct": 0.082,
+                    "housePriceFifteen": 332700,
+                    "housePriceFourteen": 315600,
+                    "housePercent": 0.05,
+                    "condoPriceFifteen": 225900,
+                    "condoPriceFourteen": 208800,
+                    "condoPercent": 0.08,
                     "crime": 137,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4178,14 +4178,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33134,
                     "cities": "Coral Gables",
-                    "house_price_fifteen": 528500,
-                    "house_price_fourteen": 499100,
-                    "house_pct": 0.059,
-                    "condo_price_fifteen": 342700,
-                    "condo_price_fourteen": 331900,
-                    "condo_pct": 0.033,
+                    "housePriceFifteen": 528500,
+                    "housePriceFourteen": 499100,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 342700,
+                    "condoPriceFourteen": 331900,
+                    "condoPercent": 0.03,
                     "crime": 189,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4236,14 +4236,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33122,
                     "cities": "Fountainbleau",
-                    "house_price_fifteen": "N/A",
-                    "house_price_fourteen": "N/A",
-                    "house_pct": "N/A",
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": "N/A",
+                    "housePriceFourteen": "N/A",
+                    "housePercent": "N/A",
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": "N/A",
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4302,14 +4302,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33144,
                     "cities": "Miami",
-                    "house_price_fifteen": 265600,
-                    "house_price_fourteen": 250900,
-                    "house_pct": 0.059,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 265600,
+                    "housePriceFourteen": 250900,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 248,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4344,14 +4344,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33126,
                     "cities": "Miami",
-                    "house_price_fifteen": 241100,
-                    "house_price_fourteen": 215300,
-                    "house_pct": 0.12,
-                    "condo_price_fifteen": 140100,
-                    "condo_price_fourteen": 12500,
-                    "condo_pct": 0.116,
+                    "housePriceFifteen": 241100,
+                    "housePriceFourteen": 215300,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 140100,
+                    "condoPriceFourteen": 12500,
+                    "condoPercent": 0.12,
                     "crime": 212,
-                    "school_grade": 2.8
+                    "schoolGrade": 2.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4410,14 +4410,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33176,
                     "cities" : "Kendall",
-                    "house_price_fifteen" : 418500,
-                    "house_price_fourteen" : 420800,
-                    "house_pct" : -0.01,
-                    "condo_price_fifteen" : 127300,
-                    "condo_price_fourteen": 118900,
-                    "condo_pct": 0.07,
+                    "housePriceFifteen" : 418500,
+                    "housePriceFourteen" : 420800,
+                    "housePercent" : -0.01,
+                    "condoPriceFifteen" : 127300,
+                    "condoPriceFourteen": 118900,
+                    "condoPercent": 0.07,
                     "crime" : 125,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4476,14 +4476,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33127,
                     "cities": "Miami",
-                    "house_price_fifteen": 98600,
-                    "house_price_fourteen": 87500,
-                    "house_pct": 12.7,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 98600,
+                    "housePriceFourteen": 87500,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 252,
-                    "school_grade": 2.2
+                    "schoolGrade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4526,14 +4526,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33157,
                     "cities": "Village of Palmetto Bay",
-                    "house_price_fifteen": 238500,
-                    "house_price_fourteen": 220300,
-                    "house_pct": 0.083,
-                    "condo_price_fifteen": 85900,
-                    "condo_price_fourteen": 75300,
-                    "condo_pct": 0.141,
+                    "housePriceFifteen": 238500,
+                    "housePriceFourteen": 220300,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": 85900,
+                    "condoPriceFourteen": 75300,
+                    "condoPercent": 0.14,
                     "crime": 129,
-                    "school_grade": 2.7
+                    "schoolGrade": 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4600,14 +4600,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33145,
                     "cities": "Miami",
-                    "house_price_fifteen": 360800,
-                    "house_price_fourteen": 312100,
-                    "house_pct": 0.156,
-                    "condo_price_fifteen": 235500,
-                    "condo_price_fourteen": 228200,
-                    "condo_pct": 0.032,
+                    "housePriceFifteen": 360800,
+                    "housePriceFourteen": 312100,
+                    "housePercent": 0.16,
+                    "condoPriceFifteen": 235500,
+                    "condoPriceFourteen": 228200,
+                    "condoPercent": 0.03,
                     "crime": 250,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4646,14 +4646,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33067,
                     "cities": "Coral Springs",
-                    "house_price_fifteen": 411000,
-                    "house_price_fourteen": 399500,
-                    "house_pct": 0.029,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 411000,
+                    "housePriceFourteen": 399500,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 83,
-                    "school_grade": 3.6
+                    "schoolGrade": 3.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4704,14 +4704,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33076,
                     "cities": "Coral Springs",
-                    "house_price_fifteen": 450100,
-                    "house_price_fourteen": 438699,
-                    "house_pct": 0.026,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 450100,
+                    "housePriceFourteen": 438699,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 81,
-                    "school_grade": 3.4
+                    "schoolGrade": 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4750,14 +4750,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33441,
                     "cities": "Deerfield Beach",
-                    "house_price_fifteen": 229500,
-                    "house_price_fourteen": 207300,
-                    "house_pct": 0.107,
-                    "condo_price_fifteen": 117100,
-                    "condo_price_fourteen": 108500,
-                    "condo_pct": 0.079,
+                    "housePriceFifteen": 229500,
+                    "housePriceFourteen": 207300,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 117100,
+                    "condoPriceFourteen": 108500,
+                    "condoPercent": 0.08,
                     "crime": 128,
-                    "school_grade": 2.3
+                    "schoolGrade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4812,14 +4812,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33442,
                     "cities": "Deerfield Beach",
-                    "house_price_fifteen": 248900,
-                    "house_price_fourteen": 235800,
-                    "house_pct": 0.056,
-                    "condo_price_fifteen": 54300,
-                    "condo_price_fourteen": 52800,
-                    "condo_pct": 0.028,
+                    "housePriceFifteen": 248900,
+                    "housePriceFourteen": 235800,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 54300,
+                    "condoPriceFourteen": 52800,
+                    "condoPercent": 0.03,
                     "crime": 57,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4866,14 +4866,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33073,
                     "cities": "Coconut Creek",
-                    "house_price_fifteen": 309300,
-                    "house_price_fourteen": 296800,
-                    "house_pct": 0.042,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 309300,
+                    "housePriceFourteen": 296800,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 135,
-                    "school_grade": 3.4
+                    "schoolGrade": 3.4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4924,14 +4924,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33062,
                     "cities": "Pompano Beach",
-                    "house_price_fifteen": 526100,
-                    "house_price_fourteen": 502300,
-                    "house_pct": 0.047,
-                    "condo_price_fifteen": 284500,
-                    "condo_price_fourteen": 265400,
-                    "condo_pct": 0.072,
+                    "housePriceFifteen": 526100,
+                    "housePriceFourteen": 502300,
+                    "housePercent": 0.05,
+                    "condoPriceFifteen": 284500,
+                    "condoPriceFourteen": 265400,
+                    "condoPercent": 0.07,
                     "crime": 140,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4990,14 +4990,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33064,
                     "cities": "Pompano Beach",
-                    "house_price_fifteen": 153200,
-                    "house_price_fourteen": 137800,
-                    "house_pct": 0.112,
-                    "condo_price_fifteen": 74400,
-                    "condo_price_fourteen": 70200,
-                    "condo_pct": 0.06,
+                    "housePriceFifteen": 153200,
+                    "housePriceFourteen": 137800,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 74400,
+                    "condoPriceFourteen": 70200,
+                    "condoPercent": 0.06,
                     "crime": 101,
-                    "school_grade": 2.3
+                    "schoolGrade": 2.3
 
                 },
                 "geometry": {
@@ -5057,14 +5057,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33065,
                     "cities": "Coral Springs",
-                    "house_price_fifteen": 284100,
-                    "house_price_fourteen": 274500,
-                    "house_pct": 0.035,
-                    "condo_price_fifteen": 80300,
-                    "condo_price_fourteen": 75900,
-                    "condo_pct": 0.058,
+                    "housePriceFifteen": 284100,
+                    "housePriceFourteen": 274500,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": 80300,
+                    "condoPriceFourteen": 75900,
+                    "condoPercent": 0.06,
                     "crime": 74,
-                    "school_grade": 3.1
+                    "schoolGrade": 3.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5115,14 +5115,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33069,
                     "cities" : "Pompano Beach",
-                    "house_price_fifteen" : 106100,
-                    "house_price_fourteen" : 101700,
-                    "house_pct" : 0.043,
-                    "condo_price_fifteen" : 128800,
-                    "condo_price_fourteen": 127600,
-                    "condo_pct": 0.01,
+                    "housePriceFifteen" : 106100,
+                    "housePriceFourteen" : 101700,
+                    "housePercent" : 0.04,
+                    "condoPriceFifteen" : 128800,
+                    "condoPriceFourteen": 127600,
+                    "condoPercent": 0.01,
                     "crime" : 195,
-                    "school_grade": 1.3
+                    "schoolGrade": 1.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5185,14 +5185,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33063,
                     "cities": "Margate",
-                    "house_price_fifteen": 208700,
-                    "house_price_fourteen": 189500,
-                    "house_pct": 0.101,
-                    "condo_price_fifteen": 56000,
-                    "condo_price_fourteen": 53600,
-                    "condo_pct": 0.045,
+                    "housePriceFifteen": 208700,
+                    "housePriceFourteen": 189500,
+                    "housePercent": 0.10,
+                    "condoPriceFifteen": 56000,
+                    "condoPriceFourteen": 53600,
+                    "condoPercent": 0.05,
                     "crime": 70,
-                    "school_grade": 2.2
+                    "schoolGrade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5243,14 +5243,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33066,
                     "cities": "Coconut Creek",
-                    "house_price_fifteen": 230000,
-                    "house_price_fourteen": 212700,
-                    "house_pct": 0.081,
-                    "condo_price_fifteen": 87300,
-                    "condo_price_fourteen": 83700,
-                    "condo_pct": 0.043,
+                    "housePriceFifteen": 230000,
+                    "housePriceFourteen": 212700,
+                    "housePercent": 0.08,
+                    "condoPriceFifteen": 87300,
+                    "condoPriceFourteen": 83700,
+                    "condoPercent": 0.04,
                     "crime": 94,
-                    "school_grade": 2.3
+                    "schoolGrade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5293,14 +5293,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33060,
                     "cities": "Pompano Beach",
-                    "house_price_fifteen": 243000,
-                    "house_price_fourteen": 228400,
-                    "house_pct": 0.064,
-                    "condo_price_fifteen": 86900,
-                    "condo_price_fourteen": 79500,
-                    "condo_pct": 0.093,
+                    "housePriceFifteen": 243000,
+                    "housePriceFourteen": 228400,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 86900,
+                    "condoPriceFourteen": 79500,
+                    "condoPercent": 0.09,
                     "crime": 158,
-                    "school_grade": 2.2
+                    "schoolGrade": 2.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5351,14 +5351,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33071,
                     "cities" : "Coral Springs",
-                    "house_price_fifteen" : 347800,
-                    "house_price_fourteen" : 341100,
-                    "house_pct" : 0.020,
-                    "condo_price_fifteen" : 118600,
-                    "condo_price_fourteen": 114800,
-                    "condo_pct": 0.033,
+                    "housePriceFifteen" : 347800,
+                    "housePriceFourteen" : 341100,
+                    "housePercent" : 0.02,
+                    "condoPriceFifteen" : 118600,
+                    "condoPriceFourteen": 114800,
+                    "condoPercent": 0.03,
                     "crime" : 66,
-                    "school_grade": 3.2
+                    "schoolGrade": 3.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5401,14 +5401,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33068,
                     "cities": "North Lauderdale",
-                    "house_price_fifteen": 157600,
-                    "house_price_fourteen": 141200,
-                    "house_pct": 0.116,
-                    "condo_price_fifteen": 71200,
-                    "condo_price_fourteen": 63800,
-                    "condo_pct": 0.116,
+                    "housePriceFifteen": 157600,
+                    "housePriceFourteen": 141200,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 71200,
+                    "condoPriceFourteen": 63800,
+                    "condoPercent": 0.12,
                     "crime": 85,
-                    "school_grade": 2.1
+                    "schoolGrade": 2.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5467,14 +5467,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33321,
                     "cities": "Tamarac",
-                    "house_price_fifteen": 171600,
-                    "house_price_fourteen": 156200,
-                    "house_pct": 0.099,
-                    "condo_price_fifteen": 85400,
-                    "condo_price_fourteen": 78700,
-                    "condo_pct": 0.085,
+                    "housePriceFifteen": 171600,
+                    "housePriceFourteen": 156200,
+                    "housePercent": 0.10,
+                    "condoPriceFifteen": 85400,
+                    "condoPriceFourteen": 78700,
+                    "condoPercent": 0.09,
                     "crime": 64,
-                    "school_grade": 2.8
+                    "schoolGrade": 2.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5521,14 +5521,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33308,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 587700,
-                    "house_price_fourteen": 575900,
-                    "house_pct": 0.02,
-                    "condo_price_fifteen": 297500,
-                    "condo_price_fourteen": 289600,
-                    "condo_pct": 0.027,
+                    "housePriceFifteen": 587700,
+                    "housePriceFourteen": 575900,
+                    "housePercent": 0.02,
+                    "condoPriceFifteen": 297500,
+                    "condoPriceFourteen": 289600,
+                    "condoPercent": 0.03,
                     "crime": 112,
-                    "school_grade": "N/A"
+                    "schoolGrade": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5575,14 +5575,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33309,
                     "cities": "Oakland Park",
-                    "house_price_fifteen": 170600,
-                    "house_price_fourteen": 152800,
-                    "house_pct": 0.116,
-                    "condo_price_fifteen": 99900,
-                    "condo_price_fourteen": 96800,
-                    "condo_pct": 0.032,
+                    "housePriceFifteen": 170600,
+                    "housePriceFourteen": 152800,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 99900,
+                    "condoPriceFourteen": 96800,
+                    "condoPercent": 0.03,
                     "crime": 168,
-                    "school_grade": 1.5
+                    "schoolGrade": 1.5
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5625,14 +5625,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33334,
                     "cities": "Oakland Park",
-                    "house_price_fifteen": 231100,
-                    "house_price_fourteen": 209700,
-                    "house_pct": 0.102,
-                    "condo_price_fifteen": 101200,
-                    "condo_price_fourteen": 92900,
-                    "condo_pct": 0.089,
+                    "housePriceFifteen": 231100,
+                    "housePriceFourteen": 209700,
+                    "housePercent": 0.10,
+                    "condoPriceFifteen": 101200,
+                    "condoPriceFourteen": 92900,
+                    "condoPercent": 0.09,
                     "crime": 204,
-                    "school_grade": 2.7
+                    "schoolGrade": 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5683,14 +5683,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33319,
                     "cities": "Lauderhill",
-                    "house_price_fifteen": 153600,
-                    "house_price_fourteen": 141500,
-                    "house_pct": 0.086,
-                    "condo_price_fifteen": 58200,
-                    "condo_price_fourteen": 56800,
-                    "condo_pct": 0.025,
+                    "housePriceFifteen": 153600,
+                    "housePriceFourteen": 141500,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 58200,
+                    "condoPriceFourteen": 56800,
+                    "condoPercent": 0.03,
                     "crime": 94,
-                    "school_grade": 1.7
+                    "schoolGrade": 1.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5741,14 +5741,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33351,
                     "cities" : "Sunrise",
-                    "house_price_fifteen" : 216400,
-                    "house_price_fourteen" : 198800,
-                    "house_pct" : 0.09,
-                    "condo_price_fifteen" : 87100,
-                    "condo_price_fourteen": 82500,
-                    "condo_pct": 0.06,
+                    "housePriceFifteen" : 216400,
+                    "housePriceFourteen" : 198800,
+                    "housePercent" : 0.09,
+                    "condoPriceFifteen" : 87100,
+                    "condoPriceFourteen": 82500,
+                    "condoPercent": 0.06,
                     "crime" : 136,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5791,12 +5791,12 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33323,
                     "cities": "Sunrise",
-                    "house_price_fifteen": 261600,
-                    "house_price_fourteen": 245400,
-                    "house_pct": 0.066,
-                    "condo_price_fifteen": 292000,
-                    "condo_price_fourteen": 283200,
-                    "condo_pct": 0.031,
+                    "housePriceFifteen": 261600,
+                    "housePriceFourteen": 245400,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 292000,
+                    "condoPriceFourteen": 283200,
+                    "condoPercent": 0.03,
                     "crime": 142
                 },
                 "geometry": {
@@ -5844,12 +5844,12 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33306,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 562700,
-                    "house_price_fourteen": 562700,
-                    "house_pct": 0,
-                    "condo_price_fifteen": 161800,
-                    "condo_price_fourteen": 153200,
-                    "condo_pct": 0.056,
+                    "housePriceFifteen": 562700,
+                    "housePriceFourteen": 562600,
+                    "housePercent": 0,
+                    "condoPriceFifteen": 161800,
+                    "condoPriceFourteen": 153200,
+                    "condoPercent": 0.06,
                     "crime": 237
                 },
                 "geometry": {
@@ -5885,14 +5885,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33311,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 122500,
-                    "house_price_fourteen": 116800,
-                    "house_pct": 0.049,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 122500,
+                    "housePriceFourteen": 116800,
+                    "housePercent": 0.05,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 184,
-                    "school_grade": 0.03
+                    "schoolGrade": 0.03
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5943,14 +5943,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33313,
                     "cities": "Lauderhill",
-                    "house_price_fifteen": 161300,
-                    "house_price_fourteen": 141800,
-                    "house_pct": 0.138,
-                    "condo_price_fifteen": 47400,
-                    "condo_price_fourteen": 46400,
-                    "condo_pct": 0.022,
+                    "housePriceFifteen": 161300,
+                    "housePriceFourteen": 141800,
+                    "housePercent": 0.14,
+                    "condoPriceFifteen": 47400,
+                    "condoPriceFourteen": 46400,
+                    "condoPercent": 0.02,
                     "crime": 147,
-                    "school_grade": 1.9
+                    "schoolGrade": 1.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5993,14 +5993,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33322,
                     "cities" : "Sunrise",
-                    "house_price_fifteen" : 232700,
-                    "house_price_fourteen" : 218000,
-                    "house_pct" : 0.07,
-                    "condo_price_fifteen" : 49500,
-                    "condo_price_fourteen": 47500,
-                    "condo_pct": 0.04,
+                    "housePriceFifteen" : 232700,
+                    "housePriceFourteen" : 218000,
+                    "housePercent" : 0.07,
+                    "condoPriceFifteen" : 49500,
+                    "condoPriceFourteen": 47500,
+                    "condoPercent": 0.04,
                     "crime" : 76,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6047,14 +6047,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33305,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 456300,
-                    "house_price_fourteen": 432800,
-                    "house_pct": 0.031,
-                    "condo_price_fifteen": 205100,
-                    "condo_price_fourteen": 194500,
-                    "condo_pct": 0.016,
+                    "housePriceFifteen": 456300,
+                    "housePriceFourteen": 432800,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 205100,
+                    "condoPriceFourteen": 194500,
+                    "condoPercent": 0.02,
                     "crime": 187,
-                    "school_grade": 3.3
+                    "schoolGrade": 3.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6097,14 +6097,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33327,
                     "cities": "Weston",
-                    "house_price_fifteen": 458000,
-                    "house_price_fourteen": 458200,
-                    "house_pct": 0,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 458000,
+                    "housePriceFourteen": 458200,
+                    "housePercent": 0,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 42,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6175,14 +6175,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33304,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 433500,
-                    "house_price_fourteen": 420300,
-                    "house_pct": 0.031,
-                    "condo_price_fifteen": 249600,
-                    "condo_price_fourteen": 245700,
-                    "condo_pct": 0.016,
+                    "housePriceFifteen": 433500,
+                    "housePriceFourteen": 420300,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 249600,
+                    "condoPriceFourteen": 245700,
+                    "condoPercent": 0.02,
                     "crime": 282,
-                    "school_grade": 3.1
+                    "schoolGrade": 3.1
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6225,14 +6225,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33326,
                     "cities": "Weston",
-                    "house_price_fifteen": 370200,
-                    "house_price_fourteen": 358200,
-                    "house_pct": 0.034,
-                    "condo_price_fifteen": 164000,
-                    "condo_price_fourteen": 159800,
-                    "condo_pct": 0.026,
+                    "housePriceFifteen": 370200,
+                    "housePriceFourteen": 358200,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 164000,
+                    "condoPriceFourteen": 159800,
+                    "condoPercent": 0.03,
                     "crime": 54,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6295,14 +6295,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33317,
                     "cities": "Plantation",
-                    "house_price_fifteen": 299950,
-                    "house_price_fourteen": 291400,
-                    "house_pct": 0.028,
-                    "condo_price_fifteen": 92100,
-                    "condo_price_fourteen": 85400,
-                    "condo_pct": 0.078,
+                    "housePriceFifteen": 299950,
+                    "housePriceFourteen": 291400,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 92100,
+                    "condoPriceFourteen": 85400,
+                    "condoPercent": 0.08,
                     "crime": 155,
-                    "school_grade": 2.7
+                    "schoolGrade": 2.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6349,14 +6349,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33324,
                     "cities": "Plantation",
-                    "house_price_fifteen": 315000,
-                    "house_price_fourteen": 300400,
-                    "house_pct": 0.049,
-                    "condo_price_fifteen": 130600,
-                    "condo_price_fourteen": 122400,
-                    "condo_pct": 0.067,
+                    "housePriceFifteen": 315000,
+                    "housePriceFourteen": 300400,
+                    "housePercent": 0.05,
+                    "condoPriceFifteen": 130600,
+                    "condoPriceFourteen": 122400,
+                    "condoPercent": 0.07,
                     "crime": 105,
-                    "school_grade": 3.9
+                    "schoolGrade": 3.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6395,14 +6395,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33325,
                     "cities": "Davie",
-                    "house_price_fifteen": 336200,
-                    "house_price_fourteen": 332300,
-                    "house_pct": 0.012,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 336200,
+                    "housePriceFourteen": 332300,
+                    "housePercent": 0.01,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 117,
-                    "school_grade": 3.8
+                    "schoolGrade": 3.8
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6445,14 +6445,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33301,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 1051100,
-                    "house_price_fourteen": 935300,
-                    "house_pct": 0.124,
-                    "condo_price_fifteen": 332200,
-                    "condo_price_fourteen": 325600,
-                    "condo_pct": 0.02,
+                    "housePriceFifteen": 1051100,
+                    "housePriceFourteen": 935300,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 332200,
+                    "condoPriceFourteen": 325600,
+                    "condoPercent": 0.02,
                     "crime": 248,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6499,14 +6499,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33316,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 952900,
-                    "house_price_fourteen": 872300,
-                    "house_pct": 0.092,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 952900,
+                    "housePriceFourteen": 872300,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 184,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6561,14 +6561,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33312,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 200600,
-                    "house_price_fourteen": 184300,
-                    "house_pct": 0.088,
-                    "condo_price_fifteen": 230000,
-                    "condo_price_fourteen": 213700,
-                    "condo_pct": 0.076,
+                    "housePriceFifteen": 200600,
+                    "housePriceFourteen": 184300,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 230000,
+                    "condoPriceFourteen": 213700,
+                    "condoPercent": 0.08,
                     "crime": 159,
-                    "school_grade": 1.7
+                    "schoolGrade": 1.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6627,14 +6627,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33315,
                     "cities": "Fort Lauderdale",
-                    "house_price_fifteen": 263500,
-                    "house_price_fourteen": 245300,
-                    "house_pct": 0.074,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 263500,
+                    "housePriceFourteen": 245300,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 336,
-                    "school_grade": 2.3
+                    "schoolGrade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6693,14 +6693,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33332,
                     "cities": "Weston",
-                    "house_price_fifteen": 554200,
-                    "house_price_fourteen": 547500,
-                    "house_pct": 1.2,
-                    "condo_price_fifteen": 440500,
-                    "condo_price_fourteen": 448700,
-                    "condo_pct": -1.8,
+                    "housePriceFifteen": 554200,
+                    "housePriceFourteen": 547500,
+                    "housePercent": 0.01,
+                    "condoPriceFifteen": 440500,
+                    "condoPriceFourteen": 448700,
+                    "condoPercent": -0.02,
                     "crime": 45,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6759,14 +6759,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33004,
                     "cities": "Dania Beach",
-                    "house_price_fifteen": 222900,
-                    "house_price_fourteen": 214100,
-                    "house_pct": 0.041,
-                    "condo_price_fifteen": 138100,
-                    "condo_price_fourteen": 135000,
-                    "condo_pct": 0.23,
+                    "housePriceFifteen": 222900,
+                    "housePriceFourteen": 214100,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": 138100,
+                    "condoPriceFourteen": 135000,
+                    "condoPercent": 0.23,
                     "crime": 207,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6845,14 +6845,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33314,
                     "cities" : "Davie",
-                    "house_price_fifteen" : 197100,
-                    "house_price_fourteen" : 184000,
-                    "house_pct" : 0.07,
-                    "condo_price_fifteen" : 112800,
-                    "condo_price_fourteen": 94700,
-                    "condo_pct": 0.19,
+                    "housePriceFifteen" : 197100,
+                    "housePriceFourteen" : 184000,
+                    "housePercent" : 0.07,
+                    "condoPriceFifteen" : 112800,
+                    "condoPriceFourteen": 94700,
+                    "condoPercent": 0.19,
                     "crime" : 171,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6903,14 +6903,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33331,
                     "cities": "Weston",
-                    "house_price_fifteen": 432600,
-                    "house_price_fourteen": 427400,
-                    "house_pct": 0.012,
-                    "condo_price_fifteen": 316400,
-                    "condo_price_fourteen": 278400,
-                    "condo_pct": 0.0136,
+                    "housePriceFifteen": 432600,
+                    "housePriceFourteen": 427400,
+                    "housePercent": 0.012,
+                    "condoPriceFifteen": 316400,
+                    "condoPriceFourteen": 278400,
+                    "condoPercent": 0.014,
                     "crime": 51,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6961,14 +6961,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33328,
                     "cities": "Davie",
-                    "house_price_fifteen": 325600,
-                    "house_price_fourteen": 317500,
-                    "house_pct": 0.026,
-                    "condo_price_fifteen": 138600,
-                    "condo_price_fourteen": 130800,
-                    "condo_pct": 0.06,
+                    "housePriceFifteen": 325600,
+                    "housePriceFourteen": 317500,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 138600,
+                    "condoPriceFourteen": 130800,
+                    "condoPercent": 0.06,
                     "crime": 76,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7007,14 +7007,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33330,
                     "cities": "Cooper City",
-                    "house_price_fifteen": 560700,
-                    "house_price_fourteen": 516200,
-                    "house_pct": 0.086,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 560700,
+                    "housePriceFourteen": 516200,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 92,
-                    "school_grade": 3.6
+                    "schoolGrade": 3.6
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7057,12 +7057,12 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33019,
                     "cities": "Hollywood",
-                    "house_price_fifteen": 502500,
-                    "house_price_fourteen": 494400,
-                    "house_pct": 0.016,
-                    "condo_price_fifteen": 299300,
-                    "condo_price_fourteen": 284200,
-                    "condo_pct": 0.053,
+                    "housePriceFifteen": 502500,
+                    "housePriceFourteen": 494400,
+                    "housePercent": 0.02,
+                    "condoPriceFifteen": 299300,
+                    "condoPriceFourteen": 284200,
+                    "condoPercent": 0.05,
                     "crime": 119
                 },
                 "geometry": {
@@ -7114,14 +7114,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33020,
                     "cities": "Holywood",
-                    "house_price_fifteen": 179100,
-                    "house_price_fourteen": 163800,
-                    "house_pct": 0.093,
-                    "condo_price_fifteen": 91600,
-                    "condo_price_fourteen": 85700,
-                    "condo_pct": 0.069,
+                    "housePriceFifteen": 179100,
+                    "housePriceFourteen": 163800,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 91600,
+                    "condoPriceFourteen": 85700,
+                    "condoPercent": 0.07,
                     "crime": 190,
-                    "school_grade": 2.3
+                    "schoolGrade": 2.3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7164,14 +7164,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33021,
                     "cities": "Hollywood",
-                    "house_price_fifteen": 285300,
-                    "house_price_fourteen": 278100,
-                    "house_pct": 0.026,
-                    "condo_price_fifteen": 103400,
-                    "condo_price_fourteen": 92800,
-                    "condo_pct": 0.114,
+                    "housePriceFifteen": 285300,
+                    "housePriceFourteen": 278100,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 103400,
+                    "condoPriceFourteen": 92800,
+                    "condoPercent": 0.11,
                     "crime": 133,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7222,14 +7222,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33024,
                     "cities": "Pembroke Pines",
-                    "house_price_fifteen": 203200,
-                    "house_price_fourteen": 183800,
-                    "house_pct": 0.106,
-                    "condo_price_fifteen": 109000,
-                    "condo_price_fourteen": 103800,
-                    "condo_pct": 0.05,
+                    "housePriceFifteen": 203200,
+                    "housePriceFourteen": 183800,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": 109000,
+                    "condoPriceFourteen": 103800,
+                    "condoPercent": 0.05,
                     "crime": 120,
-                    "school_grade": 2.9
+                    "schoolGrade": 2.9
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7272,14 +7272,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33026,
                     "cities": "Pembroke Pines",
-                    "house_price_fifteen": 270300,
-                    "house_price_fourteen": 256200,
-                    "house_pct": 0.055,
-                    "condo_price_fifteen": 105500,
-                    "condo_price_fourteen": 92600,
-                    "condo_pct": 0.139,
+                    "housePriceFifteen": 270300,
+                    "housePriceFourteen": 256200,
+                    "housePercent": 0.06,
+                    "condoPriceFifteen": 105500,
+                    "condoPriceFourteen": 92600,
+                    "condoPercent": 0.14,
                     "crime": 80,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7322,14 +7322,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33028,
                     "cities": "Pembroke Pines",
-                    "house_price_fifteen": 354600,
-                    "house_price_fourteen": 340100,
-                    "house_pct": 0.043,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 354600,
+                    "housePriceFourteen": 340100,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 94,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7368,14 +7368,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33029,
                     "cities": "Pembroke Pines",
-                    "house_price_fifteen": 363600,
-                    "house_price_fourteen": 350000,
-                    "house_pct": 0.039,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 363600,
+                    "housePriceFourteen": 350000,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 74,
-                    "school_grade": 4
+                    "schoolGrade": 4
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7418,14 +7418,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33023,
                     "cities": "Miramar",
-                    "house_price_fifteen": 163600,
-                    "house_price_fourteen": 146900,
-                    "house_pct": 0.114,
-                    "condo_price_fifteen": "N/A",
-                    "condo_price_fourteen": "N/A",
-                    "condo_pct": "N/A",
+                    "housePriceFifteen": 163600,
+                    "housePriceFourteen": 146900,
+                    "housePercent": 0.11,
+                    "condoPriceFifteen": "N/A",
+                    "condoPriceFourteen": "N/A",
+                    "condoPercent": "N/A",
                     "crime": 143,
-                    "school_grade": 2
+                    "schoolGrade": 2
 
                 },
                 "geometry": {
@@ -7473,14 +7473,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33025,
                     "cities": "Miramar",
-                    "house_price_fifteen": 223800,
-                    "house_price_fourteen": 205300,
-                    "house_pct": 0.09,
-                    "condo_price_fifteen": 114500,
-                    "condo_price_fourteen": 102100,
-                    "condo_pct": 0.121,
+                    "housePriceFifteen": 223800,
+                    "housePriceFourteen": 205300,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 114500,
+                    "condoPriceFourteen": 102100,
+                    "condoPercent": 0.12,
                     "crime": 101,
-                    "school_grade": 3.2
+                    "schoolGrade": 3.2
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7527,14 +7527,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33027,
                     "cities": "Miramar",
-                    "house_price_fifteen": 353700,
-                    "house_price_fourteen": 343400,
-                    "house_pct": 0.03,
-                    "condo_price_fifteen": 107500,
-                    "condo_price_fourteen": 95900,
-                    "condo_pct": 0.121,
+                    "housePriceFifteen": 353700,
+                    "housePriceFourteen": 343400,
+                    "housePercent": 0.03,
+                    "condoPriceFifteen": 107500,
+                    "condoPriceFourteen": 95900,
+                    "condoPercent": 0.12,
                     "crime": 87,
-                    "school_grade": 3.7
+                    "schoolGrade": 3.7
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7569,14 +7569,14 @@ var $zipData = [
                 "properties": {
                     "zipcode": 33009,
                     "cities": "Hallandale Beach",
-                    "house_price_fifteen": 177700,
-                    "house_price_fourteen": 170200,
-                    "house_pct": 0.044,
-                    "condo_price_fifteen": 203500,
-                    "condo_price_fourteen": 190400,
-                    "condo_pct": 0.069,
+                    "housePriceFifteen": 177700,
+                    "housePriceFourteen": 170200,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": 203500,
+                    "condoPriceFourteen": 190400,
+                    "condoPercent": 0.07,
                     "crime": 207,
-                    "school_grade": 3
+                    "schoolGrade": 3
                 },
                 "geometry": {
                     "type": "Polygon",

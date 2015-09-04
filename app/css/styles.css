@@ -425,6 +425,8 @@ hr {
       font-family: "Roboto Slab", "Times New Roman", Times, serif;
       font-size: 14px;
       line-height: 18px; }
+    #map-container #interface-container .percent-year {
+      display: none; }
   #map-container .interface-selector {
     background: #EEE;
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
