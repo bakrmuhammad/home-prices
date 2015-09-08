@@ -1,5 +1,4 @@
 'use strict';
-(function () {
 		
 	// SET GLOBAL LAYERS TO NULL
 	var income,
@@ -20,17 +19,52 @@
 	// MAKE TILE LAYER FOR ZOOMED IN VIEW
 	var tiles = new L.StamenTileLayer('toner-lite');
 
+
+	// WIDTHS
+	var mobile = 400;
+	var w = window.innerWidth;
+
+	function fixPosition () {
+		if (w > mobile) {
+			return [25.82, -79.85];
+		}
+
+		else {
+			return [25.50, -80.20];
+		}
+	}
+
+	function fixZoom () {
+
+		if (w > mobile) {
+			return 9.5
+		}
+
+		else {
+			return 8.5
+		}
+	}
+
+	var coordinates = fixPosition();
+	var lat = coordinates[0];
+	var lon = coordinates[1];
+
 	// BUILD MAP
 	var map = new L.Map('map-container', {
-		center: new L.LatLng(25.82, -79.85),
-		zoom: 9.5,
-		minZoom: 9.5,
+		center: new L.LatLng(lat,lon),
+		zoom: fixZoom(),
+		minZoom: 7,
 		maxZoom: 16,
 		zoomControl: false,
 		doubleClickZoom: false,
 		VML: true,
 		scrollWheelZoom: false
 	}).addLayer(tiles);
+
+
+
+
+
 
 	// ADD CONTROLS
 	var control = L.control.zoom({'position' : 'topleft'});
@@ -57,7 +91,8 @@
 			return '#bae4b3';
 		}
 		else {
-			return '#edf8e9';
+			// return '#edf8e9';
+			return '#ccc'
 		}
 	}
 
@@ -99,7 +134,8 @@
 			return '#bae4b3';
 		}
 		else {
-			return '#edf8e9';
+			// return '#edf8e9';
+			return '#ccc'
 		}
 	}
 
@@ -131,11 +167,12 @@
 		else if ((d >= 0.04 ) && (d < 0.08)) {
 			return '#6baed6';
 		}
-		else if ((d > 0.00  ) && (d < 0.04)) {
+		else if ((d >= 0.00  ) && (d < 0.04)) {
 			return '#bdd7e7';
 		}
 		else {
-			return '#eff3ff';
+			// return '#eff3ff';
+			return '#ccc'
 		}
 	}
 
@@ -172,7 +209,8 @@
 			return '#bdd7e7';
 		}
 		else {
-			return '#eff3ff';
+			// return '#eff3ff';
+			return '#ccc'
 		}
 	}
 
@@ -209,7 +247,8 @@
 			return '#fcae91';
 		}
 		else {
-			return '#fee5d9';
+			// return '#fee5d9';
+			return '#ccc'
 		}
 	}
 
@@ -844,7 +883,8 @@
 					housePercent 		= layer.feature.properties.housePercent,
 					condoPriceFourteen 	= layer.feature.properties.condoPriceFourteen,
 					condoPriceFifteen 	= layer.feature.properties.condoPriceFifteen,
-					condoPercent 		= layer.feature.properties.condoPercent;
+					condoPercent 		= layer.feature.properties.condoPercent,
+					schoolData = layer.feature.properties.school;
 
 
 				// CHANGE COLOR OF HOUSE AND 
@@ -929,6 +969,26 @@
 				$('.condo-price-fourteen').html(numberChange(condoPriceFourteen));
 				$('.condo-price-fifteen').html(numberChange(condoPriceFifteen));
 				$('.condo-percent').html(percentChange(condoPercent));
+
+
+
+				if (schoolData === 'N/A') {
+
+					$('.no-school').show();
+					$('.school-table').hide()
+				}
+
+				else {
+					for (var i = 0; i < schoolData.length; i++) {
+						$('.no-school').hide();
+						$('.school-head').after('<tr class=\'schools-row\'><td class=\'name\'>' + schoolData[i].name + '</td><td>'+ schoolData[i].grade2015 +'</td><td>' + schoolData[i].grade2014 +'</td><td>' + schoolData[i].grade2013+'</td></tr>')
+					};
+
+					$('.school-table').show()	
+				}
+
+			
+
 			},
 
 			mouseout: function(e) {
@@ -937,6 +997,9 @@
 					color: '#fff'
 				});
 				endHover();
+
+				$('.schools-row').empty()
+
 			},
 
 			mousemove: function(e){},
@@ -959,6 +1022,7 @@
 		$('.price-select').addClass('selected-interface');
 		$('.percent-select').removeClass('selected-interface');
 		$('.crime-select').removeClass('selected-interface');
+		$('.school-select').removeClass('selected-interface');
 
 		var price 			= 'price',
 			houseCheckbox 	= $('.house:checkbox'),
@@ -1128,8 +1192,8 @@
 		var crime = 'crime';
 		buildKey(crime);
 
-		$('.label-left').html('Least Crime');
-		$('.label-right').html('Most Crime');
+		$('.label-left').html('Less Crime');
+		$('.label-right').html('More Crime');
 		$('.housing-type')
 			.html('Crime rates ')
 			.css({
@@ -1478,380 +1542,4 @@
 		});
 	}
 
-	//====================================
-	// 			MIAN JS
-	//====================================
 
-
-	$('.income-box').keyup(function(event){	      
-	      // skip for arrow keys
-	      if(event.which >= 37 && event.which <= 40){
-	          event.preventDefault();
-	      }
-	      
-	      var inputNumber = $(this).val().replace(/,/gi, ''),
-	      	  newNumber   = inputNumber.split(/(?=(?:\d{3})+$)/).join(',');
-	 
-		  $(this).val(newNumber);
-	  });
-
-
-	$('#check-button-house').on('change', '.house:checkbox', function(e) {
-
-		var attr   	   		= $(this).attr('checked'),
-			houseCheckbox 	= $('.house:checkbox'),
-			houseCheck 		= (houseCheckbox.is(':checked'));
-		
-
-		buildDefaultHouse();
-
-		if (typeof attr !== typeof undefined && attr !== false) {
-			
-			$(this).removeAttr('checked');
-			
-			$('.condo:checkbox')
-				.attr('disabled', false)
-				.closest('#check-button-condo')
-				.removeClass('disabled');
-		}
-
-		else {
-			$(this).attr('checked','checked');
-			$('.condo:checkbox')
-				.attr('disabled', true)
-				.closest('#check-button-condo')
-				.addClass('disabled');
-		}
-
-		if (houseCheck === false) {
-			$('#house-price').css({
-				'float': 'left',
-				'width' : '50%',
-				'border-right': '1px dashed #ccc'
-			});
-
-			$('#condo-price').css('display', 'block');
-		}
-
-		else {
-			$('#house-price').css({
-					'float': 'none',
-					'border': 'none',
-					'width' : '100%'
-				});
-
-			$('#condo-price').css('display', 'none');
-		}
-		
-		removeError();
-		removeSelectionError();
-	});
-
-
-	$('#check-button-condo').on('change', '.condo:checkbox', function(e) {
-
-		var attr 			= $(this).attr('checked'),
-			condoCheckbox 	= $('.condo:checkbox'),
-			condoCheck 		= (condoCheckbox.is(':checked'));
-
-			buildDefaultCondo();
-		
-		if (typeof attr !== typeof undefined && attr !== false) {
-			
-			$(this).removeAttr('checked');
-			
-			$('.house:checkbox')
-				.attr('disabled', false)
-				.closest('#check-button-house')
-				.removeClass('disabled');
-		}
-
-		else {
-
-			$(this).attr('checked','checked');
-			
-			$('.house:checkbox')
-				.attr('disabled', true)
-				.closest('#check-button-house')
-				.addClass('disabled');
-		}
-
-		if (condoCheck === false) {
-			$('#condo-price').css({
-				'float': 'right',
-				'border': 'none',
-				'width' : '50%'
-			});
-			$('#house-price').css('display', 'block');
-		}
-
-		else {
-			$('#condo-price').css({
-					'float': 'none',
-					'border': 'none',
-					'width' : '100%'
-				});
-
-			$('#house-price').css('display', 'none');
-
-		}
-		
-		removeError();
-		removeSelectionError();
-	});
-
-	$('.income-box').focus(function() {
-		 $(this).val('');
-		 $('.income-button').removeAttr('disabled');
-		 $('.section:first-of-type').after('<br class=\'stop-scroll\'>');
-	});
-
-
-	$('#interface-container').on('click', '.price-select', function(event) {
-
-		$('.crime-select').removeClass('selected-interface');
-		$('.school-select').removeClass('selected-interface');
-		$('.percent-select').removeClass('selected-interface');		
-		
-		$(this).addClass('selected-interface');
-		
-		var incomeInput    = $('.income-box').val(),
-			houseCheckbox  = $('.house:checkbox'),
-			condoCheckbox  = $('.condo:checkbox'),
-			houseCheck 	   = (houseCheckbox.is(':checked')),
-			condoCheck 	   = (condoCheckbox.is(':checked')),
-			inputEmpty 	   = (incomeInput === '');
-
-		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
-			buildHouseMap();
-			console.log('build house map');
-		} 
-
-		else if ((houseCheck === true && condoCheck === false) && (inputEmpty === true)) {
-			buildDefaultHouse();
-			console.log('build condo map');
-		}
-
-		else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
-			buildCondoMap();
-			console.log('build condo map');
-		}
-
-		else if ((houseCheck === false && condoCheck === true) && (inputEmpty === true)) {
-			buildDefaultCondo();
-			console.log('build condo map');
-		}
-
-		else {
-			buildDefaultHouse();
-			console.log('build default house map');
-		}
-	});
-
-
-	$('#interface-container').on('click', '.percent-select', function(event) {
-			
-		$('.crime-select').removeClass('selected-interface');
-		$('.school-select').removeClass('selected-interface');
-		$('.price-select').removeClass('selected-interface');
-		
-		$(this).addClass('selected-interface');
-
-		var percent 	   = 'percent',
-			incomeInput    = $('.income-box').val(),
-			houseCheckbox  = $('.house:checkbox'),
-			condoCheckbox  = $('.condo:checkbox'),
-			houseCheck 	   = (houseCheckbox.is(':checked')),
-			condoCheck 	   = (condoCheckbox.is(':checked')),
-			inputEmpty 	   = (incomeInput === '');
-
-
-		if (((houseCheck === true) && (condoCheck === false)) && (inputEmpty === true)) {
-			console.log('build default percent house map');
-			buildDefaultPercentHouse();
-
-		}
-
-		else if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
-			buildHousePercentMap();
-			console.log('build percent house map');
-
-		}
-
-		else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === true))) {
-			
-			console.log('build percent condo map');
-			
-			buildDefaultPercentCondo();
-
-		}
-
-		else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === false))) {
-			buildCondoPercentMap();
-			console.log('build percent condo map');
-
-		}
-
-	});
-
-
-
-	$('#interface-container').on('click', '.crime-select', function(event) {
-		
-		$('.school-select').removeClass('selected-interface');
-		$('.price-select').removeClass('selected-interface');
-		$('.percent-select').removeClass('selected-interface');		
-		$(this).addClass('selected-interface');
-
-
-		var crime 		   = 'crime',
-			incomeInput    = $('.income-box').val(),
-			houseCheckbox = $('.house:checkbox'),
-			condoCheckbox = $('.condo:checkbox'),
-			houseCheck 	   = (houseCheckbox.is(':checked')),
-			condoCheck 	   = (condoCheckbox.is(':checked')),
-			inputEmpty 	   = (incomeInput === '');
-
-		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
-			buildCrimeMap();
-			console.log('build crime map');
-		} 
-
-		else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
-			buildCrimeMap();
-			console.log('build crime map');
-		}
-
-		else {
-			buildKey(crime);
-			buildDefaultCrime();
-
-			console.log('build default crime map');
-		}
-
-
-	});
-
-
-	$('#interface-container').on('click', '.school-select', function(event) {
-		
-		$('.price-select').removeClass('selected-interface');
-		$('.percent-select').removeClass('selected-interface');
-		$('.crime-select').removeClass('selected-interface');		
-		$(this).addClass('selected-interface');
-
-		var school 		   = 'school',
-			incomeInput    = $('.income-box').val(),
-			houseCheckbox = $('.house:checkbox'),
-			condoCheckbox = $('.condo:checkbox'),
-			houseCheck 	   = (houseCheckbox.is(':checked')),
-			condoCheck 	   = (condoCheckbox.is(':checked')),
-			inputEmpty 	   = (incomeInput === '');
-
-		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
-			buildSchoolMap();
-			console.log('build school map');
-		} 
-
-		else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
-			buildSchoolMap();
-			console.log('build school map');
-		}
-
-		else {
-			buildKey(school);
-			buildDefaultSchool();
-			
-			console.log('build default crime map');
-		}
-
-	});
-
-
-
-	// WHEN EVERYTHING IS GOOD TO GO...
-	// RUN MAP-BUILDING FUNCTIONS
-	$('#button-container').on('click', '.income-button', function() {
-		
-		var incomeInput = $('.income-box').val();
-		
-		income = getIncome(incomeInput);
-
-		$houseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: houseStyle });	
-
-		$condoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: condoStyle });
-
-		$percentHouseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: housePercentStyle });
-
-		$percentCondoLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: condoPercentStyle });
-		
-		$crimeLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: crimeStyle });
-		
-		$schoolLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: schoolStyle });
-
-
-		checkInput(income);
-
-		$('.map-interface').show();
-
-		
-
-	});
-
-	$('#button-container').on('click', '.reset', function () {
-
-		$('.income-box').val('');
-		$('.income-button').removeAttr('disabled');
-
-		$('.house:checkbox').removeAttr('checked');
-		$('.condo:checkbox').removeAttr('checked');
-	
-
-		var defaultOption = $('.housing-option option[value=\'default\']');
-		
-		defaultOption.removeAttr('disabled');
-
-		$('#condo-price').css({
-			'float': 'right',
-			'border': 'none',
-			'width' : '50%',
-			'display' : 'block'
-		});
-
-		$('#house-price').css({
-			'float': 'left',
-			'width' : '50%',
-			'border-right': '1px dashed #ccc',
-			'display': 'block'
-		});
-		
-
-		clearAllLayers();
-
-		hideExplainer();
-		setDefaultMap();
-		removeError();
-
-	});
-
-
-	// LAUNCH PAD
-	var init = function() {
-		setDefaultMap();
-		buildZipList();
-	};
-
-	// ACTIVATE!	
-	$(document).ready(function() {	
-		init();
-	});
-
-
-
-	//====================================
-	// 			KEYBOARD SEARCH
-	//====================================
-
-	// BUILD SEARCH LIST
-
-})();

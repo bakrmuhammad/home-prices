@@ -3,7 +3,7 @@
 //GLOBAL VARIABLES
 var $folio = $('.navbar-default'),
     $threshold = 20,
-    $container = $('.container');
+    $footer = $('footer');
 
 //CHANGE HEADER ON SCROLL
 $(window).scroll(function() {
@@ -24,7 +24,7 @@ $(window).scroll(function() {
 // FUNCTIONS
 //----------
 var buildFooter = function() {
-    $container.append('<div class=\"footer-list\"><a href=\"http://miamiherald.com\" target=\"_blank\"><img src=\"http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b-tiny.png\" class=\'logo\'></a><a href=\"http://www.miamiherald.com/terms_of_service\" target=\"_blank\" class=\'footer-text\'>Terms of Service</a><a href=\"http://www.miamiherald.com/privacy_policy\" target=\"_blank\" class=\'footer-text\'>Privacy Policy</a><a href=\"http://www.miamiherald.com/copyright\" target=\"_blank\" class=\'footer-text\'>Copyright</a><a href=\"http://www.miamiherald.com/contact-us\" target=\"_blank\" class=\'footer-text\'>Contact</a></div>');
+    $footer.append('<div class=\"footer-list\"><a href=\"http://miamiherald.com\" target=\"_blank\"><img src=\"http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b-tiny.png\" class=\'logo\'></a><a href=\"http://www.miamiherald.com/terms_of_service\" target=\"_blank\" class=\'footer-text\'>Terms of Service</a><a href=\"http://www.miamiherald.com/privacy_policy\" target=\"_blank\" class=\'footer-text\'>Privacy Policy</a><a href=\"http://www.miamiherald.com/copyright\" target=\"_blank\" class=\'footer-text\'>Copyright</a><a href=\"http://www.miamiherald.com/contact-us\" target=\"_blank\" class=\'footer-text\'>Contact</a></div>');
 };
 
 var buildFacebookComments = function (d, s, id) {

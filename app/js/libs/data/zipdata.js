@@ -14,7 +14,57 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 149,
-                    "schoolGrade" : 2 
+                    "schoolGrade": 2,
+                    "school": [
+                        {
+                            "name": "Barbara Hawkins Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Brentwood Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Crestview Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Excelsior Charter Academy (K-9)",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Myrtle Grove K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "North County K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Parkview Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Miami Carol City Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -56,7 +106,57 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 110,
-                    "schoolGrade" : 1.9
+                    "schoolGrade": 1.9,
+                    "school": [
+                        {
+                            "name": "Carol City Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Charles David Wyche, Jr Elementary",
+                            "grade2015": "A",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Dr. Frederica S. Wilson Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Lake Stevens Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Miami Gardens Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "North Glade Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Carol City Middle",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "F"
+                        },
+                        {
+                            "name": "Lake Stevens Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -106,7 +206,27 @@ var $zipData = [
                     "condoPriceFourteen": 94300,
                     "condoPercent": 0.06,
                     "crime": 80,
-                    "schoolGrade" : 2.5
+                    "schoolGrade": 2.5,
+                    "school": [
+                        {
+                            "name": "Madie Ives Community Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Andover Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Dr Michael M. Krop Senior High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -156,7 +276,45 @@ var $zipData = [
                     "condoPriceFourteen": 91000,
                     "condoPercent": 0.18,
                     "crime": 137,
-                    "schoolGrade" : 2.9
+                    "schoolGrade": 2.9,
+                    "school": [
+                        {
+                            "name": "Amelia Earhart Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Flamingo Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "North Hialeah Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palm Springs Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hialeah Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Hialeah Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -210,7 +368,69 @@ var $zipData = [
                     "condoPriceFourteen": 103000,
                     "condoPercent": 0.14,
                     "crime": 78,
-                     "schoolGrade" : 3.9
+                    "schoolGrade": 3.9,
+                    "school": [
+                        {
+                            "name": "Mater Performing Arts & Entertainment Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Youth Co-Op Preparatory High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Mater Academy Charter High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "City of Hialeah Education Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Jose Marti MAST Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Bob Graham Education Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Mater Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Youth Co-Op Charter School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ben Sheppard Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Mater Academy Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -260,7 +480,63 @@ var $zipData = [
                     "condoPriceFourteen": 127300,
                     "condoPercent": 0.09,
                     "crime": 96,
-                     "schoolGrade" : 3.4
+                    "schoolGrade": 3.4,
+                    "school": [
+                        {
+                            "name": "Highly Inquisitive And Versatile Education Prep.",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Joella Good Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Spanish Lake Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palm Springs North Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Country Club Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Lawton Chiles Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Mater Academy Lakes Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "American Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Mater Academy Lakes High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -310,7 +586,27 @@ var $zipData = [
                     "condoPriceFourteen": 150200,
                     "condoPercent": 0.06,
                     "crime": 103,
-                     "schoolGrade" : 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Natural Bridge Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "David Lawrence Jr. K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "MAST @ FIU",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -368,7 +664,8 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": "N/A",
-                     "schoolGrade" : 0
+                    "schoolGrade": 0,
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -429,12 +726,92 @@ var $zipData = [
                     "cities": "University Park",
                     "housePriceFifteen": 290300,
                     "housePriceFourteen": 264400,
-                    "housePercent": 0.10,
+                    "housePercent": 0.1,
                     "condoPriceFifteen": "N/A",
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 221,
-                     "schoolGrade" : 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Blue Lakes Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Cypress K-8 Center",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Bridgeprep Academy South",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Royal Palm Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Olympia Heights Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Rockway Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Pinecrest Cove Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Tropical Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Academir Charter School",
+                            "grade2015": "B",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Riviera Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Rockway Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Coral Park Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Southwest Miami Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -475,13 +852,32 @@ var $zipData = [
                     "cities": "Miami Beach",
                     "housePriceFifteen": 815400,
                     "housePriceFourteen": 742100,
-                    "housePercent": 0.10,
+                    "housePercent": 0.1,
                     "condoPriceFifteen": 236200,
                     "condoPriceFourteen": 222900,
                     "condoPercent": 0.06,
                     "crime": 200,
-                    "schoolGrade" : 2.8
-
+                    "schoolGrade": 2.8,
+                    "school": [
+                        {
+                            "name": "Biscayne Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Mater Academy Miami Beach",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Treasure Island Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -547,7 +943,57 @@ var $zipData = [
                     "condoPriceFourteen": 154900,
                     "condoPercent": -0.02,
                     "crime": 298,
-                    "schoolGrade" : 3.4
+                    "schoolGrade": 3.4,
+                    "school": [
+                        {
+                            "name": "Banyan Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Terrace Elementary School",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Emerson Elementary School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Everglades K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "David Fairchild Elementary School",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sylvania Heights Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "West Miami Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "South Miami Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -597,7 +1043,51 @@ var $zipData = [
                     "condoPriceFourteen": 64700,
                     "condoPercent": 0.16,
                     "crime": 151,
-                    "schoolGrade" : 2.1
+                    "schoolGrade": 2.1,
+                    "school": [
+                        {
+                            "name": "Archcreek Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "W. J. Bryan Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Linda Lentin K-8 Center",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "North Miami Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Aspira Raul Arnaldo Martinez Charter",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "North Miami Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "North Miami Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -647,7 +1137,15 @@ var $zipData = [
                     "condoPriceFourteen": 164200,
                     "condoPercent": 0.09,
                     "crime": 84,
-                    "schoolGrade" : 2
+                    "schoolGrade": 2,
+                    "school": [
+                        {
+                            "name": "Paul W. Bell Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -693,7 +1191,33 @@ var $zipData = [
                     "condoPriceFourteen": 273200,
                     "condoPercent": 0.02,
                     "crime": 84,
-                    "schoolGrade" : 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Eugenia B. Thomas K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dr. Rolando Espinosa K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "John I. Smith K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ronald W. Reagan/Doral Senior High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -785,7 +1309,21 @@ var $zipData = [
                     "condoPriceFourteen": 144700,
                     "condoPercent": 0.09,
                     "crime": 108,
-                    "schoolGrade" : 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Marjory Stoneman Douglas Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dr. Carlos J. Finlay Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -831,7 +1369,39 @@ var $zipData = [
                     "condoPriceFourteen": 355100,
                     "condoPercent": 0.04,
                     "crime": 137,
-                    "schoolGrade" : 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Aventura Waterways K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Aventura City Of Excellence",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Virginia A. Boone-Highland Oaks",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ojus Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Highland Oaks Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -873,7 +1443,69 @@ var $zipData = [
                     "condoPriceFourteen": 141500,
                     "condoPercent": 0.06,
                     "crime": 128,
-                    "schoolGrade" : 3.9
+                    "schoolGrade": 3.9,
+                    "school": [
+                        {
+                            "name": "Bent Tree Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ethel Koger Beckham Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Greenglade Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Joe Hall Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pinecrest Preparatory Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Royal Green Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Village Green Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Wesley Matthews Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Zora Neale Hurston Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "W. R. Thomas Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -915,7 +1547,51 @@ var $zipData = [
                     "condoPriceFourteen": 92200,
                     "condoPercent": 0.11,
                     "crime": 253,
-                    "schoolGrade" : 2.6
+                    "schoolGrade": 2.6,
+                    "school": [
+                        {
+                            "name": "Auburndale Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Shenandoah Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Bridgeprep Academy Interamerican Campus",
+                            "grade2015": "B",
+                            "grade2014": "F",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Alpha Charter Of Excellence",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "International Studies Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "International Studies Charter High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Senior High",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -965,7 +1641,8 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": "N/A",
-                    "schoolGrade" : "N/A"
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1015,7 +1692,57 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 244,
-                    "schoolGrade" : 1.9
+                    "schoolGrade": 1.9,
+                    "school": [
+                        {
+                            "name": "Arcola Lake Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Van E. Blanton Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Edison Park K-8 Center",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Holmes Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Jesse J. Mccrary, Jr. Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Horace Mann Middle",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Miami Northwestern Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Academy For Community Education",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1065,7 +1792,15 @@ var $zipData = [
                     "condoPriceFourteen": 466100,
                     "condoPercent": 0.08,
                     "crime": 97,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Ruth K. Broad Bay Harbor K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1123,8 +1858,8 @@ var $zipData = [
                     "condoPriceFourteen": 238700,
                     "condoPercent": 0.07,
                     "crime": 128,
-                    "schoolGrade": "N/A"
-
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1166,7 +1901,39 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 330,
-                    "schoolGrade": 2.4
+                    "schoolGrade": 2.4,
+                    "school": [
+                        {
+                            "name": "Benjamin Franklin K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Gratigny Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Hubert O. Sibley K-8 Academy",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Doctors Charter School Of Miami Shores",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Thomas Jefferson Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1217,7 +1984,69 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 308,
-                    "schoolGrade": 1.8
+                    "schoolGrade": 1.8,
+                    "school": [
+                        {
+                            "name": "Bunche Park Elementary",
+                            "grade2015": "B",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Richard Allen Leadership Academy",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Golden Glades Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Dr. Robert B. Ingram/Opa-Locka Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Rainbow Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "N Dade Center For Modern Language",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Nathan B. Young Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Florida International Academy",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "North Dade Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Jan Mann Opportunity School",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1316,7 +2145,27 @@ var $zipData = [
                     "condoPriceFourteen": 87200,
                     "condoPercent": 0.09,
                     "crime": 207,
-                    "schoolGrade": 2.5
+                    "schoolGrade": 2.5,
+                    "school": [
+                        {
+                            "name": "Keys Gate Charter School",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Gateway Environmental K-8 Learning Center",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Keys Gate Charter High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1420,7 +2269,75 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 334,
-                    "schoolGrade": 1.4
+                    "schoolGrade": 1.4,
+                    "school": [
+                        {
+                            "name": "Broadmoor Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Lillie C. Evans K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Liberty City Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Miami Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Poinciana Park Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Dr. Henry W. Mack/West Little River K-8 Center",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Madison Middle",
+                            "grade2015": "D",
+                            "grade2014": "F",
+                            "grade2013": "F"
+                        },
+                        {
+                            "name": "Miami Central Senior High",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "William H. Turner Technical Arts High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Secondary Student Success Center-804 ",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Cope Center North",
+                            "grade2015": "I",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1466,7 +2383,45 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 230,
-                    "schoolGrade": 1.9
+                    "schoolGrade": 1.9,
+                    "school": [
+                        {
+                            "name": "Miami Community Charter School",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Florida City Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Lincoln-Marti Schools International Campus",
+                            "grade2015": "A",
+                            "grade2014": "D",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Miami Community Charter Middle",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Miami Community Charter High",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Homestead Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1528,7 +2483,27 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 267,
-                    "schoolGrade": 2.1
+                    "schoolGrade": 2.1,
+                    "school": [
+                        {
+                            "name": "Lakeview Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Henry E.S. Reeves Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Carrie P. Meek/Westview K-8 Center",
+                            "grade2015": "B",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1590,7 +2565,87 @@ var $zipData = [
                     "condoPriceFourteen": 81500,
                     "condoPercent": 0.22,
                     "crime": 180,
-                    "schoolGrade": 2.4
+                    "schoolGrade": 2.4,
+                    "school": [
+                        {
+                            "name": "Avocado Elementary",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Somerset Academy Charter Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Arts Academy",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Laura C. Saunders Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Redondo Elementary",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "South Dade Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "West Homestead K-8 Center",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Academy Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Academy Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Homestead Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Somerset Academy Charter High",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Medical Academy For Science And Technology @ Homestead",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "South Dade Senior High",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1636,7 +2691,45 @@ var $zipData = [
                     "condoPriceFourteen": 106800,
                     "condoPercent": 0.07,
                     "crime": 190,
-                    "schoolGrade": 2.6
+                    "schoolGrade": 2.6,
+                    "school": [
+                        {
+                            "name": "Campbell Drive K-8 Center",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "The Charter School At Waterstone",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Leisure City K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Everglades Preparatory Academy",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Aspira Leadership And College Preparatory Academy",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Everglades Preparatory Academy High",
+                            "grade2015": "B",
+                            "grade2014": "D",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1754,7 +2847,33 @@ var $zipData = [
                     "condoPriceFourteen": 158400,
                     "condoPercent": 0.07,
                     "crime": 98,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Snapper Creek Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sunset Park Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Glades Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Terra Environmental Research Institute",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1808,7 +2927,75 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 213,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Air Base K-8 Center For International Education",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Summerville Advantage Academy",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Mandarin Lakes K-8 Academy",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Goulds Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Academy Silver Palms",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dr. William A. Chapman Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coconut Palm K-8 Academy",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Somerset Academy At Silver Palms",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy Charter High School",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Somerset Academy Charter High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami MacArthur South",
+                            "grade2015": "I",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1898,7 +3085,21 @@ var $zipData = [
                     "condoPriceFourteen": 408300,
                     "condoPercent": 0.08,
                     "crime": 297,
-                    "schoolGrade": 3.2
+                    "schoolGrade": 3.2,
+                    "school": [
+                        {
+                            "name": "North Beach Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Nautilus Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -1960,7 +3161,51 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 98,
-                    "schoolGrade": 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Somerset Academy Charter",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Caribbean Elementary",
+                            "grade2015": "C",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Miami Heights Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Herbert A. Ammons Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Robert Morgan Educational Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Secondary Student Success Center 803",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2014,7 +3259,8 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 107,
-                    "schoolGrade": "N/A"
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2114,7 +3360,21 @@ var $zipData = [
                     "condoPriceFourteen": 847900,
                     "condoPercent": 0.07,
                     "crime": 76,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Key Biscayne K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "MAST Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2208,7 +3468,8 @@ var $zipData = [
                     "condoPriceFourteen": 438500,
                     "condoPercent": -0.07,
                     "crime": 227,
-                    "schoolGrade": "N/A"
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2262,7 +3523,69 @@ var $zipData = [
                     "condoPriceFourteen": 125800,
                     "condoPercent": 0.16,
                     "crime": 86,
-                    "schoolGrade": 3.6
+                    "schoolGrade": 3.6,
+                    "school": [
+                        {
+                            "name": "Mater Gardens Academy Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hialeah Gardens Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Latin Builders Association Construction And Business Management Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Hialeah Gardens Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Barbara Goleman Senior High",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Mater Gardens Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hialeah Gardens Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "West Hialeah Gardens Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Lincoln-Marti Charter School Hialeah Campus",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ernest R. Graham K-8 Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2312,8 +3635,8 @@ var $zipData = [
                     "condoPriceFourteen": 1190600,
                     "condoPercent": 0.06,
                     "crime": 69,
-                    "schoolGrade": "N/A"
-
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2359,7 +3682,33 @@ var $zipData = [
                     "condoPriceFourteen": 292200,
                     "condoPercent": 0.02,
                     "crime": 203,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Henry S. West Laboratory School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ponce De Leon Middle",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Gables Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "International Studies Preparatory Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2409,7 +3758,51 @@ var $zipData = [
                     "condoPriceFourteen": 140000,
                     "condoPercent": 0.09,
                     "crime": 169,
-                    "schoolGrade": 3.4
+                    "schoolGrade": 3.4,
+                    "school": [
+                        {
+                            "name": "Norma Butler Bossard Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Christina M. Eve Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Oliver Hoover Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dr. Gilbert L. Porter Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hammocks Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Jorge Mas Canosa Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Felix Varela Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2469,9 +3862,65 @@ var $zipData = [
                     "housePercent": 0.19,
                     "condoPriceFifteen": 142500,
                     "condoPriceFourteen": 129200,
-                    "condoPercent": 0.10,
+                    "condoPercent": 0.1,
                     "crime": 149,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Renaissance Elementary Charter",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Doral Academy Of Technology",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Doral Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "E.W.F. Stirrup Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Doral Academy Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Just Arts And Management Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Ruben Dario Middle",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Doral Performing Arts & Entertainment Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Doral Academy Charter High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2525,7 +3974,27 @@ var $zipData = [
                     "condoPriceFourteen": 125800,
                     "condoPercent": 0.13,
                     "crime": 125,
-                    "schoolGrade": 3.5
+                    "schoolGrade": 3.5,
+                    "school": [
+                        {
+                            "name": "Coral Park Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pinecrest Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sweetwater Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2567,7 +4036,45 @@ var $zipData = [
                     "condoPriceFourteen": 163900,
                     "condoPercent": 0.11,
                     "crime": 113,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Calusa Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Claude Pepper Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Devon Aire K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Jack David Gordon Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Bridgeprep Academy Of Village Green",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Arvida Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2617,7 +4124,8 @@ var $zipData = [
                     "condoPriceFourteen": 370200,
                     "condoPercent": 0.06,
                     "crime": 222,
-                    "schoolGrade": "N/A"
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2683,7 +4191,63 @@ var $zipData = [
                     "condoPriceFourteen": 307200,
                     "condoPercent": -0.02,
                     "crime": 290,
-                    "schoolGrade": 3.5
+                    "schoolGrade": 3.5,
+                    "school": [
+                        {
+                            "name": "Mater Academy East Charter",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ada Merritt K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Riverside Elementary Community",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Lincoln-Marti Charter School Little Havana Campus",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Southside Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Mater East Academy Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Mater Academy East Charter High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Young Womens Preparatory Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Charter High School Of The Americas",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2729,7 +4293,21 @@ var $zipData = [
                     "condoPriceFourteen": 297800,
                     "condoPercent": 0.08,
                     "crime": 97,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Norman S. Edelcup/Sunny Isles Beach K-8",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Alonzo And Tracy Mourning Senior High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2783,15 +4361,65 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33162,
-                    "cities" : "North Miami Beach",
-                    "housePriceFifteen" : 175400,
-                    "housePriceFourteen" : 157000,
-                    "housePercent" : 0.12,
-                    "condoPriceFifteen" : 76200,
+                    "cities": "North Miami Beach",
+                    "housePriceFifteen": 175400,
+                    "housePriceFourteen": 157000,
+                    "housePercent": 0.12,
+                    "condoPriceFifteen": 76200,
                     "condoPriceFourteen": 70800,
                     "condoPercent": 0.08,
-                    "crime" : 192,
-                    "schoolGrade": 2
+                    "crime": 192,
+                    "schoolGrade": 2,
+                    "school": [
+                        {
+                            "name": "Ben Gamla Charter School",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ben Gamla Charter School North",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Fulford Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Greynolds Park Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Oak Grove Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Gertrude K. Edleman/Sabal Palm Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "John F. Kennedy Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "North Miami Beach Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2845,7 +4473,57 @@ var $zipData = [
                     "condoPriceFourteen": 379800,
                     "condoPercent": 0.06,
                     "crime": 227,
-                    "schoolGrade": 3.1
+                    "schoolGrade": 3.1,
+                    "school": [
+                        {
+                            "name": "George W. Carver Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Coconut Grove Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Silver Bluff Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Mater Grove Academy",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Mater Brickell Preparatory Academy",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Frances S. Tucker Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "George Washington Carver Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Academy Of Arts & Minds",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2915,7 +4593,57 @@ var $zipData = [
                     "condoPriceFourteen": 77600,
                     "condoPercent": 0.11,
                     "crime": 176,
-                    "schoolGrade": 2
+                    "schoolGrade": 2,
+                    "school": [
+                        {
+                            "name": "Biscayne Gardens Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Hibiscus Elementary",
+                            "grade2015": "A",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Norland Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Norwood Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Parkway Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Scott Lake Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Norland Middle",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Miami Norland Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -2969,8 +4697,45 @@ var $zipData = [
                     "condoPriceFourteen": 139700,
                     "condoPercent": 0.03,
                     "crime": 168,
-                    "schoolGrade": 4
-
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Somerset Academy Elementary (South Miami Campus)",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ludlam Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "South Miami K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sunset Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy Charter Middle (South Miami Campus)",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "South Miami Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3030,9 +4795,35 @@ var $zipData = [
                     "housePercent": 0.09,
                     "condoPriceFifteen": 109200,
                     "condoPriceFourteen": 99600,
-                    "condoPercent": 0.10,
+                    "condoPercent": 0.1,
                     "crime": 202,
-                    "schoolGrade": 1.4
+                    "schoolGrade": 1.4,
+                    "school": [
+                        {
+                            "name": "Citrus Grove Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Kensington Park Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Ramz Academy K-5 Miami Campus",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Citrus Grove Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3086,7 +4877,27 @@ var $zipData = [
                     "condoPriceFourteen": 119300,
                     "condoPercent": 0.01,
                     "crime": 143,
-                    "schoolGrade": 3.5
+                    "schoolGrade": 3.5,
+                    "school": [
+                        {
+                            "name": "Pinecrest Academy (South Campus)",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Bowman Ashe/Doolin K-8 Academy",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Dante B. Fascell Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3144,7 +4955,27 @@ var $zipData = [
                     "condoPriceFourteen": 194600,
                     "condoPercent": 0.15,
                     "crime": 160,
-                    "schoolGrade": 2.8
+                    "schoolGrade": 2.8,
+                    "school": [
+                        {
+                            "name": "Miami Shores Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Phyllis R. Miller Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Morningside K-8 Academy",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3199,7 +5030,81 @@ var $zipData = [
                     "condoPriceFourteen": 90300,
                     "condoPercent": -0.03,
                     "crime": 323,
-                    "schoolGrade": 2
+                    "schoolGrade": 2,
+                    "school": [
+                        {
+                            "name": "Maya Angelou Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Comstock Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Charles R. Drew K-8 Center",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Earlington Heights Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Lorah Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Melrose Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Agenoria S Paschal/Olinda Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Orchard Villa Elementary",
+                            "grade2015": "B",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Kelsey L. Pharr Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Georgia Jones Ayers Middle",
+                            "grade2015": "D",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Brownsville Middle",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Miami Jackson Senior High",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3261,7 +5166,51 @@ var $zipData = [
                     "condoPriceFourteen": 135400,
                     "condoPercent": 0.12,
                     "crime": 86,
-                    "schoolGrade": 3.8
+                    "schoolGrade": 3.8,
+                    "school": [
+                        {
+                            "name": "Archimedean Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Kendale Lakes Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Winston Park K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Archimedean Middle Conservatory",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Howard D. McMillan Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Archimedean Upper Conservatory",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Sunset Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3309,9 +5258,53 @@ var $zipData = [
                     "housePercent": 0.08,
                     "condoPriceFifteen": 140500,
                     "condoPriceFourteen": 128100,
-                    "condoPercent": 0.10,
+                    "condoPercent": 0.1,
                     "crime": 201,
-                    "schoolGrade": 2.9
+                    "schoolGrade": 2.9,
+                    "school": [
+                        {
+                            "name": "Integrated Science And Asian Culture Academy",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Miami Springs Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Irving & Beatrice Peskoe K-8 Center",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Academy For International Education Charter School",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Springview Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Springs Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Miami Springs Senior High",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3369,7 +5362,45 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": "N/A",
-                    "schoolGrade": 1.6
+                    "schoolGrade": 1.6,
+                    "school": [
+                        {
+                            "name": "Frederick R. Douglass Elementary",
+                            "grade2015": "D",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Theodore R. And Thelma A. Gibson Charter School",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Phyllis Wheatley Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Sports Leadership And Management Charter Middle",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Sports Leadership Of Miami Charter High",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Booker T. Washington Senior High",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3419,7 +5450,39 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 294,
-                    "schoolGrade": 2.3
+                    "schoolGrade": 2.3,
+                    "school": [
+                        {
+                            "name": "Palm Glades Preparatory Academy",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Palm Glades Preparatory Academy High",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Coral Reef Montessori Academy Charter",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pine Villa Elementary",
+                            "grade2015": "B",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Arthur And Polly Mays Conservatory Of The Arts",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "D"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3489,7 +5552,8 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 278,
-                    "schoolGrade": "N/A"
+                    "schoolGrade": "N/A",
+                    "school": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3535,7 +5599,21 @@ var $zipData = [
                     "condoPriceFourteen": 95700,
                     "condoPercent": 0.25,
                     "crime": 201,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Downtown Miami Charter School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Law Enforcement Officers Memorial High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3581,15 +5659,59 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33010,
-                    "cities" : "Hialeah",
-                    "housePriceFifteen" : 201100,
-                    "housePriceFourteen" : 174900,
-                    "housePercent" : 0.15,
-                    "condoPriceFifteen" : "N/A",
+                    "cities": "Hialeah",
+                    "housePriceFifteen": 201100,
+                    "housePriceFourteen": 174900,
+                    "housePercent": 0.15,
+                    "condoPriceFifteen": "N/A",
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
-                    "crime" : 119,
-                    "schoolGrade" : 2.7
+                    "crime": 119,
+                    "schoolGrade": 2.7,
+                    "school": [
+                        {
+                            "name": "Imater Academy Middle",
+                            "grade2015": "B",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "James H. Bright Elementary/J.W. Johnson Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Hialeah Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Excelsior Language Academy Of Hialeah",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "South Hialeah Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Imater Preparatory Academy High",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Imater Academy",
+                            "grade2015": "B",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3643,7 +5765,51 @@ var $zipData = [
                     "condoPriceFourteen": 177300,
                     "condoPercent": 0.15,
                     "crime": 181,
-                    "schoolGrade": 3.9
+                    "schoolGrade": 3.9,
+                    "school": [
+                        {
+                            "name": "Howard Drive Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Kenwood K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palmetto Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pinecrest Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Vineland K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palmetto Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Palmetto Senior High",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3697,7 +5863,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33031,
-                    "cities": "Homestead",
+                    "cities": "Redland",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
                     "housePercent": "N/A",
@@ -3705,7 +5871,21 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": "N/A",
-                    "schoolGrade": 2.2
+                    "schoolGrade": 2.2,
+                    "school": [
+                        {
+                            "name": "Redland Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Redland Middle",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3767,7 +5947,33 @@ var $zipData = [
                     "condoPriceFourteen": 101800,
                     "condoPercent": 0.07,
                     "crime": 189,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Cutler Ridge Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Gulfstream Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dr. Edward L. Whigham Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Cutler Bay Senior High",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3833,7 +6039,51 @@ var $zipData = [
                     "condoPriceFourteen": 131100,
                     "condoPercent": 0.06,
                     "crime": 100,
-                    "schoolGrade": 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Miami Lakes K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "North Twin Lakes Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palm Lakes Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Miami Lakes Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Hialeah-Miami Lakes Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Miami Lakes Educational Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Secondary Student Success Center 801",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3911,7 +6161,57 @@ var $zipData = [
                     "condoPriceFourteen": 95200,
                     "condoPercent": 0.07,
                     "crime": 81,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "John G. Dupuis Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Meadowlane Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Marcus A. Milam K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Twin Lakes Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Mae M. Walters Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Henry H. Filer Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Palm Springs Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Westland Hialeah Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -3961,7 +6261,27 @@ var $zipData = [
                     "condoPriceFourteen": 343100,
                     "condoPercent": 0.07,
                     "crime": 294,
-                    "schoolGrade": 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Fienberg/Fisher K-8 Center",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "South Pointe Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Beach Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4023,7 +6343,39 @@ var $zipData = [
                     "condoPriceFourteen": 395600,
                     "condoPercent": -0.03,
                     "crime": 215,
-                    "schoolGrade": 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Bridgeprep Academy Of Greater Miami",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Miami Children'S Museum Charter School",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Aspira Arts Deco Charter",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "I Preparatory Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "New World School of The Arts",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4089,7 +6441,27 @@ var $zipData = [
                     "condoPriceFourteen": 292700,
                     "condoPercent": 0.11,
                     "crime": 253,
-                    "schoolGrade": 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Toussaint L'Ouverture Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Miami Arts Charter",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Design & Architecture Senior High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4135,7 +6507,63 @@ var $zipData = [
                     "condoPriceFourteen": 208800,
                     "condoPercent": 0.08,
                     "crime": 137,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Dr. Manuel C. Barreiro Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Academir Charter School West",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Jane S. Roberts K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pinecrest Academy Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Arts Studio At Zelda Glazer",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Lamar Louise Curry Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "G. Holmes Braddock Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Pinecrest Preparatory Academy Charter High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "John A. Ferguson Senior High",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4185,7 +6613,21 @@ var $zipData = [
                     "condoPriceFourteen": 331900,
                     "condoPercent": 0.03,
                     "crime": 189,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Coral Gables Preparatory Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Gables Academy",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4243,7 +6685,15 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": "N/A",
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Renaissance Middle Charter School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4309,7 +6759,27 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 248,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Fairlawn Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Flagami Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Seminole Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4351,7 +6821,33 @@ var $zipData = [
                     "condoPriceFourteen": 12500,
                     "condoPercent": 0.12,
                     "crime": 212,
-                    "schoolGrade": 2.8
+                    "schoolGrade": 2.8,
+                    "school": [
+                        {
+                            "name": "Henry M. Flagler Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Charles R. Hadley Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Kinloch Park Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Kinloch Park Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4409,15 +6905,83 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33176,
-                    "cities" : "Kendall",
-                    "housePriceFifteen" : 418500,
-                    "housePriceFourteen" : 420800,
-                    "housePercent" : -0.01,
-                    "condoPriceFifteen" : 127300,
+                    "cities": "Kendall",
+                    "housePriceFifteen": 418500,
+                    "housePriceFourteen": 420800,
+                    "housePercent": -0.01,
+                    "condoPriceFifteen": 127300,
                     "condoPriceFourteen": 118900,
                     "condoPercent": 0.07,
-                    "crime" : 125,
-                    "schoolGrade": 3.7
+                    "crime": 125,
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Somerset Academy Bay Elementary",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Somerset Academy Bay Middle",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Gloria Floyd Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Leewood K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "William H. Lehman Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Advantage Academy Santa Fe",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Frank Crawford Martin K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ben Gamla Charter School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Richmond Heights Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Miami Killian Senior High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dorothy M. Wallace Cope Center",
+                            "grade2015": "I",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4483,7 +7047,81 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 252,
-                    "schoolGrade": 2.2
+                    "schoolGrade": 2.2,
+                    "school": [
+                        {
+                            "name": "Lenora Braynon Smith Elementary",
+                            "grade2015": "C",
+                            "grade2014": "F",
+                            "grade2013": "F"
+                        },
+                        {
+                            "name": "Mater Academy Of International Studies",
+                            "grade2015": "A",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Paul Laurence Dunbar K-8 Center",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Eneida M. Hartner Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Santa Clara Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Shadowlawn Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Mater Academy Middle School Of International Studies",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Jose de Diego Middle",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Mater Academy High School Of International Studies",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Young Men'S Preparatory Academy",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Edison Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Secondary Student Success Center 802",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4533,7 +7171,87 @@ var $zipData = [
                     "condoPriceFourteen": 75300,
                     "condoPercent": 0.14,
                     "crime": 129,
-                    "schoolGrade": 2.7
+                    "schoolGrade": 2.7,
+                    "school": [
+                        {
+                            "name": "Bel-Aire Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Colonial Drive Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Coral Reef Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Robert Russa Moton Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Dr. Henry E. Perrine Academy Of The Arts",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pine Lake Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Ethel F. Beckford/Richmond Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Whispering Pines Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Cutler Bay Middle",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Southwood Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Reef Senior High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miami Southridge Senior High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Richmond Perrine Optimist Academy",
+                            "grade2015": "I",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4607,7 +7325,21 @@ var $zipData = [
                     "condoPriceFourteen": 228200,
                     "condoPercent": 0.03,
                     "crime": 250,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Coral Way K-8 Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Shenandoah Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4653,7 +7385,45 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 83,
-                    "schoolGrade": 3.6
+                    "schoolGrade": 3.6,
+                    "school": [
+                        {
+                            "name": "Renaissance Charter Of Coral Springs",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Imagine Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Riverglades Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Park Springs Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Forest Glen Middle",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4711,7 +7481,63 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 81,
-                    "schoolGrade": 3.4
+                    "schoolGrade": 3.4,
+                    "school": [
+                        {
+                            "name": "Country Hills Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Broward Community Charter West",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Eagle Ridge Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Park Trails Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Heron Heights Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Westglades Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Discovery Middle Charter School",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Coral Springs Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Stoneman Douglas High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4757,7 +7583,33 @@ var $zipData = [
                     "condoPriceFourteen": 108500,
                     "condoPercent": 0.08,
                     "crime": 128,
-                    "schoolGrade": 2.3
+                    "schoolGrade": 2.3,
+                    "school": [
+                        {
+                            "name": "Deerfield Beach Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Deerfield Park Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Deerfield Beach Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Deerfield Beach High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4819,7 +7671,15 @@ var $zipData = [
                     "condoPriceFourteen": 52800,
                     "condoPercent": 0.03,
                     "crime": 57,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Quiet Waters Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4873,7 +7733,33 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 135,
-                    "schoolGrade": 3.4
+                    "schoolGrade": 3.4,
+                    "school": [
+                        {
+                            "name": "Winston Park Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Tradewinds Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Lyons Creek Middle",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Monarch High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4931,7 +7817,8 @@ var $zipData = [
                     "condoPriceFourteen": 265400,
                     "condoPercent": 0.07,
                     "crime": 140,
-                    "schoolGrade": "N/A"
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -4997,8 +7884,63 @@ var $zipData = [
                     "condoPriceFourteen": 70200,
                     "condoPercent": 0.06,
                     "crime": 101,
-                    "schoolGrade": 2.3
-
+                    "schoolGrade": 2.3,
+                    "school": [
+                        {
+                            "name": "Somerset Pines Academy",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Somerset Academy Pompano",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Norcrest Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Tedder Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Cresthaven Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palmview Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Park Ridge Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Somerset Academy Pompano Middle",
+                            "grade2015": "B",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Crystal Lake Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5064,7 +8006,63 @@ var $zipData = [
                     "condoPriceFourteen": 75900,
                     "condoPercent": 0.06,
                     "crime": 74,
-                    "schoolGrade": 3.1
+                    "schoolGrade": 3.1,
+                    "school": [
+                        {
+                            "name": "Coral Springs Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Westchester Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "James S. Hunt Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Forest Hills Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Parkside Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Sawgrass Springs Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Springs Charter School",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Springs High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Glades High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5114,15 +8112,29 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33069,
-                    "cities" : "Pompano Beach",
-                    "housePriceFifteen" : 106100,
-                    "housePriceFourteen" : 101700,
-                    "housePercent" : 0.04,
-                    "condoPriceFifteen" : 128800,
+                    "cities": "Pompano Beach",
+                    "housePriceFifteen": 106100,
+                    "housePriceFourteen": 101700,
+                    "housePercent": 0.04,
+                    "condoPriceFifteen": 128800,
                     "condoPriceFourteen": 127600,
                     "condoPercent": 0.01,
-                    "crime" : 195,
-                    "schoolGrade": 1.3
+                    "crime": 195,
+                    "schoolGrade": 1.3,
+                    "school": [
+                        {
+                            "name": "Robert C. Markham Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Charles R. Drew Elementary Magnet",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5187,12 +8199,56 @@ var $zipData = [
                     "cities": "Margate",
                     "housePriceFifteen": 208700,
                     "housePriceFourteen": 189500,
-                    "housePercent": 0.10,
+                    "housePercent": 0.1,
                     "condoPriceFifteen": 56000,
                     "condoPriceFourteen": 53600,
                     "condoPercent": 0.05,
                     "crime": 70,
-                    "schoolGrade": 2.2
+                    "schoolGrade": 2.2,
+                    "school": [
+                        {
+                            "name": "Rise Academy School Of Science & Technology",
+                            "grade2015": "D",
+                            "grade2014": "F",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Margate Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Atlantic West Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Margate Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Igeneration Empowerment Academy",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Liberty Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Atlantic Technical Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5250,7 +8306,21 @@ var $zipData = [
                     "condoPriceFourteen": 83700,
                     "condoPercent": 0.04,
                     "crime": 94,
-                    "schoolGrade": 2.3
+                    "schoolGrade": 2.3,
+                    "school": [
+                        {
+                            "name": "Coconut Creek Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coconut Creek High",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5300,7 +8370,51 @@ var $zipData = [
                     "condoPriceFourteen": 79500,
                     "condoPercent": 0.09,
                     "crime": 158,
-                    "schoolGrade": 2.2
+                    "schoolGrade": 2.2,
+                    "school": [
+                        {
+                            "name": "McNab Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pompano Beach Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Sanders Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Cypress Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Pompano Beach Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Pompano Beach High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Blanche Ely High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5350,15 +8464,47 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33071,
-                    "cities" : "Coral Springs",
-                    "housePriceFifteen" : 347800,
-                    "housePriceFourteen" : 341100,
-                    "housePercent" : 0.02,
-                    "condoPriceFifteen" : 118600,
+                    "cities": "Coral Springs",
+                    "housePriceFifteen": 347800,
+                    "housePriceFourteen": 341100,
+                    "housePercent": 0.02,
+                    "condoPriceFifteen": 118600,
                     "condoPriceFourteen": 114800,
                     "condoPercent": 0.03,
-                    "crime" : 66,
-                    "schoolGrade": 3.2
+                    "crime": 66,
+                    "schoolGrade": 3.2,
+                    "school": [
+                        {
+                            "name": "Ramblewood Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Maplewood Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Riverside Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Ramblewood Middle",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "J. P. Taravella High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5408,7 +8554,69 @@ var $zipData = [
                     "condoPriceFourteen": 63800,
                     "condoPercent": 0.12,
                     "crime": 85,
-                    "schoolGrade": 2.1
+                    "schoolGrade": 2.1,
+                    "school": [
+                        {
+                            "name": "Somerset Charter Academy North Lauderdale",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "North Lauderdale Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "North Broward Academy Of Excellence",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Imagine Charter North Lauderdale Elementary",
+                            "grade2015": "B",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Broadview Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Morrow Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Pinewood Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Silver Lakes Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "North Broward Academy Of Excellence Middle",
+                            "grade2015": "",
+                            "grade2014": "",
+                            "grade2013": ""
+                        },
+                        {
+                            "name": "Somerset Prep Charter High School",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "F"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5469,12 +8677,68 @@ var $zipData = [
                     "cities": "Tamarac",
                     "housePriceFifteen": 171600,
                     "housePriceFourteen": 156200,
-                    "housePercent": 0.10,
+                    "housePercent": 0.1,
                     "condoPriceFifteen": 85400,
                     "condoPriceFourteen": 78700,
                     "condoPercent": 0.09,
                     "crime": 64,
-                    "schoolGrade": 2.8
+                    "schoolGrade": 2.8,
+                    "school": [
+                        {
+                            "name": "Excelsior Charter Of Broward",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Renaissance Charter School At University",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Charter School of Excellence Tamarac 1",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Tamarac Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Challenger Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Millennium Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Everest Charter School",
+                            "grade2015": "B",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Pivot Charter School",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Charter School of Excellence Tamarac 2",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5528,7 +8792,8 @@ var $zipData = [
                     "condoPriceFourteen": 289600,
                     "condoPercent": 0.03,
                     "crime": 112,
-                    "schoolGrade": "N/A"
+                    "schoolGrade": "N/A",
+                    "school" : "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5582,7 +8847,39 @@ var $zipData = [
                     "condoPriceFourteen": 96800,
                     "condoPercent": 0.03,
                     "crime": 168,
-                    "schoolGrade": 1.5
+                    "schoolGrade": 1.5,
+                    "school": [
+                        {
+                            "name": "Lloyd Estates Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Oriole Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Lauderdale Lakes Middle",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "New Generation Prep High School of Performing Arts",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Anderson Boyd High",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5627,12 +8924,44 @@ var $zipData = [
                     "cities": "Oakland Park",
                     "housePriceFifteen": 231100,
                     "housePriceFourteen": 209700,
-                    "housePercent": 0.10,
+                    "housePercent": 0.1,
                     "condoPriceFifteen": 101200,
                     "condoPriceFourteen": 92900,
                     "condoPercent": 0.09,
                     "crime": 204,
-                    "schoolGrade": 2.7
+                    "schoolGrade": 2.7,
+                    "school": [
+                        {
+                            "name": "North Andrews Gardens Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Oakland Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Floranada Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Rickards Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Northeast High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5690,7 +9019,27 @@ var $zipData = [
                     "condoPriceFourteen": 56800,
                     "condoPercent": 0.03,
                     "crime": 94,
-                    "schoolGrade": 1.7
+                    "schoolGrade": 1.7,
+                    "school": [
+                        {
+                            "name": "Pathways Academy K-8 Center",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Central Charter School",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Park Lakes Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "D"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5740,15 +9089,59 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33351,
-                    "cities" : "Sunrise",
-                    "housePriceFifteen" : 216400,
-                    "housePriceFourteen" : 198800,
-                    "housePercent" : 0.09,
-                    "condoPriceFifteen" : 87100,
+                    "cities": "Sunrise",
+                    "housePriceFifteen": 216400,
+                    "housePriceFourteen": 198800,
+                    "housePercent": 0.09,
+                    "condoPriceFifteen": 87100,
                     "condoPriceFourteen": 82500,
                     "condoPercent": 0.06,
-                    "crime" : 136,
-                    "schoolGrade": 3
+                    "crime": 136,
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Franklin Academy B",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Banyan Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Welleby Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Sandpiper Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Discovery Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Westpine Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Piper High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5797,7 +9190,9 @@ var $zipData = [
                     "condoPriceFifteen": 292000,
                     "condoPriceFourteen": 283200,
                     "condoPercent": 0.03,
-                    "crime": 142
+                    "crime": 142,
+                    "schoolGrade": "N/A",
+                    "school": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5850,7 +9245,9 @@ var $zipData = [
                     "condoPriceFifteen": 161800,
                     "condoPriceFourteen": 153200,
                     "condoPercent": 0.06,
-                    "crime": 237
+                    "crime": 237,
+                    "schoolGrade": "N/A",
+                    "school": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5892,7 +9289,111 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 184,
-                    "schoolGrade": 0.03
+                    "schoolGrade": 1.6,
+                    "school": [
+                        {
+                            "name": "Eagles' Nest Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Village Academy",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Henry McNeal Turner Learning",
+                            "grade2015": "D",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Dillard Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Walker Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Broward Estates Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Larkdale Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "North Fork Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Martin Luther King Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Thurgood Marshall Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Rock Island Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Sunland Early Learning Center",
+                            "grade2015": "A",
+                            "grade2014": "D",
+                            "grade2013": "F"
+                        },
+                        {
+                            "name": "Parkway Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "William Dandy Middle",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Eagles' Nest Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Somerset Academy Village Charter Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Dillard High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5950,7 +9451,69 @@ var $zipData = [
                     "condoPriceFourteen": 46400,
                     "condoPercent": 0.02,
                     "crime": 147,
-                    "schoolGrade": 1.9
+                    "schoolGrade": 1.9,
+                    "school": [
+                        {
+                            "name": "Renaissance Charter Of Plantation",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Ben Gamla South Broward",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "P.T. Lauderhill Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Castle Hill Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Village Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Mirror Lake Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Royal Palm Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Plantation Middle",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Lauderhill High",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "F"
+                        },
+                        {
+                            "name": "Plantation High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -5992,15 +9555,35 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33322,
-                    "cities" : "Sunrise",
-                    "housePriceFifteen" : 232700,
-                    "housePriceFourteen" : 218000,
-                    "housePercent" : 0.07,
-                    "condoPriceFifteen" : 49500,
+                    "cities": "Sunrise",
+                    "housePriceFifteen": 232700,
+                    "housePriceFourteen": 218000,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 49500,
                     "condoPriceFourteen": 47500,
                     "condoPercent": 0.04,
-                    "crime" : 76,
-                    "schoolGrade": 3
+                    "crime": 76,
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Horizon Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Nob Hill Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Bair Middle",
+                            "grade2015": "B",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6054,7 +9637,21 @@ var $zipData = [
                     "condoPriceFourteen": 194500,
                     "condoPercent": 0.02,
                     "crime": 187,
-                    "schoolGrade": 3.3
+                    "schoolGrade": 3.3,
+                    "school": [
+                        {
+                            "name": "Wilton Manors Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Fort Lauderdale High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6104,7 +9701,27 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 42,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Imagine Charter School Weston",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Gator Run Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Imagine Middle School West",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6182,7 +9799,33 @@ var $zipData = [
                     "condoPriceFourteen": 245700,
                     "condoPercent": 0.02,
                     "crime": 282,
-                    "schoolGrade": 3.1
+                    "schoolGrade": 3.1,
+                    "school": [
+                        {
+                            "name": "Bayview Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "North Side Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Bennett Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sunrise Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6232,7 +9875,33 @@ var $zipData = [
                     "condoPriceFourteen": 159800,
                     "condoPercent": 0.03,
                     "crime": 54,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Country Isles Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Indian Trace Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Eagle Point Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Tequesta Trace Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6302,7 +9971,57 @@ var $zipData = [
                     "condoPriceFourteen": 85400,
                     "condoPercent": 0.08,
                     "crime": 155,
-                    "schoolGrade": 2.7
+                    "schoolGrade": 2.7,
+                    "school": [
+                        {
+                            "name": "Tropical Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Meadowbrook Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Peters Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Plantation Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Plantation Park Elementary",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Seminole Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "South Plantation High",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "McFatter Technical Center",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6356,7 +10075,33 @@ var $zipData = [
                     "condoPriceFourteen": 122400,
                     "condoPercent": 0.07,
                     "crime": 105,
-                    "schoolGrade": 3.9
+                    "schoolGrade": 3.9,
+                    "school": [
+                        {
+                            "name": "Imagine Schools South Campus",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Central Park Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Fox Trail Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Indian Ridge Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6402,7 +10147,27 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 117,
-                    "schoolGrade": 3.8
+                    "schoolGrade": 3.8,
+                    "school": [
+                        {
+                            "name": "Flamingo Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sawgrass Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Western High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6452,7 +10217,15 @@ var $zipData = [
                     "condoPriceFourteen": 325600,
                     "condoPercent": 0.02,
                     "crime": 248,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Virginia S. Young Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6506,7 +10279,21 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 184,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Harbordale Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Charter School Of Excellence",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6568,7 +10355,39 @@ var $zipData = [
                     "condoPriceFourteen": 213700,
                     "condoPercent": 0.08,
                     "crime": 159,
-                    "schoolGrade": 1.7
+                    "schoolGrade": 1.7,
+                    "school": [
+                        {
+                            "name": "Riverland Elementary",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Westwood Heights Elementary",
+                            "grade2015": "F",
+                            "grade2014": "F",
+                            "grade2013": "D"
+                        },
+                        {
+                            "name": "Foster Stephen Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "New River Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Stranahan High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6634,7 +10453,15 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 336,
-                    "schoolGrade": 2.3
+                    "schoolGrade": 2.3,
+                    "school": [
+                        {
+                            "name": "Croissant Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6700,7 +10527,27 @@ var $zipData = [
                     "condoPriceFourteen": 448700,
                     "condoPercent": -0.02,
                     "crime": 45,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Manatee Bay Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Falcon Cove Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Cypress Bay High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6766,7 +10613,27 @@ var $zipData = [
                     "condoPriceFourteen": 135000,
                     "condoPercent": 0.23,
                     "crime": 207,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Dania Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "F"
+                        },
+                        {
+                            "name": "Collins Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Olsen Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6844,15 +10711,47 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33314,
-                    "cities" : "Davie",
-                    "housePriceFifteen" : 197100,
-                    "housePriceFourteen" : 184000,
-                    "housePercent" : 0.07,
-                    "condoPriceFifteen" : 112800,
+                    "cities": "Davie",
+                    "housePriceFifteen": 197100,
+                    "housePriceFourteen": 184000,
+                    "housePercent": 0.07,
+                    "condoPriceFifteen": 112800,
                     "condoPriceFourteen": 94700,
                     "condoPercent": 0.19,
-                    "crime" : 171,
-                    "schoolGrade": 3.7
+                    "crime": 171,
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Nova Dwight Eisenhower Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Nova Blanche Forman Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Davie Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Nova Middle",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Nova High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6910,7 +10809,33 @@ var $zipData = [
                     "condoPriceFourteen": 278400,
                     "condoPercent": 0.014,
                     "crime": 51,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Everglades Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hawkes Bluff Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Silver Trail Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pembroke Pines Charter High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -6968,7 +10893,39 @@ var $zipData = [
                     "condoPriceFourteen": 130800,
                     "condoPercent": 0.06,
                     "crime": 76,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Championship Academy Of Discovery",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Cooper City Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Silver Ridge Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pioneer Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Cooper City High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7014,7 +10971,27 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 92,
-                    "schoolGrade": 3.6
+                    "schoolGrade": 3.6,
+                    "school": [
+                        {
+                            "name": "Franklin Academy E",
+                            "grade2015": "C",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Griffin Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Franklin Academy F",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7063,7 +11040,9 @@ var $zipData = [
                     "condoPriceFifteen": 299300,
                     "condoPriceFourteen": 284200,
                     "condoPercent": 0.05,
-                    "crime": 119
+                    "crime": 119,
+                    "schoolGrade": "N/A",
+                    "school": "N/A"
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7121,7 +11100,93 @@ var $zipData = [
                     "condoPriceFourteen": 85700,
                     "condoPercent": 0.07,
                     "crime": 190,
-                    "schoolGrade": 2.3
+                    "schoolGrade": 2.3,
+                    "school": [
+                        {
+                            "name": "Beachside Montessori Villa",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hollywood Central Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Hollywood Academy Of Arts & Science",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sunshine Elementary Charter",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Colbert Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Mary M. Bethune Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Oakridge Elementary",
+                            "grade2015": "D",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Attucks Middle",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "McNicol Middle",
+                            "grade2015": "C",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Hollywood Academy Of Arts & Science Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Paragon Academy of Technology",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "South Broward High",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Ben Gamla Charter High",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Somerset Academy Hollywood",
+                            "grade2015": "F",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7171,7 +11236,45 @@ var $zipData = [
                     "condoPriceFourteen": 92800,
                     "condoPercent": 0.11,
                     "crime": 133,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Hollywood Hills Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Stirling Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Orange Brook Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Championship Academy Of Distinction",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Sheridan Hills Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hollywood Hills High",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7229,7 +11332,93 @@ var $zipData = [
                     "condoPriceFourteen": 103800,
                     "condoPercent": 0.05,
                     "crime": 120,
-                    "schoolGrade": 2.9
+                    "schoolGrade": 2.9,
+                    "school": [
+                        {
+                            "name": "Driftwood Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Charter Sch Of Excellence",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Kidz Choice Charter School",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "West Hollywood Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Boulevard Heights Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Sheridan Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Hollywood Park Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pasadena Lakes Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Charter School of Excellence",
+                            "grade2015": "A",
+                            "grade2014": "N/A",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Driftwood Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Apollo Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pines Middle",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "International Sch Of Broward",
+                            "grade2015": "I",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "McArthur High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7279,7 +11468,33 @@ var $zipData = [
                     "condoPriceFourteen": 92600,
                     "condoPercent": 0.14,
                     "crime": 80,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Renaissance Charter School At Cooper City",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "N/A"
+                        },
+                        {
+                            "name": "Pembroke Lakes Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Embassy Creek Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pines Lakes Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7329,7 +11544,33 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 94,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Silver Palms Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Lakeside Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Walter C. Young Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Charles W. Flanagan High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7375,7 +11616,69 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 74,
-                    "schoolGrade": 4
+                    "schoolGrade": 4,
+                    "school": [
+                        {
+                            "name": "Franklin Academy",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Panther Run Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Chapel Trail Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Sunset Lakes Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pembroke Pines Charter Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Conservatory",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "West Broward High",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7425,8 +11728,57 @@ var $zipData = [
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
                     "crime": 143,
-                    "schoolGrade": 2
-
+                    "schoolGrade": 2,
+                    "school": [
+                        {
+                            "name": "Annabel C. Perry Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Pembroke Pines Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Watkins Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Miramar Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Lake Forest Elementary",
+                            "grade2015": "F",
+                            "grade2014": "D",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Sunshine Elementary",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Fairway Elementary",
+                            "grade2015": "D",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Henry D. Perry Middle",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7480,7 +11832,63 @@ var $zipData = [
                     "condoPriceFourteen": 102100,
                     "condoPercent": 0.12,
                     "crime": 101,
-                    "schoolGrade": 3.2
+                    "schoolGrade": 3.2,
+                    "school": [
+                        {
+                            "name": "Sea Castle Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Neighborhood Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "City Of Pembroke Pines Charter Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Palm Cove Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "New Renaissance Middle",
+                            "grade2015": "C",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Preparatory Middle",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Preparatory Middle",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "B"
+                        },
+                        {
+                            "name": "Somerset Academy Charter High School",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Miramar High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7534,7 +11942,69 @@ var $zipData = [
                     "condoPriceFourteen": 95900,
                     "condoPercent": 0.12,
                     "crime": 87,
-                    "schoolGrade": 3.7
+                    "schoolGrade": 3.7,
+                    "school": [
+                        {
+                            "name": "Coconut Palm Elementary",
+                            "grade2015": "C",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy East Prepatory ",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy - Miramar Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Coral Cove Elementary",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Silver Lakes Elementary",
+                            "grade2015": "B",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Silver Shores Elementary",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Dolphin Bay Elementary",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Glades Middle",
+                            "grade2015": "A",
+                            "grade2014": "B",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Somerset Academy - Miramar Middle",
+                            "grade2015": "A",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        },
+                        {
+                            "name": "Everglades High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",
@@ -7576,7 +12046,27 @@ var $zipData = [
                     "condoPriceFourteen": 190400,
                     "condoPercent": 0.07,
                     "crime": 207,
-                    "schoolGrade": 3
+                    "schoolGrade": 3,
+                    "school": [
+                        {
+                            "name": "Hallandale Elementary",
+                            "grade2015": "B",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Gulfstream Middle",
+                            "grade2015": "A",
+                            "grade2014": "C",
+                            "grade2013": "C"
+                        },
+                        {
+                            "name": "Hallandale High",
+                            "grade2015": "B",
+                            "grade2014": "A",
+                            "grade2013": "A"
+                        }
+                    ]
                 },
                 "geometry": {
                     "type": "Polygon",

@@ -475,12 +475,17 @@ hr {
     width: 20%;
     float: left;
     border: 5px solid; }
+  #map-container .footer-list {
+    border: 1px solid;
+    font-size: 10px !important;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif;
+    margin-top: 2em; }
 
 .section:nth-child(2) {
   margin-top: 2em; }
 
 #hover-box {
-  width: 260px;
+  width: 300px;
   position: absolute;
   background: #fff;
   color: #000;
@@ -489,7 +494,7 @@ hr {
   -moz-box-shadow: 0px 0px 10px #999;
   display: none;
   z-index: 9999;
-  height: 115px; }
+  height: auto; }
   #hover-box .float-left {
     float: left; }
   #hover-box .float-right {
@@ -498,13 +503,13 @@ hr {
     border-right: 1px dashed #ccc;
     height: 80px;
     width: 50%;
-    padding: 2.5px 10px 0px 0;
+    padding: 2.5px 5px 0px 5px;
     float: left; }
   #hover-box #condo-price {
     border-right: none;
     height: 80px;
     width: 50%;
-    padding: 2.5px 10px 0px 10px;
+    padding: 2.5px 5px 0px 5px;
     float: right; }
   #hover-box .house-row {
     display: block;
@@ -515,6 +520,37 @@ hr {
     font-size: 12px; }
     #hover-box .house-row:last-of-type {
       border: none; }
+  #hover-box #school-list {
+    height: auto;
+    display: none;
+    font-size: 10px;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif;
+    clear: both;
+    padding: 5px 5px 0px 5px; }
+    #hover-box #school-list .school-table {
+      width: 100%; }
+      #hover-box #school-list .school-table th {
+        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        color: #666;
+        width: 5px;
+        text-align: center;
+        padding-top: 2.5px; }
+      #hover-box #school-list .school-table .name {
+        text-align: left; }
+      #hover-box #school-list .school-table td {
+        text-align: center; }
+      #hover-box #school-list .school-table .schools-row {
+        border-bottom: 1px dashed #ccc; }
+        #hover-box #school-list .school-table .schools-row:last-of-type {
+          border-bottom: none; }
+  #hover-box .no-school {
+    display: none;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #bbb;
+    padding: 1em;
+    text-align: center; }
   #hover-box .table-label {
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -526,8 +562,131 @@ hr {
     font-size: 16px;
     font-weight: bold; }
 
+.mobile-interface {
+  border: 1px solid;
+  margin-top: 20px;
+  display: none;
+  height: 400px; }
+  .mobile-interface #button-container {
+    margin: 1em auto;
+    height: auto;
+    display: block;
+    max-width: 475px; }
+    .mobile-interface #button-container h3 {
+      text-align: center; }
+    .mobile-interface #button-container .input-holder {
+      text-align: center;
+      display: inline-block; }
+    .mobile-interface #button-container .button-holder {
+      text-align: center;
+      display: inline;
+      float: right; }
+    .mobile-interface #button-container .income-btn {
+      margin: 5px auto;
+      background-color: #EFEFEF;
+      border-radius: 4px;
+      border: 1px solid #D0D0D0;
+      overflow: hidden;
+      width: 65px;
+      height: 30px;
+      display: inline-block;
+      font-size: 16px;
+      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+      font-weight: bold; }
+      .mobile-interface #button-container .income-btn:hover {
+        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+    .mobile-interface #button-container .income-box {
+      font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      font-size: 20px;
+      border-bottom: 1px dashed #ccc;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 125px;
+      padding-left: 0.25em;
+      text-align: left;
+      vertical-align: 10px; }
+      .mobile-interface #button-container .income-box::-webkit-input-placeholder {
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.75em;
+        font-size: 18px; }
+      .mobile-interface #button-container .income-box:focus {
+        outline: 0; }
+        .mobile-interface #button-container .income-box:focus::-webkit-input-placeholder {
+          color: #fff; }
+  .mobile-interface .question {
+    font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px; }
+  .mobile-interface .dollar-sign {
+    font-size: 20px;
+    vertical-align: 10px; }
+  .mobile-interface .error {
+    height: auto;
+    width: 100%;
+    display: none;
+    margin: 1px auto;
+    text-align: center; }
+    .mobile-interface .error .error-message {
+      background: #aa0000;
+      padding: 0.25em; }
+  .mobile-interface #check-button-house, .mobile-interface #check-button-condo {
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    overflow: hidden;
+    width: 60px;
+    height: 20px;
+    display: inline-flex;
+    margin: 0px 0.25em; }
+    .mobile-interface #check-button-house:hover, .mobile-interface #check-button-condo:hover {
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+    .mobile-interface #check-button-house label, .mobile-interface #check-button-condo label {
+      float: left;
+      width: 100%; }
+      .mobile-interface #check-button-house label span, .mobile-interface #check-button-condo label span {
+        text-align: left;
+        display: block;
+        padding: 2px 2px;
+        font-size: 14px;
+        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+        line-height: 0px; }
+      .mobile-interface #check-button-house label input, .mobile-interface #check-button-condo label input {
+        display: none; }
+        .mobile-interface #check-button-house label input:checked + span, .mobile-interface #check-button-condo label input:checked + span {
+          background-color: #aaa;
+          color: #000; }
+  .mobile-interface .explainer {
+    display: none;
+    font-size: 14px;
+    line-height: 18px; }
+
 @media (max-width: 991px) {
   .input-holder {
     width: 100%; }
   .button-holder {
     width: 100%; } }
+
+@media (max-width: 767px) {
+  .map {
+    display: block;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  #map-info {
+    display: none !important; }
+  #map-container {
+    width: 100% !important; }
+  .mobile-interface {
+    display: block; }
+  footer {
+    display: block; }
+  #hover-box {
+    display: none !important; } }
