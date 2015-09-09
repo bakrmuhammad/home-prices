@@ -566,12 +566,15 @@ hr {
   border: 1px solid;
   margin-top: 20px;
   display: none;
-  height: 400px; }
+  height: auto; }
+  .mobile-interface .readout {
+    font-size: 16px; }
   .mobile-interface #button-container {
     margin: 1em auto;
-    height: auto;
+    height: 180px;
     display: block;
-    max-width: 475px; }
+    max-width: 475px;
+    border: 1px solid; }
     .mobile-interface #button-container h3 {
       text-align: center; }
     .mobile-interface #button-container .input-holder {
@@ -663,8 +666,11 @@ hr {
           color: #000; }
   .mobile-interface .explainer {
     display: none;
-    font-size: 14px;
-    line-height: 18px; }
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid red;
+    text-align: center;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif; }
 
 @media (max-width: 991px) {
   .input-holder {
@@ -679,13 +685,29 @@ hr {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-top: 1em; }
   #map-info {
     display: none !important; }
   #map-container {
     width: 100% !important; }
+    #map-container #interface-container {
+      border: 1px solid red;
+      right: -40px;
+      width: 290px; }
+      #map-container #interface-container .map-interface {
+        width: 245px; }
+      #map-container #interface-container .price-explainer {
+        border: 1px solid;
+        font-size: 12px;
+        line-height: 16px; }
   .mobile-interface {
     display: block; }
+    .mobile-interface .readout {
+      border: 1px solid;
+      font-size: 16px; }
+    .mobile-interface .button-holder {
+      border: 1px solid; }
   footer {
     display: block; }
   #hover-box {

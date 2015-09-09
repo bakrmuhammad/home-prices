@@ -9,8 +9,6 @@
 
 .info {
 
-	
-
 
 	#house-choice {
 		margin: 1em 0 2em 0;
@@ -607,19 +605,22 @@
 
 }
 
-
-
 .mobile-interface {
 	border: 1px solid;
 	margin-top: 20px;
 	display: none;
-	height: 400px;
+	height: auto;
+
+	.readout {
+		font-size: $base;
+	}
 
 	#button-container {
 		margin: 1em auto;
-		height: auto;
+		height: 180px;
 		display: block;
 		max-width: 475px;
+		border: 1px solid;
 		
 		h3 {
 			text-align: center;
@@ -758,11 +759,14 @@
 		}
 		.explainer {
 			display: none;
-			font-size: $sm;
+			font-size: $base;
 			line-height: 18px;
+			border: 1px solid red;
+			text-align: center;
+			font-family: $serif;
 		}
 
-}
+	}
 
 
 @media (max-width: 991px) {
@@ -789,6 +793,7 @@
 	    padding-left: 15px;
 	    margin-right: auto;
 	    margin-left: auto;
+	    margin-top: 1em;
 	}
 
 	#map-info {
@@ -797,12 +802,38 @@
 
 	#map-container {
 		width: 100% !important;
+
+		#interface-container {
+			border: 1px solid red;
+			right: -40px;
+			width: 290px;
+
+			.map-interface {
+				width: 245px;
+			}
+
+			.price-explainer {
+				border: 1px solid;
+				font-size: $xs;
+				line-height: 16px;
+			}
+
+
+		}
 		
 	}
 
 	.mobile-interface {
 		display: block;
 
+		.readout {
+			border: 1px solid;
+			font-size: $base;
+		}
+
+		.button-holder {
+			border: 1px solid;
+		}
 	}
 
 	footer {
@@ -813,7 +844,4 @@
 		display: none !important;
 	}
 
-
 }
-
-

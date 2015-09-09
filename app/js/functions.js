@@ -21,11 +21,15 @@
 
 
 	// WIDTHS
-	var mobile = 400;
+	var mobile = 600;
 	var w = window.innerWidth;
 
+	console.log(w)
+
+	console.log(w>mobile)
+
 	function fixPosition () {
-		if (w > mobile) {
+		if (w >= mobile) {
 			return [25.82, -79.85];
 		}
 
@@ -41,13 +45,25 @@
 		}
 
 		else {
-			return 8.5
+			return 8.75
+		}
+	}
+
+	function controlZoom () {
+		if (w > mobile) {
+			return true;
+		}
+
+		else {
+			return false;
 		}
 	}
 
 	var coordinates = fixPosition();
 	var lat = coordinates[0];
 	var lon = coordinates[1];
+
+	console.log(lat, lon)
 
 	// BUILD MAP
 	var map = new L.Map('map-container', {
@@ -58,11 +74,8 @@
 		zoomControl: false,
 		doubleClickZoom: false,
 		VML: true,
-		scrollWheelZoom: false
+		scrollWheelZoom: controlZoom()
 	}).addLayer(tiles);
-
-
-
 
 
 
