@@ -48,11 +48,11 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="navbar-header"><a class="navbar-brand-img large-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b.png" class="logo"></a> <a class="navbar-brand-img mobile-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/h_b.png" class="logo"></a> <a class="navbar-brand sig">Real Estate</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a onclick="popUp=window.open('https://twitter.com/home?status=This%20is%20a%20test%20tweet%20for%20the%20home%20price%20project','popupwindow','scrollbars=yes,width=500,height=320');popUp.focus();return false"><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-google-plus"></i></a></li></ul></div></nav>
 
       <!-- CONTENT -->
-  <!--     <div class="container"> -->
+
         
 
 	<div class="container">
-			<div class="mobile-interface">
+			<div id="map-info">
 				<span class="graphic-label">The housing market</span>
 				<div class="headline">Finding affordable housing in South Florida</div>
 				<div class="byline">
@@ -65,22 +65,35 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 					<p class='readout'>If you choose to buy a 
 						<span id="check-button-house">
 							<label>
-								<input class='house' type="checkbox" checked='checked' value="1">
+								<input class='house' type="checkbox"  value="1">
 									<span><i class="fa fa-home"></i> house</span>
 							</label>
 						</span> or 
 					   <span id="check-button-condo">
 						   	<label>
-						   		<input class='condo' type="checkbox" disabled='disabled' value="1">
+						   		<input class='condo' type="checkbox" value="1">
 						   	<span><i class="fa fa-building"></i> condo</span>
 						   	</label>
 					   	</span>
-					   in South Florida	with an annual household income of:
-					</p>
+					   in South Florida	using your annual household 
+					   <span id="check-button-income">
+					   	<label>
+					   		<input class='income' type="checkbox" value="1">
+					   	<span> income</span>
+					   	</label>
+				   	  </span> 
+				   	  or
+				   	  <span id="check-button-savings">
+						   	<label>
+						   		<input class='savings' type="checkbox" value="1">
+						   	<span> savings</span>
+						   	</label>
+					   	</span>
+					 </p>
 					
 					<div class="input-holder">
 						<span class="dollar-sign">$ </span>
-						<input name="income-box" class="income-box" type="text" placeholder="Enter income" />
+						<input name="income-box" class="income-box" type="text" placeholder="" />
 					</div>
 					
 
@@ -106,93 +119,11 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 				</div>	
 			</div>	
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- <div id="list-container">
-				<header>
-				<input id="srcbox" placeholder="Search for a ZIP code...">
-				<span id="srcbox-button"></span>
-				<span id="reset" class="ral upper xsmall">Clear</span>
-				<div class="clearfix"></div>
-				</header>
-				<section id="zip-list" style="height: 491px;">
-					<ul></ul>
-				</section>
-
-			</div>		 -->	
+		
 		<!-- </div> -->
 
 		<div class="map">
 			<div id="map-container">
-				
-				<div id="map-info">
-					<span class="graphic-label">The housing market</span>
-					<div class="headline">Finding affordable housing in South Florida</div>
-					<div class="byline">
-						<span class="name">By <span class="upper"><a href="mailto:calcantara@miamiherald.com">Chris Alcantara</a></span> and <span class="upper"><a href="mailto:nnehamas@miamiherald.com">Nicolas Nehamas</a></span></span>
-						<span class="date">Published: Sept. 20, 2015</span>
-					</div>
-
-					<div id="button-container">
-
-						<p class='readout'>If you choose to buy a 
-							<span id="check-button-house">
-								<label>
-									<input class='house' type="checkbox" checked='checked' value="1">
-										<span><i class="fa fa-home"></i> house</span>
-								</label>
-							</span> or 
-						   <span id="check-button-condo">
-							   	<label>
-							   		<input class='condo' type="checkbox" disabled='disabled' value="1">
-							   	<span><i class="fa fa-building"></i> condo</span>
-							   	</label>
-						   	</span>
-						   in South Florida	with an annual household income of:
-						</p>
-						
-						<div class="input-holder">
-							<span class="dollar-sign">$ </span>
-							<input name="income-box" class="income-box" type="text" placeholder="Enter income" />
-						</div>
-						
-
-						<div class="button-holder">
-							<button class='income-button income-btn' type="button" value="Execute">Submit</button>
-							
-							<button class='reset income-btn' type="button" value="Reset">Reset</button>
-						</div>
-					</div>
-
-					<div class="error">
-						<div class="alert alert-danger" role="alert">
-						  <i class="fa fa-info-circle"></i>
-						  <span class="sr-only">Error:</span>
-						   Enter a valid number
-						</div>
-					</div>
-
-					<div class="explainer">
-						<p>You can afford a <span class="housing"></span> in <span class="zip-count"></span> ZIP codes.</p>
-					</div>	
-				</div>
-
-
-
-
 				<div id="interface-container">
 					<ul>
 						<li class="price-select interface-selector selected-interface">Price</li>
@@ -236,36 +167,49 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 					<div class="clearfix"></div>
 					
 					<div id="house-price">
-						<span class="table-label">Average house price</span>
 						
-						<div class="house-row">
-							<span class="float-left">2014</span><span class="float-right house-price-fourteen"></span>
-						</div>
+						<table class='housing-table'>
+							<tr>
+								<th>Year</th>
+								<th>House Price</th>
+							</tr>
+							<tr>
+								<td>2014</td>
+								<td class="house-price-fourteen"></td>
+							</tr>
+							<tr>
+								<td>2015</td>
+								<td class="house-price-fifteen"></td>
+							</tr>
+							<tr>
+								<td>Pct.</td>
+								<td class="house-percent"></td>
+							</tr>
+
+						</table>
 						
-						<div class="house-row">
-							<span class="float-left">2015</span><span class="float-right house-price-fifteen"></span>
-						</div>
-						
-						<div class="house-row">
-							<span class="float-left">Pct.</span><span class="float-right house-percent"></span>
-						</div>
 					</div>
-
-
 					<div id="condo-price">
-						<span class="table-label">Average condo price</span>
-						
-						<div class="house-row">
-							<span class="float-left">2014</span><span class="float-right condo-price-fourteen"></span>
-						</div>
-						
-						<div class="house-row">
-							<span class="float-left">2015</span><span class="float-right condo-price-fifteen"></span>
-						</div>
-						
-						<div class="house-row">
-							<span class="float-left">Pct.</span><span class="float-right condo-percent"></span>
-						</div>
+						<table class='housing-table'>
+							<tr>
+								<th>Year</th>
+								<th>Condo Price</th>
+							</tr>
+							<tr>
+								<td>2014</td>
+								<td class="condo-price-fourteen"></td>
+							</tr>
+							<tr>
+								<td>2015</td>
+								<td class="condo-price-fifteen"></td>
+							</tr>
+
+							<tr>
+								<td>Pct.</td>
+								<td class="condo-percent"></td>
+							</tr>
+
+						</table>
 					</div>
 		
 					<div class="clearfix"></div>
@@ -283,23 +227,40 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 					</div>
 
 				</div>
-
-
-
-
 			</div>
-			
-		</div>
+		</div> <!-- END MAP -->
 	
+	
+		<div id="list-container">
+			<header>
+
+			<div class="explainer">
+				<p>Here is a list of the <span class="zip-count"></span> ZIP codes where you can afford a <span class="housing"></span>:</p>
+			</div>	
+			<input id="srcbox" placeholder="Search for a ZIP code...">
+			<span id="srcbox-button"></span>
+			<span id="reset" class="ral upper xsmall">Clear</span>
+			<div class="clearfix"></div>
+			</header>
 
 
+			<section id="zip-list" style="height: 491px;">
+				<ul></ul>
+			</section>
+
+		</div>	
+
+
+ 
+        <div class="container">
        <!--  <div id="sources">
 	<p>Sources: Zillow, Miami-Dade County Public Schools, Broward County Schools and ESRI</p>
 </div> -->
         <!-- <h3 class="comments">Comments</h3>
 <div id="fb-root"></div><div class="fb-comments" data-href="" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
  -->
-<!--       </div> -->
+        <footer></footer>
+      </div>
       <!-- JS LIBRARIES -->
       <script src="js/libs/d3/d3.min.js"></script>
 <script src="js/libs/jquery/jquery.min.js"></script>

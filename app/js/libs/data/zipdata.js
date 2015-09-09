@@ -6,6 +6,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33056,
+                    "neighborhoods": "",
                     "cities": "Miami Gardens",
                     "housePriceFifteen": 145500,
                     "housePriceFourteen": 133800,
@@ -98,6 +99,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33055,
+                    "neighborhoods": "",
                     "cities": "Miami Gardens",
                     "housePriceFifteen": 169300,
                     "housePriceFourteen": 140400,
@@ -198,6 +200,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33179,
+                    "neighborhoods": "",
                     "cities": "Ives Estates",
                     "housePriceFifteen": 256700,
                     "housePriceFourteen": 222100,
@@ -268,6 +271,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33013,
+                    "neighborhoods": "",
                     "cities": "Hialeah",
                     "housePriceFifteen": 212500,
                     "housePriceFourteen": 191200,
@@ -360,6 +364,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33016,
+                    "neighborhoods": "",
                     "cities": "Hialeah",
                     "housePriceFifteen": 246700,
                     "housePriceFourteen": 240300,
@@ -472,6 +477,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33015,
+                    "neighborhoods": "",
                     "cities": "Country Club",
                     "housePriceFifteen": 278200,
                     "housePriceFourteen": 251000,
@@ -578,6 +584,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33181,
+                    "neighborhoods": "",
                     "cities": "North Miami",
                     "housePriceFifteen": 739200,
                     "housePriceFourteen": 689000,
@@ -656,6 +663,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33039,
+                    "neighborhoods": "",
                     "cities": "Homestead",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -723,10 +731,11 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33165,
+                    "neighborhoods": "",
                     "cities": "University Park",
                     "housePriceFifteen": 290300,
                     "housePriceFourteen": 264400,
-                    "housePercent": 0.1,
+                    "housePercent": 0.10,
                     "condoPriceFifteen": "N/A",
                     "condoPriceFourteen": "N/A",
                     "condoPercent": "N/A",
@@ -849,10 +858,11 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33141,
+                    "neighborhoods": "",
                     "cities": "Miami Beach",
                     "housePriceFifteen": 815400,
                     "housePriceFourteen": 742100,
-                    "housePercent": 0.1,
+                    "housePercent": 0.10,
                     "condoPriceFifteen": 236200,
                     "condoPriceFourteen": 222900,
                     "condoPercent": 0.06,
@@ -935,6 +945,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33155,
+                    "neighborhoods": "",
                     "cities": "Coral Terrace",
                     "housePriceFifteen": 317500,
                     "housePriceFourteen": 287700,
@@ -1035,6 +1046,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33161,
+                    "neighborhoods": "",
                     "cities": "North Miami",
                     "housePriceFifteen": 200100,
                     "housePriceFourteen": 176700,
@@ -1129,6 +1141,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33182,
+                    "neighborhoods": "",
                     "cities": "Tamiami",
                     "housePriceFifteen": 313100,
                     "housePriceFourteen": 283000,
@@ -1183,6 +1196,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33178,
+                    "neighborhoods": "",
                     "cities": "Doral",
                     "housePriceFifteen": 502800,
                     "housePriceFourteen": 490550,
@@ -1283,6 +1297,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33101,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 190613.795585,
                     "SHAPE_LEN": 1792.25249867
                 },
@@ -1292,6 +1307,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33151,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 7492.6403201,
                     "SHAPE_LEN": 419.19661969
                 },
@@ -1301,6 +1317,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33184,
+                    "neighborhoods": "",
                     "cities": "Tamiami",
                     "housePriceFifteen": 309500,
                     "housePriceFourteen": 286200,
@@ -1361,6 +1378,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33180,
+                    "neighborhoods": "",
                     "cities": "Aventura",
                     "housePriceFifteen": 796100,
                     "housePriceFourteen": 745800,
@@ -1435,6 +1453,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33175,
+                    "neighborhoods": "",
                     "cities": "Tamiami",
                     "housePriceFifteen": 303900,
                     "housePriceFourteen": 285300,
@@ -1539,6 +1558,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33135,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 260300,
                     "housePriceFourteen": 231200,
@@ -1633,6 +1653,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33192,
+                    "neighborhoods": "",
                     "cities": "Homestead",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -1684,6 +1705,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33150,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 115600,
                     "housePriceFourteen": 114700,
@@ -1784,6 +1806,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33154,
+                    "neighborhoods": "",
                     "cities": "Bal Harbour",
                     "housePriceFifteen": 682800,
                     "housePriceFourteen": 617300,
@@ -1850,6 +1873,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33194,
+                    "neighborhoods": "",
                     "cities": "Golden Glades",
                     "housePriceFifteen": 378400,
                     "housePriceFourteen": 357400,
@@ -1893,6 +1917,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33168,
+                    "neighborhoods": "",
                     "cities": "North Miami",
                     "housePriceFifteen": 128000,
                     "housePriceFourteen": 117800,
@@ -1967,6 +1992,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33116,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 263396.231166,
                     "SHAPE_LEN": 2368.36553885
                 },
@@ -1976,6 +2002,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33054,
+                    "neighborhoods": "",
                     "cities": "Miami Gardens",
                     "housePriceFifteen": 101600,
                     "housePriceFourteen": 93700,
@@ -2128,6 +2155,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33197,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 193105.833516,
                     "SHAPE_LEN": 1920.9171325
                 },
@@ -2137,6 +2165,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33035,
+                    "neighborhoods": "",
                     "cities": "Homestead",
                     "housePriceFifteen": 193600,
                     "housePriceFourteen": 172400,
@@ -2243,6 +2272,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33153,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 4228.09009075,
                     "SHAPE_LEN": 325.793651837
                 },
@@ -2252,6 +2282,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33283,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 2747.60792373,
                     "SHAPE_LEN": 287.174298155
                 },
@@ -2261,6 +2292,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33147,
+                    "neighborhoods": "",
                     "cities": "West Little River",
                     "housePriceFifteen": 106400,
                     "housePriceFourteen": 93500,
@@ -2375,6 +2407,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33034,
+                    "neighborhoods": "",
                     "cities": "Florida City",
                     "housePriceFifteen": 106000,
                     "housePriceFourteen": 91800,
@@ -2475,6 +2508,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33167,
+                    "neighborhoods": "",
                     "cities": "Westview",
                     "housePriceFifteen": 109700,
                     "housePriceFourteen": 103000,
@@ -2557,6 +2591,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33030,
+                    "neighborhoods": "",
                     "cities": "Homestead",
                     "housePriceFifteen": 149200,
                     "housePriceFourteen": 132100,
@@ -2683,6 +2718,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33033,
+                    "neighborhoods": "",
                     "cities": "Homestead",
                     "housePriceFifteen": 151900,
                     "housePriceFourteen": 139300,
@@ -2839,6 +2875,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33173,
+                    "neighborhoods": "",
                     "cities": "Kendall",
                     "housePriceFifteen": 329200,
                     "housePriceFourteen": 306400,
@@ -2919,6 +2956,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33032,
+                    "neighborhoods": "",
                     "cities": "Princeton",
                     "housePriceFifteen": 158700,
                     "housePriceFourteen": 139300,
@@ -3077,6 +3115,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33140,
+                    "neighborhoods": "",
                     "cities": "Miami Beach",
                     "housePriceFifteen": 1533600,
                     "housePriceFourteen": 1248800,
@@ -3153,6 +3192,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33177,
+                    "neighborhoods": "",
                     "cities": "South Miami Heights",
                     "housePriceFifteen": 214400,
                     "housePriceFourteen": 189900,
@@ -3251,6 +3291,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33187,
+                    "neighborhoods": "",
                     "cities": "Richmond West",
                     "housePriceFifteen": 294400,
                     "housePriceFourteen": 264200,
@@ -3310,6 +3351,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33109,
+                    "neighborhoods": "",
                     "cities": "Fisher Island",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -3352,6 +3394,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33149,
+                    "neighborhoods": "",
                     "cities": "Key Biscayne",
                     "housePriceFifteen": 2807400,
                     "housePriceFourteen": 2430700,
@@ -3460,6 +3503,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33131,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -3515,6 +3559,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33018,
+                    "neighborhoods": "",
                     "cities": "Hialeah",
                     "housePriceFifteen": 258200,
                     "housePriceFourteen": 232200,
@@ -3627,6 +3672,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33158,
+                    "neighborhoods": "",
                     "cities": "Village of Palmetto Bay",
                     "housePriceFifteen": 606500,
                     "housePriceFourteen": 566300,
@@ -3674,6 +3720,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33146,
+                    "neighborhoods": "",
                     "cities": "Coral Gables",
                     "housePriceFifteen": 930700,
                     "housePriceFourteen": 828800,
@@ -3750,6 +3797,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33196,
+                    "neighborhoods": "",
                     "cities": "The Hammocks",
                     "housePriceFifteen": 300400,
                     "housePriceFourteen": 278000,
@@ -3856,13 +3904,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33172,
+                    "neighborhoods": "",
                     "cities": "Fountainbleau",
                     "housePriceFifteen": 415600,
                     "housePriceFourteen": 408000,
                     "housePercent": 0.19,
                     "condoPriceFifteen": 142500,
                     "condoPriceFourteen": 129200,
-                    "condoPercent": 0.1,
+                    "condoPercent": 0.10,
                     "crime": 149,
                     "schoolGrade": 3.7,
                     "school": [
@@ -3966,6 +4015,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33174,
+                    "neighborhoods": "",
                     "cities": "Fountainbleau",
                     "housePriceFifteen": 282400,
                     "housePriceFourteen": 258900,
@@ -4028,6 +4078,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33186,
+                    "neighborhoods": "",
                     "cities": "The Crossings",
                     "housePriceFifteen": 293300,
                     "housePriceFourteen": 271400,
@@ -4116,6 +4167,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33129,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 584800,
                     "housePriceFourteen": 503000,
@@ -4183,6 +4235,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33130,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -4285,6 +4338,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33160,
+                    "neighborhoods": "",
                     "cities": "Sunny Isles Beach",
                     "housePriceFifteen": 1755300,
                     "housePriceFourteen": 1548800,
@@ -4361,6 +4415,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33162,
+                    "neighborhoods": "",
                     "cities": "North Miami Beach",
                     "housePriceFifteen": 175400,
                     "housePriceFourteen": 157000,
@@ -4465,6 +4520,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33133,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 731100,
                     "housePriceFourteen": 655000,
@@ -4585,6 +4641,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33169,
+                    "neighborhoods": "",
                     "cities": "Miami Gardens",
                     "housePriceFifteen": 181900,
                     "housePriceFourteen": 164300,
@@ -4689,10 +4746,11 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33143,
+                    "neighborhoods": "",
                     "cities": "Glenvar Heights",
                     "housePriceFifteen": 750600,
                     "housePriceFourteen": 664300,
-                    "housePercent": 0.01,
+                    "housePercent": 0.13,
                     "condoPriceFifteen": 144300,
                     "condoPriceFourteen": 139700,
                     "condoPercent": 0.03,
@@ -4789,13 +4847,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33125,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 200900,
                     "housePriceFourteen": 185000,
                     "housePercent": 0.09,
                     "condoPriceFifteen": 109200,
                     "condoPriceFourteen": 99600,
-                    "condoPercent": 0.1,
+                    "condoPercent": 0.10,
                     "crime": 202,
                     "schoolGrade": 1.4,
                     "school": [
@@ -4869,13 +4928,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33193,
+                    "neighborhoods": "",
                     "cities": "Kendall West",
                     "housePriceFifteen": 289500,
                     "housePriceFourteen": 274000,
                     "housePercent": 0.06,
                     "condoPriceFifteen": 134100,
                     "condoPriceFourteen": 119300,
-                    "condoPercent": 0.01,
+                    "condoPercent": 0.11,
                     "crime": 143,
                     "schoolGrade": 3.5,
                     "school": [
@@ -4947,6 +5007,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33138,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 504700,
                     "housePriceFourteen": 462000,
@@ -5013,6 +5074,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33152,
+                    "neighborhoods": "",
                     "SHAPE_AREA": 1666832.93127,
                     "SHAPE_LEN": 6392.42513859
                 },
@@ -5022,6 +5084,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33142,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 97100,
                     "housePriceFourteen": 85300,
@@ -5158,6 +5221,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33183,
+                    "neighborhoods": "",
                     "cities": "Kendale Lakes",
                     "housePriceFifteen": 295800,
                     "housePriceFourteen": 275400,
@@ -5252,13 +5316,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33166,
+                    "neighborhoods": "",
                     "cities": "Miami Springs",
                     "housePriceFifteen": 340200,
                     "housePriceFourteen": 313900,
                     "housePercent": 0.08,
                     "condoPriceFifteen": 140500,
                     "condoPriceFourteen": 128100,
-                    "condoPercent": 0.1,
+                    "condoPercent": 0.10,
                     "crime": 201,
                     "schoolGrade": 2.9,
                     "school": [
@@ -5354,6 +5419,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33136,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -5442,6 +5508,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33170,
+                    "neighborhoods": "",
                     "cities": "Goulds",
                     "housePriceFifteen": 187100,
                     "housePriceFourteen": 167100,
@@ -5544,6 +5611,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33190,
+                    "neighborhoods": "",
                     "cities": "Cutler Bay",
                     "housePriceFifteen": 230100,
                     "housePriceFourteen": 201200,
@@ -5591,6 +5659,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33128,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -5659,6 +5728,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33010,
+                    "neighborhoods": "",
                     "cities": "Hialeah",
                     "housePriceFifteen": 201100,
                     "housePriceFourteen": 174900,
@@ -5757,6 +5827,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33156,
+                    "neighborhoods": "",
                     "cities": "Pinecrest",
                     "housePriceFifteen": 999500,
                     "housePriceFourteen": 891500,
@@ -5863,6 +5934,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33031,
+                    "neighborhoods": "",
                     "cities": "Redland",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -5939,6 +6011,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33189,
+                    "neighborhoods": "",
                     "cities": "Cutler Bay",
                     "housePriceFifteen": 221900,
                     "housePriceFourteen": 200700,
@@ -6031,6 +6104,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33014,
+                    "neighborhoods": "",
                     "cities": "Hialeah",
                     "housePriceFifteen": 298100,
                     "housePriceFourteen": 280900,
@@ -6153,6 +6227,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33012,
+                    "neighborhoods": "",
                     "cities": "Hialeah",
                     "housePriceFifteen": 240600,
                     "housePriceFourteen": 223300,
@@ -6253,6 +6328,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33139,
+                    "neighborhoods": "",
                     "cities": "Miami Beach",
                     "housePriceFifteen": 3229000,
                     "housePriceFourteen": 2535300,
@@ -6335,6 +6411,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33132,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -6433,6 +6510,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33137,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 663000,
                     "housePriceFourteen": 539700,
@@ -6499,6 +6577,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33185,
+                    "neighborhoods": "",
                     "cities": "Kendall West",
                     "housePriceFifteen": 332700,
                     "housePriceFourteen": 315600,
@@ -6605,6 +6684,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33134,
+                    "neighborhoods": "",
                     "cities": "Coral Gables",
                     "housePriceFifteen": 528500,
                     "housePriceFourteen": 499100,
@@ -6677,6 +6757,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33122,
+                    "neighborhoods": "",
                     "cities": "Fountainbleau",
                     "housePriceFifteen": "N/A",
                     "housePriceFourteen": "N/A",
@@ -6751,6 +6832,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33144,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 265600,
                     "housePriceFourteen": 250900,
@@ -6813,6 +6895,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33126,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 241100,
                     "housePriceFourteen": 215300,
@@ -6905,6 +6988,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33176,
+                    "neighborhoods": "",
                     "cities": "Kendall",
                     "housePriceFifteen": 418500,
                     "housePriceFourteen": 420800,
@@ -7039,6 +7123,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33127,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 98600,
                     "housePriceFourteen": 87500,
@@ -7163,6 +7248,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33157,
+                    "neighborhoods": "",
                     "cities": "Village of Palmetto Bay",
                     "housePriceFifteen": 238500,
                     "housePriceFourteen": 220300,
@@ -7317,6 +7403,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33145,
+                    "neighborhoods": "",
                     "cities": "Miami",
                     "housePriceFifteen": 360800,
                     "housePriceFourteen": 312100,
@@ -7377,6 +7464,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33067,
+                    "neighborhoods": "",
                     "cities": "Coral Springs",
                     "housePriceFifteen": 411000,
                     "housePriceFourteen": 399500,
@@ -7473,6 +7561,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33076,
+                    "neighborhoods": "",
                     "cities": "Coral Springs",
                     "housePriceFifteen": 450100,
                     "housePriceFourteen": 438699,
@@ -7575,6 +7664,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33441,
+                    "neighborhoods": "",
                     "cities": "Deerfield Beach",
                     "housePriceFifteen": 229500,
                     "housePriceFourteen": 207300,
@@ -7663,6 +7753,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33442,
+                    "neighborhoods": "",
                     "cities": "Deerfield Beach",
                     "housePriceFifteen": 248900,
                     "housePriceFourteen": 235800,
@@ -7725,6 +7816,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33073,
+                    "neighborhoods": "",
                     "cities": "Coconut Creek",
                     "housePriceFifteen": 309300,
                     "housePriceFourteen": 296800,
@@ -7809,6 +7901,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33062,
+                    "neighborhoods": "",
                     "cities": "Pompano Beach",
                     "housePriceFifteen": 526100,
                     "housePriceFourteen": 502300,
@@ -7876,6 +7969,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33064,
+                    "neighborhoods": "",
                     "cities": "Pompano Beach",
                     "housePriceFifteen": 153200,
                     "housePriceFourteen": 137800,
@@ -7998,6 +8092,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33065,
+                    "neighborhoods": "",
                     "cities": "Coral Springs",
                     "housePriceFifteen": 284100,
                     "housePriceFourteen": 274500,
@@ -8112,6 +8207,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33069,
+                    "neighborhoods": "",
                     "cities": "Pompano Beach",
                     "housePriceFifteen": 106100,
                     "housePriceFourteen": 101700,
@@ -8196,10 +8292,11 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33063,
+                    "neighborhoods": "",
                     "cities": "Margate",
                     "housePriceFifteen": 208700,
                     "housePriceFourteen": 189500,
-                    "housePercent": 0.1,
+                    "housePercent": 0.10,
                     "condoPriceFifteen": 56000,
                     "condoPriceFourteen": 53600,
                     "condoPercent": 0.05,
@@ -8298,6 +8395,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33066,
+                    "neighborhoods": "",
                     "cities": "Coconut Creek",
                     "housePriceFifteen": 230000,
                     "housePriceFourteen": 212700,
@@ -8362,6 +8460,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33060,
+                    "neighborhoods": "",
                     "cities": "Pompano Beach",
                     "housePriceFifteen": 243000,
                     "housePriceFourteen": 228400,
@@ -8464,6 +8563,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33071,
+                    "neighborhoods": "",
                     "cities": "Coral Springs",
                     "housePriceFifteen": 347800,
                     "housePriceFourteen": 341100,
@@ -8546,6 +8646,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33068,
+                    "neighborhoods": "",
                     "cities": "North Lauderdale",
                     "housePriceFifteen": 157600,
                     "housePriceFourteen": 141200,
@@ -8674,10 +8775,11 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33321,
+                    "neighborhoods": "",
                     "cities": "Tamarac",
                     "housePriceFifteen": 171600,
                     "housePriceFourteen": 156200,
-                    "housePercent": 0.1,
+                    "housePercent": 0.10,
                     "condoPriceFifteen": 85400,
                     "condoPriceFourteen": 78700,
                     "condoPercent": 0.09,
@@ -8784,6 +8886,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33308,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 587700,
                     "housePriceFourteen": 575900,
@@ -8839,10 +8942,11 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33309,
+                    "neighborhoods": "",
                     "cities": "Oakland Park",
                     "housePriceFifteen": 170600,
                     "housePriceFourteen": 152800,
-                    "housePercent": 0.11,
+                    "housePercent": 0.10,
                     "condoPriceFifteen": 99900,
                     "condoPriceFourteen": 96800,
                     "condoPercent": 0.03,
@@ -8921,6 +9025,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33334,
+                    "neighborhoods": "",
                     "cities": "Oakland Park",
                     "housePriceFifteen": 231100,
                     "housePriceFourteen": 209700,
@@ -9011,13 +9116,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33319,
+                    "neighborhoods": "",
                     "cities": "Lauderhill",
                     "housePriceFifteen": 153600,
                     "housePriceFourteen": 141500,
                     "housePercent": 0.09,
                     "condoPriceFifteen": 58200,
                     "condoPriceFourteen": 56800,
-                    "condoPercent": 0.03,
+                    "condoPercent": 0.02,
                     "crime": 94,
                     "schoolGrade": 1.7,
                     "school": [
@@ -9089,6 +9195,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33351,
+                    "neighborhoods": "",
                     "cities": "Sunrise",
                     "housePriceFifteen": 216400,
                     "housePriceFourteen": 198800,
@@ -9183,6 +9290,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33323,
+                    "neighborhoods": "",
                     "cities": "Sunrise",
                     "housePriceFifteen": 261600,
                     "housePriceFourteen": 245400,
@@ -9238,6 +9346,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33306,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 562700,
                     "housePriceFourteen": 562600,
@@ -9281,6 +9390,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33311,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 122500,
                     "housePriceFourteen": 116800,
@@ -9443,6 +9553,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33313,
+                    "neighborhoods": "",
                     "cities": "Lauderhill",
                     "housePriceFifteen": 161300,
                     "housePriceFourteen": 141800,
@@ -9555,6 +9666,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33322,
+                    "neighborhoods": "",
                     "cities": "Sunrise",
                     "housePriceFifteen": 232700,
                     "housePriceFourteen": 218000,
@@ -9629,13 +9741,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33305,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 456300,
                     "housePriceFourteen": 432800,
-                    "housePercent": 0.03,
+                    "housePercent": 0.05,
                     "condoPriceFifteen": 205100,
                     "condoPriceFourteen": 194500,
-                    "condoPercent": 0.02,
+                    "condoPercent": 0.05,
                     "crime": 187,
                     "schoolGrade": 3.3,
                     "school": [
@@ -9693,6 +9806,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33327,
+                    "neighborhoods": "",
                     "cities": "Weston",
                     "housePriceFifteen": 458000,
                     "housePriceFourteen": 458200,
@@ -9791,6 +9905,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33304,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 433500,
                     "housePriceFourteen": 420300,
@@ -9867,6 +9982,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33326,
+                    "neighborhoods": "",
                     "cities": "Weston",
                     "housePriceFifteen": 370200,
                     "housePriceFourteen": 358200,
@@ -9963,6 +10079,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33317,
+                    "neighborhoods": "",
                     "cities": "Plantation",
                     "housePriceFifteen": 299950,
                     "housePriceFourteen": 291400,
@@ -10067,6 +10184,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33324,
+                    "neighborhoods": "",
                     "cities": "Plantation",
                     "housePriceFifteen": 315000,
                     "housePriceFourteen": 300400,
@@ -10139,6 +10257,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33325,
+                    "neighborhoods": "",
                     "cities": "Davie",
                     "housePriceFifteen": 336200,
                     "housePriceFourteen": 332300,
@@ -10209,6 +10328,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33301,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 1051100,
                     "housePriceFourteen": 935300,
@@ -10271,6 +10391,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33316,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 952900,
                     "housePriceFourteen": 872300,
@@ -10347,6 +10468,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33312,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 200600,
                     "housePriceFourteen": 184300,
@@ -10445,6 +10567,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33315,
+                    "neighborhoods": "",
                     "cities": "Fort Lauderdale",
                     "housePriceFifteen": 263500,
                     "housePriceFourteen": 245300,
@@ -10519,6 +10642,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33332,
+                    "neighborhoods": "",
                     "cities": "Weston",
                     "housePriceFifteen": 554200,
                     "housePriceFourteen": 547500,
@@ -10605,13 +10729,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33004,
+                    "neighborhoods": "",
                     "cities": "Dania Beach",
                     "housePriceFifteen": 222900,
                     "housePriceFourteen": 214100,
                     "housePercent": 0.04,
                     "condoPriceFifteen": 138100,
                     "condoPriceFourteen": 135000,
-                    "condoPercent": 0.23,
+                    "condoPercent": 0.02,
                     "crime": 207,
                     "schoolGrade": 3,
                     "school": [
@@ -10711,6 +10836,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33314,
+                    "neighborhoods": "",
                     "cities": "Davie",
                     "housePriceFifteen": 197100,
                     "housePriceFourteen": 184000,
@@ -10801,13 +10927,14 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33331,
+                    "neighborhoods": "",
                     "cities": "Weston",
                     "housePriceFifteen": 432600,
                     "housePriceFourteen": 427400,
-                    "housePercent": 0.012,
+                    "housePercent": 0.12,
                     "condoPriceFifteen": 316400,
                     "condoPriceFourteen": 278400,
-                    "condoPercent": 0.014,
+                    "condoPercent": 0.12,
                     "crime": 51,
                     "schoolGrade": 4,
                     "school": [
@@ -10885,6 +11012,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33328,
+                    "neighborhoods": "",
                     "cities": "Davie",
                     "housePriceFifteen": 325600,
                     "housePriceFourteen": 317500,
@@ -10963,6 +11091,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33330,
+                    "neighborhoods": "",
                     "cities": "Cooper City",
                     "housePriceFifteen": 560700,
                     "housePriceFourteen": 516200,
@@ -11033,6 +11162,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33019,
+                    "neighborhoods": "",
                     "cities": "Hollywood",
                     "housePriceFifteen": 502500,
                     "housePriceFourteen": 494400,
@@ -11092,6 +11222,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33020,
+                    "neighborhoods": "",
                     "cities": "Holywood",
                     "housePriceFifteen": 179100,
                     "housePriceFourteen": 163800,
@@ -11228,6 +11359,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33021,
+                    "neighborhoods": "",
                     "cities": "Hollywood",
                     "housePriceFifteen": 285300,
                     "housePriceFourteen": 278100,
@@ -11324,6 +11456,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33024,
+                    "neighborhoods": "",
                     "cities": "Pembroke Pines",
                     "housePriceFifteen": 203200,
                     "housePriceFourteen": 183800,
@@ -11460,6 +11593,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33026,
+                    "neighborhoods": "",
                     "cities": "Pembroke Pines",
                     "housePriceFifteen": 270300,
                     "housePriceFourteen": 256200,
@@ -11536,6 +11670,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33028,
+                    "neighborhoods": "",
                     "cities": "Pembroke Pines",
                     "housePriceFifteen": 354600,
                     "housePriceFourteen": 340100,
@@ -11608,6 +11743,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33029,
+                    "neighborhoods": "",
                     "cities": "Pembroke Pines",
                     "housePriceFifteen": 363600,
                     "housePriceFourteen": 350000,
@@ -11720,6 +11856,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33023,
+                    "neighborhoods": "",
                     "cities": "Miramar",
                     "housePriceFifteen": 163600,
                     "housePriceFourteen": 146900,
@@ -11824,6 +11961,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33025,
+                    "neighborhoods": "",
                     "cities": "Miramar",
                     "housePriceFifteen": 223800,
                     "housePriceFourteen": 205300,
@@ -11934,6 +12072,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33027,
+                    "neighborhoods": "",
                     "cities": "Miramar",
                     "housePriceFifteen": 353700,
                     "housePriceFourteen": 343400,
@@ -12038,6 +12177,7 @@ var $zipData = [
                 "type": "Feature",
                 "properties": {
                     "zipcode": 33009,
+                    "neighborhoods": "",
                     "cities": "Hallandale Beach",
                     "housePriceFifteen": 177700,
                     "housePriceFourteen": 170200,

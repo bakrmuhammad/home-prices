@@ -490,11 +490,11 @@
 
 		// SET VARIBLES TO GET CRIME
 		var incomeInput    = $('.income-box').val(),
-      houseCheckbox  = $('.house:checkbox'),
-      condoCheckbox  = $('.condo:checkbox'),
-      houseCheck 	   = (houseCheckbox.is(':checked')),
-      condoCheck 	   = (condoCheckbox.is(':checked')),
-      inputEmpty 	   = (incomeInput === '');
+	    	houseCheckbox  = $('.house:checkbox'),
+	      	condoCheckbox  = $('.condo:checkbox'),
+	      	houseCheck 	   = (houseCheckbox.is(':checked')),
+	      	condoCheck 	   = (condoCheckbox.is(':checked')),
+	      	inputEmpty 	   = (incomeInput === '');
 
 		// CEHCK IF HOUSE OR CONDO IS CHECKED 	
 		if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
@@ -683,11 +683,28 @@
 
 	// Get money that can be spent on housing
 	function getIncome (num) {
-		var income = parseFloat(num.replace(',','') * 3.5);
-
-		$('.income').html('$' + num);
 		
-		return income;
+		var incomeCheckbox  = $('.income:checkbox'),
+  			savingsCheckbox = $('.savings:checkbox'),
+  			incomeCheck     = (incomeCheckbox.is(':checked')),
+  			savingsCheck 	= (savingsCheckbox.is(':checked'));
+
+
+  		if (incomeCheck === true && savingsCheck === false) {
+  			var income = parseFloat(num.replace(',','') * 3.5);
+  			console.log(income)
+			return income;
+  		}
+
+  		else if (incomeCheck === false && savingsCheck === true) {
+
+  			var income = parseFloat(num.replace(',',''));
+  			console.log(income)
+			return income;
+
+  		}
+
+  		$('.income').html('$' + num);
 	}
 
 	// Change number to dollar
@@ -751,11 +768,12 @@
 		$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please choose a housing type');
 	}
 
-	function removeError () {
-		$('.error').slideUp('fast');
+	function flagMoneyError () {
+		$('.error').slideDown('fast');
+		$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please choose a form of payment');
 	}
 
-	function removeSelectionError () {
+	function removeError () {
 		$('.error').slideUp('fast');
 	}
 
@@ -768,25 +786,71 @@
 		var incomeInput 	= $('.income-box').val(),
 			houseCheckbox 	= $('.house:checkbox'),
 			condoCheckbox 	= $('.condo:checkbox'),
+			incomeCheckbox 	= $('.income:checkbox'),
+			savingsCheckbox = $('.savings:checkbox'),
 			inputBoxError 	= (isNaN(income)) || (incomeInput === ''),
 			houseCheck 		= (houseCheckbox.is(':checked')),
-			condoCheck 		= (condoCheckbox.is(':checked'));
+			condoCheck 		= (condoCheckbox.is(':checked')),
+			incomeCheck 	= (incomeCheckbox.is(':checked')),
+			savingsCheck 	= (savingsCheckbox.is(':checked'));
 
 		// ERROR HANDLING
-		if ((inputBoxError === false) && (houseCheck === true ) && (condoCheck === false)) {
+
+		// No errors
+		if ( ( inputBoxError === false ) && (houseCheck === true ) && (condoCheck === false) && ((incomeCheck === true) || (savingsCheck === true))) {
 			buildHouseMap(income);
 			removeError();
 		}
-		else if (((inputBoxError === true) && ((houseCheck === true) || condoCheck === true ))) {
-			flagError();
-		}
-		else if (((inputBoxError === true) && ((houseCheck === false) && condoCheck === false ))) {
+
+		// If nothing's selected. Throw selection error
+		else if ((inputBoxError === true) && ((houseCheck === false) && condoCheck === false ) && ((incomeCheck === false) && (savingsCheck === false))) {
 			flagSelectionError();
 		}
-		else if ((inputBoxError === false) && (houseCheck === false ) && (condoCheck === true)) {
-			buildCondoMap(income);
-			removeError();
+
+
+		// If payment and housing are checked, but input is empty
+		// throw number error
+		else if ((inputBoxError === true) && ((houseCheck === true) || condoCheck === true ) && ((incomeCheck === true) || (savingsCheck === true))) {
+			flagError();
 		}
+
+		// If payment is selected and input is filled, 
+		// but payment is not checked, throw money error
+
+		else if ((inputBoxError === false) && ((houseCheck === true) || condoCheck === true ) && ((incomeCheck === false) && (savingsCheck === false))) {
+			flagMoneyError();
+
+			// alert('hooray!')
+		}
+
+
+		// If only housing is selected
+		else if ((inputBoxError === true) && ((houseCheck === true) || condoCheck === true ) && ((incomeCheck === false) && (savingsCheck === false))) {
+			flagMoneyError();
+
+			// alert('hooray!')
+		}
+
+
+
+		// else if (((inputBoxError === true) && ((houseCheck === false) && condoCheck === false ))) {
+		// 	flagSelectionError();
+		// }
+
+		// else if (((inputBoxError === true) && ((houseCheck === true) || condoCheck === true )) && ((incomeCheck === false) || (savingsCheck === false))) {
+			
+		// 	flagMoneyError();
+		// }
+
+
+		// else if ((inputBoxError === false) && (houseCheck === false ) && (condoCheck === true)) {
+		// 	buildCondoMap(income);
+		// 	removeError();
+		// }
+
+		var income = getIncome(incomeInput);
+
+		return income;
 	}
 
 	//=============
@@ -1037,9 +1101,9 @@
 		$('.crime-select').removeClass('selected-interface');
 		$('.school-select').removeClass('selected-interface');
 
-		var price 			= 'price',
-			houseCheckbox 	= $('.house:checkbox'),
-			houseCheck 		= (houseCheckbox.is(':checked'));
+		var price 		  = 'price',
+			houseCheckbox = $('.house:checkbox'),
+			houseCheck 	  = (houseCheckbox.is(':checked'));
 
 		buildKey(price);
 
@@ -1052,12 +1116,14 @@
 		$('.housing-explainer').html(' in Miami-Dade and Broward counties.');
 		$('.percent-year').css('display', 'none');
 
+
 		// TOGGLE HOVER PRICE TABLES
 		if (houseCheck === false) {
 			$('#house-price').css({
 				'float': 'left',
 				'width' : '50%',
-				'border-right': '1px dashed #ccc'
+				'border-right': '1px dashed #ccc',
+				'border-right-style': 'dashed'
 			});
 			$('#condo-price').css('display', 'block');
 		}
@@ -1121,7 +1187,8 @@
 			$('#house-price').css({
 				'float': 'left',
 				'width' : '50%',
-				'border-right': '1px dashed #ccc'
+				'border-right': '1px dashed #ccc',
+				'border-right-style': 'dashed'
 			});
 			$('#condo-price').css('display', 'block');
 		}
@@ -1480,21 +1547,36 @@
 	// 			MAP LIST
 	//====================================
 
+
 	function buildZipList () {
+
+		$('#list-container').show();
+
+
 		d3.json('../js/libs/data/zipcode_test.json', function(data) {
 
-			$.each(data, function(i, val) {
 
-				$('#zip-list ul').append('<li class=\'listing\' data-index=' + i + ' data-zipcode=\''+ data[i].zipcode + '\' data-house-fourteen=\''+data[i].housePriceFourteen+'\' data-house-fifteen=\''+data[i].housePriceFifteen+'\' data-house-percent=\''+data[i].housePercent+'\' data-condo-fourteen=\''+data[i].condoPriceFourteen+'\' data-condo-fifteen=\''+data[i].condoPriceFifteen+'\' data-condo-percent=\''+data[i].condoPercent+'\'><span class =\'hed\'>' + data[i].zipcode + ' – ' + data[i].city + '</span></li>');
-				 
-				
-				$('#zip-list').on('click', '.listing', function(event) {
+		function returnIncome () {
+
+			var incomeInput = $('.income-box').val(),
+				income = getIncome(incomeInput);
+
+			return income;
+
+		}
+
+
+			var handlers = [
+
+				// On first click...
+				function () {
 
 					if ( $(this).hasClass('active-listing') ) {
 						return false;
 					}
 
 					$('.hed').css('text-align', 'center');
+					
 
 					var houseFourteen = $(this).attr('data-house-fourteen'),
 						houseFifteen  = $(this).attr('data-house-fifteen'),
@@ -1509,7 +1591,7 @@
 					
 					$(this).addClass('active-listing');
 					
-					$(this).append('<div class="inner">' +
+					$(this).append('<div class="inner"><i class="close-item fa fa-times"></i>' +
 					'<div id=\'prices-container\'>'+
 					'<div class=\'price col-sm-12 col-xs-12\'>' +
 					'<span class=\'hed\'>Average Home Prices</span>' +
@@ -1535,15 +1617,72 @@
 					'<span class=\'price-num\'>'+ percentChange(condoPercent) + '</span></div></div></div>'+'<table class=\'school-list\'><tr class= \'table-head\'><th class=\'name\'>School</th><th>2014-15</th><th>2013-14</th><th>2012-13</th></tr></table>'+'</div>'
 					);
 
+					$('.close-item').css({
+						'display': 'block',
+						'cursor': 'pointer'
+					});
+
 					var q = $(this).attr('data-index'),
 						schoolData = data[q].school;
 
 					for (var i = 0; i < schoolData.length; i++) {
 						
 						$('.table-head').after('<tr><td class=\'name\'>' + schoolData[i].name + '</td><td>'+ schoolData[i].grade2015 +'</td><td>' + schoolData[i].grade2014 +'</td><td>' + schoolData[i].grade2013+'</td></tr>');
-					}
+					}		 
+				},
+				// On second click...
+				function () {
+					$('.listing .inner').remove();
+					$('.listing').removeClass('active-listing');
+				}
+			]
+
+			var income = returnIncome();
+
+			$.each(data, function(i, val) {
+
+				$('#zip-list ul').append('<li class=\'listing\' data-index=' + i + ' data-zipcode=\''+ data[i].zipcode + '\' data-house-fourteen=\''+data[i].housePriceFourteen+'\' data-house-fifteen=\''+data[i].housePriceFifteen+'\' data-house-percent=\''+data[i].housePercent+'\' data-condo-fourteen=\''+data[i].condoPriceFourteen+'\' data-condo-fifteen=\''+data[i].condoPriceFifteen+'\' data-condo-percent=\''+data[i].condoPercent+'\'><span class =\'hed\'>' + data[i].zipcode + ' – ' + data[i].city + '</span></li>');	
+
+				var counter = 0;
+
+				$('#zip-list').on('click', '.listing', function(event) {
+
+					handlers[counter++].apply(this,Array.prototype.slice.apply(arguments));
+
+					counter %= handlers.length;
 				});
 	  		});
+
+			
+			var items = $('.listing');
+
+				var houseCheckbox  = $('.house:checkbox'),
+	      			condoCheckbox  = $('.condo:checkbox'),
+	      			houseCheck 	   = (houseCheckbox.is(':checked')),
+	      			condoCheck 	   = (condoCheckbox.is(':checked'));
+
+			$.each(items, function(i) {
+
+				var houseFifteen   = $(this).attr('data-house-fifteen'),
+					condoFifteen   = $(this).attr('data-condo-fifteen');
+
+				if ((income >= houseFifteen) && ((houseCheck === true) && (condoCheck === false))) {
+
+					$(this).addClass('match')
+					console.log('match only houses')
+				}
+
+				else if ((income >= condoFifteen) && ((houseCheck === false) && (condoCheck === true))) {
+					$(this).addClass('match')
+					console.log('match only condos')
+				}
+
+
+				else {
+					$(this).addClass('miss')
+					console.log('add miss')
+				}
+			});		
 
 			$('#srcbox').quicksearch('.listing', '.hed');
 	

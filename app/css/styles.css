@@ -266,7 +266,7 @@ hr {
     font-size: 18px; } }
 
 .miss {
-  display: none; }
+  display: none !important; }
 
 .info #house-choice {
   margin: 1em 0 2em 0;
@@ -277,145 +277,266 @@ hr {
   .info #house-choice .disabled:hover {
     background-color: #efefef !important; }
 
+#list-container {
+  background: #f8f5f2;
+  margin-top: 1em;
+  display: none; }
+  #list-container header {
+    padding: 10px;
+    display: block;
+    position: relative; }
+    #list-container header #srcbox {
+      font-family: 'Roboto Slab', Georgia, Times, Serif;
+      font-size: 16px;
+      width: 78%;
+      padding: 14px 10.5% 14px 2.5%;
+      margin: 15px auto 25px auto;
+      display: block;
+      border: none;
+      background: #EEE;
+      box-shadow: inset 0px 0px 10px #CCC;
+      border-radius: 3px; }
+    #list-container header #srcbox-button {
+      background: transparent url("http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png") no-repeat scroll center center;
+      width: 35px;
+      height: 25px;
+      position: absolute;
+      right: 15%;
+      top: 100px; }
+    #list-container header #reset {
+      padding: 4px;
+      position: absolute;
+      right: 7%;
+      top: 140px;
+      display: inline-block;
+      cursor: pointer; }
+    #list-container header .explainer {
+      border: 1px solid;
+      padding: 0 20px;
+      font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      font-size: 18px;
+      text-align: center; }
+  #list-container #zip-list {
+    border-top: 2px solid #AAA;
+    width: 100%;
+    height: 400px !important;
+    overflow-y: scroll;
+    box-shadow: inset 0px 0px 10px #CCC;
+    margin: 1em 0 2em 0; }
+    #list-container #zip-list ul {
+      padding: 0px; }
+    #list-container #zip-list .active-listing {
+      background: #fff;
+      display: block !important;
+      cursor: default !important; }
+    #list-container #zip-list .listing {
+      padding: 20px;
+      list-style-type: none;
+      cursor: pointer;
+      border-bottom: 1px solid #AAA;
+      border-bottom-style: solid;
+      font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 18px; }
+      #list-container #zip-list .listing:hover {
+        background: #fff; }
+      #list-container #zip-list .listing .close-item {
+        float: right;
+        display: none; }
+      #list-container #zip-list .listing .school-list {
+        width: 100%;
+        font-weight: normal; }
+        #list-container #zip-list .listing .school-list td, #list-container #zip-list .listing .school-list th {
+          font-size: 11px;
+          text-align: center; }
+        #list-container #zip-list .listing .school-list th {
+          padding: 2.5px 2.5px 5px 2.5px; }
+        #list-container #zip-list .listing .school-list tr {
+          border-bottom: 1px dashed #ccc;
+          border-bottom-style: dashed; }
+          #list-container #zip-list .listing .school-list tr:first-of-type, #list-container #zip-list .listing .school-list tr:last-of-type {
+            border: none; }
+        #list-container #zip-list .listing .school-list td {
+          padding: 2.5px 0px; }
+        #list-container #zip-list .listing .school-list .name {
+          text-align: left !important; }
+      #list-container #zip-list .listing #prices-container {
+        height: 200px;
+        width: 100%;
+        margin-top: 0.75em; }
+        #list-container #zip-list .listing #prices-container .price {
+          text-align: center;
+          margin-bottom: 1em; }
+          #list-container #zip-list .listing #prices-container .price:last-of-type {
+            border: none; }
+          #list-container #zip-list .listing #prices-container .price .hed {
+            font-size: 14px;
+            display: block; }
+          #list-container #zip-list .listing #prices-container .price .num {
+            margin: 0.5em auto;
+            border-right: 1px dashed #ccc; }
+            #list-container #zip-list .listing #prices-container .price .num:last-of-type {
+              border: none; }
+            #list-container #zip-list .listing #prices-container .price .num .year {
+              font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              font-weight: bold; }
+            #list-container #zip-list .listing #prices-container .price .num .price-num {
+              display: block;
+              font-family: "Roboto Slab", "Times New Roman", Times, serif;
+              font-size: 20px;
+              font-weight: 300; }
+
+.income {
+  font-weight: bold;
+  color: #2ca25f; }
+
 .map-section {
   display: block;
   margin-top: 1e; }
+
+#map-info {
+  position: absolute;
+  bottom: 36%;
+  right: 30px;
+  max-width: 315px;
+  z-index: 9999;
+  background-color: #fff;
+  display: block;
+  border: 1px solid #ccc;
+  padding: 0.5em; }
+  #map-info .headline {
+    font-size: 25px;
+    text-align: left; }
+  #map-info .byline {
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px; }
+    #map-info .byline .name a {
+      color: #666; }
+    #map-info .byline .date {
+      font-size: 12px; }
+  #map-info .readout {
+    font-size: 14px;
+    text-align: left; }
+  #map-info .graphic-label {
+    text-align: left; }
+  #map-info #button-container {
+    margin: 1em auto;
+    height: auto;
+    display: block;
+    max-width: 475px; }
+    #map-info #button-container h3 {
+      text-align: center; }
+    #map-info #button-container .input-holder {
+      text-align: center;
+      display: inline-block; }
+    #map-info #button-container .button-holder {
+      text-align: center;
+      display: inline;
+      float: right; }
+    #map-info #button-container .income-btn {
+      margin: 5px auto;
+      background-color: #EFEFEF;
+      border-radius: 4px;
+      border: 1px solid #D0D0D0;
+      overflow: hidden;
+      width: 65px;
+      height: 30px;
+      display: inline-block;
+      font-size: 16px;
+      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+      font-weight: bold; }
+      #map-info #button-container .income-btn:hover {
+        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+    #map-info #button-container .income-box {
+      font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      font-size: 20px;
+      border-bottom: 1px dashed #ccc;
+      border-bottom-style: dashed;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 125px;
+      padding-left: 0.25em;
+      text-align: left;
+      vertical-align: 10px; }
+      #map-info #button-container .income-box::-webkit-input-placeholder {
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.75em;
+        font-size: 18px; }
+      #map-info #button-container .income-box:focus {
+        outline: 0; }
+        #map-info #button-container .income-box:focus::-webkit-input-placeholder {
+          color: #fff; }
+  #map-info .question {
+    font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px; }
+  #map-info .dollar-sign {
+    font-size: 20px;
+    vertical-align: 10px; }
+  #map-info .error {
+    height: auto;
+    width: 100%;
+    display: none;
+    margin: 1px auto;
+    text-align: center; }
+    #map-info .error .error-message {
+      background: #aa0000;
+      padding: 0.25em; }
+  #map-info #check-button-house, #map-info #check-button-condo, #map-info #check-button-income, #map-info #check-button-savings {
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    overflow: hidden;
+    width: 60px;
+    height: 20px;
+    display: inline-flex;
+    margin: 0px 0.25em; }
+    #map-info #check-button-house:hover, #map-info #check-button-condo:hover, #map-info #check-button-income:hover, #map-info #check-button-savings:hover {
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+    #map-info #check-button-house label, #map-info #check-button-condo label, #map-info #check-button-income label, #map-info #check-button-savings label {
+      float: left;
+      width: 100%; }
+      #map-info #check-button-house label span, #map-info #check-button-condo label span, #map-info #check-button-income label span, #map-info #check-button-savings label span {
+        text-align: left;
+        display: block;
+        padding: 2px 2px;
+        font-size: 14px;
+        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+        line-height: 0px; }
+      #map-info #check-button-house label input, #map-info #check-button-condo label input, #map-info #check-button-income label input, #map-info #check-button-savings label input {
+        display: none; }
+        #map-info #check-button-house label input:checked + span, #map-info #check-button-condo label input:checked + span, #map-info #check-button-income label input:checked + span, #map-info #check-button-savings label input:checked + span {
+          background-color: #aaa;
+          color: #000; }
+  #map-info #check-button-income span, #map-info #check-button-savings span {
+    padding: 9px 7px !important; }
+  #map-info .explainer {
+    display: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif; }
+    #map-info .explainer .fa-level-down {
+      display: none; }
 
 #map-container {
   width: 100vw;
   height: 91vh;
   display: block;
   position: relative !important; }
-  #map-container #map-info {
-    position: absolute;
-    bottom: 40%;
-    right: 30px;
-    max-width: 315px;
-    z-index: 99999;
-    background-color: #fff;
-    display: block;
-    border: 1px solid #ccc;
-    padding: 0.5em; }
-    #map-container #map-info .headline {
-      font-size: 25px;
-      text-align: left; }
-    #map-container #map-info .byline {
-      font-size: 12px;
-      text-align: left;
-      line-height: 15px; }
-      #map-container #map-info .byline .name a {
-        color: #666; }
-      #map-container #map-info .byline .date {
-        font-size: 12px; }
-    #map-container #map-info .readout {
-      font-size: 14px;
-      text-align: left; }
-    #map-container #map-info .graphic-label {
-      text-align: left; }
-    #map-container #map-info #button-container {
-      margin: 1em auto;
-      height: auto;
-      display: block;
-      max-width: 475px; }
-      #map-container #map-info #button-container h3 {
-        text-align: center; }
-      #map-container #map-info #button-container .input-holder {
-        text-align: center;
-        display: inline-block; }
-      #map-container #map-info #button-container .button-holder {
-        text-align: center;
-        display: inline;
-        float: right; }
-      #map-container #map-info #button-container .income-btn {
-        margin: 5px auto;
-        background-color: #EFEFEF;
-        border-radius: 4px;
-        border: 1px solid #D0D0D0;
-        overflow: hidden;
-        width: 65px;
-        height: 30px;
-        display: inline-block;
-        font-size: 16px;
-        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-        font-weight: bold; }
-        #map-container #map-info #button-container .income-btn:hover {
-          -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-          -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-      #map-container #map-info #button-container .income-box {
-        font-family: "Roboto Slab", "Times New Roman", Times, serif;
-        font-size: 20px;
-        border-bottom: 1px dashed #ccc;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        width: 125px;
-        padding-left: 0.25em;
-        text-align: left;
-        vertical-align: 10px; }
-        #map-container #map-info #button-container .income-box::-webkit-input-placeholder {
-          font-weight: 300;
-          text-align: left;
-          line-height: 1.75em;
-          font-size: 18px; }
-        #map-container #map-info #button-container .income-box:focus {
-          outline: 0; }
-          #map-container #map-info #button-container .income-box:focus::-webkit-input-placeholder {
-            color: #fff; }
-    #map-container #map-info .question {
-      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      font-size: 16px; }
-    #map-container #map-info .dollar-sign {
-      font-size: 20px;
-      vertical-align: 10px; }
-    #map-container #map-info .error {
-      height: auto;
-      width: 100%;
-      display: none;
-      margin: 1px auto;
-      text-align: center; }
-      #map-container #map-info .error .error-message {
-        background: #aa0000;
-        padding: 0.25em; }
-    #map-container #map-info #check-button-house, #map-container #map-info #check-button-condo {
-      background-color: #EFEFEF;
-      border-radius: 4px;
-      border: 1px solid #D0D0D0;
-      overflow: hidden;
-      width: 60px;
-      height: 20px;
-      display: inline-flex;
-      margin: 0px 0.25em; }
-      #map-container #map-info #check-button-house:hover, #map-container #map-info #check-button-condo:hover {
-        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-      #map-container #map-info #check-button-house label, #map-container #map-info #check-button-condo label {
-        float: left;
-        width: 100%; }
-        #map-container #map-info #check-button-house label span, #map-container #map-info #check-button-condo label span {
-          text-align: left;
-          display: block;
-          padding: 2px 2px;
-          font-size: 14px;
-          font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-          line-height: 0px; }
-        #map-container #map-info #check-button-house label input, #map-container #map-info #check-button-condo label input {
-          display: none; }
-          #map-container #map-info #check-button-house label input:checked + span, #map-container #map-info #check-button-condo label input:checked + span {
-            background-color: #aaa;
-            color: #000; }
-    #map-container #map-info .explainer {
-      display: none;
-      font-size: 14px;
-      line-height: 18px; }
   #map-container #interface-container {
     position: absolute;
     bottom: 60px;
     right: 30px;
     max-width: 315px;
-    z-index: 99999; }
+    z-index: 10000; }
     #map-container #interface-container ul {
       position: relative;
       top: 11px;
@@ -458,8 +579,6 @@ hr {
   #map-container .key-holder {
     clear: both;
     margin: 1em 0; }
-  #map-container .explainer {
-    font-family: "Roboto Slab", "Times New Roman", Times, serif; }
   #map-container .label {
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
     font-size: 10px;
@@ -499,6 +618,25 @@ hr {
     float: left; }
   #hover-box .float-right {
     float: right; }
+  #hover-box .housing-table {
+    width: 100%;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif; }
+    #hover-box .housing-table th {
+      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      color: #666;
+      font-size: 10px !important; }
+      #hover-box .housing-table th:nth-child(2) {
+        text-align: right; }
+    #hover-box .housing-table tr {
+      border-bottom: 1px #ccc;
+      border-bottom-style: dashed; }
+      #hover-box .housing-table tr:first-of-type, #hover-box .housing-table tr:last-of-type {
+        border: none; }
+    #hover-box .housing-table td {
+      width: 50%; }
+      #hover-box .housing-table td:nth-child(2) {
+        text-align: right; }
   #hover-box #house-price {
     border-right: 1px dashed #ccc;
     height: 80px;
@@ -515,7 +653,8 @@ hr {
     display: block;
     height: 20px;
     width: 100%;
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px #ccc !important;
+    border-bottom-style: dashed !important;
     font-family: "Roboto Slab", "Times New Roman", Times, serif;
     font-size: 12px; }
     #hover-box .house-row:last-of-type {
@@ -541,7 +680,8 @@ hr {
       #hover-box #school-list .school-table td {
         text-align: center; }
       #hover-box #school-list .school-table .schools-row {
-        border-bottom: 1px dashed #ccc; }
+        border-bottom: 1px dashed #ccc;
+        border-bottom-style: dashed; }
         #hover-box #school-list .school-table .schools-row:last-of-type {
           border-bottom: none; }
   #hover-box .no-school {
@@ -562,115 +702,8 @@ hr {
     font-size: 16px;
     font-weight: bold; }
 
-.mobile-interface {
-  border: 1px solid;
-  margin-top: 20px;
-  display: none;
-  height: auto; }
-  .mobile-interface .readout {
-    font-size: 16px; }
-  .mobile-interface #button-container {
-    margin: 1em auto;
-    height: 180px;
-    display: block;
-    max-width: 475px;
-    border: 1px solid; }
-    .mobile-interface #button-container h3 {
-      text-align: center; }
-    .mobile-interface #button-container .input-holder {
-      text-align: center;
-      display: inline-block; }
-    .mobile-interface #button-container .button-holder {
-      text-align: center;
-      display: inline;
-      float: right; }
-    .mobile-interface #button-container .income-btn {
-      margin: 5px auto;
-      background-color: #EFEFEF;
-      border-radius: 4px;
-      border: 1px solid #D0D0D0;
-      overflow: hidden;
-      width: 65px;
-      height: 30px;
-      display: inline-block;
-      font-size: 16px;
-      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-      font-weight: bold; }
-      .mobile-interface #button-container .income-btn:hover {
-        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-    .mobile-interface #button-container .income-box {
-      font-family: "Roboto Slab", "Times New Roman", Times, serif;
-      font-size: 20px;
-      border-bottom: 1px dashed #ccc;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      width: 125px;
-      padding-left: 0.25em;
-      text-align: left;
-      vertical-align: 10px; }
-      .mobile-interface #button-container .income-box::-webkit-input-placeholder {
-        font-weight: 300;
-        text-align: left;
-        line-height: 1.75em;
-        font-size: 18px; }
-      .mobile-interface #button-container .income-box:focus {
-        outline: 0; }
-        .mobile-interface #button-container .income-box:focus::-webkit-input-placeholder {
-          color: #fff; }
-  .mobile-interface .question {
-    font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 16px; }
-  .mobile-interface .dollar-sign {
-    font-size: 20px;
-    vertical-align: 10px; }
-  .mobile-interface .error {
-    height: auto;
-    width: 100%;
-    display: none;
-    margin: 1px auto;
-    text-align: center; }
-    .mobile-interface .error .error-message {
-      background: #aa0000;
-      padding: 0.25em; }
-  .mobile-interface #check-button-house, .mobile-interface #check-button-condo {
-    background-color: #EFEFEF;
-    border-radius: 4px;
-    border: 1px solid #D0D0D0;
-    overflow: hidden;
-    width: 60px;
-    height: 20px;
-    display: inline-flex;
-    margin: 0px 0.25em; }
-    .mobile-interface #check-button-house:hover, .mobile-interface #check-button-condo:hover {
-      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
-    .mobile-interface #check-button-house label, .mobile-interface #check-button-condo label {
-      float: left;
-      width: 100%; }
-      .mobile-interface #check-button-house label span, .mobile-interface #check-button-condo label span {
-        text-align: left;
-        display: block;
-        padding: 2px 2px;
-        font-size: 14px;
-        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
-        line-height: 0px; }
-      .mobile-interface #check-button-house label input, .mobile-interface #check-button-condo label input {
-        display: none; }
-        .mobile-interface #check-button-house label input:checked + span, .mobile-interface #check-button-condo label input:checked + span {
-          background-color: #aaa;
-          color: #000; }
-  .mobile-interface .explainer {
-    display: none;
-    font-size: 16px;
-    line-height: 18px;
-    border: 1px solid red;
-    text-align: center;
-    font-family: "Roboto Slab", "Times New Roman", Times, serif; }
+footer {
+  display: none; }
 
 @media (max-width: 991px) {
   .input-holder {
@@ -688,7 +721,125 @@ hr {
     margin-left: auto;
     margin-top: 1em; }
   #map-info {
-    display: none !important; }
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    max-width: 100%;
+    z-index: 9999;
+    height: 410px;
+    margin-top: 20px; }
+    #map-info .graphic-label, #map-info .headline, #map-info .byline, #map-info .date, #map-info .readout {
+      text-align: center; }
+    #map-info .readout {
+      font-size: 16px; }
+    #map-info #button-container {
+      margin: 1em auto;
+      height: 180px;
+      display: block;
+      max-width: 475px;
+      border: 1px solid; }
+      #map-info #button-container h3 {
+        text-align: center; }
+      #map-info #button-container .input-holder {
+        text-align: center;
+        display: inline-block; }
+      #map-info #button-container .button-holder {
+        text-align: center;
+        display: inline;
+        float: right; }
+      #map-info #button-container .income-btn {
+        margin: 5px auto;
+        background-color: #EFEFEF;
+        border-radius: 4px;
+        border: 1px solid #D0D0D0;
+        overflow: hidden;
+        width: 65px;
+        height: 30px;
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+        font-weight: bold; }
+        #map-info #button-container .income-btn:hover {
+          -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+      #map-info #button-container .income-box {
+        font-family: "Roboto Slab", "Times New Roman", Times, serif;
+        font-size: 20px;
+        border-bottom: 1px dashed #ccc;
+        border-bottom-style: dashed;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 125px;
+        padding-left: 0.25em;
+        text-align: left;
+        vertical-align: 10px; }
+        #map-info #button-container .income-box::-webkit-input-placeholder {
+          font-weight: 300;
+          text-align: left;
+          line-height: 1.75em;
+          font-size: 18px; }
+        #map-info #button-container .income-box:focus {
+          outline: 0; }
+          #map-info #button-container .income-box:focus::-webkit-input-placeholder {
+            color: #fff; }
+    #map-info .question {
+      font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 16px; }
+    #map-info .dollar-sign {
+      font-size: 20px;
+      vertical-align: 10px; }
+    #map-info .error {
+      height: auto;
+      width: 100%;
+      display: none;
+      margin: 1px auto;
+      text-align: center; }
+      #map-info .error .error-message {
+        background: #aa0000;
+        padding: 0.25em; }
+    #map-info #check-button-house, #map-info #check-button-condo {
+      background-color: #EFEFEF;
+      border-radius: 4px;
+      border: 1px solid #D0D0D0;
+      overflow: hidden;
+      width: 60px;
+      height: 20px;
+      display: inline-flex;
+      margin: 0px 0.25em; }
+      #map-info #check-button-house:hover, #map-info #check-button-condo:hover {
+        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+      #map-info #check-button-house label, #map-info #check-button-condo label {
+        float: left;
+        width: 100%; }
+        #map-info #check-button-house label span, #map-info #check-button-condo label span {
+          text-align: left;
+          display: block;
+          padding: 2px 2px;
+          font-size: 14px;
+          font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+          line-height: 0px; }
+        #map-info #check-button-house label input, #map-info #check-button-condo label input {
+          display: none; }
+          #map-info #check-button-house label input:checked + span, #map-info #check-button-condo label input:checked + span {
+            background-color: #aaa;
+            color: #000; }
+    #map-info .explainer {
+      display: none;
+      font-size: 16px;
+      line-height: 18px;
+      border: 1px solid red;
+      text-align: center;
+      font-family: "Roboto Slab", "Times New Roman", Times, serif; }
+      #map-info .explainer .fa-level-down {
+        display: inline; }
   #map-container {
     width: 100% !important; }
     #map-container #interface-container {
@@ -701,14 +852,8 @@ hr {
         border: 1px solid;
         font-size: 12px;
         line-height: 16px; }
-  .mobile-interface {
-    display: block; }
-    .mobile-interface .readout {
-      border: 1px solid;
-      font-size: 16px; }
-    .mobile-interface .button-holder {
-      border: 1px solid; }
   footer {
-    display: block; }
+    display: block;
+    width: 100%; }
   #hover-box {
     display: none !important; } }

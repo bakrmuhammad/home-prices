@@ -26,23 +26,8 @@
 
 		buildDefaultHouse();
 
-		if (typeof attr !== typeof undefined && attr !== false) {
-			
-			$(this).removeAttr('checked');
-			
-			$('.condo:checkbox')
-				.attr('disabled', false)
-				.closest('#check-button-condo')
-				.removeClass('disabled');
-		}
 
-		else {
-			$(this).attr('checked','checked');
-			$('.condo:checkbox')
-				.attr('disabled', true)
-				.closest('#check-button-condo')
-				.addClass('disabled');
-		}
+		$('.condo:checkbox').attr('checked', false);
 
 		if (houseCheck === false) {
 			$('#house-price').css({
@@ -58,14 +43,14 @@
 			$('#house-price').css({
 					'float': 'none',
 					'border': 'none',
-					'width' : '100%'
+					'width' : '100%',
+					'display': 'block'
 				});
 
 			$('#condo-price').css('display', 'none');
 		}
 		
-		removeError();
-		removeSelectionError();
+		// removeError();
 	});
 
 
@@ -77,25 +62,8 @@
 
 			buildDefaultCondo();
 		
-		if (typeof attr !== typeof undefined && attr !== false) {
-			
-			$(this).removeAttr('checked');
-			
-			$('.house:checkbox')
-				.attr('disabled', false)
-				.closest('#check-button-house')
-				.removeClass('disabled');
-		}
+			$('.house:checkbox').attr('checked', false);
 
-		else {
-
-			$(this).attr('checked','checked');
-			
-			$('.house:checkbox')
-				.attr('disabled', true)
-				.closest('#check-button-house')
-				.addClass('disabled');
-		}
 
 		if (condoCheck === false) {
 			$('#condo-price').css({
@@ -110,15 +78,15 @@
 			$('#condo-price').css({
 					'float': 'none',
 					'border': 'none',
-					'width' : '100%'
+					'width' : '100%',
+					'display': 'block'
 				});
 
 			$('#house-price').css('display', 'none');
 
 		}
 		
-		removeError();
-		removeSelectionError();
+		// removeError();
 	});
 
 	$('.income-box').focus(function() {
@@ -126,6 +94,26 @@
 		 $('.income-button').removeAttr('disabled');
 		 $('.section:first-of-type').after('<br class=\'stop-scroll\'>');
 	});
+
+
+
+	$('#check-button-income').on('change', '.income:checkbox', function(e) {
+
+		$('.income-box').attr('placeholder', 'Enter income' )
+
+		$('.savings:checkbox').attr('checked', false)
+
+
+	})
+
+	$('#check-button-savings').on('change', '.savings:checkbox', function(e) {
+
+		$('.income-box').attr('placeholder', 'Enter amount' )
+
+		$('.income:checkbox').attr('checked', false)
+				
+
+	})
 
 
 	$('#interface-container').on('click', '.price-select', function(event) {
@@ -219,6 +207,10 @@
 
 		}
 
+		else {
+			buildDefaultPercentHouse();
+		}
+
 	});
 
 
@@ -307,6 +299,8 @@
 	// RUN MAP-BUILDING FUNCTIONS
 	$('#button-container').on('click', '.income-button', function() {
 		
+		$('.map-interface').show();	
+		
 		var incomeInput = $('.income-box').val();
 		
 		income = getIncome(incomeInput);
@@ -326,7 +320,13 @@
 
 		checkInput(income);
 
-		$('.map-interface').show();		
+		var mobile = 600,
+			w = window.innerWidth;
+
+		if (mobile > w) {
+			buildZipList();
+		};
+					
 
 	});
 
@@ -339,7 +339,7 @@
 		$('.condo:checkbox').removeAttr('checked');
 
 
-
+		$('#list-container').hide();
 
 
 		$('#school-list').hide();
@@ -375,7 +375,7 @@
 	// LAUNCH PAD
 	function init () {
 		setDefaultMap();
-		buildZipList();
+		
 	}
 
 	// ACTIVATE!	

@@ -37,7 +37,8 @@ var buildFacebookComments = function (d, s, id) {
 $(document).ready(function() {
     
     $folio.css({
-        'border-bottom': '1px solid #ddd'
+        'border-bottom': '1px solid #ddd',
+        'z-index': 10001
     });
 
     buildFooter();

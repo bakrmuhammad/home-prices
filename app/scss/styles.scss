@@ -4,7 +4,7 @@
 
 
 
-.miss { display: none;}
+.miss { display: none !important;}
 
 
 .info {
@@ -27,157 +27,188 @@
 			&:hover {
 				 background-color: #efefef !important;
 			}
+		}
+	}	
+}
 
+
+#list-container {
+	background: #f8f5f2;
+	margin-top: 1em;
+	display: none;
+
+	& header {
+		padding: 10px;
+		display: block;
+		position: relative;
+
+		#srcbox{
+			font-family: 'Roboto Slab', Georgia, Times, Serif;
+		    font-size: 16px;
+		    width: 78%;
+		    padding: 14px 10.5% 14px 2.5%;
+		    margin: 15px auto 25px auto;
+		    display: block;
+		    border: none;
+		    background: #EEE;
+		    box-shadow: inset 0px 0px 10px #CCC;
+		    border-radius: 3px;
 		}
 
+		#srcbox-button {
+			background: rgba(0, 0, 0, 0) url('http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png') no-repeat scroll center center;
+		    width: 35px;
+		    height: 25px;
+		    position: absolute;
+		    right: 15%;
+		    top: 100px;
+		}
 
+		#reset {
+		    padding: 4px;
+		    position: absolute;
+		    right: 7%;
+		    top: 140px;
+		    display: inline-block;
+		    cursor: pointer;
+		 }
+
+
+		.explainer {
+			border: 1px solid;
+			padding: 0 20px;
+			font-family: $serif;
+			font-size: $md;
+			text-align: center;
+		}
 	}
 
-	// #list-container {
-	// 	background: #f8f5f2;
-	// 	height: 600px;
+	#zip-list {
+		border-top: 2px solid #AAA;
+	    width: 100%;
+	    height: 400px !important;
+	    overflow-y: scroll;
+	    box-shadow: inset 0px 0px 10px #CCC;
+	    margin: 1em 0 2em 0;
+		
+		ul {
+			padding: 0px;
+		}
+		
+		.active-listing { 
+			background: #fff; 
+			display: block !important; 
+			cursor: default !important 
+		}
+		
+	    .listing {
+	    	padding: 20px;
+	    	list-style-type: none;
+		    cursor: pointer;
+		    border-bottom: 1px solid #AAA;
+		    border-bottom-style: solid;
+		    font-family: $serif;
+		    font-weight: bold;
+		    font-size: $md;
 
-	// 	& header {
-	// 		padding: 10px;
-	// 		display: block;
-	// 		position: relative;
+		    &:hover {
+		    	background: #fff;
+		    }
 
-	// 		#srcbox{
-	// 			font-family: 'Roboto Slab', Georgia, Times, Serif;
-	// 		    font-size: 16px;
-	// 		    width: 78%;
-	// 		    padding: 14px 10.5% 14px 2.5%;
-	// 		    margin: 15px auto 25px auto;
-	// 		    display: block;
-	// 		    border: none;
-	// 		    background: #EEE;
-	// 		    box-shadow: inset 0px 0px 10px #CCC;
-	// 		    border-radius: 3px;
-	// 		}
-
-	// 		#srcbox-button {
-	// 			background: rgba(0, 0, 0, 0) url('http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png') no-repeat scroll center center;
-	// 		    width: 35px;
-	// 		    height: 25px;
-	// 		    position: absolute;
-	// 		    right: 15%;
-	// 		    top: 35px;
-	// 		}
-
-	// 		#reset {
-	// 		    padding: 4px;
-	// 		    position: absolute;
-	// 		    right: 7%;
-	// 		    top: 78px;
-	// 		    display: inline-block;
-	// 		    cursor: pointer;
-	// 		 }
-	// 	}
-
-	// 	#zip-list {
-	// 		border-top: 2px solid #AAA;
-	// 	    width: 100%;
-	// 	    height: 500px;
-	// 	    overflow-y: scroll;
-	// 	    box-shadow: inset 0px 0px 10px #CCC;
+		    .close-item {
+		    	float: right;
+		    	display: none;
+		    }
 			
-	// 		ul {
-	// 			padding: 0px;
-	// 		}
-			
-	// 		.active-listing { 
-	// 			background: #fff; 
-	// 			display: block !important; 
-	// 			cursor: default !important 
-	// 		}
-			
-	// 	    .listing {
-	// 	    	padding: 20px;
-	// 	    	list-style-type: none;
-	// 		    cursor: pointer;
-	// 		    border-bottom: 1px solid #AAA;
-	// 		    font-family: $serif;
-	// 		    font-weight: bold;
-	// 		    font-size: $md;
+			.school-list {
 
-	// 		    &:hover {
-	// 		    	background: #fff;
-	// 		    }
+				width: 100%;
+				font-weight: normal;
 
-				
-	// 			.school-list {
-	// 
-	// 				width: 100%;
-	// 				font-weight: normal;
+				td, th {
+					font-size: 11px;
+					text-align: center;
+				}
 
-	// 				td, th {
-	// 					border: 1px solid red;
-	// 					font-size: $sm;
-	// 					text-align: center;
-	// 				}
+				th {
+					padding: 2.5px 2.5px 5px 2.5px;
+				}
 
-	// 				.name {
-	// 					text-align: left !important;
-	// 				}
+				tr {
+					border-bottom: 1px dashed #ccc;
+					border-bottom-style: dashed;
 
-	// 			}
+					&:first-of-type, &:last-of-type {
+						border: none;
+					}
 
-	// 			#prices-container {
-	// 				height: 200px;
-	// 				width: 100%;
+				}
 
-	// 				margin-top: 0.75em;
+				td {
+					padding: 2.5px 0px;
+				}
 
-	// 				.price {
-	// 					text-align: center;
-	// 					margin-bottom: 1em;
-	
-	// 					&:last-of-type {
-	// 						border: none;
-	// 					}
 
-	// 					.hed {
-	// 						font-size: $sm;
-	// 						display: block;
-	// 					}
+				.name {
+					text-align: left !important;
+				}
+			}
 
-	// 					.num {
-	// 						margin: 0.5em auto;
-	// 						border-right: 1px dashed #ccc;
+			#prices-container {
+				height: 200px;
+				width: 100%;
 
-	// 						&:last-of-type {
-	// 							border: none;
-	// 						}
+				margin-top: 0.75em;
 
-							
-	// 						.year {
-	// 							font-family: $sans-serif-condensed;
-	// 							font-size: $sm;
-	// 							font-weight: bold;
-	// 						}
+				.price {
+					text-align: center;
+					margin-bottom: 1em;
 
-	// 						.price-num {
-	// 							display: block;
-	// 							font-family: $serif;
-	// 							font-size: $lg;
-	// 							font-weight: 300;
-	// 						}
-	// 					}	
-	// 				}						
-	// 			}
-	// 	    }
-	// 	}
-	// }
+					&:last-of-type {
+						border: none;
+					}
 
-	// .income {
-	// 	font-weight: bold;	
-	// 	color: $green;
-	// }
+					.hed {
+						font-size: $sm;
+						display: block;
+					}
 
-	// h2 {
+					.num {
+						margin: 0.5em auto;
+						border-right: 1px dashed #ccc;
 
-	// }	
+						&:last-of-type {
+							border: none;
+						}
+
+						
+						.year {
+							font-family: $sans-serif-condensed;
+							font-size: $sm;
+							font-weight: bold;
+						}
+
+						.price-num {
+							display: block;
+							font-family: $serif;
+							font-size: 20px;
+							font-weight: 300;
+						}
+					}	
+				}						
+			}
+	    }
+	}
 }
+
+.income {
+	font-weight: bold;	
+	color: $green;
+}
+
+h2 {
+
+}	
 
 
 .map-section {
@@ -187,18 +218,12 @@
 }
 
 
-#map-container {
-	width: 100vw;
-	height: 91vh;
-	display: block;
-	position: relative !important;
-
-	#map-info {
+#map-info {
 		position: absolute;
-	    bottom: 40%;
+	    bottom: 36%;
 	    right: 30px;
 	    max-width: 315px;
-	    z-index: 99999;
+	    z-index: 9999;
 	    background-color: #fff;
 	    display: block;
 	    border: 1px solid #ccc;
@@ -280,6 +305,7 @@
 				font-family: $serif;
 				font-size: 20px;
 				border-bottom: 1px dashed $border-gray;
+				border-bottom-style: dashed;
 				border-top: none;
 				border-left: none;
 				border-right: none;
@@ -306,6 +332,676 @@
 			}
 		}
 
+		.question {
+			font-family: $sans-serif-condensed;
+			font-weight: bold;
+			font-size: $base;
+		}
+
+		.dollar-sign{
+			font-size: 20px;
+			vertical-align: 10px;
+		}
+
+		
+		.error {
+			height: auto;
+			width: 100%;
+			display: none;
+			margin: 1px auto;
+			text-align: center;
+
+
+			.error-message {
+				background: $red;
+				padding: 0.25em;
+			}
+		}
+
+		#check-button-house, #check-button-condo, #check-button-income, #check-button-savings {
+		    background-color:#EFEFEF;
+		    border-radius:4px;
+		    border: 1px solid #D0D0D0;
+		    overflow: hidden;
+		    width: 60px;
+		    height: 20px;
+		    display: inline-flex;
+		    margin: 0px 0.25em;
+
+
+		    &:hover {
+		    	-webkit-box-shadow: 0px 1px 1px $shade;
+				-moz-box-shadow: 0px 1px 1px $shade;
+				box-shadow: 0px 1px 1px $shade;
+		    }
+
+		    & label {
+		    	float:left;
+		   		width: 100%;
+
+		   		& span {
+		   			text-align: left;
+				    display: block;
+				    padding: 2px 2px;
+				    font-size: $sm;
+				    font-family: $sans-serif-condensed;
+				    line-height: 0px;
+				}
+
+
+				& input {
+					display: none;
+
+					&:checked + span {
+						background-color: #aaa;
+		    			color: #000;
+					}
+				}
+		    }
+
+		}
+
+		#check-button-income, #check-button-savings {
+			& span {
+				padding: 9px 7px !important;
+			}
+		}
+		.explainer {
+			display: none;
+			font-size: $sm;
+			line-height: 18px;
+			font-family: $serif;
+
+
+			.fa-level-down {
+				display: none;
+			}
+		}
+	
+	}
+
+
+
+
+
+#map-container {
+	width: 100vw;
+	height: 91vh;
+	display: block;
+	position: relative !important;
+
+	// #map-info {
+	// 	position: absolute;
+	//     bottom: 40%;
+	//     right: 30px;
+	//     max-width: 315px;
+	//     z-index: 99999;
+	//     background-color: #fff;
+	//     display: block;
+	//     border: 1px solid #ccc;
+	//    	padding: 0.5em;
+
+	//     .headline {
+	//     	font-size: 25px;
+	//     	text-align: left;
+	//     }
+
+	//     .byline {
+	//     	font-size: $xs;
+	//     	text-align: left;
+	//     	line-height: 15px;
+
+	//     	.name a {
+	//     		color: $text-gray;
+	//     	}
+
+	//     	.date{
+	//     		font-size: $xs;
+	//     	}
+	//     }
+
+	//     .readout{
+	//     	font-size: $sm;
+	//     	text-align: left;
+	//     }
+
+	//     .graphic-label {
+	//     	text-align: left;
+	//     }
+
+	//     #button-container {
+	// 		margin: 1em auto;
+	// 		height: auto;
+	// 		display: block;
+	// 		max-width: 475px;
+			
+	// 		h3 {
+	// 			text-align: center;
+	// 		}
+
+	// 		.input-holder {
+	// 			text-align: center;
+	// 			display: inline-block;
+
+
+	// 		}
+
+	// 		.button-holder{
+	// 			text-align: center;
+	// 			display: inline;
+	// 			float: right;
+
+	// 		}
+
+	// 		.income-btn {
+	// 			margin: 5px auto;
+	// 		    background-color: #EFEFEF;
+	// 		    border-radius: 4px;
+	// 		    border: 1px solid #D0D0D0;
+	// 		    overflow: hidden;
+	// 		    width: 65px;
+	// 		    height: 30px;
+	// 		    display: inline-block;
+	// 			font-size: $base;
+	// 			font-family:  $sans-serif-condensed;
+	// 			font-weight: bold;
+
+	// 			&:hover {
+	// 		    	-webkit-box-shadow: 0px 1px 1px $shade;
+	// 				-moz-box-shadow: 0px 1px 1px $shade;
+	// 				box-shadow: 0px 1px 1px $shade;
+	// 		    }
+	// 		}
+
+	// 		.income-box {
+	// 			font-family: $serif;
+	// 			font-size: 20px;
+	// 			border-bottom: 1px dashed $border-gray;
+	// 			border-top: none;
+	// 			border-left: none;
+	// 			border-right: none;
+	// 			width: 125px;
+	// 			padding-left: 0.25em;
+	// 			// margin-right: 1em;
+	// 			text-align: left;
+	// 			vertical-align: 10px;
+				
+	// 			&::-webkit-input-placeholder {
+	// 				font-weight: 300;
+	// 				text-align: left;
+	// 				line-height: 1.75em;
+	// 				font-size: 18px;
+	// 			}
+
+	// 			&:focus {
+	// 				outline: 0;
+
+	// 				&::-webkit-input-placeholder{
+	// 					color: #fff;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.question {
+	// 		font-family: $sans-serif-condensed;
+	// 		font-weight: bold;
+	// 		font-size: $base;
+	// 	}
+
+	// 	.dollar-sign{
+	// 		font-size: 20px;
+	// 		vertical-align: 10px;
+	// 	}
+
+		
+	// 	.error {
+	// 		height: auto;
+	// 		width: 100%;
+	// 		display: none;
+	// 		margin: 1px auto;
+	// 		text-align: center;
+
+
+	// 		.error-message {
+	// 			background: $red;
+	// 			padding: 0.25em;
+	// 		}
+	// 	}
+
+	// 	#check-button-house, #check-button-condo {
+	// 	    background-color:#EFEFEF;
+	// 	    border-radius:4px;
+	// 	    border: 1px solid #D0D0D0;
+	// 	    overflow: hidden;
+	// 	    width: 60px;
+	// 	    height: 20px;
+	// 	    display: inline-flex;
+	// 	    margin: 0px 0.25em;
+
+
+	// 	    &:hover {
+	// 	    	-webkit-box-shadow: 0px 1px 1px $shade;
+	// 			-moz-box-shadow: 0px 1px 1px $shade;
+	// 			box-shadow: 0px 1px 1px $shade;
+	// 	    }
+
+	// 	    & label {
+	// 	    	float:left;
+	// 	   		width: 100%;
+
+	// 	   		& span {
+	// 	   			text-align: left;
+	// 			    display: block;
+	// 			    padding: 2px 2px;
+	// 			    font-size: $sm;
+	// 			    font-family: $sans-serif-condensed;
+	// 			    line-height: 0px;
+	// 			}
+
+
+	// 			& input {
+	// 				display: none;
+
+	// 				&:checked + span {
+	// 					background-color: #aaa;
+	// 	    			color: #000;
+	// 				}
+	// 			}
+	// 	    }
+
+	// 	}
+	// 	.explainer {
+	// 		display: none;
+	// 		font-size: $sm;
+	// 		line-height: 18px;
+	// 	}
+	
+	// }
+
+	#interface-container {
+	    position: absolute;
+	    bottom: 60px;
+	    right: 30px;
+	    max-width: 315px;
+	    z-index: 10000;
+
+		ul {
+		    position: relative;
+		    top: 11px;
+		    right: 40px;
+		    z-index: 2;
+		}
+		
+		.price-explainer {
+			font-family: $serif;
+			font-size: $sm;
+			line-height: 18px;
+		}
+
+		.percent-year {
+			display: none;
+		}
+	}
+
+	.interface-selector {
+	    background: #EEE;
+	    font-family: $sans-serif-condensed;
+	    text-transform: uppercase;
+	    display: inline-block;
+	    padding: 5px 7px;
+	    margin: 0 !important;
+	    cursor: pointer;
+	    border-top: 1px solid #CCC;
+	    border-right: 1px solid #BBB;
+	    border-bottom: 1px solid #BBB;
+	    border-left: 1px solid #BBB;
+	}
+
+	.selected-interface {
+		background: #fff;
+		border-bottom: none;
+		padding-bottom: 6px;
+	}
+
+	.map-interface {
+	    width: 315px;
+	    z-index: 9999;
+	    display: block;
+	    padding: 15px;
+	    background: #FFF;
+	    border-top: 1px solid #BBB;
+	    border-right: 1px solid #BBB;
+	    border-bottom: 2px solid #AAA;
+	    border-left: 1px solid #BBB;
+	    border-bottom-left-radius: 4px;
+	    border-bottom-right-radius: 4px;
+	}
+	.key-holder {
+		clear: both;
+		margin: 1em 0;
+	}
+
+	.label {
+		font-family: $sans-serif-condensed;
+		font-size: $xxs;
+		display: inline-block;
+		padding: 0px;
+		float: left;
+		text-transform: uppercase;
+		color: #aaa;
+		margin: 0.5em 0;
+
+		&:last-of-type {
+			float: right;
+		}
+	}
+
+	.legend-block {
+		width: 20%;
+	    float: left;
+	    border: 5px solid;
+	}
+
+	
+	.footer-list{
+		border: 1px solid;
+		font-size: $xxs !important;
+		font-family: $serif;
+		margin-top: 2em;
+	}
+
+
+
+}
+
+
+.section:nth-child(2) {
+	margin-top: 2em;
+}
+
+#hover-box {
+	width: 300px;
+	position: absolute;
+	background: #fff;
+	color: #000;
+	padding: 5px 8px;
+	box-shadow: 0px 0px 10px #999;
+	-moz-box-shadow: 0px 0px 10px #999;
+	display: none;
+	z-index: 9999;
+	height: auto;
+	
+
+	.float-left {
+		float: left;
+	}
+
+	.float-right {
+		float: right;
+	}
+
+
+	.housing-table {
+		width: 100%;
+		font-family: $serif;
+
+		th {
+			font-family: $sans-serif-condensed;
+			text-transform: uppercase;
+			color: $text-gray;
+			font-size: 10px !important;
+
+			&:nth-child(2) {
+				text-align: right;
+			}
+		}
+
+		tr {
+			border-bottom: 1px #ccc;
+			border-bottom-style: dashed;
+
+			&:first-of-type, &:last-of-type {
+				border: none;
+			}
+		}
+
+		td {
+			width: 50%;
+
+			&:nth-child(2) {
+				text-align: right;
+			}
+
+		}
+	}
+
+	#house-price {
+		border-right: 1px dashed #ccc;
+		height: 80px;
+		width: 50%;
+		padding: 2.5px 5px 0px 5px;
+		float: left;
+	}
+
+	#condo-price {
+		border-right: none;
+		height: 80px;
+		width: 50%;
+		padding: 2.5px 5px 0px 5px;
+		float: right;
+	}
+
+	.house-row {
+		display: block;
+		height: 20px;
+		width: 100%;
+		border-bottom: 1px #ccc !important;
+		border-bottom-style: dashed !important;
+		font-family: $serif;
+		font-size: 12px;
+
+		&:last-of-type{ 
+			border: none;
+		}
+	}
+
+	#school-list {
+		height: auto;
+		display: none;
+		font-size: $xxs;
+		font-family: $serif;
+		clear: both;
+		padding: 5px 5px 0px 5px;
+
+		.school-table {
+			width: 100%;
+
+			th {
+
+				font-family: $sans-serif-condensed;
+				text-transform: uppercase;
+				color: $text-gray;
+				width: 5px;
+				text-align: center;
+				padding-top: 2.5px;
+			}
+
+			.name {
+				text-align: left;
+			}
+
+			td {
+				text-align: center;
+			}
+
+			.schools-row {
+				border-bottom: 1px dashed #ccc;
+				border-bottom-style: dashed;
+
+				&:last-of-type {
+					border-bottom: none;
+				}
+			}
+		}
+		// .city {
+		// 	font-family: $sans-serif;
+		// 	font-size: $base;
+		// }
+	}	
+		.no-school {
+			display: none;
+			font-family: $serif;
+			font-size: $md;
+			color: #bbb;
+			padding: 1em;
+			text-align: center;
+		}
+
+
+		.table-label {
+			font-family: $sans-serif-condensed;
+			text-transform: uppercase;
+			font-size: $xxs;
+			font-weight: bold;
+			color: $text-gray;
+		}
+
+		.zip-code, .city, .state {
+			font-family: $serif;
+			font-size: $base;
+			font-weight: bold;
+		}
+
+}
+
+footer {
+	display: none;
+}
+
+
+@media (max-width: 991px) {
+
+
+	.input-holder {
+		width: 100%;
+	}
+
+	.button-holder {
+		width: 100%;
+	}
+}
+
+
+
+
+@media (max-width: $small-display) {
+
+	.map {
+		display: block;
+		width: 100%;
+		padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-top: 1em;
+	}
+	
+
+	#map-info {
+		position: relative;
+		bottom: 0px;
+	    right: 0px;
+	    left: 0px;
+	    top: 0px;
+	    width: 100%;
+	    max-width: 100%;
+	    z-index: 9999;
+	    height: 410px;
+	    margin-top: 20px;
+
+		.graphic-label, .headline, .byline, .date, .readout {
+			text-align: center;
+		}
+		.readout {
+		font-size: $base;
+		}
+
+		#button-container {
+			margin: 1em auto;
+			height: 180px;
+			display: block;
+			max-width: 475px;
+			border: 1px solid;
+			
+			h3 {
+				text-align: center;
+			}
+
+			.input-holder {
+				text-align: center;
+				display: inline-block;
+
+
+			}
+
+			.button-holder{
+				text-align: center;
+				display: inline;
+				float: right;
+
+			}
+
+			.income-btn {
+				margin: 5px auto;
+			    background-color: #EFEFEF;
+			    border-radius: 4px;
+			    border: 1px solid #D0D0D0;
+			    overflow: hidden;
+			    width: 65px;
+			    height: 30px;
+			    display: inline-block;
+				font-size: $base;
+				font-family:  $sans-serif-condensed;
+				font-weight: bold;
+
+				&:hover {
+			    	-webkit-box-shadow: 0px 1px 1px $shade;
+					-moz-box-shadow: 0px 1px 1px $shade;
+					box-shadow: 0px 1px 1px $shade;
+			    }
+			}
+
+			.income-box {
+				font-family: $serif;
+				font-size: 20px;
+				border-bottom: 1px dashed $border-gray;
+				border-bottom-style: dashed;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				width: 125px;
+				padding-left: 0.25em;
+				// margin-right: 1em;
+				text-align: left;
+				vertical-align: 10px;
+				
+				&::-webkit-input-placeholder {
+					font-weight: 300;
+					text-align: left;
+					line-height: 1.75em;
+					font-size: 18px;
+				}
+
+				&:focus {
+					outline: 0;
+
+					&::-webkit-input-placeholder{
+						color: #fff;
+					}
+				}
+			}
+		}
 		.question {
 			font-family: $sans-serif-condensed;
 			font-weight: bold;
@@ -376,428 +1072,17 @@
 		}
 		.explainer {
 			display: none;
-			font-size: $sm;
-			line-height: 18px;
-		}
-	
-	}
-
-	#interface-container {
-	    position: absolute;
-	    bottom: 60px;
-	    right: 30px;
-	    max-width: 315px;
-	    z-index: 99999;
-
-		ul {
-		    position: relative;
-		    top: 11px;
-		    right: 40px;
-		    z-index: 2;
-		}
-		
-		.price-explainer {
-			font-family: $serif;
-			font-size: $sm;
-			line-height: 18px;
-		}
-
-		.percent-year {
-			display: none;
-		}
-	}
-
-	.interface-selector {
-	    background: #EEE;
-	    font-family: $sans-serif-condensed;
-	    text-transform: uppercase;
-	    display: inline-block;
-	    padding: 5px 7px;
-	    margin: 0 !important;
-	    cursor: pointer;
-	    border-top: 1px solid #CCC;
-	    border-right: 1px solid #BBB;
-	    border-bottom: 1px solid #BBB;
-	    border-left: 1px solid #BBB;
-	}
-
-	.selected-interface {
-		background: #fff;
-		border-bottom: none;
-		padding-bottom: 6px;
-	}
-
-	.map-interface {
-	    width: 315px;
-	    z-index: 9999;
-	    display: block;
-	    padding: 15px;
-	    background: #FFF;
-	    border-top: 1px solid #BBB;
-	    border-right: 1px solid #BBB;
-	    border-bottom: 2px solid #AAA;
-	    border-left: 1px solid #BBB;
-	    border-bottom-left-radius: 4px;
-	    border-bottom-right-radius: 4px;
-	}
-	.key-holder {
-		clear: both;
-		margin: 1em 0;
-	}
-
-	.explainer {
-		font-family: $serif;
-	}
-
-	.label {
-		font-family: $sans-serif-condensed;
-		font-size: $xxs;
-		display: inline-block;
-		padding: 0px;
-		float: left;
-		text-transform: uppercase;
-		color: #aaa;
-		margin: 0.5em 0;
-
-		&:last-of-type {
-			float: right;
-		}
-	}
-
-	.legend-block {
-		width: 20%;
-	    float: left;
-	    border: 5px solid;
-	}
-
-	
-	.footer-list{
-		border: 1px solid;
-		font-size: $xxs !important;
-		font-family: $serif;
-		margin-top: 2em;
-	}
-
-
-
-}
-
-
-.section:nth-child(2) {
-	margin-top: 2em;
-}
-
-#hover-box {
-	width: 300px;
-	position: absolute;
-	background: #fff;
-	color: #000;
-	padding: 5px 8px;
-	box-shadow: 0px 0px 10px #999;
-	-moz-box-shadow: 0px 0px 10px #999;
-	display: none;
-	z-index: 9999;
-	height: auto;
-	
-
-	.float-left {
-		float: left;
-	}
-
-	.float-right {
-		float: right;
-	}
-
-	#house-price {
-		border-right: 1px dashed #ccc;
-		height: 80px;
-		width: 50%;
-		padding: 2.5px 5px 0px 5px;
-		float: left;
-	}
-
-	#condo-price {
-		border-right: none;
-		height: 80px;
-		width: 50%;
-		padding: 2.5px 5px 0px 5px;
-		float: right;
-	}
-
-	.house-row {
-		display: block;
-		height: 20px;
-		width: 100%;
-		border-bottom: 1px dashed #ccc;
-		font-family: $serif;
-		font-size: 12px;
-
-		&:last-of-type{ 
-			border: none;
-		}
-	}
-
-	#school-list {
-		height: auto;
-		display: none;
-		font-size: $xxs;
-		font-family: $serif;
-		clear: both;
-		padding: 5px 5px 0px 5px;
-
-		.school-table {
-			width: 100%;
-
-			th {
-
-				font-family: $sans-serif-condensed;
-				text-transform: uppercase;
-				color: $text-gray;
-				width: 5px;
-				text-align: center;
-				padding-top: 2.5px;
-			}
-
-			.name {
-				text-align: left;
-			}
-
-			td {
-				text-align: center;
-			}
-
-			.schools-row {
-				border-bottom: 1px dashed #ccc;
-
-				&:last-of-type {
-					border-bottom: none;
-				}
-			}
-		}
-		// .city {
-		// 	font-family: $sans-serif;
-		// 	font-size: $base;
-		// }
-	}	
-		.no-school {
-			display: none;
-			font-family: $serif;
-			font-size: $md;
-			color: #bbb;
-			padding: 1em;
-			text-align: center;
-		}
-
-
-		.table-label {
-			font-family: $sans-serif-condensed;
-			text-transform: uppercase;
-			font-size: $xxs;
-			font-weight: bold;
-			color: $text-gray;
-		}
-
-		.zip-code, .city, .state {
-			font-family: $serif;
-			font-size: $base;
-			font-weight: bold;
-		}
-
-}
-
-.mobile-interface {
-	border: 1px solid;
-	margin-top: 20px;
-	display: none;
-	height: auto;
-
-	.readout {
-		font-size: $base;
-	}
-
-	#button-container {
-		margin: 1em auto;
-		height: 180px;
-		display: block;
-		max-width: 475px;
-		border: 1px solid;
-		
-		h3 {
-			text-align: center;
-		}
-
-		.input-holder {
-			text-align: center;
-			display: inline-block;
-
-
-		}
-
-		.button-holder{
-			text-align: center;
-			display: inline;
-			float: right;
-
-		}
-
-		.income-btn {
-			margin: 5px auto;
-		    background-color: #EFEFEF;
-		    border-radius: 4px;
-		    border: 1px solid #D0D0D0;
-		    overflow: hidden;
-		    width: 65px;
-		    height: 30px;
-		    display: inline-block;
-			font-size: $base;
-			font-family:  $sans-serif-condensed;
-			font-weight: bold;
-
-			&:hover {
-		    	-webkit-box-shadow: 0px 1px 1px $shade;
-				-moz-box-shadow: 0px 1px 1px $shade;
-				box-shadow: 0px 1px 1px $shade;
-		    }
-		}
-
-		.income-box {
-			font-family: $serif;
-			font-size: 20px;
-			border-bottom: 1px dashed $border-gray;
-			border-top: none;
-			border-left: none;
-			border-right: none;
-			width: 125px;
-			padding-left: 0.25em;
-			// margin-right: 1em;
-			text-align: left;
-			vertical-align: 10px;
-			
-			&::-webkit-input-placeholder {
-				font-weight: 300;
-				text-align: left;
-				line-height: 1.75em;
-				font-size: 18px;
-			}
-
-			&:focus {
-				outline: 0;
-
-				&::-webkit-input-placeholder{
-					color: #fff;
-				}
-			}
-		}
-	}
-	.question {
-			font-family: $sans-serif-condensed;
-			font-weight: bold;
-			font-size: $base;
-		}
-
-		.dollar-sign{
-			font-size: 20px;
-			vertical-align: 10px;
-		}
-
-		
-		.error {
-			height: auto;
-			width: 100%;
-			display: none;
-			margin: 1px auto;
-			text-align: center;
-
-
-			.error-message {
-				background: $red;
-				padding: 0.25em;
-			}
-		}
-
-		#check-button-house, #check-button-condo {
-		    background-color:#EFEFEF;
-		    border-radius:4px;
-		    border: 1px solid #D0D0D0;
-		    overflow: hidden;
-		    width: 60px;
-		    height: 20px;
-		    display: inline-flex;
-		    margin: 0px 0.25em;
-
-
-		    &:hover {
-		    	-webkit-box-shadow: 0px 1px 1px $shade;
-				-moz-box-shadow: 0px 1px 1px $shade;
-				box-shadow: 0px 1px 1px $shade;
-		    }
-
-		    & label {
-		    	float:left;
-		   		width: 100%;
-
-		   		& span {
-		   			text-align: left;
-				    display: block;
-				    padding: 2px 2px;
-				    font-size: $sm;
-				    font-family: $sans-serif-condensed;
-				    line-height: 0px;
-				}
-
-
-				& input {
-					display: none;
-
-					&:checked + span {
-						background-color: #aaa;
-		    			color: #000;
-					}
-				}
-		    }
-
-		}
-		.explainer {
-			display: none;
 			font-size: $base;
 			line-height: 18px;
 			border: 1px solid red;
 			text-align: center;
 			font-family: $serif;
+
+			.fa-level-down {
+				display: inline;
+			}
 		}
 
-	}
-
-
-@media (max-width: 991px) {
-
-
-	.input-holder {
-		width: 100%;
-	}
-
-	.button-holder {
-		width: 100%;
-	}
-}
-
-
-
-
-@media (max-width: $small-display){
-
-	.map {
-		display: block;
-		width: 100%;
-		padding-right: 15px;
-	    padding-left: 15px;
-	    margin-right: auto;
-	    margin-left: auto;
-	    margin-top: 1em;
-	}
-
-	#map-info {
-		display: none !important;
 	}
 
 	#map-container {
@@ -823,21 +1108,9 @@
 		
 	}
 
-	.mobile-interface {
-		display: block;
-
-		.readout {
-			border: 1px solid;
-			font-size: $base;
-		}
-
-		.button-holder {
-			border: 1px solid;
-		}
-	}
-
 	footer {
 		display: block;
+		width: 100%;
 	}
 
 	#hover-box {
@@ -845,3 +1118,6 @@
 	}
 
 }
+
+
+
