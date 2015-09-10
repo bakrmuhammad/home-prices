@@ -1,4 +1,3 @@
-
 'use strict';
 
 // SET GLOBAL LAYERS TO NULL
@@ -35,7 +34,6 @@ function fixPosition() {
 }
 
 function fixZoom() {
-
 	if (w > mobile) {
 		return 9.5
 	} else {
@@ -303,8 +301,14 @@ var $defaultSchoolLayer = L.geoJson($zipData, {
 // COLORS, OPACITY AND DASH
 function getHouseColor(d) {
 
-	if (income > d) {
+	if (income >= d) {
 		return '#006d2c';
+	} else if (income >= (d * 0.75)){
+		return '#31a354'
+	} else if (income >= (d * 0.50)) {
+		return '#74c476'
+	} else if (income >= (d * 0.25)) {
+		return '#bae4b3'
 	} else {
 		return '#ccc';
 	}
@@ -347,8 +351,14 @@ function houseStyle(features, layer) {
 
 function getCondoColor(d) {
 
-	if (income > d) {
+	if (income >= d) {
 		return '#006d2c';
+	} else if (income >= (d * 0.75)){
+		return '#31a354'
+	} else if (income >= (d * 0.50)) {
+		return '#74c476'
+	} else if (income >= (d * 0.25)) {
+		return '#bae4b3'
 	} else {
 		return '#ccc';
 	}
@@ -667,6 +677,17 @@ function percentChange(number) {
 	}
 }
 
+
+// START DAY
+
+// OBJECTIVE:
+// FIGURE OUT HOW TO CALCULATE AFFORDABILITY
+// FOR MAP SHADING
+function getPricePercent(price, percent) {
+	var percentage = price * percent;
+	var result;
+}
+
 //====================================
 // INCOME INPUT AND HOUSING SELECTION
 // 			ERROR HANDLING
@@ -674,17 +695,17 @@ function percentChange(number) {
 
 function flagError() {
 	$('.error').slideDown('fast');
-	$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please enter a valid number');
+	$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please enter a valid number.');
 }
 
 function flagSelectionError() {
 	$('.error').slideDown('fast');
-	$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please choose a housing type');
+	$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please choose house or condo.');
 }
 
 function flagMoneyError() {
 	$('.error').slideDown('fast');
-	$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please choose a form of payment');
+	$('.alert').html('<i class=\'fa fa-info-circle\'></i> Error: Please choose income or price.');
 }
 
 function removeError() {
@@ -1202,6 +1223,10 @@ function buildHouseMap() {
 			}
 		});
 
+		if (count >= 1) {
+			$('.no-data').hide();
+		};
+
 		console.log('Houses:' + count);
 
 		$('.income').html('$' + numeral(income).format('0,0'));
@@ -1258,6 +1283,10 @@ function buildCondoMap() {
 				return count++;
 			}
 		});
+
+		if (count >= 1) {
+			$('.no-data').hide();
+		};
 
 		$('#interface-container').show();
 		$('.income').html('$' + numeral(income).format('0,0'));

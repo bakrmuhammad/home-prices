@@ -37,6 +37,13 @@
 	margin-top: 1em;
 	display: none;
 
+	.no-data {
+		text-align: center;
+	    margin: 1.5em 0;
+	    font-size: 6em;
+	    color: #ddd;
+	}
+
 	& header {
 		padding: 10px;
 		display: block;
@@ -250,6 +257,7 @@ h2 {
 	    .readout{
 	    	font-size: $sm;
 	    	text-align: left;
+	    	line-height: 24px;
 	    }
 
 	    .graphic-label {
@@ -365,7 +373,7 @@ h2 {
 		    width: 60px;
 		    height: 20px;
 		    display: inline-flex;
-		    margin: -5px 0.25em;
+		    margin: -5px 0em;
 
 
 		    &:hover {
@@ -402,8 +410,17 @@ h2 {
 
 		#check-button-income, #check-button-savings {
 			& span {
-				padding: 9px 7px !important;
+				padding: 9px 4px !important;
 			}
+		}
+
+		#check-button-income {
+			width: 50px;
+			padding: 0 0px;
+		}
+
+		#check-button-savings {
+			width: 40px;
 		}
 		.explainer {
 			display: none;
@@ -429,7 +446,7 @@ h2 {
 
 #map-container {
 	width: 100vw;
-	height: 92vh;
+	height: 91.5vh;
 	display: block;
 	position: relative !important;
 
@@ -923,6 +940,10 @@ footer {
 
 	#hover-box {
 		display: none !important;
+	}
+
+	#list-container {
+		display: block;
 	}
 
 }

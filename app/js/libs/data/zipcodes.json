@@ -36,7 +36,7 @@
     },
     {
         "zipcode": 33009,
-        "neighborhoods": "",
+        "neighborhoods": "Golden Isles and Pembroke Park",
         "city": "Hallandale",
         "state": "Fla.",
         "county": "Broward",
@@ -248,7 +248,7 @@
     },
     {
         "zipcode": 33014,
-        "neighborhoods": "",
+        "neighborhoods": "Miami Lakes",
         "city": "Hialeah",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -307,7 +307,7 @@
     },
     {
         "zipcode": 33015,
-        "neighborhoods": "",
+        "neighborhoods": "Palm Springs North",
         "city": "Country Club",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -455,7 +455,7 @@
     },
     {
         "zipcode": 33018,
-        "neighborhoods": "",
+        "neighborhoods": "Hialeah Gardens",
         "city": "Hialeah",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -532,7 +532,7 @@
     },
     {
         "zipcode": 33019,
-        "neighborhoods": "",
+        "neighborhoods": "South Central Beach",
         "city": "Hollywood",
         "state": "Fla.",
         "county": "Broward",
@@ -547,7 +547,7 @@
     },
     {
         "zipcode": 33020,
-        "neighborhoods": "",
+        "neighborhoods": "Hollywood Lakes, Park Side, Royal Poinciana and North Central",
         "city": "Hollywood",
         "state": "Fla.",
         "county": "Broward",
@@ -648,7 +648,7 @@
     },
     {
         "zipcode": 33021,
-        "neighborhoods": "",
+        "neighborhoods": "Hollywood Hills, Emerald Hills, Park East and Playland",
         "city": "Hollywood",
         "state": "Fla.",
         "county": "Broward",
@@ -701,7 +701,7 @@
     },
     {
         "zipcode": 33023,
-        "neighborhoods": "",
+        "neighborhoods": "Beverly Park and Lawnacres",
         "city": "Miramar",
         "state": "Fla.",
         "county": "Broward",
@@ -766,7 +766,7 @@
     },
     {
         "zipcode": 33024,
-        "neighborhoods": "",
+        "neighborhoods": "Driftwood and Boulevard Heights",
         "city": "Pembroke Pines",
         "state": "Fla.",
         "county": "Broward",
@@ -938,7 +938,7 @@
     },
     {
         "zipcode": 33026,
-        "neighborhoods": "",
+        "neighborhoods": "Royal Palm Ranches",
         "city": "Pembroke Pines",
         "state": "Fla.",
         "county": "Broward",
@@ -1097,7 +1097,7 @@
     },
     {
         "zipcode": 33029,
-        "neighborhoods": "",
+        "neighborhoods": "Silver Lakes",
         "city": "Pembroke Pines",
         "state": "Fla.",
         "county": "Broward",
@@ -1269,7 +1269,7 @@
     },
     {
         "zipcode": 33031,
-        "neighborhoods": "",
+        "neighborhoods": "Redland",
         "city": "Redland",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -1298,7 +1298,7 @@
     },
     {
         "zipcode": 33032,
-        "neighborhoods": "",
+        "neighborhoods": "Naranja",
         "city": "Princeton",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -1381,7 +1381,7 @@
     },
     {
         "zipcode": 33033,
-        "neighborhoods": "",
+        "neighborhoods": "Homestead Air Force Base and Leisure City",
         "city": "Homestead",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -1537,7 +1537,7 @@
     },
     {
         "zipcode": 33054,
-        "neighborhoods": "",
+        "neighborhoods": "Bunche Park, Opa-locka",
         "city": "Miami Gardens",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -1679,7 +1679,7 @@
     },
     {
         "zipcode": 33056,
-        "neighborhoods": "",
+        "neighborhoods": "Carol City, Scott Lake and Lake Lucerne",
         "city": "Miami Gardens",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -1744,7 +1744,7 @@
     },
     {
         "zipcode": 33060,
-        "neighborhoods": "",
+        "neighborhoods": "Kendall Green",
         "city": "Pompano Beach",
         "state": "Fla.",
         "county": "Broward",
@@ -1803,7 +1803,7 @@
     },
     {
         "zipcode": 33062,
-        "neighborhoods": "",
+        "neighborhoods": "Hillsboro Beach",
         "city": "Pompano Beach",
         "state": "Fla.",
         "county": "Broward",
@@ -1877,7 +1877,7 @@
     },
     {
         "zipcode": 33064,
-        "neighborhoods": "",
+        "neighborhoods": "Cresthaven, Lighthouse Point, Loch Lomond and Bonnie Loch",
         "city": "Pompano Beach",
         "state": "Fla.",
         "county": "Broward",
@@ -1948,7 +1948,7 @@
     },
     {
         "zipcode": 33065,
-        "neighborhoods": "",
+        "neighborhoods": "Crossings",
         "city": "Coral Springs",
         "state": "Fla.",
         "county": "Broward",
@@ -2101,7 +2101,7 @@
     },
     {
         "zipcode": 33068,
-        "neighborhoods": "",
+        "neighborhoods": "Margate Estates",
         "city": "North Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -2178,7 +2178,7 @@
     },
     {
         "zipcode": 33069,
-        "neighborhoods": "",
+        "neighborhoods": "Collier City",
         "city": "Pompano Beach",
         "state": "Fla.",
         "county": "Broward",
@@ -2295,7 +2295,7 @@
     },
     {
         "zipcode": 33076,
-        "neighborhoods": "",
+        "neighborhoods": "Parkland",
         "city": "Coral Springs",
         "state": "Fla.",
         "county": "Broward",
@@ -2404,7 +2404,7 @@
     },
     {
         "zipcode": 33125,
-        "neighborhoods": "",
+        "neighborhoods": "Little Havana and West Flagler",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2445,7 +2445,7 @@
     },
     {
         "zipcode": 33126,
-        "neighborhoods": "",
+        "neighborhoods": "Blue Lagoon",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2486,7 +2486,7 @@
     },
     {
         "zipcode": 33127,
-        "neighborhoods": "",
+        "neighborhoods": "Allapattah, Wynwood and Design District",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2575,7 +2575,7 @@
     },
     {
         "zipcode": 33128,
-        "neighborhoods": "",
+        "neighborhoods": "Government Center and Little Havana",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2604,7 +2604,7 @@
     },
     {
         "zipcode": 33129,
-        "neighborhoods": "",
+        "neighborhoods": "South Brickell",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2618,7 +2618,7 @@
     },
     {
         "zipcode": 33130,
-        "neighborhoods": "",
+        "neighborhoods": "West Brickell and East Little Havana",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2689,7 +2689,7 @@
     },
     {
         "zipcode": 33131,
-        "neighborhoods": "",
+        "neighborhoods": "Brickell and Brickell Key",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2704,7 +2704,7 @@
     },
     {
         "zipcode": 33132,
-        "neighborhoods": "",
+        "neighborhoods": "Downtown Miami, Port Miami, Edgewater and Omni",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2751,7 +2751,7 @@
     },
     {
         "zipcode": 33133,
-        "neighborhoods": "",
+        "neighborhoods": "Coconut Grove and Silver Bluff",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2816,7 +2816,7 @@
     },
     {
         "zipcode": 33134,
-        "neighborhoods": "",
+        "neighborhoods": "Granada and downtown Coral Gables",
         "city": "Coral Gables",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2845,7 +2845,7 @@
     },
     {
         "zipcode": 33135,
-        "neighborhoods": "",
+        "neighborhoods": "Shenandoah and East Gables",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2904,7 +2904,7 @@
     },
     {
         "zipcode": 33136,
-        "neighborhoods": "",
+        "neighborhoods": "Allapattah and Overtown",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2957,7 +2957,7 @@
     },
     {
         "zipcode": 33137,
-        "neighborhoods": "",
+        "neighborhoods": "Lemon City, Buena Vista, Design District and Morningside",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -2992,7 +2992,7 @@
     },
     {
         "zipcode": 33138,
-        "neighborhoods": "",
+        "neighborhoods": "Miami Shores, Little River, Upper East Side",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3027,7 +3027,7 @@
     },
     {
         "zipcode": 33139,
-        "neighborhoods": "",
+        "neighborhoods": "South Beach, South Pointe, Venetian, Star, Palm and Hibiscus Islands",
         "city": "Miami Beach",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3062,7 +3062,7 @@
     },
     {
         "zipcode": 33140,
-        "neighborhoods": "",
+        "neighborhoods": "Mid-Beach, Nautilus and Bayshore",
         "city": "Miami Beach",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3091,7 +3091,7 @@
     },
     {
         "zipcode": 33141,
-        "neighborhoods": "",
+        "neighborhoods": "North Beach, North Bay Village and Normandy Isle",
         "city": "Miami Beach",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3126,7 +3126,7 @@
     },
     {
         "zipcode": 33142,
-        "neighborhoods": "",
+        "neighborhoods": "Brownsville, Liberty Square, Allapattah",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3215,7 +3215,7 @@
     },
     {
         "zipcode": 33143,
-        "neighborhoods": "",
+        "neighborhoods": "Cocoplum, Tahiti Beach and South Miami",
         "city": "Glenvar Heights",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3268,7 +3268,7 @@
     },
     {
         "zipcode": 33144,
-        "neighborhoods": "",
+        "neighborhoods": "Westchester, Alameda, Flagami and West Miami",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3303,7 +3303,7 @@
     },
     {
         "zipcode": 33145,
-        "neighborhoods": "",
+        "neighborhoods": "Shenandoah, Silver Bluff and the Pines",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3332,7 +3332,7 @@
     },
     {
         "zipcode": 33146,
-        "neighborhoods": "",
+        "neighborhoods": "Merrick Park",
         "city": "Coral Gables",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3373,7 +3373,7 @@
     },
     {
         "zipcode": 33147,
-        "neighborhoods": "",
+        "neighborhoods": "Gladeview",
         "city": "West Little River",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3485,7 +3485,7 @@
     },
     {
         "zipcode": 33150,
-        "neighborhoods": "",
+        "neighborhoods": "Miami Shores, El Portal and Pinewood",
         "city": "Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3550,7 +3550,7 @@
     },
     {
         "zipcode": 33154,
-        "neighborhoods": "",
+        "neighborhoods": "Surfside and Bay Harbor Islands",
         "city": "Bal Harbour",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3573,7 +3573,7 @@
     },
     {
         "zipcode": 33155,
-        "neighborhoods": "",
+        "neighborhoods": "Coral Way Village, Westchester and Glenvar Heights",
         "city": "Coral Terrace",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3638,7 +3638,7 @@
     },
     {
         "zipcode": 33156,
-        "neighborhoods": "",
+        "neighborhoods": "Gables by the Sea, Gables Estates and Hammock Oaks",
         "city": "Pinecrest",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3697,7 +3697,7 @@
     },
     {
         "zipcode": 33157,
-        "neighborhoods": "",
+        "neighborhoods": "Perrine, West Perrine, Palmetto Estates and Franjo",
         "city": "Village of Palmetto Bay",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3792,7 +3792,7 @@
     },
     {
         "zipcode": 33158,
-        "neighborhoods": "",
+        "neighborhoods": "King's Bay and Deering Bay",
         "city": "Village of Palmetto Bay",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3807,7 +3807,7 @@
     },
     {
         "zipcode": 33160,
-        "neighborhoods": "",
+        "neighborhoods": "Golden Beach",
         "city": "Sunny Isles Beach",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3836,7 +3836,7 @@
     },
     {
         "zipcode": 33161,
-        "neighborhoods": "",
+        "neighborhoods": "Biscayne Park",
         "city": "North Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3895,7 +3895,7 @@
     },
     {
         "zipcode": 33162,
-        "neighborhoods": "",
+        "neighborhoods": "East Golden Glades",
         "city": "North Miami Beach",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -3960,7 +3960,7 @@
     },
     {
         "zipcode": 33165,
-        "neighborhoods": "",
+        "neighborhoods": "Olympia Heights, Westwood Lakes and Westchester",
         "city": "University Park",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4055,7 +4055,7 @@
     },
     {
         "zipcode": 33166,
-        "neighborhoods": "",
+        "neighborhoods": "Medley, Virginia Gardens and NE Doral",
         "city": "Miami Springs",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4149,7 +4149,7 @@
     },
     {
         "zipcode": 33168,
-        "neighborhoods": "",
+        "neighborhoods": "Biscayne Gardens and Pinewood",
         "city": "North Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4196,7 +4196,7 @@
     },
     {
         "zipcode": 33169,
-        "neighborhoods": "",
+        "neighborhoods": "Biscayne Gardens, Andover and Norland",
         "city": "Miami Gardens",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4261,7 +4261,7 @@
     },
     {
         "zipcode": 33170,
-        "neighborhoods": "",
+        "neighborhoods": "Redland",
         "city": "Goulds",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4308,7 +4308,7 @@
     },
     {
         "zipcode": 33172,
-        "neighborhoods": "",
+        "neighborhoods": "Vanderbilt Park",
         "city": "Fountainbleau",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4379,7 +4379,7 @@
     },
     {
         "zipcode": 33173,
-        "neighborhoods": "",
+        "neighborhoods": "Olympia Heights and Sunset",
         "city": "Kendall",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4420,7 +4420,7 @@
     },
     {
         "zipcode": 33174,
-        "neighborhoods": "",
+        "neighborhoods": "Sweetwater",
         "city": "Fountainbleau",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4532,7 +4532,7 @@
     },
     {
         "zipcode": 33176,
-        "neighborhoods": "",
+        "neighborhoods": "Green-Mar Acres, Richmond Heights and Hawley Heights",
         "city": "Kendall",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4674,7 +4674,7 @@
     },
     {
         "zipcode": 33178,
-        "neighborhoods": "",
+        "neighborhoods": "Medley",
         "city": "Doral",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4715,7 +4715,7 @@
     },
     {
         "zipcode": 33179,
-        "neighborhoods": "",
+        "neighborhoods": "Highland Lakes and Ojus",
         "city": "Ives Estates",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4750,7 +4750,7 @@
     },
     {
         "zipcode": 33180,
-        "neighborhoods": "",
+        "neighborhoods": "Ojus",
         "city": "Aventura",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -4797,7 +4797,7 @@
     },
     {
         "zipcode": 33181,
-        "neighborhoods": "",
+        "neighborhoods": "San Souci Estates and Keystone Islands",
         "city": "North Miami",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -5014,7 +5014,7 @@
     },
     {
         "zipcode": 33186,
-        "neighborhoods": "",
+        "neighborhoods": "Country Walk",
         "city": "The Crossings",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -5067,7 +5067,7 @@
     },
     {
         "zipcode": 33187,
-        "neighborhoods": "",
+        "neighborhoods": "Aladdin City, Coopertown",
         "city": "Richmond West",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -5082,7 +5082,7 @@
     },
     {
         "zipcode": 33189,
-        "neighborhoods": "",
+        "neighborhoods": "Saga Bay and Lakes by the Bay",
         "city": "Cutler Bay",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -5189,7 +5189,7 @@
     },
     {
         "zipcode": 33196,
-        "neighborhoods": "",
+        "neighborhoods": "Country Walk",
         "city": "The Hammocks",
         "state": "Fla.",
         "county": "Miami-Dade",
@@ -5248,7 +5248,7 @@
     },
     {
         "zipcode": 33301,
-        "neighborhoods": "",
+        "neighborhoods": "Colee Hammock and Victoria Park",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5271,7 +5271,7 @@
     },
     {
         "zipcode": 33304,
-        "neighborhoods": "",
+        "neighborhoods": "Sunrise Key, Sunrise Intracoastal, Middle River Terrace and Lake Ridge",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5312,7 +5312,7 @@
     },
     {
         "zipcode": 33305,
-        "neighborhoods": "",
+        "neighborhoods": "Poinsettia Heights and Lazy Lake",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5357,7 +5357,7 @@
     },
     {
         "zipcode": 33308,
-        "neighborhoods": "",
+        "neighborhoods": "Lauderdale-by-the-Sea, Imperial Point, Coral Ridge and Sea Ranch Lakes",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5372,7 +5372,7 @@
     },
     {
         "zipcode": 33309,
-        "neighborhoods": "",
+        "neighborhoods": "Palm Aire, Twin Lakes and Lauderdale Lakes",
         "city": "Oakland Park",
         "state": "Fla.",
         "county": "Broward",
@@ -5419,7 +5419,7 @@
     },
     {
         "zipcode": 33311,
-        "neighborhoods": "",
+        "neighborhoods": "South Middle River, Lauderdale Manor and Dorse Riverbend",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5538,7 +5538,7 @@
     },
     {
         "zipcode": 33312,
-        "neighborhoods": "",
+        "neighborhoods": "Chula Vista, Melrose Park, Shady Banks and Flamingo Park",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5585,7 +5585,7 @@
     },
     {
         "zipcode": 33313,
-        "neighborhoods": "",
+        "neighborhoods": "Sunrise Heights",
         "city": "Lauderhill",
         "state": "Fla.",
         "county": "Broward",
@@ -5662,7 +5662,7 @@
     },
     {
         "zipcode": 33314,
-        "neighborhoods": "",
+        "neighborhoods": "Nova Estates, Ferncrest Ridge and Davie Heights",
         "city": "Davie",
         "state": "Fla.",
         "county": "Broward",
@@ -5709,7 +5709,7 @@
     },
     {
         "zipcode": 33315,
-        "neighborhoods": "",
+        "neighborhoods": "Tarpon River, Edgewood and Croissant Park",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5732,7 +5732,7 @@
     },
     {
         "zipcode": 33316,
-        "neighborhoods": "",
+        "neighborhoods": "Harbordale, Port Everglades, Harbour Isles and Lauderdale Harbours",
         "city": "Fort Lauderdale",
         "state": "Fla.",
         "county": "Broward",
@@ -5761,7 +5761,7 @@
     },
     {
         "zipcode": 33317,
-        "neighborhoods": "",
+        "neighborhoods": "Plantation Gardens",
         "city": "Plantation",
         "state": "Fla.",
         "county": "Broward",
@@ -5826,7 +5826,7 @@
     },
     {
         "zipcode": 33319,
-        "neighborhoods": "",
+        "neighborhoods": "Lauderdale Lakes, Broadview, Pompano Park and Village Park",
         "city": "Lauderhill",
         "state": "Fla.",
         "county": "Broward",
@@ -5932,7 +5932,7 @@
     },
     {
         "zipcode": 33322,
-        "neighborhoods": "",
+        "neighborhoods": "Sunrise Lakes",
         "city": "Sunrise",
         "state": "Fla.",
         "county": "Broward",
@@ -5982,7 +5982,7 @@
     },
     {
         "zipcode": 33324,
-        "neighborhoods": "",
+        "neighborhoods": "Pine Island Ridge and Plantation Gardens",
         "city": "Plantation",
         "state": "Fla.",
         "county": "Broward",
@@ -6099,7 +6099,7 @@
     },
     {
         "zipcode": 33327,
-        "neighborhoods": "",
+        "neighborhoods": "Savanna",
         "city": "Weston",
         "state": "Fla.",
         "county": "Broward",
@@ -6134,7 +6134,7 @@
     },
     {
         "zipcode": 33328,
-        "neighborhoods": "",
+        "neighborhoods": "Sunshine Acres",
         "city": "Davie",
         "state": "Fla.",
         "county": "Broward",
@@ -6181,7 +6181,7 @@
     },
     {
         "zipcode": 33330,
-        "neighborhoods": "",
+        "neighborhoods": "Southwest Ranches",
         "city": "Cooper City",
         "state": "Fla.",
         "county": "Broward",
@@ -6216,7 +6216,7 @@
     },
     {
         "zipcode": 33331,
-        "neighborhoods": "",
+        "neighborhoods": "Southwest Ranches and the Ridges",
         "city": "Weston",
         "state": "Fla.",
         "county": "Broward",
@@ -6257,7 +6257,7 @@
     },
     {
         "zipcode": 33332,
-        "neighborhoods": "",
+        "neighborhoods": "Southwest Ranches and Weston Hills",
         "city": "Weston",
         "state": "Fla.",
         "county": "Broward",
@@ -6292,7 +6292,7 @@
     },
     {
         "zipcode": 33334,
-        "neighborhoods": "",
+        "neighborhoods": "North Andrews Gardens and Twin Lakes South",
         "city": "Oakland Park",
         "state": "Fla.",
         "county": "Broward",
@@ -6339,7 +6339,7 @@
     },
     {
         "zipcode": 33351,
-        "neighborhoods": "",
+        "neighborhoods": "City Center",
         "city": "Sunrise",
         "state": "Fla.",
         "county": "Broward",
@@ -6398,7 +6398,7 @@
     },
     {
         "zipcode": 33441,
-        "neighborhoods": "",
+        "neighborhoods": "Arlington Park and the Cove",
         "city": "Deerfield Beach",
         "state": "Fla.",
         "county": "Broward",
@@ -6439,7 +6439,7 @@
     },
     {
         "zipcode": 33442,
-        "neighborhoods": "",
+        "neighborhoods": "Century Village, West Deerfield Beach and Lakeview",
         "city": "Deerfield Beach",
         "state": "Fla.",
         "county": "Broward",

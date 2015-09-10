@@ -24,8 +24,10 @@
 	$('#check-button-house').on('change', '.house:checkbox', function(e) {
 
 		var attr   	   		= $(this).attr('checked'),
-			houseCheckbox 	= $('.house:checkbox'),
-			houseCheck 		= (houseCheckbox.is(':checked'));
+			houseCheckbox = $('.house:checkbox'),
+			condoCheckbox 	= $('.condo:checkbox'),
+			houseCheck = (houseCheckbox.is(':checked')),
+			condoCheck 		= (condoCheckbox.is(':checked'));
 		
 
 		buildDefaultHouse();
@@ -33,7 +35,7 @@
 
 		$('.condo:checkbox').attr('checked', false);
 
-		if (houseCheck === false) {
+		if ((condoCheck === false) && (houseCheck === false)) {
 			$('#house-price').css({
 				'float': 'left',
 				'width' : '50%',
@@ -45,11 +47,11 @@
 
 		else {
 			$('#house-price').css({
-					'float': 'none',
-					'border': 'none',
-					'width' : '100%',
-					'display': 'block'
-				});
+				'float': 'none',
+				'border': 'none',
+				'width' : '100%',
+				'display': 'block'
+			});
 
 			$('#condo-price').css('display', 'none');
 		}
@@ -61,7 +63,9 @@
 	$('#check-button-condo').on('change', '.condo:checkbox', function(e) {
 
 		var attr 			= $(this).attr('checked'),
+			houseCheckbox = $('.house:checkbox'),
 			condoCheckbox 	= $('.condo:checkbox'),
+			houseCheck = (houseCheckbox.is(':checked')),
 			condoCheck 		= (condoCheckbox.is(':checked'));
 
 			buildDefaultCondo();
@@ -69,7 +73,7 @@
 			$('.house:checkbox').attr('checked', false);
 
 
-		if (condoCheck === false) {
+		if ((condoCheck === false) && (houseCheck === false)) {
 			$('#condo-price').css({
 				'float': 'right',
 				'border': 'none',
@@ -80,14 +84,13 @@
 
 		else {
 			$('#condo-price').css({
-					'float': 'none',
-					'border': 'none',
-					'width' : '100%',
-					'display': 'block'
-				});
+				'float': 'none',
+				'border': 'none',
+				'width' : '100%',
+				'display': 'block'
+			});
 
 			$('#house-price').css('display', 'none');
-
 		}
 		
 		// removeError();
@@ -302,6 +305,7 @@
 	// WHEN EVERYTHING IS GOOD TO GO...
 	// RUN MAP-BUILDING FUNCTIONS
 	$('#button-container').on('click', '.income-button', function() {
+
 		
 		$('.map-interface').show();	
 		
@@ -343,10 +347,6 @@
 		$('.condo:checkbox').removeAttr('checked');
 		$('.income:checkbox').removeAttr('checked');
 		$('.savings:checkbox').removeAttr('checked');
-
-
-		$('#list-container').hide();
-
 
 		$('#school-list').hide();
 	

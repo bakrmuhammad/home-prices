@@ -281,6 +281,11 @@ hr {
   background: #f8f5f2;
   margin-top: 1em;
   display: none; }
+  #list-container .no-data {
+    text-align: center;
+    margin: 1.5em 0;
+    font-size: 6em;
+    color: #ddd; }
   #list-container header {
     padding: 10px;
     display: block;
@@ -417,7 +422,8 @@ hr {
       font-size: 12px; }
   #map-info .readout {
     font-size: 14px;
-    text-align: left; }
+    text-align: left;
+    line-height: 24px; }
   #map-info .graphic-label {
     text-align: left; }
   #map-info #button-container {
@@ -495,7 +501,7 @@ hr {
     width: 60px;
     height: 20px;
     display: inline-flex;
-    margin: -5px 0.25em; }
+    margin: -5px 0em; }
     #map-info #check-button-house:hover, #map-info #check-button-condo:hover, #map-info #check-button-income:hover, #map-info #check-button-savings:hover {
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
@@ -516,7 +522,12 @@ hr {
           background-color: #aaa;
           color: #000; }
   #map-info #check-button-income span, #map-info #check-button-savings span {
-    padding: 9px 7px !important; }
+    padding: 9px 4px !important; }
+  #map-info #check-button-income {
+    width: 50px;
+    padding: 0 0px; }
+  #map-info #check-button-savings {
+    width: 40px; }
   #map-info .explainer {
     display: none;
     font-size: 14px;
@@ -532,7 +543,7 @@ hr {
 
 #map-container {
   width: 100vw;
-  height: 92vh;
+  height: 91.5vh;
   display: block;
   position: relative !important; }
   #map-container #interface-container {
@@ -857,4 +868,6 @@ footer {
     display: block;
     width: 100%; }
   #hover-box {
-    display: none !important; } }
+    display: none !important; }
+  #list-container {
+    display: block; } }
