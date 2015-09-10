@@ -4,6 +4,10 @@
 
 (function () {
 
+
+		$('.leaflet-bottom.leaflet-left').append('<div class=\'source\'>Sources: Zillow, Miami-Dade County Public Schools, Broward County Schools and ESRI</div>')
+
+
 	 $('.income-box').keyup(function(event){	      
 	      // skip for arrow keys
 	      if(event.which >= 37 && event.which <= 40){
@@ -303,7 +307,7 @@
 		
 		var incomeInput = $('.income-box').val();
 		
-		income = getIncome(incomeInput);
+			income = getIncome(incomeInput);
 
 		$houseLayer = L.geoJson($zipData, { onEachFeature: onEachFeature, style: houseStyle });	
 
@@ -337,6 +341,8 @@
 
 		$('.house:checkbox').removeAttr('checked');
 		$('.condo:checkbox').removeAttr('checked');
+		$('.income:checkbox').removeAttr('checked');
+		$('.savings:checkbox').removeAttr('checked');
 
 
 		$('#list-container').hide();
