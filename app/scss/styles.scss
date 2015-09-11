@@ -2,7 +2,14 @@
 
 //WRITE YOUR CSS HERE
 
-
+.mag-glass {
+    float: right;
+    margin-right: 60px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+    color: $text-gray;
+}
 
 .miss { display: none !important;}
 
@@ -62,14 +69,14 @@
 		    border-radius: 3px;
 		}
 
-		#srcbox-button {
-			background: rgba(0, 0, 0, 0) url('http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png') no-repeat scroll center center;
-		    width: 35px;
-		    height: 25px;
-		    position: absolute;
-		    right: 15%;
-		    top: 100px;
-		}
+		// #srcbox-button {
+		// 	background: rgba(0, 0, 0, 0) url('http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png') no-repeat scroll center center;
+		//     width: 35px;
+		//     height: 25px;
+		//     position: absolute;
+		//     right: 15%;
+		//     top: 55%;
+		// }
 
 		#reset {
 		    padding: 4px;
@@ -86,6 +93,9 @@
 			font-family: $serif;
 			font-size: $md;
 			text-align: center;
+			background: whitesmoke;
+			padding: 0.25em;
+			border-radius: 0.25em;
 		}
 	}
 
@@ -100,6 +110,7 @@
 		ul {
 			padding: 0px;
 		}
+
 		
 		.active-listing { 
 			background: #fff; 
@@ -120,6 +131,15 @@
 		    &:hover {
 		    	background: #fff;
 		    }
+
+		   	.neighborhoods {
+				font-size: $xs;
+				color: $text-gray;
+
+				.hoods {
+					
+				}
+			}
 
 		    .close-item {
 		    	float: right;
@@ -266,7 +286,7 @@ h2 {
 
 	    #button-container {
 			margin: 1em auto;
-			height: auto;
+			height: 115px;
 			display: block;
 			max-width: 475px;
 			
@@ -310,7 +330,7 @@ h2 {
 
 			.income-box {
 				font-family: $serif;
-				font-size: 18px;
+				font-size: 20px;
 				border-bottom: 1px dashed $border-gray;
 				border-bottom-style: dashed;
 				border-top: none;
@@ -352,7 +372,7 @@ h2 {
 
 		
 		.error {
-			height: auto;
+			height: 50px;
 			width: 100%;
 			display: none;
 			margin: 1px auto;
@@ -427,6 +447,9 @@ h2 {
 			font-size: $sm;
 			line-height: 18px;
 			font-family: $serif;
+			background: whitesmoke;
+			padding: 0.25em;
+			border-radius: 0.25em;
 
 
 			.fa-level-down {
@@ -562,6 +585,21 @@ h2 {
 	display: none;
 	z-index: 9999;
 	height: auto;
+
+
+	.neighborhoods {
+		display: block;
+		font-family: $serif;
+		font-size: 11px;
+		color: $text-gray;
+		font-weight: bold;
+		line-height: 14px;
+		margin-bottom: 5px;
+
+		.hoods {
+			
+		}
+	}
 	
 
 	.float-left {
@@ -713,6 +751,12 @@ footer {
 
 @media (max-width: 991px) {
 
+	#map-info {
+		#button-container {
+			height: 150px;
+		}
+	}
+
 
 	.input-holder {
 		width: 100%;
@@ -761,7 +805,7 @@ footer {
 
 		#button-container {
 			margin: 1em auto;
-			height: 215px;
+			height: 200px;
 			display: block;
 			max-width: 475px;
 			
@@ -802,7 +846,7 @@ footer {
 
 			.income-box {
 				font-family: $serif;
-				font-size: 18px !important;
+				font-size: 20px !important;
 				border-bottom: 1px dashed $border-gray;
 				border-bottom-style: dashed;
 				border-top: none;
@@ -864,7 +908,7 @@ footer {
 		    width: 60px;
 		    height: 20px;
 		    display: inline-flex;
-		    margin: -5px 0.25em;
+		    margin: -5px 0px;
 
 
 		    &:hover {
@@ -904,6 +948,11 @@ footer {
 			line-height: 18px;
 			text-align: center;
 			font-family: $serif;
+			background: whitesmoke;
+			padding: 0.25em;
+			height: 45px;
+			margin-top: 1em;
+			border-radius: 0.25em;
 
 			.fa-level-down {
 				display: inline;
@@ -944,9 +993,22 @@ footer {
 
 	#list-container {
 		display: block;
+
+		.explainer {
+			display: none;
+			font-size: $base !important;
+		}
+	}
+
+
+	.leaflet-bottom.leaflet-right {
+		display: none;
 	}
 
 }
 
-
-
+@media (max-width: $tiny-display) {
+	#button-container {
+		height: 215px !important;
+	}
+}

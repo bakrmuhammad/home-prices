@@ -265,6 +265,14 @@ hr {
   .fa-facebook, .fa-twitter, .fa-google-plus {
     font-size: 18px; } }
 
+.mag-glass {
+  float: right;
+  margin-right: 60px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
+  color: #666; }
+
 .miss {
   display: none !important; }
 
@@ -301,13 +309,6 @@ hr {
       background: #EEE;
       box-shadow: inset 0px 0px 10px #CCC;
       border-radius: 3px; }
-    #list-container header #srcbox-button {
-      background: transparent url("http://media.miamiherald.com/static/media/projects/2014/school-demographics/img/src.png") no-repeat scroll center center;
-      width: 35px;
-      height: 25px;
-      position: absolute;
-      right: 15%;
-      top: 100px; }
     #list-container header #reset {
       padding: 4px;
       position: absolute;
@@ -319,7 +320,10 @@ hr {
       padding: 0 20px;
       font-family: "Roboto Slab", "Times New Roman", Times, serif;
       font-size: 18px;
-      text-align: center; }
+      text-align: center;
+      background: whitesmoke;
+      padding: 0.25em;
+      border-radius: 0.25em; }
   #list-container #zip-list {
     border-top: 2px solid #AAA;
     width: 100%;
@@ -344,6 +348,9 @@ hr {
       font-size: 18px; }
       #list-container #zip-list .listing:hover {
         background: #fff; }
+      #list-container #zip-list .listing .neighborhoods {
+        font-size: 12px;
+        color: #666; }
       #list-container #zip-list .listing .close-item {
         float: right;
         display: none; }
@@ -428,7 +435,7 @@ hr {
     text-align: left; }
   #map-info #button-container {
     margin: 1em auto;
-    height: auto;
+    height: 115px;
     display: block;
     max-width: 475px; }
     #map-info #button-container h3 {
@@ -458,7 +465,7 @@ hr {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
     #map-info #button-container .income-box {
       font-family: "Roboto Slab", "Times New Roman", Times, serif;
-      font-size: 18px;
+      font-size: 20px;
       border-bottom: 1px dashed #ccc;
       border-bottom-style: dashed;
       border-top: none;
@@ -485,7 +492,7 @@ hr {
     font-size: 20px;
     vertical-align: 10px; }
   #map-info .error {
-    height: auto;
+    height: 50px;
     width: 100%;
     display: none;
     margin: 1px auto;
@@ -532,7 +539,10 @@ hr {
     display: none;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Roboto Slab", "Times New Roman", Times, serif; }
+    font-family: "Roboto Slab", "Times New Roman", Times, serif;
+    background: whitesmoke;
+    padding: 0.25em;
+    border-radius: 0.25em; }
     #map-info .explainer .fa-level-down {
       display: none; }
 
@@ -629,6 +639,14 @@ hr {
   display: none;
   z-index: 9999;
   height: auto; }
+  #hover-box .neighborhoods {
+    display: block;
+    font-family: "Roboto Slab", "Times New Roman", Times, serif;
+    font-size: 11px;
+    color: #666;
+    font-weight: bold;
+    line-height: 14px;
+    margin-bottom: 5px; }
   #hover-box .float-left {
     float: left; }
   #hover-box .float-right {
@@ -721,6 +739,8 @@ footer {
   display: none; }
 
 @media (max-width: 991px) {
+  #map-info #button-container {
+    height: 150px; }
   .input-holder {
     width: 100%; }
   .button-holder {
@@ -753,7 +773,7 @@ footer {
       font-size: 16px; }
     #map-info #button-container {
       margin: 1em auto;
-      height: 215px;
+      height: 200px;
       display: block;
       max-width: 475px; }
       #map-info #button-container h3 {
@@ -783,7 +803,7 @@ footer {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
       #map-info #button-container .income-box {
         font-family: "Roboto Slab", "Times New Roman", Times, serif;
-        font-size: 18px !important;
+        font-size: 20px !important;
         border-bottom: 1px dashed #ccc;
         border-bottom-style: dashed;
         border-top: none;
@@ -826,7 +846,7 @@ footer {
       width: 60px;
       height: 20px;
       display: inline-flex;
-      margin: -5px 0.25em; }
+      margin: -5px 0px; }
       #map-info #check-button-house:hover, #map-info #check-button-condo:hover {
         -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
@@ -851,7 +871,12 @@ footer {
       font-size: 16px;
       line-height: 18px;
       text-align: center;
-      font-family: "Roboto Slab", "Times New Roman", Times, serif; }
+      font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      background: whitesmoke;
+      padding: 0.25em;
+      height: 45px;
+      margin-top: 1em;
+      border-radius: 0.25em; }
       #map-info .explainer .fa-level-down {
         display: inline; }
   #map-container {
@@ -870,4 +895,13 @@ footer {
   #hover-box {
     display: none !important; }
   #list-container {
-    display: block; } }
+    display: block; }
+    #list-container .explainer {
+      display: none;
+      font-size: 16px !important; }
+  .leaflet-bottom.leaflet-right {
+    display: none; } }
+
+@media (max-width: 400px) {
+  #button-container {
+    height: 215px !important; } }

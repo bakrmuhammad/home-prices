@@ -5,7 +5,7 @@
 	<div class="container">
 			<div id="map-info">
 				<span class="graphic-label">{{ COPY.label }}</span>
-				<div class="headline">Finding affordable housing in South Florida</div>
+				<div class="headline">Finding an affordable home in South Florida</div>
 				<div class="byline">
 					<span class="name">By <span class="upper"><a href="mailto:calcantara@miamiherald.com">{{ COPY.reporter_name }}</a></span> and <span class="upper"><a href="mailto:nnehamas@miamiherald.com">{{ COPY.reporter_name_two }}</a></span></span>
 					<span class="date">Published: {{ COPY.date }}</span>
@@ -26,7 +26,7 @@
 						   	<span><i class="fa fa-building"></i> condo</span>
 						   	</label>
 					   	</span>
-					   in South Florida	by your household 
+					   in South Florida by your household 
 					   <span id="check-button-income">
 					   	<label>
 					   		<input class='income' type="checkbox" value="1">
@@ -115,6 +115,8 @@
 
 				<div id="hover-box">
 					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span>
+
+					<span class='neighborhoods'><span class="hoods"></span></span>
 					
 					<div class="clearfix"></div>
 					
@@ -190,8 +192,7 @@
 				<p>Here is a list of the <span class="zip-count"></span> ZIP codes where you can afford a <span class="housing"></span>:</p>
 			</div>	
 			<input id="srcbox" placeholder="Search for a ZIP code...">
-			<span id="srcbox-button"></span>
-			<span id="reset" class="ral upper xsmall">Clear</span>
+			<i class="fa fa-search mag-glass"></i>
 			<div class="clearfix"></div>
 			</header>
 

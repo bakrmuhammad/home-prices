@@ -38,7 +38,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/libs/bootstrap.css">
 <link rel="stylesheet" href="css/libs/leaflet.css">
-
+<link rel="stylesheet" href="css/fonts/fonts.css">
 <link rel="stylesheet" href="css/styles.css">
 
     <title>Finding affordable housing in Miami-Dade and Broward counties | Miami Herald</title>
@@ -48,13 +48,12 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="navbar-header"><a class="navbar-brand-img large-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b.png" class="logo"></a> <a class="navbar-brand-img mobile-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/h_b.png" class="logo"></a> <a class="navbar-brand sig">Real Estate</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a onclick="popUp=window.open('https://twitter.com/home?status=This%20is%20a%20test%20tweet%20for%20the%20home%20price%20project','popupwindow','scrollbars=yes,width=500,height=320');popUp.focus();return false"><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-google-plus"></i></a></li></ul></div></nav>
 
       <!-- CONTENT -->
-
-        
+      
 
 	<div class="container">
 			<div id="map-info">
 				<span class="graphic-label">The housing market</span>
-				<div class="headline">Finding affordable housing in South Florida</div>
+				<div class="headline">Finding an affordable home in South Florida</div>
 				<div class="byline">
 					<span class="name">By <span class="upper"><a href="mailto:calcantara@miamiherald.com">Chris Alcantara</a></span> and <span class="upper"><a href="mailto:nnehamas@miamiherald.com">Nicolas Nehamas</a></span></span>
 					<span class="date">Published: Sept. 20, 2015</span>
@@ -75,7 +74,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						   	<span><i class="fa fa-building"></i> condo</span>
 						   	</label>
 					   	</span>
-					   in South Florida	by your household 
+					   in South Florida by your household 
 					   <span id="check-button-income">
 					   	<label>
 					   		<input class='income' type="checkbox" value="1">
@@ -164,6 +163,8 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 
 				<div id="hover-box">
 					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span>
+
+					<span class='neighborhoods'><span class="hoods"></span></span>
 					
 					<div class="clearfix"></div>
 					
@@ -239,8 +240,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 				<p>Here is a list of the <span class="zip-count"></span> ZIP codes where you can afford a <span class="housing"></span>:</p>
 			</div>	
 			<input id="srcbox" placeholder="Search for a ZIP code...">
-			<span id="srcbox-button"></span>
-			<span id="reset" class="ral upper xsmall">Clear</span>
+			<i class="fa fa-search mag-glass"></i>
 			<div class="clearfix"></div>
 			</header>
 
@@ -254,7 +254,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 
 
  
-        <div class="container">
+      <div class="container">
        <!--  <div id="sources">
 	<p>Sources: Zillow, Miami-Dade County Public Schools, Broward County Schools and ESRI</p>
 </div> -->
@@ -278,6 +278,5 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 <script src="js/main.js"></script>
       <!-- ANALYTICS -->
       <!-- <div id="mistatstag" style="display:none"><script type="text/javascript" src="http://media.miamiherald.com/misites/mia/miamiherald.js"></script><script type="text/javascript" src="http://media.miamiherald.com/mistats/products/pubsys_s_code.js"></script><script type="text/javascript">mistats.pagename="Static: Finding affordable housing in Miami-Dade and Broward counties",mistats.pagelevel="Static",mistats.channel="Static: News",mistats.contentsource=mistats.sitename+": Static: Miami Herald",mistats.taxonomy="News|National|GovtPolitics|Elections|";</script><script type="text/javascript" src="http://media.miamiherald.com/mistats/products/pubsys.js"></script><script type="text/javascript" src="http://media.miamiherald.com/mistats/finalizestats.js"></script></div> -->
-      
   </body>
 </html>

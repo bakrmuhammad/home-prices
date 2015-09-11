@@ -262,15 +262,15 @@ var $defaultCrimeLayer = L.geoJson($zipData, {
 function getDefaultSchoolColor(d) {
 
 	if (d >= 4) {
-		return '#f2f0f7';
+		return '#54278f';
 	} else if ((d >= 3) && (d <= 3.9)) {
-		return '#f2f0f7';
+		return '#756bb1';
 	} else if ((d >= 2) && (d <= 2.9)) {
 		return '#9e9ac8';
 	} else if ((d > 1) && (d <= 1.9)) {
-		return '#756bb1';
+		return '#cbc9e2';
 	} else if ((d > 0.1) && (d <= 0.9)) {
-		return '#54278f';
+		return '#f2f0f7';
 	} else {
 		return '#ccc';
 	}
@@ -302,14 +302,29 @@ var $defaultSchoolLayer = L.geoJson($zipData, {
 function getHouseColor(d) {
 
 	if (income >= d) {
-		return '#006d2c';
-	} else if (income >= (d * 0.75)){
-		return '#31a354'
-	} else if (income >= (d * 0.50)) {
-		return '#74c476'
-	} else if (income >= (d * 0.25)) {
-		return '#bae4b3'
-	} else {
+
+		if ( (income * 0.75) >= d ) {
+			
+			if ( (income * 0.50) >= d ) {
+
+				if ( (income * 0.25) >= d ) {
+					return '#bae4b3'
+				}
+				
+				else {
+					return '#74c476'					
+				}
+			}
+			else {
+				return '#31a354'
+			}
+		}
+		else {
+			return '#006d2c'
+		}
+	}
+
+	else {
 		return '#ccc';
 	}
 }
@@ -352,14 +367,29 @@ function houseStyle(features, layer) {
 function getCondoColor(d) {
 
 	if (income >= d) {
-		return '#006d2c';
-	} else if (income >= (d * 0.75)){
-		return '#31a354'
-	} else if (income >= (d * 0.50)) {
-		return '#74c476'
-	} else if (income >= (d * 0.25)) {
-		return '#bae4b3'
-	} else {
+
+		if ( (income * 0.75) >= d ) {
+			
+			if ( (income * 0.50) >= d ) {
+
+				if ( (income * 0.25) >= d ) {
+					return '#bae4b3'
+				}
+				
+				else {
+					return '#74c476'					
+				}
+			}
+			else {
+				return '#31a354'
+			}
+		}
+		else {
+			return '#006d2c'
+		}
+	}
+
+	else {
 		return '#ccc';
 	}
 }
@@ -530,30 +560,30 @@ function getSchoolColor(school, house, condo) {
 	if ((houseCheck === true) && ((condoCheck === false) && (inputEmpty === false))) {
 
 		if ((income >= house) && (school === 4)) {
-			return '#f2f0f7';
+			return '#54278f';
 		} else if ((income >= house) && ((school >= 3.0) && (school <= 3.9))) {
-			return '#cbc9e2';
+			return '#756bb1';
 		} else if ((income >= house) && ((school >= 2.0) && (school <= 2.9))) {
 			return '#9e9ac8';
 		} else if ((income >= house) && ((school > 1) && (school <= 1.9))) {
-			return '#756bb1';
+			return '#cbc9e2';
 		} else if ((income >= house) && ((school >= 0.1) && (school <= 0.9))) {
-			return '#54278f';
+			return '#f2f0f7';
 		} else {
 			return '#ccc';
 		}
 	} else if ((houseCheck === false) && ((condoCheck === true) && (inputEmpty === false))) {
 
 		if ((income >= condo) && (school === 4)) {
-			return '#f2f0f7';
+			return '#54278f';
 		} else if ((income >= condo) && ((school >= 3.0) && (school <= 3.9))) {
-			return '#cbc9e2';
+			return '#756bb1';
 		} else if ((income >= condo) && ((school >= 2.0) && (school <= 2.9))) {
 			return '#9e9ac8';
 		} else if ((income >= condo) && ((school > 1) && (school <= 1.9))) {
-			return '#756bb1';
+			return '#cbc9e2';
 		} else if ((income >= condo) && ((school >= 0.1) && (school <= 0.9))) {
-			return '#54278f';
+			return '#f2f0f7';
 		} else {
 			return '#ccc';
 		}
@@ -881,6 +911,7 @@ function onEachFeature(feature, layer) {
 			var condoPriceFifteen = layer.feature.properties.condoPriceFifteen;
 			var condoPercent = layer.feature.properties.condoPercent;
 			var schoolData = layer.feature.properties.school;
+			var neighborhoodNames = layer.feature.properties.neighborhoods;
 
 
 			// CHANGE COLOR OF HOUSE AND 
@@ -941,6 +972,8 @@ function onEachFeature(feature, layer) {
 			$('.condo-price-fourteen').html(numberChange(condoPriceFourteen));
 			$('.condo-price-fifteen').html(numberChange(condoPriceFifteen));
 			$('.condo-percent').html(percentChange(condoPercent));
+
+			$('.hoods').html(neighborhoodNames)
 
 			if (schoolData === 'N/A') {
 				$('.no-school').show();
@@ -1185,8 +1218,8 @@ function buildDefaultSchool() {
 			'color': '#54278f',
 			'font-weight': 'bold'
 		});
-	$('.label-left').html('A');
-	$('.label-right').html('F');
+	$('.label-left').html('F');
+	$('.label-right').html('A');
 	$('.housing-type')
 		.html('Average school grade ')
 		.css({
@@ -1236,7 +1269,7 @@ function buildHouseMap() {
 
 	$('#interface-container').show();
 	$('.key-holder').css('display', 'block');
-	$('.legend-block').remove();
+	// $('.legend-block').remove();
 	$('.housing-type')
 		.html('Affordable ')
 		.css({
@@ -1245,8 +1278,8 @@ function buildHouseMap() {
 		});
 	$('.housing-explainer').html(' single-family houses by ZIP codes.');
 	$('.percent-year').css('display', 'none');
-	$('.label-left').empty();
-	$('.label-right').empty();
+	// $('.label-left').empty();
+	// $('.label-right').empty();
 
 	showExplainer();
 	clearAllLayers();
@@ -1263,7 +1296,6 @@ function buildCondoMap() {
 	$('.percent-select').removeClass('selected-interface');
 	$('.price-select').addClass('selected-interface');
 	$('.key-holder').css('display', 'block');
-	$('.legend-block').remove();
 	$('.housing-type')
 		.html('Affordable ')
 		.css({
@@ -1272,8 +1304,6 @@ function buildCondoMap() {
 		});
 	$('.housing-explainer').html(' condos by ZIP codes.');
 	$('.percent-year').css('display', 'none');
-	$('.label-left').empty();
-	$('.label-right').empty();
 
 	d3.csv('../js/libs/data/zipcodes.csv', function(data) {
 		var count = 0;
@@ -1415,8 +1445,8 @@ function buildSchoolMap() {
 		});
 	$('.housing-explainer').html(' for ZIP codes you can afford.');
 	$('.percent-year').css('display', 'none');
-	$('.label-left').html('A');
-	$('.label-right').html('F');
+	$('.label-left').html('F');
+	$('.label-right').html('A');
 
 	for (var i = 0; i < legendColors.length; i++) {
 		$('.key').append('<div class=\'legend-block\' style=\'border-color:' + legendColors[i] + '\'</div>');
@@ -1442,6 +1472,8 @@ function buildZipList() {
 			return income;
 		}
 
+		$('#list-explainer .explainer').show();
+
 		// TOGGLE CLICK ON LISTING
 		var handlers = [
 
@@ -1459,13 +1491,16 @@ function buildZipList() {
 				var condoFifteen = $(this).attr('data-condo-fifteen');
 				var condoPercent = $(this).attr('data-condo-percent');
 
+				var neighborhoods = $(this).attr('data-neighborhoods');
+
 				$('.listing .inner').remove();
 
 				$('.listing').removeClass('active-listing');
 
 				$(this).addClass('active-listing');
 
-				$(this).append('<div class="inner"><i class="close-item fa fa-times"></i>' +
+				$(this).append('<div class="inner">' + 
+					'<span class=\'neighborhoods\'><span class="hoods">' + neighborhoods +'</span></span><i class="close-item fa fa-times"></i>' +
 					'<div id=\'prices-container\'>' +
 					'<div class=\'price col-sm-12 col-xs-12\'>' +
 					'<span class=\'hed\'>Average Home Prices</span>' +
@@ -1516,7 +1551,7 @@ function buildZipList() {
 
 		$.each(data, function(i, val) {
 
-			$('#zip-list ul').append('<li class=\'listing\' data-index=' + i + ' data-zipcode=\'' + data[i].zipcode + '\' data-house-fourteen=\'' + data[i].housePriceFourteen + '\' data-house-fifteen=\'' + data[i].housePriceFifteen + '\' data-house-percent=\'' + data[i].housePercent + '\' data-condo-fourteen=\'' + data[i].condoPriceFourteen + '\' data-condo-fifteen=\'' + data[i].condoPriceFifteen + '\' data-condo-percent=\'' + data[i].condoPercent + '\'><span class =\'hed\'>' + data[i].zipcode + ' – ' + data[i].city + '</span></li>');
+			$('#zip-list ul').append('<li class=\'listing\' data-index=' + i + ' data-zipcode=\'' + data[i].zipcode + '\' data-neighborhoods=\'' + data[i].neighborhoods + '\' data-house-fourteen=\'' + data[i].housePriceFourteen + '\' data-house-fifteen=\'' + data[i].housePriceFifteen + '\' data-house-percent=\'' + data[i].housePercent + '\' data-condo-fourteen=\'' + data[i].condoPriceFourteen + '\' data-condo-fifteen=\'' + data[i].condoPriceFifteen + '\' data-condo-percent=\'' + data[i].condoPercent + '\'><span class =\'hed\'>' + data[i].zipcode + ' – ' + data[i].city + '</span></li>');
 			var counter = 0;
 
 			$('#zip-list').on('click', '.listing', function(event) {
