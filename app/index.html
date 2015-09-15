@@ -15,14 +15,14 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 <meta name="description" content="">
 <meta name="author" content="Chris Alcantara">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="keywords" content="">
+<meta name="keywords" content="real estate, affordable housing, condos, single-family homes, townhouses, south florida, miami-dade county, broward county, zipcodes">
 <meta name="copyright" content="&copy; 2015 Miami Herald">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Graphic: Finding affordable housing in Miami-Dade and Broward counties"/>
 <meta property="og:type" content="article"/> 
 <meta property="og:description" content=""/>
 <meta property="og:image" content=""/>
-<meta property="og:url" content=""/>
+<meta property="og:url" content="pubsys.miamiherald.com/static/media/projects/2015/zipcode-housing-map"/>
 <meta property="og:site_name " content="Miami Herald"/> 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@MiamiHerald">
@@ -38,14 +38,13 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/libs/bootstrap.css">
 <link rel="stylesheet" href="css/libs/leaflet.css">
-<link rel="stylesheet" href="css/fonts/fonts.css">
 <link rel="stylesheet" href="css/styles.css">
 
     <title>Finding affordable housing in Miami-Dade and Broward counties | Miami Herald</title>
   </head>
   <body>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="navbar-header"><a class="navbar-brand-img large-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b.png" class="logo"></a> <a class="navbar-brand-img mobile-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/h_b.png" class="logo"></a> <a class="navbar-brand sig">Real Estate</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a onclick="popUp=window.open('https://twitter.com/home?status=This%20is%20a%20test%20tweet%20for%20the%20home%20price%20project','popupwindow','scrollbars=yes,width=500,height=320');popUp.focus();return false"><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-google-plus"></i></a></li></ul></div></nav>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="navbar-header"><a class="navbar-brand-img large-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b.png" class="logo"></a> <a class="navbar-brand-img mobile-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/h_b.png" class="logo"></a> <a class="navbar-brand sig">Real Estate</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a onclick="popUp=window.open('https://twitter.com/home?status=GRAPHIC%3A%20See%20where%20you%20can%20afford%20a%20house%20or%20condo/townhouse%20in%20South%20Florida.%20hrld.us/zipcode-house','popupwindow','scrollbars=yes,width=500,height=320');popUp.focus();return false"><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-google-plus"></i></a></li></ul></div></nav>
 
       <!-- CONTENT -->
       
@@ -53,7 +52,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 	<div class="container">
 			<div id="map-info">
 				<span class="graphic-label">The housing market</span>
-				<div class="headline">Finding an affordable home in South Florida</div>
+				<div class="headline">What will your money buy?</div>
 				<div class="byline">
 					<span class="name">By <span class="upper"><a href="mailto:calcantara@miamiherald.com">Chris Alcantara</a></span> and <span class="upper"><a href="mailto:nnehamas@miamiherald.com">Nicolas Nehamas</a></span></span>
 					<span class="date">Published: Sept. 20, 2015</span>
@@ -61,7 +60,9 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 
 				<div id="button-container">
 
-					<p class='readout'>See where you can afford a  
+					<p class="readout">Skyrocketing home prices mean many middle-class South Floridians can't buy the homes they want. This tool shows where you can afford a home and how school quality, safety and value growth compare.</p>
+
+					<p class='readout'>Start by selecting
 						<span id="check-button-house">
 							<label>
 								<input class='house' type="checkbox"  value="1">
@@ -71,32 +72,35 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 					   <span id="check-button-condo">
 						   	<label>
 						   		<input class='condo' type="checkbox" value="1">
-						   	<span><i class="fa fa-building"></i> condo</span>
+						   	<span><i class="fa fa-building"></i> condo/townhouse</span>
 						   	</label>
-					   	</span>
-					   in South Florida by your household 
+					   	</span>.
+						If you want to see what's affordable based on your household income, select
 					   <span id="check-button-income">
 					   	<label>
 					   		<input class='income' type="checkbox" value="1">
 					   	<span> income</span>
 					   	</label>
-				   	  </span> 
-				   	  or desired
+				   	  </span>. 
+				   	  Otherwise, select
 				   	  <span id="check-button-savings">
 						   	<label>
 						   		<input class='savings' type="checkbox" value="1">
 						   	<span> price</span>
 						   	</label>
-					   	</span>
-					   	for a home.
+					   	</span>.
+						Finally, type your income or price in the box below. <span class="hover-instructions">Hover over a ZIP code for more information.</span>
 					 </p>
+
+				</div>
 					
+
+				<div id="input-container">
 					<div class="input-holder">
 						<span class="dollar-sign">$ </span>
 						<input name="income-box" class="income-box" type="text" placeholder="" />
 					</div>
-					
-
+				
 					<div class="button-holder">
 						<button class='income-button income-btn' type="button" value="Execute">Submit</button>
 						
@@ -104,6 +108,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 					</div>
 				</div>
 
+				<div class="clearfix"></div>
 				<div class="error">
 					<div class="alert alert-danger" role="alert">
 					  <i class="fa fa-info-circle"></i>
@@ -116,6 +121,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 				
 				<div class="explainer">
 					<p>You can afford a <span class="housing"></span> in <span class="zip-count"></span> ZIP codes. <i class="fa fa-level-down"></i></p>
+					<p class="income-only">Experts say you should, at most, spend three-and-a-half times your income when buying a home.</p>
 				</div>	
 			</div>	
 	</div>
@@ -126,12 +132,12 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 			<div id="map-container">
 				<div id="interface-container">
 					<ul>
-						<li class="price-select interface-selector selected-interface">Price</li>
-						<li class="percent-select interface-selector">Rate change</li>
+						<li class="price-select interface-selector selected-interface">Value</li>
+						<li class="percent-select interface-selector">Value change</li>
 
 						<li class="crime-select interface-selector">Crime</li>
 						
-						<li class="school-select interface-selector">School</li>
+						<li class="school-select interface-selector">Schools</li>
 					</ul>
 			
 					<div class="map-interface">	
@@ -162,10 +168,15 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 				</div>
 
 				<div id="hover-box">
-					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span>
+					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span> 
+					<span class="crime-rate">
+						<span class="crime-level"></span>
+					</span>
 
-					<span class='neighborhoods'><span class="hoods"></span></span>
-					
+					<div class="sub-info">
+						<span class='neighborhoods'>Neighborhoods:
+						<span class="hoods"></span></span>					
+					</div>
 					<div class="clearfix"></div>
 					
 					<div id="house-price">
@@ -173,7 +184,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						<table class='housing-table'>
 							<tr>
 								<th>Year</th>
-								<th>House Price</th>
+								<th>House Value</th>
 							</tr>
 							<tr>
 								<td>2014</td>
@@ -195,7 +206,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						<table class='housing-table'>
 							<tr>
 								<th>Year</th>
-								<th>Condo Price</th>
+								<th>Condo Value</th>
 							</tr>
 							<tr>
 								<td>2014</td>
@@ -256,11 +267,8 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
  
       <div class="container">
        <!--  <div id="sources">
-	<p>Sources: Zillow, Miami-Dade County Public Schools, Broward County Schools and ESRI</p>
+	<p>Sources: Zillow, Florida Department of Education and ESRI</p>
 </div> -->
-        <!-- <h3 class="comments">Comments</h3>
-<div id="fb-root"></div><div class="fb-comments" data-href="" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
- -->
         <footer></footer>
       </div>
       <!-- JS LIBRARIES -->

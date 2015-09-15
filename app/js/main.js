@@ -4,34 +4,28 @@
 
 (function () {
 
-
-		$('.leaflet-bottom.leaflet-left').append('<div class=\'source\'>Sources: Zillow, Miami-Dade County Public Schools, Broward County Schools and ESRI</div>')
-
+	$('.leaflet-bottom.leaflet-left').append('<div class=\'source\'>Sources: Zillow, Florida Department of Education and ESRI <br> Note: Home values for each ZIP code are similar to recorded sales prices.</div>')
 
 	 $('.income-box').keyup(function(event){	      
-	      // skip for arrow keys
-	      if(event.which >= 37 && event.which <= 40){
+	      if (event.which >= 37 && event.which <= 40){
 	          event.preventDefault();
 	      }
 	      
-	      var inputNumber = $(this).val().replace(/,/gi, ''),
-	      	  newNumber   = inputNumber.split(/(?=(?:\d{3})+$)/).join(',');
+	      var inputNumber = $(this).val().replace(/,/gi, '');
+	      var newNumber   = inputNumber.split(/(?=(?:\d{3})+$)/).join(',');
 	 
 		  $(this).val(newNumber);
 	  });
 
-
 	$('#check-button-house').on('change', '.house:checkbox', function(e) {
 
-		var attr   	   		= $(this).attr('checked'),
-			houseCheckbox = $('.house:checkbox'),
-			condoCheckbox 	= $('.condo:checkbox'),
-			houseCheck = (houseCheckbox.is(':checked')),
-			condoCheck 		= (condoCheckbox.is(':checked'));
+		var attr = $(this).attr('checked');
+		var	houseCheckbox = $('.house:checkbox');
+		var	condoCheckbox = $('.condo:checkbox');
+		var	houseCheck = (houseCheckbox.is(':checked'));
+		var	condoCheck = (condoCheckbox.is(':checked'));
 		
-
 		buildDefaultHouse();
-
 
 		$('.condo:checkbox').attr('checked', false);
 
@@ -55,23 +49,19 @@
 
 			$('#condo-price').css('display', 'none');
 		}
-		
-		// removeError();
 	});
-
 
 	$('#check-button-condo').on('change', '.condo:checkbox', function(e) {
 
-		var attr 			= $(this).attr('checked'),
-			houseCheckbox = $('.house:checkbox'),
-			condoCheckbox 	= $('.condo:checkbox'),
-			houseCheck = (houseCheckbox.is(':checked')),
-			condoCheck 		= (condoCheckbox.is(':checked'));
+		var attr = $(this).attr('checked');
+		var	houseCheckbox = $('.house:checkbox');
+		var	condoCheckbox = $('.condo:checkbox');
+		var	houseCheck = (houseCheckbox.is(':checked'));
+		var	condoCheck = (condoCheckbox.is(':checked'));
 
-			buildDefaultCondo();
-		
-			$('.house:checkbox').attr('checked', false);
+		buildDefaultCondo();
 
+		$('.house:checkbox').attr('checked', false);
 
 		if ((condoCheck === false) && (houseCheck === false)) {
 			$('#condo-price').css({
@@ -89,11 +79,8 @@
 				'width' : '100%',
 				'display': 'block'
 			});
-
 			$('#house-price').css('display', 'none');
 		}
-		
-		// removeError();
 	});
 
 	$('.income-box').focus(function() {
@@ -102,44 +89,36 @@
 		 $('.section:first-of-type').after('<br class=\'stop-scroll\'>');
 	});
 
-
-
 	$('#check-button-income').on('change', '.income:checkbox', function(e) {
-
 		$('.income-box').attr('placeholder', 'Enter income' )
-
 		$('.savings:checkbox').attr('checked', false)
-
-
+		$('.income-only').show();
 	})
 
 	$('#check-button-savings').on('change', '.savings:checkbox', function(e) {
-
 		$('.income-box').attr('placeholder', 'Enter amount' )
-
 		$('.income:checkbox').attr('checked', false)
-				
-
+		$('.income-only').hide();	
 	})
 
-
 	$('#interface-container').on('click', '.price-select', function(event) {
-
 		$('.crime-select').removeClass('selected-interface');
 		$('.school-select').removeClass('selected-interface');
 		$('.percent-select').removeClass('selected-interface');		
-		
+	
 		$(this).addClass('selected-interface');
 		
-		var incomeInput    = $('.income-box').val(),
-			houseCheckbox  = $('.house:checkbox'),
-			condoCheckbox  = $('.condo:checkbox'),
-			houseCheck 	   = (houseCheckbox.is(':checked')),
-			condoCheck 	   = (condoCheckbox.is(':checked')),
-			inputEmpty 	   = (incomeInput === ''),
-			schoolTable    = $('#school-list');
+		var incomeInput = $('.income-box').val();
+		var	houseCheckbox = $('.house:checkbox');
+		var	condoCheckbox = $('.condo:checkbox');
+		var	houseCheck = (houseCheckbox.is(':checked'));
+		var	condoCheck = (condoCheckbox.is(':checked'));
+		var	inputEmpty = (incomeInput === '');
+		var	schoolTable = $('#school-list');
+		var	crimeRate = $('.crime-rate');
 
-			schoolTable.hide();
+		crimeRate.hide();
+		schoolTable.hide();
 
 		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
 			buildHouseMap();
@@ -176,17 +155,18 @@
 		
 		$(this).addClass('selected-interface');
 
-		var percent 	   = 'percent',
-			incomeInput    = $('.income-box').val(),
-			houseCheckbox  = $('.house:checkbox'),
-			condoCheckbox  = $('.condo:checkbox'),
-			houseCheck 	   = (houseCheckbox.is(':checked')),
-			condoCheck 	   = (condoCheckbox.is(':checked')),
-			inputEmpty 	   = (incomeInput === ''),
-			schoolTable    = $('#school-list');
+		var percent = 'percent';
+		var	incomeInput = $('.income-box').val();
+		var	houseCheckbox = $('.house:checkbox');
+		var	condoCheckbox = $('.condo:checkbox');
+		var	houseCheck = (houseCheckbox.is(':checked'));
+		var	condoCheck = (condoCheckbox.is(':checked'));
+		var	inputEmpty = (incomeInput === '');
+		var	schoolTable = $('#school-list');
+		var	crimeRate = $('.crime-rate');
 
-			schoolTable.hide();
-
+		crimeRate.hide();
+		schoolTable.hide();
 
 		if (((houseCheck === true) && (condoCheck === false)) && (inputEmpty === true)) {
 			console.log('build default percent house map')
@@ -229,7 +209,6 @@
 		$('.percent-select').removeClass('selected-interface');		
 		$(this).addClass('selected-interface');
 
-
 		var crime 		   = 'crime',
 			incomeInput    = $('.income-box').val(),
 			house_checkbox = $('.house:checkbox'),
@@ -237,7 +216,11 @@
 			houseCheck 	   = (house_checkbox.is(':checked')),
 			condoCheck 	   = (condo_checkbox.is(':checked')),
 			inputEmpty 	   = (incomeInput === ''),
-			schoolTable    = $('#school-list');
+			schoolTable    = $('#school-list'),
+			crimeRate = $('.crime-rate');
+
+			crimeRate.show();
+			
 
 			schoolTable.hide();
 
@@ -277,7 +260,10 @@
 			houseCheck 	   = (house_checkbox.is(':checked')),
 			condoCheck 	   = (condo_checkbox.is(':checked')),
 			inputEmpty 	   = (incomeInput === ''),
-			schoolTable    = $('#school-list');
+			schoolTable    = $('#school-list'),
+			crimeRate = $('.crime-rate');
+
+			crimeRate.hide();
 
 			schoolTable.show();
 
@@ -304,7 +290,7 @@
 
 	// WHEN EVERYTHING IS GOOD TO GO...
 	// RUN MAP-BUILDING FUNCTIONS
-	$('#button-container').on('click', '.income-button', function() {
+	$('#input-container').on('click', '.income-button', function() {
 
 		
 		$('.map-interface').show();	
@@ -334,11 +320,10 @@
 		if (mobile > w) {
 			buildZipList();
 		};
-					
 
 	});
 
-	$('#button-container').on('click', '.reset', function () {
+	$('#input-container').on('click', '.reset', function () {
 
 		$('.income-box').val('');
 		$('.income-button').removeAttr('disabled');

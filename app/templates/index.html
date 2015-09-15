@@ -5,7 +5,7 @@
 	<div class="container">
 			<div id="map-info">
 				<span class="graphic-label">{{ COPY.label }}</span>
-				<div class="headline">Finding an affordable home in South Florida</div>
+				<div class="headline">What will your money buy?</div>
 				<div class="byline">
 					<span class="name">By <span class="upper"><a href="mailto:calcantara@miamiherald.com">{{ COPY.reporter_name }}</a></span> and <span class="upper"><a href="mailto:nnehamas@miamiherald.com">{{ COPY.reporter_name_two }}</a></span></span>
 					<span class="date">Published: {{ COPY.date }}</span>
@@ -13,7 +13,9 @@
 
 				<div id="button-container">
 
-					<p class='readout'>See where you can afford a  
+					<p class="readout">Skyrocketing home prices mean many middle-class South Floridians can't buy the homes they want. This tool shows where you can afford a home and how school quality, safety and value growth compare.</p>
+
+					<p class='readout'>Start by selecting
 						<span id="check-button-house">
 							<label>
 								<input class='house' type="checkbox"  value="1">
@@ -23,32 +25,35 @@
 					   <span id="check-button-condo">
 						   	<label>
 						   		<input class='condo' type="checkbox" value="1">
-						   	<span><i class="fa fa-building"></i> condo</span>
+						   	<span><i class="fa fa-building"></i> condo/townhouse</span>
 						   	</label>
-					   	</span>
-					   in South Florida by your household 
+					   	</span>.
+						If you want to see what's affordable based on your household income, select
 					   <span id="check-button-income">
 					   	<label>
 					   		<input class='income' type="checkbox" value="1">
 					   	<span> income</span>
 					   	</label>
-				   	  </span> 
-				   	  or desired
+				   	  </span>. 
+				   	  Otherwise, select
 				   	  <span id="check-button-savings">
 						   	<label>
 						   		<input class='savings' type="checkbox" value="1">
 						   	<span> price</span>
 						   	</label>
-					   	</span>
-					   	for a home.
+					   	</span>.
+						Finally, type your income or price in the box below. <span class="hover-instructions">Hover over a ZIP code for more information.</span>
 					 </p>
+
+				</div>
 					
+
+				<div id="input-container">
 					<div class="input-holder">
 						<span class="dollar-sign">$ </span>
 						<input name="income-box" class="income-box" type="text" placeholder="" />
 					</div>
-					
-
+				
 					<div class="button-holder">
 						<button class='income-button income-btn' type="button" value="Execute">Submit</button>
 						
@@ -56,6 +61,7 @@
 					</div>
 				</div>
 
+				<div class="clearfix"></div>
 				<div class="error">
 					<div class="alert alert-danger" role="alert">
 					  <i class="fa fa-info-circle"></i>
@@ -68,6 +74,7 @@
 				
 				<div class="explainer">
 					<p>You can afford a <span class="housing"></span> in <span class="zip-count"></span> ZIP codes. <i class="fa fa-level-down"></i></p>
+					<p class="income-only">Experts say you should, at most, spend three-and-a-half times your income when buying a home.</p>
 				</div>	
 			</div>	
 	</div>
@@ -78,12 +85,12 @@
 			<div id="map-container">
 				<div id="interface-container">
 					<ul>
-						<li class="price-select interface-selector selected-interface">Price</li>
-						<li class="percent-select interface-selector">Rate change</li>
+						<li class="price-select interface-selector selected-interface">Value</li>
+						<li class="percent-select interface-selector">Value change</li>
 
 						<li class="crime-select interface-selector">Crime</li>
 						
-						<li class="school-select interface-selector">School</li>
+						<li class="school-select interface-selector">Schools</li>
 					</ul>
 			
 					<div class="map-interface">	
@@ -114,10 +121,15 @@
 				</div>
 
 				<div id="hover-box">
-					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span>
+					<span class="city"></span><span class="state"> – </span><span class="zip-code"></span> 
+					<span class="crime-rate">
+						<span class="crime-level"></span>
+					</span>
 
-					<span class='neighborhoods'><span class="hoods"></span></span>
-					
+					<div class="sub-info">
+						<span class='neighborhoods'>Neighborhoods:
+						<span class="hoods"></span></span>					
+					</div>
 					<div class="clearfix"></div>
 					
 					<div id="house-price">
@@ -125,7 +137,7 @@
 						<table class='housing-table'>
 							<tr>
 								<th>Year</th>
-								<th>House Price</th>
+								<th>House Value</th>
 							</tr>
 							<tr>
 								<td>2014</td>
@@ -147,7 +159,7 @@
 						<table class='housing-table'>
 							<tr>
 								<th>Year</th>
-								<th>Condo Price</th>
+								<th>Condo Value</th>
 							</tr>
 							<tr>
 								<td>2014</td>

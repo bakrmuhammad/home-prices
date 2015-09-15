@@ -16,7 +16,6 @@
 
 .info {
 
-
 	#house-choice {
 		margin: 1em 0 2em 0;
 		text-align: center;
@@ -111,6 +110,21 @@
 			padding: 0px;
 		}
 
+		.crime-rate {
+			// float: right;
+			font-size: 12px;
+			display: inline-block;
+			color: $text-gray;
+					
+		}
+
+		.schools-hed {
+			text-align: center;
+			font-family: $serif;
+			font-size: $sm;
+			font-weight: bold;
+		}
+
 		
 		.active-listing { 
 			background: #fff; 
@@ -135,15 +149,18 @@
 		   	.neighborhoods {
 				font-size: $xs;
 				color: $text-gray;
+				margin-right: 1em;
+			}
 
-				.hoods {
-					
-				}
+
+			.small-info {
+				line-height: 8px !important;
 			}
 
 		    .close-item {
 		    	float: right;
 		    	display: none;
+		    	font-size: $lg !important;
 		    }
 			
 			.school-list {
@@ -232,11 +249,6 @@
 	color: $green;
 }
 
-h2 {
-
-}	
-
-
 .map-section {
 	display: block;
 	margin-top: 1e
@@ -245,15 +257,16 @@ h2 {
 
 
 #map-info {
-		position: absolute;
-	    bottom: 36%;
-	    right: 30px;
-	    max-width: 315px;
-	    z-index: 9999;
-	    background-color: #fff;
-	    display: block;
-	    border: 1px solid #ccc;
-	   	padding: 0.5em;
+	position: absolute;
+    bottom: 29%;
+    right: 15px;
+    height: auto;
+    max-width: 375px;
+    z-index: 9999;
+    background-color: #fff;
+    display: block;
+    border: 1px solid #ccc;
+   	padding: 0.75em;
 
 	    .headline {
 	    	font-size: 25px;
@@ -275,9 +288,9 @@ h2 {
 	    }
 
 	    .readout{
-	    	font-size: $sm;
+	    	font-size: $xs;
 	    	text-align: left;
-	    	line-height: 24px;
+	    	line-height: 18px;
 	    }
 
 	    .graphic-label {
@@ -285,27 +298,36 @@ h2 {
 	    }
 
 	    #button-container {
-			margin: 1em auto;
-			height: 115px;
-			display: block;
-			max-width: 475px;
-			
+	  
+	    	margin-bottom: 0.25em;
+	    	height: auto;
+
+	    }
+
+	    #input-container {
+	    	height: 50px;
+	  
+	    	margin: 0.5em auto;
+
 			h3 {
 				text-align: center;
 			}
 
+
 			.input-holder {
 				text-align: center;
+				float: left;
 				display: inline-block;
-
-
+				margin: 0.5em;
+	
+				// width: 50%;
 			}
 
 			.button-holder{
 				text-align: center;
-				display: inline;
 				float: right;
-
+				display: inline-block;
+				margin-top: 0.25em;
 			}
 
 			.income-btn {
@@ -330,7 +352,7 @@ h2 {
 
 			.income-box {
 				font-family: $serif;
-				font-size: 20px;
+				font-size: 18px;
 				border-bottom: 1px dashed $border-gray;
 				border-bottom-style: dashed;
 				border-top: none;
@@ -370,18 +392,17 @@ h2 {
 			vertical-align: 10px;
 		}
 
-		
 		.error {
-			height: 50px;
+			height: 20px;
 			width: 100%;
 			display: none;
 			margin: 1px auto;
 			text-align: center;
+			font-family: $sans-serif;
+			font-size: 12px !important;
 
-
-			.error-message {
-				background: $red;
-				padding: 0.25em;
+			.alert {
+				padding: 2px !important;
 			}
 		}
 
@@ -390,11 +411,10 @@ h2 {
 		    border-radius:4px;
 		    border: 1px solid #D0D0D0;
 		    overflow: hidden;
-		    width: 60px;
-		    height: 20px;
-		    display: inline-flex;
+		    width: 50px;
+		    height: 17px;
+		    display: inline-block;
 		    margin: -5px 0em;
-
 
 		    &:hover {
 		    	-webkit-box-shadow: 0px 1px 1px $shade;
@@ -410,7 +430,7 @@ h2 {
 		   			text-align: left;
 				    display: block;
 				    padding: 2px 2px;
-				    font-size: $sm;
+				    font-size: $xs;
 				    font-family: $sans-serif-condensed;
 				    line-height: 0px;
 				}
@@ -430,26 +450,41 @@ h2 {
 
 		#check-button-income, #check-button-savings {
 			& span {
-				padding: 9px 4px !important;
+				padding: 8px 4px !important;
 			}
 		}
 
+		#check-button-condo {
+			width: 105px;
+		}
+
 		#check-button-income {
-			width: 50px;
+			width: 45px;
 			padding: 0 0px;
 		}
 
 		#check-button-savings {
-			width: 40px;
+			width: 35px;
 		}
 		.explainer {
 			display: none;
+			margin-top: 0.5em;
 			font-size: $sm;
 			line-height: 18px;
 			font-family: $serif;
 			background: whitesmoke;
-			padding: 0.25em;
+			padding: 0.5em 0.15em;
+			text-align: center;
 			border-radius: 0.25em;
+
+			.income-only {
+				font-size: $xxs;
+				font-style: italic;
+				width: 85%;
+				display: none;
+				margin: 0px auto;
+				line-height: 14px;
+			}
 
 
 			.fa-level-down {
@@ -464,6 +499,7 @@ h2 {
 	background: #F4F4F4;
 	padding: 0 0.25em;
 	font-size: 11px;
+	font-family: $sans-serif;
 }
 
 
@@ -475,8 +511,8 @@ h2 {
 
 	#interface-container {
 	    position: absolute;
-	    bottom: 60px;
-	    right: 30px;
+	    bottom: 45px;
+	    right: 75px;
 	    max-width: 315px;
 	    z-index: 10000;
 
@@ -519,7 +555,7 @@ h2 {
 	}
 
 	.map-interface {
-	    width: 315px;
+	    width: 375px;
 	    z-index: 9999;
 	    display: block;
 	    padding: 15px;
@@ -559,7 +595,6 @@ h2 {
 
 	
 	.footer-list{
-		border: 1px solid;
 		font-size: $xxs !important;
 		font-family: $serif;
 		margin-top: 2em;
@@ -587,19 +622,32 @@ h2 {
 	height: auto;
 
 
-	.neighborhoods {
-		display: block;
-		font-family: $serif;
-		font-size: 11px;
-		color: $text-gray;
-		font-weight: bold;
+	.sub-info {
+		height: auto;
+		margin-bottom: 0.5em;
 		line-height: 14px;
-		margin-bottom: 5px;
 
-		.hoods {
+		.neighborhoods {
+			display: inline;
+			font-family: $serif;
+			font-size: 11px;
+			color: $text-gray;
+			font-weight: bold;
 			
 		}
+
 	}
+
+	.crime-rate {
+		float: right;
+		padding: 1.5px;
+		margin-top: 2px;
+		border-radius: 4px;
+		color: #fff;
+		font-family: $serif;
+		display: none;
+		font-weight: bold;
+	}	
 	
 
 	.float-left {
@@ -749,21 +797,20 @@ footer {
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: $medium-display) {
 
 	#map-info {
 		#button-container {
-			height: 150px;
+			height: auto;
 		}
 	}
 
-
 	.input-holder {
-		width: 100%;
+		width: 45%;
 	}
 
 	.button-holder {
-		width: 100%;
+		width: 45%;
 	}
 }
 
@@ -781,7 +828,29 @@ footer {
 	    margin-left: auto;
 	    margin-top: 1em;
 	}
+
+	#input-container {
+
+		// padding: 0px 15px;
+
+		.input-holder {
+			margin-top: 5px !important;
+
+		}
+
+		.button-holder {
+
+			
+			button {
+				width: 80px !important;
+			}
 	
+			
+		}
+	
+	}
+
+
 
 	#map-info {
 		position: relative;
@@ -796,18 +865,18 @@ footer {
 	    margin-top: 20px;
 	    border: none;
 
-		.graphic-label, .headline, .byline, .date, .readout {
+		.graphic-label, .headline, .byline, .date {
 			text-align: center;
 		}
 		.readout {
-		font-size: $base;
+			font-size: $sm;
+			line-height: 20px;
 		}
 
 		#button-container {
 			margin: 1em auto;
-			height: 200px;
 			display: block;
-			max-width: 475px;
+			width: 100%;
 			
 			h3 {
 				text-align: center;
@@ -816,12 +885,14 @@ footer {
 			.input-holder {
 				text-align: center;
 				display: inline-block;
+	
 			}
 
 			.button-holder{
 				text-align: center;
 				display: inline;
-				float: right;
+				// float: right;
+	
 			}
 
 			.income-btn {
@@ -846,7 +917,7 @@ footer {
 
 			.income-box {
 				font-family: $serif;
-				font-size: 20px !important;
+				font-size: 18px !important;
 				border-bottom: 1px dashed $border-gray;
 				border-bottom-style: dashed;
 				border-top: none;
@@ -900,14 +971,14 @@ footer {
 			}
 		}
 
-		#check-button-house, #check-button-condo {
+		#check-button-house, #check-button-condo, {
 		    background-color:#EFEFEF;
 		    border-radius:4px;
 		    border: 1px solid #D0D0D0;
 		    overflow: hidden;
 		    width: 60px;
 		    height: 20px;
-		    display: inline-flex;
+		    display: inline-block;
 		    margin: -5px 0px;
 
 
@@ -942,15 +1013,37 @@ footer {
 		    }
 
 		}
+
+		#check-button-savings {
+			width: 40px;
+			height: 18px;
+
+			span {
+				font-size: 14px !important;
+			}
+		}
+
+		#check-button-income {
+			width: 50px;
+
+			span {
+				font-size: 14px !important;
+			}
+		}
+
+		#check-button-condo {
+			width: 122.5px;
+		}
+
 		.explainer {
 			display: none;
-			font-size: $base;
+			font-size: $sm;
 			line-height: 18px;
 			text-align: center;
 			font-family: $serif;
 			background: whitesmoke;
 			padding: 0.25em;
-			height: 45px;
+			height: auto;
 			margin-top: 1em;
 			border-radius: 0.25em;
 
@@ -965,11 +1058,12 @@ footer {
 		width: 100% !important;
 
 		#interface-container {
-			right: -40px;
-			width: 290px;
+			right: -35px;
+			width: 300px;
+			bottom: 60px;
 
 			.map-interface {
-				width: 245px;
+				width: 260px;
 			}
 
 			.price-explainer {
@@ -996,7 +1090,7 @@ footer {
 
 		.explainer {
 			display: none;
-			font-size: $base !important;
+			font-size: $sm !important;
 		}
 	}
 
@@ -1005,10 +1099,32 @@ footer {
 		display: none;
 	}
 
+	.hover-instructions {
+		display: none;
+	}
+
 }
 
 @media (max-width: $tiny-display) {
 	#button-container {
-		height: 215px !important;
+		height: auto !important;
+	}
+
+	#input-container {
+		height: 85px !important;
+			
+		.input-holder {
+			width: 100%;
+			margin: 0px !important;
+		
+			.income-box {
+				width: 145px !important;
+			}
+		}
+		
+		.button-holder {
+			width: 100% !important;
+			height: 40px !important;
+		}
 	}
 }
