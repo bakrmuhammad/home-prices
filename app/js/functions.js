@@ -1090,7 +1090,7 @@ function buildDefaultCondo() {
 	buildKey(price);
 
 	$('.housing-type')
-		.html('Price of condos')
+		.html('Value of condos/townhomes')
 		.css({
 			'color': '#006d2c',
 			'font-weight': 'bold'
@@ -1181,7 +1181,7 @@ function buildDefaultPercentCondo() {
 	}
 
 	$('.housing-type')
-		.html('Price change of condos')
+		.html('Value change of condos/townhomes')
 		.css({
 			'color': '#08519c',
 			'font-weight': 'bold'
@@ -1215,7 +1215,7 @@ function buildDefaultCrime() {
 			'font-weight': 'bold'
 		});
 
-	$('.housing-explainer').html(' by ZIP code determined by the Florida Department of Education.');
+	$('.housing-explainer').html(' by ZIP code.');
 	$('.percent-year').css('display', 'none');
 
 	clearDefaultLayers();
@@ -1504,6 +1504,8 @@ function buildZipList() {
 				}
 				$('.hed').css('text-align', 'center');
 
+				var zip = $(this).attr('data-zipcode');
+
 				var houseFourteen = $(this).attr('data-house-fourteen');
 				var houseFifteen = $(this).attr('data-house-fifteen');
 				var housePercent = $(this).attr('data-house-percent');
@@ -1513,16 +1515,18 @@ function buildZipList() {
 				var neighborhoods = $(this).attr('data-neighborhoods');
 				var crimeRate = $(this).attr('data-crime');
 
+				
+
 				$('.listing .inner').remove();
 
 				$('.listing').removeClass('active-listing');
 
 				$(this).addClass('active-listing');
 
-				$(this).append('<div class="inner">' + 
-					'<span class=\'neighborhoods\'><span class="hoods">Neighborhoods: ' + neighborhoods +'</span></span><div class=\'small-info\'><span class=\'crime-rate\'>Crime rate: ' + crimeRate + '</span><i class="close-item fa fa-times"></i></div>' +
-					'<div id=\'prices-container\'>' +
-					'<div class=\'price col-sm-12 col-xs-12\'>' +
+				$(this).append('<div class="inner"><div class=\'small-info\'><i class="close-item fa fa-times"></i>' + 
+					'<p class="hoods">Neighborhoods: ' + neighborhoods +'</p><p class=\'crime-rate\'>Crime rate: ' + crimeRate + '</p></div>' +
+					'<div class=\'img-container col-xs-3\'><img class=\'img-responsive\' src=\'img/' + zip +'_Flat.jpg\'></div><div id=\'prices-container\' class=\'col-sm-6\'>' +
+					'<div class=\'price col-sm-9 col-xs-9\'>' +
 					'<span class=\'hed\'>Median Home Values</span>' +
 					'<div class=\'num col-sm-4 col-xs-4\'>' +
 					'<span class=\'year\'>2014</span>' +
@@ -1533,7 +1537,7 @@ function buildZipList() {
 					'<div class=\'num col-sm-4 col-xs-4\'>' +
 					'<span class=\'year\'>Pct.</span>' +
 					'<span class=\'price-num\'>' + percentChange(housePercent) + '</span></div></div>' +
-					'<div class=\'price col-sm-12 col-xs-12\'>' +
+					'<div class=\'price col-sm-9 col-xs-9\'>' +
 					'<span class=\'hed\'>Median Condo Values</span>' +
 					'<div class=\'num col-sm-4 col-xs-4\'>' +
 					'<span class=\'year\'>2014</span>' +
@@ -1543,7 +1547,7 @@ function buildZipList() {
 					'<span class=\'price-num\'>' + numberChange(condoFifteen) + '</span></div>' +
 					'<div class=\'num col-sm-4 col-xs-4\'>' +
 					'<span class=\'year\'>Pct.</span>' +
-					'<span class=\'price-num\'>' + percentChange(condoPercent) + '</span></div></div></div>' + '<h3 class=\'schools-hed\'>School Grades</h3><table class=\'school-list\'><tr class= \'table-head\'><th class=\'name\'>School</th><th>2014-15</th><th>2013-14</th><th>2012-13</th></tr></table>' + '</div>'
+					'<span class=\'price-num\'>' + percentChange(condoPercent) + '</span></div></div></div>' + '<h3 class=\'schools-hed\'>School Grades</h3><table class=\'school-list\'><tr class= \'table-head\'><th class=\'name\'>School</th><th>14-15</th><th>13-14</th><th>12-13</th></tr></table>' + '</div>'
 				);
 
 				$('.close-item').css({
@@ -1551,13 +1555,30 @@ function buildZipList() {
 					'cursor': 'pointer'
 				});
 
-				var q = $(this).attr('data-index'),
-					schoolData = data[q].school;
 
-				for (var i = 0; i < schoolData.length; i++) {
+				var index = $(this).attr('data-index');
+				var schoolCheck = $(this).attr('data-school-check')
+				var schoolData = data[index].school;
 
-					$('.table-head').after('<tr><td class=\'name\'>' + schoolData[i].name + '</td><td>' + schoolData[i].grade2015 + '</td><td>' + schoolData[i].grade2014 + '</td><td>' + schoolData[i].grade2013 + '</td></tr>');
+				console.log(schoolCheck)
+		
+				if (schoolCheck === "true") {
+					for (var i = 0; i < schoolData.length; i++) {
+
+						$('.table-head').after('<tr><td class=\'name\'>' + schoolData[i].name + '</td><td>' + schoolData[i].grade2015 + '</td><td>' + schoolData[i].grade2014 + '</td><td>' + schoolData[i].grade2013 + '</td></tr>');
+					}
+
 				}
+
+				else {
+					$('.table-head')
+						.empty()
+						.after('<h4 class=\'no-school-data\'>No school data</h4>')
+				}
+
+
+
+				
 			},
 
 			// ON SECOND CLICK...
@@ -1572,7 +1593,7 @@ function buildZipList() {
 
 		$.each(data, function(i, val) {
 
-			$('#zip-list ul').append('<li class=\'listing\' data-index=' + i + ' data-zipcode=\'' + data[i].zipcode + '\' data-neighborhoods=\'' + data[i].neighborhoods + '\'data-crime=\'' + data[i].crime + '\' data-house-fourteen=\'' + data[i].housePriceFourteen + '\' data-house-fifteen=\'' + data[i].housePriceFifteen + '\' data-house-percent=\'' + data[i].housePercent + '\' data-condo-fourteen=\'' + data[i].condoPriceFourteen + '\' data-condo-fifteen=\'' + data[i].condoPriceFifteen + '\' data-condo-percent=\'' + data[i].condoPercent + '\'><span class =\'hed\'>' + data[i].zipcode + ' – ' + data[i].city + '</span></li>');
+			$('#zip-list ul').append('<li class=\'listing\' data-index=' + i + ' data-zipcode=\'' + data[i].zipcode + '\' data-neighborhoods=\'' + data[i].neighborhoods + '\'data-crime=\'' + data[i].crime + '\' data-house-fourteen=\'' + data[i].housePriceFourteen + '\' data-house-fifteen=\'' + data[i].housePriceFifteen + '\' data-house-percent=\'' + data[i].housePercent + '\' data-condo-fourteen=\'' + data[i].condoPriceFourteen + '\' data-condo-fifteen=\'' + data[i].condoPriceFifteen + '\' data-condo-percent=\'' + data[i].condoPercent + '\' data-school-check = \''+ data[i].hasSchool+'\'><span class =\'hed\'>' + data[i].zipcode + ' – ' + data[i].city + '</span></li>');
 			
 			var counter = 0;
 

@@ -314,7 +314,7 @@
 
 		checkInput(income);
 
-		var mobile = 600,
+		var mobile = 843,
 			w = window.innerWidth;
 
 		if (mobile > w) {

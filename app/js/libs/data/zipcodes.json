@@ -13,6 +13,7 @@
         "condoPercent": 0.02,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Dania Elementary",
@@ -48,6 +49,7 @@
         "condoPercent": 0.07,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Hallandale Elementary",
@@ -83,6 +85,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Imater Academy Middle",
@@ -142,6 +145,7 @@
         "condoPercent": 0.07,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "John G. Dupuis Elementary",
@@ -207,6 +211,7 @@
         "condoPercent": 0.18,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Amelia Earhart Elementary",
@@ -260,6 +265,7 @@
         "condoPercent": 0.06,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Miami Lakes K-8 Center",
@@ -319,6 +325,7 @@
         "condoPercent": 0.09,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Highly Inquisitive And Versatile Education Prep.",
@@ -390,6 +397,7 @@
         "condoPercent": 0.14,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Mater Performing Arts & Entertainment Academy",
@@ -467,6 +475,7 @@
         "condoPercent": 0.16,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Mater Gardens Academy Middle",
@@ -543,6 +552,7 @@
         "condoPriceFifteen": 299300,
         "condoPercent": 0.05,
         "crime": "Low",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -559,6 +569,7 @@
         "condoPercent": 0.07,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Beachside Montessori Villa",
@@ -660,6 +671,7 @@
         "condoPercent": 0.11,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Hollywood Hills Elementary",
@@ -713,6 +725,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Annabel C. Perry Elementary",
@@ -778,6 +791,7 @@
         "condoPercent": 0.05,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Driftwood Elementary",
@@ -879,6 +893,7 @@
         "condoPercent": 0.12,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Sea Castle Elementary",
@@ -950,6 +965,7 @@
         "condoPercent": 0.14,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Renaissance Charter School At Cooper City",
@@ -991,6 +1007,7 @@
         "condoPercent": 0.12,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Coconut Palm Elementary",
@@ -1068,6 +1085,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Silver Palms Elementary",
@@ -1109,6 +1127,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Franklin Academy",
@@ -1186,6 +1205,7 @@
         "condoPercent": 0.22,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Avocado Elementary",
@@ -1281,6 +1301,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Redland Elementary",
@@ -1310,6 +1331,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Air Base K-8 Center For International Education",
@@ -1393,6 +1415,7 @@
         "condoPercent": 0.07,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Campbell Drive K-8 Center",
@@ -1446,6 +1469,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Miami Community Charter School",
@@ -1499,6 +1523,7 @@
         "condoPercent": 0.09,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Keys Gate Charter School",
@@ -1533,6 +1558,7 @@
         "condoPriceFifteen": "No data",
         "condoPercent": "No data",
         "crime": "N/A",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -1549,6 +1575,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Bunche Park Elementary",
@@ -1626,6 +1653,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Carol City Elementary",
@@ -1691,6 +1719,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Barbara Hawkins Elementary",
@@ -1756,6 +1785,7 @@
         "condoPercent": 0.09,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "McNab Elementary",
@@ -1814,6 +1844,7 @@
         "condoPriceFifteen": 284500,
         "condoPercent": 0.07,
         "crime": "Average",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -1830,6 +1861,7 @@
         "condoPercent": 0.04,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Rise Academy School Of Science & Technology",
@@ -1889,6 +1921,7 @@
         "condoPercent": 0.06,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Somerset Pines Academy",
@@ -1960,6 +1993,7 @@
         "condoPercent": 0.06,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Coral Springs Elementary",
@@ -2031,6 +2065,7 @@
         "condoPercent": 0.04,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Coconut Creek Elementary",
@@ -2060,6 +2095,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Renaissance Charter Of Coral Springs",
@@ -2113,6 +2149,7 @@
         "condoPercent": 0.12,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Somerset Charter Academy North Lauderdale",
@@ -2190,6 +2227,7 @@
         "condoPercent": 0.01,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Robert C. Markham Elementary",
@@ -2219,6 +2257,7 @@
         "condoPercent": 0.03,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Ramblewood Elementary",
@@ -2266,6 +2305,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Winston Park Elementary",
@@ -2307,6 +2347,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Country Hills Elementary",
@@ -2377,6 +2418,7 @@
         "condoPriceFifteen": 3102400,
         "condoPercent": 0.07,
         "crime": "N/A",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -2393,6 +2435,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Renaissance Middle Charter School",
@@ -2416,6 +2459,7 @@
         "condoPercent": 0.10,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Citrus Grove Elementary",
@@ -2457,6 +2501,7 @@
         "condoPercent": 0.12,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Henry M. Flagler Elementary",
@@ -2498,6 +2543,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Lenora Braynon Smith Elementary",
@@ -2587,6 +2633,7 @@
         "condoPercent": 0.25,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Downtown Miami Charter School",
@@ -2614,7 +2661,8 @@
         "condoPriceFourteen": 370200,
         "condoPriceFifteen": 391300,
         "condoPercent": 0.06,
-        "crime": "High"
+        "crime": "High",
+        "hasSchool": false
     },
     {
         "zipcode": 33130,
@@ -2630,6 +2678,7 @@
         "condoPercent": -0.02,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Mater Academy East Charter",
@@ -2700,7 +2749,8 @@
         "condoPriceFifteen": 435600,
         "condoPercent": -0.07,
         "crime": "High",
-        "school_grade": "N/A"
+        "school_grade": "N/A",
+        "hasSchool": false
     },
     {
         "zipcode": 33132,
@@ -2716,6 +2766,7 @@
         "condoPercent": -0.03,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Bridgeprep Academy Of Greater Miami",
@@ -2763,6 +2814,7 @@
         "condoPercent": 0.06,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "George W. Carver Elementary",
@@ -2828,6 +2880,7 @@
         "condoPercent": 0.03,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Coral Gables Preparatory Academy",
@@ -2857,6 +2910,7 @@
         "condoPercent": 0.11,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Auburndale Elementary",
@@ -2916,6 +2970,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Frederick R. Douglass Elementary",
@@ -2969,6 +3024,7 @@
         "condoPercent": 0.11,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Toussaint L'Ouverture Elementary",
@@ -3004,6 +3060,7 @@
         "condoPercent": 0.15,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Miami Shores Elementary",
@@ -3039,6 +3096,7 @@
         "condoPercent": 0.07,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Fienberg/Fisher K-8 Center",
@@ -3074,6 +3132,7 @@
         "condoPercent": 0.08,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "North Beach Elementary",
@@ -3103,6 +3162,7 @@
         "condoPercent": 0.06,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Biscayne Elementary",
@@ -3138,6 +3198,7 @@
         "condoPercent": -0.03,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Maya Angelou Elementary",
@@ -3227,6 +3288,7 @@
         "condoPercent": 0.03,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Somerset Academy Elementary (South Miami Campus)",
@@ -3280,6 +3342,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Fairlawn Elementary",
@@ -3315,6 +3378,7 @@
         "condoPercent": 0.03,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Coral Way K-8 Center",
@@ -3344,6 +3408,7 @@
         "condoPercent": 0.02,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Henry S. West Laboratory School",
@@ -3385,6 +3450,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": 1.4,
+        "hasSchool": true,
         "school": [
             {
                 "name": "Broadmoor Elementary ",
@@ -3468,6 +3534,7 @@
         "condoPercent": 0.07,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Key Biscayne K-8 Center",
@@ -3497,6 +3564,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Arcola Lake Elementary",
@@ -3562,6 +3630,7 @@
         "condoPercent": 0.08,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Ruth K. Broad Bay Harbor K-8 Center",
@@ -3585,6 +3654,7 @@
         "condoPercent": -0.02,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Banyan Elementary",
@@ -3650,6 +3720,7 @@
         "condoPercent": 0.15,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Howard Drive Elementary",
@@ -3709,6 +3780,7 @@
         "condoPercent": 0.14,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Bel-Aire Elementary",
@@ -3803,6 +3875,7 @@
         "condoPriceFifteen": 1256400,
         "condoPercent": 0.06,
         "crime": "Low",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -3819,6 +3892,7 @@
         "condoPercent": 0.08,
         "crime": 97,
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Norman S. Edelcup/Sunny Isles Beach K-8",
@@ -3848,6 +3922,7 @@
         "condoPercent": 0.16,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Archcreek Elementary",
@@ -3907,6 +3982,7 @@
         "condoPercent": 0.08,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Ben Gamla Charter School",
@@ -3972,6 +4048,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Blue Lakes Elementary",
@@ -4067,6 +4144,7 @@
         "condoPercent": 0.10,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Integrated Science And Asian Culture Academy",
@@ -4126,6 +4204,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Lakeview Elementary",
@@ -4161,6 +4240,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Benjamin Franklin K-8 Center",
@@ -4206,8 +4286,9 @@
         "condoPriceFourteen": 77600,
         "condoPriceFifteen": 85800,
         "condoPercent": 0.11,
-        "crime": "AVerage",
+        "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Biscayne Gardens Elementary",
@@ -4273,6 +4354,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Palm Glades Preparatory Academy",
@@ -4320,6 +4402,7 @@
         "condoPercent": 0.10,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Renaissance Elementary Charter",
@@ -4391,6 +4474,7 @@
         "condoPercent": 0.07,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Snapper Creek Elementary",
@@ -4432,6 +4516,7 @@
         "condoPercent": 0.13,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Coral Park Elementary",
@@ -4467,6 +4552,7 @@
         "condoPercent": 0.06,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Bent Tree Elementary",
@@ -4544,6 +4630,7 @@
         "condoPercent": 0.07,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Somerset Academy Bay Elementary",
@@ -4627,6 +4714,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Somerset Academy Charter",
@@ -4686,6 +4774,7 @@
         "condoPercent": 0.02,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Eugenia B. Thomas K-8 Center",
@@ -4727,6 +4816,7 @@
         "condoPercent": 0.06,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Madie Ives Community Elementary",
@@ -4762,6 +4852,7 @@
         "condoPercent": 0.04,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Aventura Waterways K-8 Center",
@@ -4809,6 +4900,7 @@
         "condoPercent": 0.06,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Natural Bridge Elementary",
@@ -4844,6 +4936,7 @@
         "condoPercent": 0.09,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Paul W. Bell Middle",
@@ -4867,6 +4960,7 @@
         "condoPercent": 0.12,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Archimedean Academy",
@@ -4926,6 +5020,7 @@
         "condoPercent": 0.09,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Marjory Stoneman Douglas Elementary",
@@ -4955,6 +5050,7 @@
         "condoPercent": 0.08,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Dr. Manuel C. Barreiro Elementary",
@@ -5026,6 +5122,7 @@
         "condoPercent": 0.11,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Calusa Elementary",
@@ -5078,6 +5175,7 @@
         "condoPriceFifteen": "No data",
         "condoPercent": "No data",
         "crime": "Average",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -5094,6 +5192,7 @@
         "condoPercent": 0.07,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Cutler Ridge Elementary",
@@ -5135,6 +5234,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": false,
         "schools": "N/A"
     },
     {
@@ -5151,6 +5251,7 @@
         "condoPercent": 0.11,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Pinecrest Academy (South Campus)",
@@ -5185,6 +5286,7 @@
         "condoPriceFifteen": 254800,
         "condoPercent": 0.07,
         "crime": "Average",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -5201,6 +5303,7 @@
         "condoPercent": 0.09,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Norma Butler Bossard Elementary",
@@ -5260,6 +5363,7 @@
         "condoPercent": 0.02,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Virginia S. Young Elementary",
@@ -5283,6 +5387,7 @@
         "condoPercent": 0.02,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Bayview Elementary",
@@ -5324,6 +5429,7 @@
         "condoPercent": 0.05,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Wilton Manors Elementary",
@@ -5353,6 +5459,7 @@
         "condoPercent": 0.06,
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": false,
         "school": "N/A"
     },
     {
@@ -5368,6 +5475,7 @@
         "condoPriceFifteen": 297500,
         "condoPercent": 0.03,
         "crime": "Average",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -5384,6 +5492,7 @@
         "condoPercent": 0.03,
         "crime": "Average",
         "school_grade": 1.9,
+        "hasSchool": true,
         "school": [
             {
                 "name": "Lloyd Estates Elementary",
@@ -5431,6 +5540,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "1.6",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Eagles' Nest Elementary",
@@ -5550,6 +5660,7 @@
         "condoPercent": 0.08,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Riverland Elementary",
@@ -5597,6 +5708,7 @@
         "condoPercent": 0.02,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Renaissance Charter Of Plantation",
@@ -5674,6 +5786,7 @@
         "condoPercent": 0.19,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Nova Dwight Eisenhower Elementary",
@@ -5721,6 +5834,7 @@
         "condoPercent": "No data",
         "crime": "High",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Croissant Park Elementary",
@@ -5744,6 +5858,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Harbordale Elementary",
@@ -5773,6 +5888,7 @@
         "condoPercent": 0.08,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Tropical Elementary",
@@ -5838,6 +5954,7 @@
         "condoPercent": 0.02,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Pathways Academy K-8 Center",
@@ -5873,6 +5990,7 @@
         "condoPercent": 0.09,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Excelsior Charter Of Broward",
@@ -5944,6 +6062,7 @@
         "condoPercent": 0.04,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Horizon Elementary",
@@ -5978,6 +6097,7 @@
         "condoPriceFifteen": 292000,
         "condoPercent": 0.03,
         "crime": "Average",
+        "hasSchool": false,
         "school_grade": "N/A"
     },
     {
@@ -5994,6 +6114,7 @@
         "condoPercent": 0.07,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Imagine Schools South Campus",
@@ -6035,6 +6156,7 @@
         "condoPercent": "No data",
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Flamingo Elementary",
@@ -6070,6 +6192,7 @@
         "condoPercent": 0.03,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Country Isles Elementary",
@@ -6111,6 +6234,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Imagine Charter School Weston",
@@ -6146,6 +6270,7 @@
         "condoPercent": 0.06,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Championship Academy Of Discovery",
@@ -6193,6 +6318,7 @@
         "condoPercent": "No data",
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Franklin Academy E",
@@ -6228,6 +6354,7 @@
         "condoPercent": 0.12,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Everglades Elementary",
@@ -6269,6 +6396,7 @@
         "condoPercent": -0.02,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Manatee Bay Elementary",
@@ -6304,6 +6432,7 @@
         "condoPercent": 0.09,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "North Andrews Gardens Elementary",
@@ -6351,6 +6480,7 @@
         "condoPercent": 0.06,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Franklin Academy B",
@@ -6410,6 +6540,7 @@
         "condoPercent": 0.08,
         "crime": "Average",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Deerfield Beach Elementary",
@@ -6451,6 +6582,7 @@
         "condoPercent": 0.03,
         "crime": "Low",
         "school_grade": "N/A",
+        "hasSchool": true,
         "school": [
             {
                 "name": "Quiet Waters Elementary",

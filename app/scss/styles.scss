@@ -118,13 +118,6 @@
 					
 		}
 
-		.schools-hed {
-			text-align: center;
-			font-family: $serif;
-			font-size: $sm;
-			font-weight: bold;
-		}
-
 		
 		.active-listing { 
 			background: #fff; 
@@ -146,10 +139,15 @@
 		    	background: #fff;
 		    }
 
-		   	.neighborhoods {
+		   	.hoods {
 				font-size: $xs;
 				color: $text-gray;
-				margin-right: 1em;
+				margin-top: 1em;
+				line-height: 16px;
+			}
+
+			.img-container {
+				margin: 0.5em 0;
 			}
 
 
@@ -162,14 +160,26 @@
 		    	display: none;
 		    	font-size: $lg !important;
 		    }
+
+
+
+		    .schools-hed {
+				text-align: center;
+				font-family: $serif;
+				font-size: $base;
+				font-weight: bold;
+				// clear: both;
+				width: 100%;
+				margin: 0px auto;
+			}
 			
 			.school-list {
-
-				width: 100%;
+				width: 75%;
+				margin-bottom: 3em;
 				font-weight: normal;
 
 				td, th {
-					font-size: 11px;
+					font-size: 14px;
 					text-align: center;
 				}
 
@@ -191,15 +201,25 @@
 					padding: 2.5px 0px;
 				}
 
+				tbody {
+					margin-left: 1em !important;
+				}
+
 
 				.name {
 					text-align: left !important;
+				}
+
+				.no-school-data {
+					text-align: center;
+					font-size: $lg;
+					color: #ccc;
 				}
 			}
 
 			#prices-container {
 				height: 200px;
-				width: 100%;
+				// width: 100%;
 
 				margin-top: 0.75em;
 
@@ -212,7 +232,7 @@
 					}
 
 					.hed {
-						font-size: $sm;
+						font-size: $base;
 						display: block;
 					}
 
@@ -251,7 +271,7 @@
 
 .map-section {
 	display: block;
-	margin-top: 1e
+	margin-top: 1em;
 
 }
 
@@ -504,7 +524,7 @@
 
 
 #map-container {
-	width: 100vw;
+	width: 100%;
 	height: 91.5vh;
 	display: block;
 	position: relative !important;
@@ -1102,7 +1122,18 @@ footer {
 	.hover-instructions {
 		display: none;
 	}
+}
 
+
+@media (max-width: 701px) {
+	.school-list {
+		width: 100% !important;
+		margin-bottom: 0 !important;
+	}
+
+	.schools-hed {
+		clear: both;
+	}
 }
 
 @media (max-width: $tiny-display) {
@@ -1127,4 +1158,26 @@ footer {
 			height: 40px !important;
 		}
 	}
+
+	.price-num {
+		font-size: $base !important;
+	}
+
+	.img-container {
+		margin-top: 1em !important;
+	}
+
+	.schools-hed {
+		font-size: $sm !important;
+		display: block;
+	}
+
+	.school-list {
+		td,th {
+			font-size: $xxs !important;
+		}
+	}
+
 }
+
+
