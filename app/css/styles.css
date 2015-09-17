@@ -273,6 +273,9 @@ hr {
   z-index: 2;
   color: #666; }
 
+.dotted-mobile {
+  display: none; }
+
 .miss {
   display: none !important; }
 
@@ -280,8 +283,9 @@ hr {
   margin: 1em 0 2em 0;
   text-align: center;
   height: auto;
-  width: 100% h3;
-    width-padding-bottom: 8px; }
+  width: 100%; }
+  .info #house-choice h3 {
+    padding-bottom: 8px; }
   .info #house-choice .disabled:hover {
     background-color: #efefef !important; }
 
@@ -441,6 +445,10 @@ hr {
   display: block;
   border: 1px solid #ccc;
   padding: 0.75em; }
+  #map-info .tool-list {
+    list-style: decimal;
+    list-style-position: inside;
+    padding-left: 20px; }
   #map-info .headline {
     font-size: 25px;
     text-align: left; }
@@ -535,7 +543,6 @@ hr {
     border-radius: 4px;
     border: 1px solid #D0D0D0;
     overflow: hidden;
-    width: 50px;
     height: 17px;
     display: inline-block;
     margin: -5px 0em; }
@@ -559,22 +566,16 @@ hr {
           background-color: #aaa;
           color: #000; }
   #map-info #check-button-income span, #map-info #check-button-savings span {
-    padding: 8px 4px !important; }
-  #map-info #check-button-condo {
-    width: 105px; }
+    padding: 2px 4px !important; }
   #map-info #check-button-income {
-    width: 45px;
     padding: 0 0px; }
-  #map-info #check-button-savings {
-    width: 35px; }
   #map-info .explainer {
     display: none;
-    margin-top: 0.5em;
     font-size: 14px;
     line-height: 18px;
     font-family: "Roboto Slab", "Times New Roman", Times, serif;
     background: whitesmoke;
-    padding: 0.5em 0.15em;
+    padding: 5px 5px 0.15px 5px;
     text-align: center;
     border-radius: 0.25em; }
     #map-info .explainer .income-only {
@@ -603,6 +604,7 @@ hr {
     bottom: 45px;
     right: 75px;
     max-width: 315px;
+    height: 125px;
     z-index: 10000; }
     #map-container #interface-container ul {
       position: relative;
@@ -646,7 +648,7 @@ hr {
   #map-container .key-holder {
     clear: both;
     margin: 1em 0; }
-  #map-container .label {
+  #map-container .labels .label {
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
     font-size: 10px;
     display: inline-block;
@@ -655,10 +657,20 @@ hr {
     text-transform: uppercase;
     color: #aaa;
     margin: 0.5em 0; }
-    #map-container .label:last-of-type {
-      float: right; }
+    #map-container .labels .label:nth-child(1) {
+      text-align: left;
+      width: 50%; }
+    #map-container .labels .label:last-of-type {
+      text-align: right;
+      width: 50%; }
+    #map-container .labels .label-middle {
+      text-align: center;
+      width: 33%;
+      display: none; }
+  #map-container .labels .b-grade, #map-container .labels .d-grade {
+    display: none; }
   #map-container .legend-block {
-    width: 20%;
+    width: 25%;
     float: left;
     border: 5px solid; }
   #map-container .footer-list {
@@ -680,6 +692,8 @@ hr {
   display: none;
   z-index: 9999;
   height: auto; }
+  #hover-box .mobile-readout {
+    display: none; }
   #hover-box .sub-info {
     height: auto;
     margin-bottom: 0.5em;
@@ -750,7 +764,7 @@ hr {
     font-size: 10px;
     font-family: "Roboto Slab", "Times New Roman", Times, serif;
     clear: both;
-    padding: 5px 5px 0px 5px; }
+    padding: 0px 5px 0px 5px; }
     #hover-box #school-list .school-table {
       width: 100%; }
       #hover-box #school-list .school-table th {
@@ -758,6 +772,8 @@ hr {
         text-transform: uppercase;
         color: #666;
         width: 5px;
+        font-weight: 900;
+        font-size: 9px;
         text-align: center;
         padding-top: 2.5px; }
       #hover-box #school-list .school-table .name {
@@ -767,14 +783,12 @@ hr {
       #hover-box #school-list .school-table .schools-row {
         border-bottom: 1px dashed #ccc;
         border-bottom-style: dashed; }
-        #hover-box #school-list .school-table .schools-row:last-of-type {
-          border-bottom: none; }
   #hover-box .no-school {
     display: none;
     font-family: "Roboto Slab", "Times New Roman", Times, serif;
     font-size: 18px;
     color: #bbb;
-    padding: 1em;
+    margin-bottom: 10px;
     text-align: center; }
   #hover-box .table-label {
     font-family: "Roboto Condensed", "Helvetica Nueue", Helvetica, Arial, sans-serif;
@@ -807,6 +821,8 @@ footer {
     margin-right: auto;
     margin-left: auto;
     margin-top: 1em; }
+  .dotted-mobile {
+    display: block; }
   #input-container .input-holder {
     margin-top: 5px !important; }
   #input-container .button-holder button {
@@ -823,6 +839,33 @@ footer {
     height: auto;
     margin-top: 20px;
     border: none; }
+    #map-info .tool-list {
+      text-align: center;
+      padding: 0px; }
+      #map-info .tool-list #check-button-house, #map-info .tool-list #check-button-condo {
+        display: block;
+        width: 170px;
+        height: 30px;
+        margin: 0px auto; }
+        #map-info .tool-list #check-button-house label, #map-info .tool-list #check-button-condo label {
+          height: 100px !important; }
+        #map-info .tool-list #check-button-house label span, #map-info .tool-list #check-button-condo label span {
+          font-size: 14px !important;
+          text-align: center;
+          padding-top: 7px; }
+      #map-info .tool-list #check-button-house label input:checked + span, #map-info .tool-list #check-button-condo label input:checked + span {
+        height: 30px !important; }
+      #map-info .tool-list #check-button-income, #map-info .tool-list #check-button-savings {
+        display: block;
+        width: 170px;
+        height: 30px;
+        margin: 0px auto; }
+        #map-info .tool-list #check-button-income label span, #map-info .tool-list #check-button-savings label span {
+          font-size: 14px !important;
+          text-align: center;
+          padding: 0.5em 0 1em 0 !important; }
+      #map-info .tool-list #check-button-income label input:checked + span, #map-info .tool-list #check-button-savings label input:checked + span {
+        height: 40px !important; }
     #map-info .graphic-label, #map-info .headline, #map-info .byline, #map-info .date {
       text-align: center; }
     #map-info .readout {
@@ -882,7 +925,7 @@ footer {
       font-weight: bold;
       font-size: 16px; }
     #map-info .dollar-sign {
-      font-size: 20px;
+      font-size: 24px;
       vertical-align: 10px; }
     #map-info .error {
       height: auto;
@@ -898,7 +941,6 @@ footer {
       border-radius: 4px;
       border: 1px solid #D0D0D0;
       overflow: hidden;
-      width: 60px;
       height: 20px;
       display: inline-block;
       margin: -5px 0px; }
@@ -956,11 +998,39 @@ footer {
       #map-container #interface-container .price-explainer {
         font-size: 12px;
         line-height: 16px; }
+      #map-container #interface-container .interface-selector {
+        font-size: 10px; }
   footer {
     display: block;
     width: 100%; }
   #hover-box {
-    display: none !important; }
+    display: none; }
+    #hover-box .mobile-readout {
+      display: block; }
+      #hover-box .mobile-readout .readout {
+        font-size: 12px;
+        text-align: left; }
+        #hover-box .mobile-readout .readout .average-grade, #hover-box .mobile-readout .readout .school-number {
+          font-weight: bold;
+          color: #54278f; }
+  .mobile-readout {
+    display: block; }
+    .mobile-readout .close-button-wrapper {
+      text-align: center; }
+      .mobile-readout .close-button-wrapper .hover-box-close {
+        margin: 0px auto;
+        background-color: #EFEFEF;
+        border-radius: 4px;
+        border: 1px solid #D0D0D0;
+        overflow: hidden;
+        height: 30px;
+        font-weight: bold;
+        font-family: "Roboto", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+        font-size: 14px; }
+        .mobile-readout .close-button-wrapper .hover-box-close:hover {
+          -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
   #list-container {
     display: block; }
     #list-container .explainer {

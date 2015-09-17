@@ -60,13 +60,16 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 
 				<div id="button-container">
 
-					<p class="readout">Skyrocketing home prices mean many middle-class South Floridians can't buy the homes they want. This tool shows where you can afford a home and how school quality, safety and value growth compare.</p>
+					<p class="readout">Skyrocketing home prices mean many middle-class South Floridians can't buy the homes they want. This tool shows where you can afford a home and how school quality, safety and value growth compare. Here's how to use it:</p>
 
-					<p class='readout'>Start by selecting
+					<ol class="tool-list readout">
+
+					<li>
+						<p>Select 
 						<span id="check-button-house">
 							<label>
-								<input class='house' type="checkbox"  value="1">
-									<span><i class="fa fa-home"></i> house</span>
+								<input class='house' type="checkbox" checked="checked" value="1">
+									<span><i class="fa fa-home"></i> single-family home</span>
 							</label>
 						</span> or 
 					   <span id="check-button-condo">
@@ -74,31 +77,46 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						   		<input class='condo' type="checkbox" value="1">
 						   	<span><i class="fa fa-building"></i> condo/townhouse</span>
 						   	</label>
-					   	</span>.
-						If you want to see what's affordable based on your household income, select
+					   	</span>
+						</p>
+					</li>
+					
+					<hr class="dotted dotted-mobile">
+
+					<li>
+					<p>
+						Select
 					   <span id="check-button-income">
 					   	<label>
-					   		<input class='income' type="checkbox" value="1">
-					   	<span> income</span>
+					   		<input class='income' type="checkbox" checked ='checked' value="1">
+					   	<span><i class="fa fa-briefcase"></i> income</span>
 					   	</label>
-				   	  </span>. 
-				   	  Otherwise, select
+				   	  </span>or
 				   	  <span id="check-button-savings">
 						   	<label>
 						   		<input class='savings' type="checkbox" value="1">
-						   	<span> price</span>
+						   	<span><i class="fa fa-money"></i> price</span>
 						   	</label>
-					   	</span>.
-						Finally, type your income or price in the box below. <span class="hover-instructions">Hover over a ZIP code for more information.</span>
-					 </p>
+					   	</span>
+					</p>
+						
+					</li>
+				
+				 </ol>
+					<p class="readout">
+						<span class="hover-instructions">Hover over a ZIP code for more information.</span>
+					</p>
 
 				</div>
-					
+
+				<hr class="dotted dotted-mobile">
+				
+
 
 				<div id="input-container">
 					<div class="input-holder">
 						<span class="dollar-sign">$ </span>
-						<input name="income-box" class="income-box" type="text" placeholder="" />
+						<input name="income-box" class="income-box" type="text" placeholder="Enter income" />
 					</div>
 				
 					<div class="button-holder">
@@ -154,9 +172,19 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 							<div class="key"></div>
 
 							<div class="clearfix"></div>	
+							<div class="labels">
+								
+								<h6 class="label label-left"></h6>
 
-							<span class="label label-left"></span>
-							<span class="label label-right"></span>
+								<h6 class="label d-grade"></h6>
+
+								<h6 class="label label-middle"></h6>
+
+								<h6 class="label b-grade"></h6>
+
+								<h6 class="label label-right"></h6>
+
+							</div>
 						
 						</div>
 						
@@ -184,7 +212,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						<table class='housing-table'>
 							<tr>
 								<th>Year</th>
-								<th>House Value</th>
+								<th>Home Value</th>
 							</tr>
 							<tr>
 								<td>2014</td>
@@ -231,12 +259,22 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 						<table class='school-table'>
 							<tr class='school-head'>
 								<th class='name'>School</th>
-								<th>2015</th>
-								<th>2014</th>
-								<th>2013</th>
+								<th>'14-15</th>
+								<th>'13-14</th>
+								<th>'12-13</th>
 							</tr>
 						</table>
-						<span class="no-school">No school data</span>
+						<h4 class="no-school">No school data</h4>
+					</div>
+
+					<div class="mobile-readout">
+						<p class="readout">
+							There are <span class="school-number"></span> in this ZIP code with an average grade, determined by the Florida Department of Education, of <span class="average-grade"></span>.
+						</p> 
+						<div class="close-button-wrapper">
+							<button class='hover-box-close'>Close</button>
+						</div>
+
 					</div>
 
 				</div>
@@ -250,7 +288,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 			<div class="explainer">
 				<p>Here is a list of the <span class="zip-count"></span> ZIP codes where you can afford a <span class="housing"></span>:</p>
 			</div>	
-			<input id="srcbox" placeholder="Search for a ZIP code...">
+			<input id="srcbox" placeholder="Enter a ZIP code or city...">
 			<i class="fa fa-search mag-glass"></i>
 			<div class="clearfix"></div>
 			</header>
