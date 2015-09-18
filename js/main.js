@@ -1,6 +1,5 @@
+'use strict';
 (function () {
-  'use strict';
-
 	$('.leaflet-bottom.leaflet-left').append('<div class=\'source\'>Sources: Zillow, Florida Department of Education and ESRI</div>');
 
 	$('.income-box').keyup(function(event) {
@@ -13,7 +12,6 @@
 	});
 
 	$('#check-button-house').on('change', '.house:checkbox', function(e) {
-
 		var attr = $(this).attr('checked');
 		var houseCheckbox = $('.house:checkbox');
 		var condoCheckbox = $('.condo:checkbox');
@@ -42,7 +40,9 @@
 				'width': '100%',
 				'display': 'block'
 			});
+
 			removeError();
+
 			$('#condo-price').css('display', 'none');
 		}
 	});
@@ -104,7 +104,6 @@
 		$('.crime-select').removeClass('selected-interface');
 		$('.school-select').removeClass('selected-interface');
 		$('.percent-select').removeClass('selected-interface');
-
 		$(this).addClass('selected-interface');
 
 		var price = 'price';
@@ -143,7 +142,6 @@
 		$('.crime-select').removeClass('selected-interface');
 		$('.school-select').removeClass('selected-interface');
 		$('.price-select').removeClass('selected-interface');
-
 		$(this).addClass('selected-interface');
 
 		var percent = 'percent';
@@ -204,23 +202,18 @@
 
 		if ((houseCheck === true && condoCheck === false) && (inputEmpty === false)) {
 			buildCrimeMap();
-			console.log('build crime map');
 		} else if ((houseCheck === false && condoCheck === true) && (inputEmpty === false)) {
 			buildCrimeMap();
-			console.log('build crime map');
 		} else {
 			buildKey(crime);
 			buildDefaultCrime();
-			console.log('build default crime map');
 		}
 	});
 
 	$('#interface-container').on('click touchstart', '.school-select', function(event) {
-
 		$('.price-select').removeClass('selected-interface');
 		$('.percent-select').removeClass('selected-interface');
 		$('.crime-select').removeClass('selected-interface');
-
 		$(this).addClass('selected-interface');
 
 		var school = 'school';
@@ -250,7 +243,6 @@
 		}
 	});
 
-	// WHEN EVERYTHING IS GOOD TO GO...
 	// RUN MAP-BUILDING FUNCTIONS
 	$('#input-container').on('click touchstart', '.income-button', function() {
 
