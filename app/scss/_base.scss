@@ -26,7 +26,6 @@ $serif: "Roboto Slab", "Times New Roman", Times, serif;
 
 $raleway: "Raleway", "Helvetica Nueue", Helvetica, Arial, sans-serif;
 
-
 //STANDARD FONT SIZES
 $base: 16px;
 $xxl: 36px;
@@ -152,6 +151,10 @@ body,html {
 
 .navbar-right {
 	float: right!important;
+}
+
+.center {
+	text-align: center;
 }
 
 //LABEL
@@ -325,8 +328,6 @@ hr {
 	max-width: 485px;
 	color: $text-gray-source;
 	display: table;
-	border-top: 1px solid $border-gray;
-
 	p {
 		padding: 0.5em 0 0 0;
 	}
@@ -426,7 +427,7 @@ hr {
 //BREAKPOINTS
 $large-display: 1200px;
 $medium-display: 992px;
-$small-display: 767px;
+$small-display: 768px;
 $tiny-display: 400px;
 
 @media (max-width: $small-display) {
